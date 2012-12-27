@@ -1,0 +1,44 @@
+/* CSS Document */
+.im img{
+	border:0 !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+.upload{
+	float:left;
+	padding:0 5px;
+	color:#FFF;
+	text-align:center;
+	background:#FF6600;
+	font-weight:bold;
+	padding:0 5px;
+	margin:5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	
+}
+.delete{
+	display:none;
+	width:18px;
+	height:18px;
+	cursor:pointer;
+	text-indent:9999px;
+	overflow:hidden;
+	position:absolute;
+	background:url(../img/delete.png) 0 0 no-repeat;
+}
+span.im{
+	text-indent:0 !important;
+}
+span.im{
+    border: 1px solid #CCCCCC;
+	margin:5px;
+    padding: 5px;
+}
+span.im:hover a {
+	display:block;
+}
+

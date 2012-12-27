@@ -1,0 +1,263 @@
+/*
+CSS Document
+Proyect: CodeIgniter BackEnd
+Version: 1.0 (05/2012)
+Autor: Pedro Montero
+Team: Pedro Montero (html/css/jquery/php)
+Description 
+-----------
+Ancho Total: 960px
+Tipografia : Verdana
+Colores    : Gris Opaco: #CCC
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	outline: none;
+}
+
+img {
+	border: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+table {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+table tr td {
+	text-indent: 5px;
+	line-height:25px;
+	vertical-align: top;
+	text-align:left;
+	padding:1px 0;
+}
+
+input{
+	font-size: 12px;
+	border: 1px solid #CCC;
+	line-height:16px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+} 
+
+select {
+	font-size: 12px;
+	border: 1px solid #CCC;
+	line-height:16px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+textarea {
+	font-size: 12px;
+	border: 1px solid #CCC;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	resize : none;
+}
+
+.radio{
+	border:none !important;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+
+#header {
+	height: 100px;
+	position: relative;
+	border: 1px #666666 solid;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-ms-border-radius: 7px;
+	border-radius: 7px;
+	padding: 10px;
+	margin: 10px 10px 0 10px;
+}
+
+#header-pin {
+	width: 22px;
+	height: 14px;
+	display: block;
+	position: absolute;
+	text-indent: 9999px;
+	background: url(../images/pinh-open.jpg) left top no-repeat;
+	overflow: hidden;
+	right: 8px;
+	bottom: -14px;
+}
+
+#header-pin:hover {
+	background-position: left bottom;
+}
+
+#header #tools {
+	color: #333;
+	float: right;
+	padding: 10px 20px 0 0;
+}
+
+#header #tools a {
+	color: #333;
+	text-decoration: none;
+}
+
+#header #tools a:hover {
+	color: #09C;
+	text-decoration: none;
+}
+
+#header #tools #link {
+	text-align: right;
+}
+
+#header #tools #relog {
+	font-size: 25px;
+	color: #666;
+	margin: 15px 0 0 0;
+	float: right;
+}
+
+#main {
+	position: relative;
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+#sidebar {
+	position: absolute;
+	width: 168px;
+	left: 0;
+	border: 1px #666666 solid;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-ms-border-radius: 7px;
+	border-radius: 7px;
+	padding: 20px 0;
+	margin: 0 10px 0 10px;
+}
+
+#sidebar-pin {
+	width: 14px;
+	height: 22px;
+	display: block;
+	position: absolute;
+	text-indent: 9999px;
+	background: url(../images/pinv-open.jpg) left top no-repeat;
+	overflow: hidden;
+	right: -14px;
+	top: 8px;
+}
+
+#sidebar-pin:hover {
+	background-position: left bottom;
+}
+
+/*first level*/
+#sidebar ul li {
+	font-weight: bold;
+	text-indent: 10px;
+	padding: 8px 0;
+	border-bottom: 1px solid #CCC;
+}
+
+#sidebar ul li a {
+	color: #666;
+	text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+	color: #EA6F19;
+}
+/*second level*/
+#sidebar ul li ul li {
+	padding: 3px 0;
+	border-bottom: none;
+	text-indent: 15px;
+	list-style: inside;
+}
+
+#title {
+	margin: 0 0 0 200px;
+	padding: 0 0 10px 0;
+}
+
+#content {
+	margin: 0 10px 0 200px;
+	border: 1px #666666 solid;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-ms-border-radius: 7px;
+	border-radius: 7px;
+	padding: 10px;
+}
+
+.bo {
+	border: 1px solid #FF6600;
+}
+
+.trHeader {
+	background-color: #FF6600;
+	font-weight: bold;
+	color: #FFF;
+	line-height: 18px;
+	text-indent: 4px;
+}
+
+.trHeader:hover {
+	background-color: #FF6600 !important;
+}
+
+.trLista {
+	line-height: 18px;
+}
+
+.trLista:hover {
+	background-color: #EBEBEB;
+}
+
+button {
+	background-color: #FF6600;
+	border: 0 none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 5px;
+}
+
+.btn-img {
+    background: none repeat scroll 0 0 #01824A;
+    color: #FFFFFF;
+    margin: 5px 10px 0;
+    text-align: center;
+}
+#error{
+	float:right;
+	color:#F00;
+	padding:0 45px 0 0;
+}
+#footer {
+	height: 100px;
+	position: relative;
+	margin: 0 0 0 200px;
+	padding: 10px 0 10px 0;
+}
