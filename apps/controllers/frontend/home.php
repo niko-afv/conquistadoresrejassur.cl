@@ -6,7 +6,7 @@ class Home extends CI_Controller {
 	
 	public function __construct(){
 		parent::__construct();
-		$this->title = 'pm';
+		$this->title = 'Conquistadores Rejas Sur';
 		$this->layout = array('base'=>'main','meta','header','footer');
 	}
 	

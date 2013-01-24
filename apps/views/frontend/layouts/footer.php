@@ -1,3 +1,3 @@
 FOOTER
 <br />
-2012. Todos los derechos reservados. Pedro Montero.
+2013. Todos los derechos reservados. Club De Conquistadores Rejas Sur.
