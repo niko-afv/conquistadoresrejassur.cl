@@ -3,16 +3,16 @@
 <head>
 <title>bo</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/css/login.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/js/jquery-1.8.1.min.js"></script>
-<script type="text/javascript" src="/js/jquery.functions.js"></script>
+<link href="<?php echo base_url();?>/css/login.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?php echo base_url();?>/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>/js/jquery.functions.js"></script>
 <script type="text/javascript">
 <!--
 
 //DELETE
 $(document).ready(function(){
-	$('[name=username]').val('pmontero');
-	$('[name=password]').val('123456');
+	/*$('[name=username]').val('pmontero');
+	$([name=password]').val('123456');*/
 
 });
 //DELETE 
@@ -36,7 +36,7 @@ function ckFormLogin(){
 		<?php 
 			echo validation_errors();			
 			$attributes = array('name' => 'formLogin', 'autocomplete' => 'off');
-			echo form_open('/bo/login', $attributes);
+			echo form_open('index.php/admin/login', $attributes);
 			# User field
 			echo form_label('User');
 			echo form_input(array('name'=>'username','size'=>'10','maxlenght'=>'10','onkeypress'=>'return IsNombre(event);'));

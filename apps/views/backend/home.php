@@ -1,5 +1,1 @@
-<?php
- 
- //print_r($query);
- 
- ?>
+Hola Mundo

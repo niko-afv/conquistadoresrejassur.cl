@@ -40,15 +40,13 @@
 
 /*FrontEnd*/
 $route['default_controller'] = "frontend/home";
-$route['proyectos'] = "frontend/proyectos";
 $route['404_override'] = '';
 
 /*BackEnd*/
-$route['bo'] 		= "backend/bo";
-$route['bo/login'] 	= "backend/bo/login";
-$route['bo/logout'] = "backend/bo/logout";
-$route['bo/pin']	= "backend/bo/pin";
-$route['bo/upload']	= "backend/upload";
-$route['bo/home']	= "backend/home";
+$route['admin'] 		= "backend/bo";
+$route['admin/login'] 		= "backend/bo/login";
+$route['admin/logout'] 		= "backend/bo/logout";
+$route['bo/pin'] 		= "backend/bo/pin";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

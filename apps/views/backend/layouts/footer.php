@@ -1,1 +1,1 @@
-2012. Todos los derechos reservados. Pedro Montero.
+2012. Todos los derechos reservados. Conquistadores Rejas Sur.

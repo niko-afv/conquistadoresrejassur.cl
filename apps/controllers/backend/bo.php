@@ -10,50 +10,63 @@ class Bo extends CI_Controller {
 		$this->load->helper(array('form','url'));	
 		$this->load->library(array('log'));
 		$this->data = $this->session->flashdata('msg');
+                
+		if(!$this->session->userdata('userBo_id') && !$this->uri->segments[2] == 'login'){
+			redirect('index.php/admin/login');
+		}
 	}
 	
 	public function index(){
-		$data['msg'] = $this->data;		
-		$this->load->view('backend/login',$data);
+		$this->layout = array('base'=>'main','meta','header','sidebar','footer');
+		$data['msg'] = $this->data;
+		$data['category_title'] = "Bienvenido al sistema de administración de conquistadores Rejas Sur";
+		$data['title'] = "BackOffice - Bienvenida";
+		$this->load->view('backend/home',$data);
 	}
 	
 	public function login(){	
-		if($this->input->post()){			
+		if($this->input->post()){
 			$this->load->library('form_validation');		
 			$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean|min_length[5]|max_length[25]');
 			$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|min_length[5]|max_length[25]');			
-			if($this->form_validation->run() == true){				
+			if($this->form_validation->run() == true){
 				$bo = new $this->md_bo();
 				#user data
 				$user = array(
 						'username'=>$this->input->post('username',true),
 						'password'=>$this->input->post('password',true),
 						);
-				if($rs = $bo->boUserLogin($user)){								
+				//if($rs = $bo->boUserLogin($user)){
+				if($user['username'] == 'nicolas' && $user['password'] == 'nicolas'){
 					$this->session->set_userdata(array(
-					   	'userBo_id'	 	 => $rs[0]->use_id,
-					   	'userBo_nombre'	 => $rs[0]->use_first_name.' '.$rs[0]->use_last_name,
+					   	'userBo_id'	 	 => '12345',//$rs[0]->use_id,
+					   	'userBo_nombre'	 => 'nicolas',//$rs[0]->use_first_name.' '.$rs[0]->use_last_name,
 					   	'userBo_session' => true,
 					   	'userBo_type' 	 => 'admin',
 						'userBo_pin' 	 => array('h'=>1,'v'=>1)
 					));				
-					if($this->log->user('login')){
-						redirect('bo/home'); 
+					/*if($this->log->user('login')){
+						redirect('ba/home'); 
 					}else{
 						$this->session->set_flashdata('msg','En estos momentos no está disponible');
-						redirect('bo');
-					}				
+						redirect('index.php/adminx');
+					}*/
+					if($this->session->userdata('userBo_nombre') == 'nicolas'){
+						redirect('index.php/admin');
+					}else{
+						echo "Hola";
+					}
 				}else{
 					$this->session->set_flashdata('msg','El usuario o pasword son incorrectos');
-					redirect('bo');
+					redirect('index.php/admin/login');
 				}
 			}else{
 				$this->session->set_flashdata('msg','El usuario o pasword son incorrectos');
-				redirect('bo');
+				redirect('index.php/admin/login');
 			}
 		}else{
-			$this->session->set_flashdata('msg','El usuario o pasword son incorrectos');
-			redirect('bo');
+			$data['msg'] = $this->data;		
+			$this->load->view('backend/login',$data);
 		}
 	}
 	
@@ -61,7 +74,7 @@ class Bo extends CI_Controller {
 		if($this->log->user('logout')){
 			foreach($_SESSION as $k => $d)preg_match('/^userBo/',$k)?$this->session->unset_userdata($k):false;
 			$this->session->set_flashdata('msg','Sesión cerrada correctamente');			
-			redirect('bo');
+			redirect('index.php/admin/login');
 		}			
 	}
 	public function pin(){
