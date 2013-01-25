@@ -7,6 +7,7 @@ class Bo extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('md_bo');
+                $this->load->model('usuario');
 		$this->load->helper(array('form','url'));	
 		$this->load->library(array('log'));
 		$this->data = $this->session->flashdata('msg');
@@ -24,20 +25,16 @@ class Bo extends CI_Controller {
 		$this->load->view('backend/home',$data);
 	}
 	
-	public function login(){	
-		if($this->input->post()){
+	public function login(){            
+		if($this->input->post()){                        
 			$this->load->library('form_validation');		
-			$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean|min_length[5]|max_length[25]');
-			$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|min_length[5]|max_length[25]');			
-			if($this->form_validation->run() == true){
-				$bo = new $this->md_bo();
-				#user data
-				$user = array(
-						'username'=>$this->input->post('username',true),
-						'password'=>$this->input->post('password',true),
-						);
-				//if($rs = $bo->boUserLogin($user)){
-				if($user['username'] == 'nicolas' && $user['password'] == 'nicolas'){
+			$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean|min_length[3]|max_length[25]');
+			$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|min_length[3]|max_length[25]');			
+			if($this->form_validation->run() == true){        
+                                $this->usuario->setNombre($this->input->post('username',true));
+                                $this->usuario->setClave($this->input->post('password',true));
+                                if($this->usuario->login()){
+                                    echo "Holax";
 					$this->session->set_userdata(array(
 					   	'userBo_id'	 	 => '12345',//$rs[0]->use_id,
 					   	'userBo_nombre'	 => 'nicolas',//$rs[0]->use_first_name.' '.$rs[0]->use_last_name,
@@ -71,11 +68,11 @@ class Bo extends CI_Controller {
 	}
 	
 	public function logout(){
-		if($this->log->user('logout')){
+		//if($this->log->user('logout')){
 			foreach($_SESSION as $k => $d)preg_match('/^userBo/',$k)?$this->session->unset_userdata($k):false;
 			$this->session->set_flashdata('msg','Sesión cerrada correctamente');			
 			redirect('index.php/admin/login');
-		}			
+		//}			
 	}
 	public function pin(){
 		$pin = $this->input->post('pin',true);
