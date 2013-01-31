@@ -48,5 +48,10 @@ $route['admin/login'] 		= "backend/bo/login";
 $route['admin/logout'] 		= "backend/bo/logout";
 $route['bo/pin'] 		= "backend/bo/pin";
 
+
+$route['admin/pruebas']               =   "backend/pruebas/";
+$route['admin/pruebas/(:any)']        =   "backend/pruebas/$1";
+//$route['admin/pruebas/integrante']        =   "backend/pruebas/integrante";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

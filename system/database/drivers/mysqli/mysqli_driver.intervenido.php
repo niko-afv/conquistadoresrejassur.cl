@@ -139,14 +139,16 @@ class CI_DB_mysqli_driver extends CI_DB {
 		{
 			// mysqli_set_charset() requires MySQL >= 5.0.7, use SET NAMES as fallback
 			$this->use_set_names = (version_compare(mysqli_get_server_info($this->conn_id), '5.0.7', '>=')) ? FALSE : TRUE;
+			
 		}
 
 		if ($this->use_set_names === TRUE)
 		{
 			return @mysqli_query($this->conn_id, "SET NAMES '".$this->escape_str($charset)."' COLLATE '".$this->escape_str($collation)."'");
-		}
+			}
 		else
 		{
+		
 			return @mysqli_set_charset($this->conn_id, $charset);
 		}
 	}
@@ -175,9 +177,22 @@ class CI_DB_mysqli_driver extends CI_DB {
 	 */
 	function _execute($sql)
 	{
-		$sql = $this->_prep_query($sql);
-		$result = @mysqli_query($this->conn_id, $sql);
-		return $result;
+		// Free result from previous query
+       @mysqli_free_result($this->result_id);
+ 
+       $sql = $this->_prep_query($sql);
+       // get a result code of query (), can be used for test is the query ok
+       $retval = @mysqli_multi_query($this->conn_id, $sql); 
+ 
+       // get a first resultset
+       $firstResult = @mysqli_store_result($this->conn_id);
+ 
+       // free other resultsets
+       while (@mysqli_next_result($this->conn_id)) 
+          $result = @mysqli_store_result($this->conn_id);
+          @mysqli_free_result($result);
+		  
+	  return $firstResult;
 	}
 
 	// --------------------------------------------------------------------

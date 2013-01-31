@@ -12,7 +12,7 @@ class Bo extends CI_Controller {
 		$this->load->library(array('log'));
 		$this->data = $this->session->flashdata('msg');
                 
-		if(!$this->session->userdata('userBo_id') && !$this->uri->segments[2] == 'login'){
+		if(!$this->session->userdata('userBo_id') && $this->uri->segments[2] != 'login'){
 			redirect('index.php/admin/login');
 		}
 	}
