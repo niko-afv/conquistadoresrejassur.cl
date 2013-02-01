@@ -10,7 +10,7 @@
  *
  * @author nks
  */
-class integrante extends CI_Model{
+class Integrante extends CI_Model{
     
     
     private $rut;
@@ -25,12 +25,16 @@ class integrante extends CI_Model{
     private $rango;
     private $cargo;
     private $estado = 1;
-    
+    private $apoderado;
+
+
     private $xnuevo;
     
     public function __construct() {
         parent::__construct();
         $this->xnuevo = FALSE;
+        $this->load->model('apoderado','apoderado_m');
+        $this->apoderado = new $this->apoderado_m();
     }
 
 
@@ -50,13 +54,30 @@ class integrante extends CI_Model{
             $this->setMail($xintegrante[0]->EMAIL);
             $this->setFoto($xintegrante[0]->FOTO);
             $this->setRango($xintegrante[0]->RANGO);
-            //$this->setCargo($xintegrante[0]->CARGO);
+            $this->setCargo($xintegrante[0]->CARGO);
             $this->setEstado($xintegrante[0]->ESTADO);
+            
+            $this->apoderado->setRut($xintegrante[0]->RUT_APODERADO);
         }else{
             $this->xnuevo = TRUE;
         }
     }
-    
+    public function setRango($value){
+        $this->db->where('RANGOS',$value);
+        $res = $this->db->get('RANGOS');
+        if(count($res->result())>0){
+            $xrango = $res->result();
+            $this->rango = $xrango[0]->NOMBRE;
+        }
+    }
+    public function setCargo($value){
+        $this->db->where('ID',$value);
+        $res = $this->db->get('CARGOS');
+        if(count($res->result())>0){
+            $xcargo = $res->result();
+            $this->cargo = $xcargo[0]->NOMBRE;
+        }
+    }
     public function setNombre($value){$this->nombre = $value;}
     public function setApellido($value){$this->apellido = $value;}
     public function setEdad($value){$this->edad = $value;}
@@ -64,9 +85,7 @@ class integrante extends CI_Model{
     public function setTelefonoAuxiliar($value){$this->telefono_auxiliar = $value;}
     public function setDireccion($value){$this->direccion = $value;}
     public function setMail($value){$this->mail = $value;}
-    public function setFoto($value){$this->foto = $value;}
-    public function setRango($value){$this->rango = $value;}
-    public function setCargo($value){$this->cargo = $value;}
+    public function setFoto($value){$this->foto = $value;}    
     public function setEstado($value){$this->estado = $value;}
     
     

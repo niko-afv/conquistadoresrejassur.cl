@@ -10,19 +10,24 @@
  *
  * @author nks
  */
-class unidad extends CI_Model{
+class Unidad extends CI_Model{
 
     private $id;
     private $nombre;
     private $fundado;
     private $estado;
     
-    private $nuevo;
+    private $trayectorias;
+
+
+    private $xnuevo;
 
 
     public function __construct() {
         parent::__construct();
-        $this->nuevo = FALSE;
+        $this->xnuevo = FALSE;
+        $this->trayectorias = new ArrayObject();
+        $this->load->model('trayectoria_unidad');
     }
     
     public function setId($value){
@@ -31,13 +36,24 @@ class unidad extends CI_Model{
         $this->db->where('ID',  $this->getId());
         $res = $this->db->get('UNIDADES');
         
-        if(count($res->result()) > 0){
+        if(count($res->result()) == 0){
+            $this->xnuevo = TRUE;            
+        }else{            
             $xunidad = $res->result();            
             $this->setNombre($xunidad[0]->NOMBRE);
             $this->setFundado($xunidad[0]->FUNDADO);
             $this->setEstado($xunidad[0]->ESTADO);
-        }else{
-            $this->nuevo = TRUE;
+            
+            $this->db->where('ID_UNIDAD',  $this->getId());
+            $res = $this->db->get('UNIDADES_TRAYECTORIA');
+            
+            if( count($res->result()) > 0 ){
+                foreach($res->result() as $item => $val){
+                    $xTrayectoria = new $this->trayectoria_unidad();
+                    $xTrayectoria->setId($val->ID);
+                    $this->addTrayectoria($xTrayectoria);
+                }
+            }
         }
         return $this;
     }
@@ -64,7 +80,18 @@ class unidad extends CI_Model{
         return $res;
     }
     
-    
+    public function addTrayectoria($xtrayectoria){
+        $this->trayectorias->append($xtrayectoria);
+    }
+    public function getTrayectoria($index){
+        return $this->trayectorias->offsetGet($index);
+    }
+    public function countTrayectorias(){
+        return $this->trayectorias->count();
+    }
+    public function removeTrayectoria($index){
+        $this->trayectorias->offsetUnset($index);
+    }
     
 }
 

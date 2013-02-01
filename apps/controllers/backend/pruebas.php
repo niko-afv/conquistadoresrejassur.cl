@@ -32,14 +32,14 @@ class pruebas extends CI_Controller {
         $this->load->model('unidad');
         
         $Ounidad = new $this->unidad();
-        $Ounidad->setId(1);
+        $Ounidad->setId(10);
         
         $data = array(
-            'unidad'    =>  $Ounidad
+            'res'    =>  $Ounidad
             
         );
         
-        $this->load->view('backend/pruebas/unidad',$data);
+        $this->load->view('backend/pruebas/pruebas',$data);
     }
     
     public function addUnidad(){
@@ -59,7 +59,7 @@ class pruebas extends CI_Controller {
     public function integrantex(){
         $this->load->model('integrante');
         $oIntegrante = new $this->integrante();
-        $oIntegrante->setRut('17390878-4');
+        $oIntegrante->setRut('11111111-1');
         $data = array(
             'integrante'    =>  $oIntegrante,
         );
@@ -86,6 +86,27 @@ class pruebas extends CI_Controller {
         );
         
         $this->load->view('backend/pruebas/integrante2',$data);
+    }
+    
+    public function apoderado(){
+        $this->load->model('apoderado');
+        $oApoderado = new $this->apoderado();
+        
+        $oApoderado->setRut("88811111-1");
+        $data = array(
+            'res'   =>  $oApoderado
+        );
+        $this->load->view('backend/pruebas/pruebas',$data);
+    }
+    
+    public function trayectoriax(){
+        $this->load->model('trayectoria_unidad');
+        $oTrayactoria = new $this->trayectoria_unidad();
+        $oTrayactoria->setId('3');
+        $data = array(
+            'res'    =>  $oTrayactoria,
+        );
+        $this->load->view('backend/pruebas/pruebas',$data);
     }
 }
 ?>
