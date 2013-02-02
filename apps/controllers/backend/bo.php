@@ -10,7 +10,7 @@ class Bo extends CI_Controller {
                 $this->load->model('usuario');
 		$this->load->helper(array('form','url'));	
 		$this->load->library(array('log'));
-		$this->data = $this->session->flashdata('msg');
+		$this->data = $this->session->flashdata('msg');                
                 
 		if(!$this->session->userdata('userBo_id') && $this->uri->segments[2] != 'login'){
 			redirect('index.php/admin/login');
@@ -49,7 +49,8 @@ class Bo extends CI_Controller {
 						redirect('index.php/adminx');
 					}*/
 					if($this->session->userdata('userBo_nombre') == 'nicolas'){
-						redirect('index.php/admin');
+                                                $redirect = ($this->session->userdata('url_referida')!="")?$this->session->userdata('url_referida'):'index.php/admin';
+                                                redirect($redirect);
 					}else{
 						echo "Hola";
 					}
