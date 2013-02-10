@@ -1,6 +1,7 @@
 <title><?php echo $title?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="<?php echo base_url();?>/css/bo.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url();?>/css/bo2.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?php echo base_url();?>/js/jquery-1.8.1.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>/js/jquery.functions.js"></script>
 <script type="text/javascript">

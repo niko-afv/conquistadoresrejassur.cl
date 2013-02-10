@@ -20,7 +20,7 @@ class pruebas extends CI_Controller {
         $this->load->library(array('log'));
         $this->data = $this->session->flashdata('msg');
         
-        $this->session->set_userdata(array('url_referida'=>$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']));
+        $this->session->set_userdata(array('userBo_url_referida'=>$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']));
         
         if(!$this->session->userdata('userBo_id') && $this->uri->segments[2] != 'login'){
             redirect('index.php/admin/login');
