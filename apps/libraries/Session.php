@@ -43,7 +43,7 @@ class CI_Session {
 		$sess = $sess && isset($_SESSION[$sess])?$_SESSION[$sess]:false;
 		if(!$sess){
 			$this->object->session->set_flashdata('msg','Usted no tiene permisos para acceder al administrador');
-			redirect('bo');
+			redirect('index.php/admin/login');
 		}
 	}	
 	

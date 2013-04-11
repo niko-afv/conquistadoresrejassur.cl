@@ -63,20 +63,22 @@ class Integrante extends CI_Model{
         }
     }
     public function setRango($value){
-        $this->db->where('RANGOS',$value);
+        $this->rango = $value;
+        /*$this->db->where('RANGOS',$value);
         $res = $this->db->get('RANGOS');
         if(count($res->result())>0){
             $xrango = $res->result();
             $this->rango = $xrango[0]->NOMBRE;
-        }
+        }*/
     }
     public function setCargo($value){
-        $this->db->where('ID',$value);
+        $this->cargo = $value;
+        /*$this->db->where('ID',$value);
         $res = $this->db->get('CARGOS');
         if(count($res->result())>0){
             $xcargo = $res->result();
             $this->cargo = $xcargo[0]->NOMBRE;
-        }
+        }*/
     }
     public function setNombre($value){$this->nombre = $value;}
     public function setApellido($value){$this->apellido = $value;}
@@ -126,7 +128,7 @@ class Integrante extends CI_Model{
             $array['EMAIL'] = $this->getMail();
             $array['FOTO'] = $this->getFoto();
             $array['RANGO'] = $this->getRango();
-            //$array['CARGO'] = $this->cargo;
+            $array['CARGO'] = $this->getCargo();
             $array['ESTADO'] = $this->getEstado();
         }else{
             $array['rut'] = $this->getRut();
@@ -139,7 +141,7 @@ class Integrante extends CI_Model{
             $array['email'] = $this->getMail();
             $array['foto'] = $this->getFoto();
             $array['rango'] = $this->getRango();
-            //$array['cargo'] = $this->cargo;
+            $array['cargo'] = $this->getCargo();
             $array['estado'] = $this->getEstado();
         }
         return $array;
