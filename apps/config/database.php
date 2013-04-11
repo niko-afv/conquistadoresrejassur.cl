@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'rejassur';
-$db['default']['password'] = 'rejassur';
-$db['default']['database'] = 'CONQUIS_REJAS_SUR';
+$db['default']['hostname'] = 'mysql0.db.koding.com';
+$db['default']['username'] = 'benjamin13_gigun';
+$db['default']['password'] = 'benjamin13';
+$db['default']['database'] = 'benjamin13_gigun';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
