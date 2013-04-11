@@ -1,3 +1,27 @@
+<script type="text/javascript" src="<?php echo $base_url;?>js/AjaxUpload.2.0.js"></script>
+<script type="text/javascript" src="<?php echo $base_url;?>js/upload/upload.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo $base_url;?>js/upload/css/upload.css">
+
+<script type="text/javascript">
+    $(document).on("ready", function(){
+        $("#upload").upload({
+            galery:{
+                content : '#galeryZona', /*no opcional*/
+                views   : ['120x80'],        /*no opcional*/
+                count   : 1
+            },
+            image:{
+                path   : 'integrantes',
+                types  : 'jpg,png,jpeg,gif',
+                size   : 1000,
+                width  : 385,
+                height : 385
+                //thumb  : ['210x144']
+            }
+         });
+    })
+</script>
+
 <form action="" method="POST">
     <div class="bo-form">
         <div class="form-title">
@@ -5,7 +29,7 @@
         </div>
 
         <div class="form-item">
-            <label>Subir Foto</label>
+            <label id="upload">Subir Foto</label>
             <?php echo form_error('foto');?>
         </div>
     </div>
@@ -14,7 +38,7 @@
     <div class="bo-form">
         <div class="form-title">
             Datos Personales
-        </div>    
+        </div>
 
         <div class="form-item">
             <label>Rut</label>
@@ -63,6 +87,29 @@
             <input type="text" name="mail"  />
             <?php echo form_error('mail');?>
         </div>
+        
+        <div class="form-item">
+            <label>Cargo</label>
+            <select name="cargo">
+                <option value="0">Seleccione Cargo</option>
+                <?php foreach ($cargos as $item => $val){?>
+                <option value="<?=$val['id'];?>"><?=$val['nombre'];?></option>
+                <?php }?>
+            </select>
+            <?php echo form_error('mail');?>
+        </div>
+        
+        <div class="form-item">
+            <label>Rango</label>
+            <select name="rango">
+                <option value="0">Seleccione Rango</option>
+                <?php foreach ($rangos as $item => $val){?>
+                <option value="<?=$val['id'];?>"><?=$val['nombre'];?></option>
+                <?php }?>
+            </select>
+            <?php echo form_error('mail');?>
+        </div>
+        
 
         <div class="form-item">
             <input type="submit" value="Guardar"    />

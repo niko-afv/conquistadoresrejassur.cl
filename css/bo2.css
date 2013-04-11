@@ -48,7 +48,7 @@ root {
     width: 30%;
     float: left;
 }
-.form-item input{
+.form-item input, .form-item select{
     width: 60%;
 }
 .form-item input[type='submit']{

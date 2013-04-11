@@ -22,7 +22,7 @@
 			 thumb	:null
 		},
 		name: $(this).attr('id'),
-		upload: '/bo/home/uploadImage/'
+		upload: '/conquistadoresrejassur.cl/index.php/backend/upload/image'
     };
 	/*re asignacion de variables nulas*/
 	if(options.galery.content == null){options.galery.content=null}
