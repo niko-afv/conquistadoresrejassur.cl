@@ -35,14 +35,14 @@
     </div>
 
 
-    <div class="bo-form">
+    <div class="bo-form span13">
         <div class="form-title">
             Datos Personales
         </div>
 
         <div class="form-item">
             <label>Rut</label>
-            <input type="text" name="rut"  />
+            <input type="text" name="rut" placeholder="ej: xxxxxxxx-x"  />
             <?php echo form_error('rut');?>
         </div>
 
@@ -66,25 +66,28 @@
 
         <div class="form-item">
             <label>Telefono</label>
-            <input type="text" name="fono"  />
+            <input type="text" name="fono" placeholder="ej: xxxxxxxxx"  />
             <?php echo form_error('fono');?>
         </div>
 
         <div class="form-item">
             <label>Telefono Auxiliar</label>
-            <input type="text" name="fono2"  />
+            <input type="text" name="fono2" placeholder="ej: xxxxxxxx-x"  />
             <?php echo form_error('fono2');?>
         </div>
 
         <div class="form-item">
             <label>Direccion</label>
-            <input type="text" name="direccion"  />
+            <input type="text" name="direccion" placeholder="ej: calle #numero, comuna"  />
             <?php echo form_error('direccion');?>
         </div>
 
         <div class="form-item">
             <label>E-Mail</label>
-            <input type="text" name="mail"  />
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-envelope"></i></span>
+                <input type="text" name="mail" placeholder="ej: algun@email.com"  />
+            </div>
             <?php echo form_error('mail');?>
         </div>
         
@@ -100,7 +103,7 @@
         </div>
         
         <div class="form-item">
-            <label>Rango</label>
+            <label>Grado</label>
             <select name="rango">
                 <option value="0">Seleccione Rango</option>
                 <?php foreach ($rangos as $item => $val){?>
@@ -112,10 +115,10 @@
         
 
         <div class="form-item">
-            <input type="submit" value="Guardar"    />
+            <input type="submit" value="Guardar" class="btn btn-primary"    />
         </div>
 
-        <div c  lass="clear"></div>
+        <div class="clear"></div>
     </div>
 </form>
 <div class="clear"></div>

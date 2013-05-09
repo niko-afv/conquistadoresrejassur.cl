@@ -26,12 +26,12 @@ class Listado extends CI_Model{
         }
     }
 
-    private function listarIntegrantes(){
+    public function listarIntegrantes(){
         $this->load->model('Integrante');
         $this->db->select('RUT');
         $records = $this->db->get('INTEGRANTES');
         foreach ($records->result() as $item => $val){
-            $oIntegrante = new $this->Integrante($val->getRut());
+            $oIntegrante = new $this->Integrante($val->RUT);
         }
     }
     

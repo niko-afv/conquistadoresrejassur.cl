@@ -9,6 +9,9 @@
 root { 
     display: block;
 }
+figure{
+    float: left;
+}
 .error{
     background: none repeat scroll 0 0 #FBE3E4;
     border: 1px solid #FBC2C4;
@@ -21,21 +24,31 @@ root {
     width: 60%;
 }
 .bo-form{
-    border: 1px solid #131361;
+    border: 1px solid #999999;
     float: left;
     margin: 0 15px 20px 0;
     min-height: 100px;
     min-width: 200px;
     width: 40%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.bo-form:hover{
+    box-shadow: 10px 10px 40px -16px #333;
+    /*margin: 0 15px 20px -1px;*/
+    margin-top: -2px;        
 }
 .form-title{
     background: #131361;
-    color: #fff000;
-    height: 25px;
+    border-radius: 4px 4px 0 0;
+    /*color: #fff000;*/
+    color : rgb(255,241,0);
+    height: 20px;
     font-size: 15px;
     font-weight: bold;
     line-height: 22px;
     text-indent: 10px;
+    padding: 5px 0;
     width: 100%;
 }
 .form-item{

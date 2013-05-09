@@ -1,10 +1,5 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of integrante_form
  *
@@ -26,9 +21,9 @@ class Integrante_Form extends CI_Controller{
         }*/
     }
 
-    public function index(){
+    /*public function index(){
         echo "Hola";
-    }
+    }*/
     
     public function agregar(){
         $data['base_url']       =   base_url();
@@ -71,6 +66,27 @@ class Integrante_Form extends CI_Controller{
             }
         }
         $this->load->view('backend/integrante_formulario',$data);
+    }
+    
+    public function Listar(){
+        $data['base_url']       =   base_url();
+        $data['title']          =   $this->title;
+        $data['category_title'] =   'Listado de  Integrantes';
+        
+        $this->load->model('listado');
+        $oListado = new $this->listado();
+        $oListado->listarIntegrantes();
+        $array  =   array();
+        for ($i = 0; $i < $oListado->count();$i++){
+            $array[$i]['rut']       =   $oListado->get($i)->getRut();
+            $array[$i]['nombre']    =   $oListado->get($i)->getNombre();
+            $array[$i]['apellido']  =   $oListado->get($i)->getApellido();
+            $array[$i]['edad']      =   $oListado->get($i)->getEdad();
+            $array[$i]['cargo']     =   $oListado->get($i)->getCargo();
+            $array[$i]['grado']     =   $oListado->get($i)->getRango();
+        }
+        $data['integrantes']    =   $array;
+        $this->load->view('backend/integrante_listado',$data);
     }
     
     private function loadCargos(){
