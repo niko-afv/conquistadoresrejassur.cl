@@ -1,48 +1,33 @@
-<?php print_r($integrantes);?>
+
 <table class='table table-hover table-bordered table-condensed'>
     <thead>
-        <tr>
+        <tr class="form-title">
             <th>Rut</th>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Edad</th>
             <th>Cargo</th>
             <th>Grado</th>
+            <th>&nbsp;</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>17390878-4</td>
-            <td>Nicolás</td>
-            <td>Fredes</td>
-            <td>23</td>
-            <td>Director</td>
-            <td>Conquistador</td>
+    <?php foreach($integrantes as $item => $val){?>
+        <tr id="">
+            <td><?php echo $val['rut']; ?></td>
+            <td><?php echo $val['nombre']; ?></td>
+            <td><?php echo $val['apellido']; ?></td>
+            <td><?php echo $val['edad']; ?></td>
+            <td><?php echo $val['cargo']; ?></td>
+            <td><?php echo $val['grado']; ?></td>
+            <td>
+                <a href='javascript:void(0)'><i class='icon-edit'></i></a>
+                &nbsp;
+                <a href='<?php echo $base_url . "index.php/admin/integrantes_list/eliminar/" . $val['rut']; ?>'><i class='icon-trash'></i></a>
+                
+            </td>
         </tr>
-        <tr>
-            <td>17390878-4</td>
-            <td>Nicolás</td>
-            <td>Fredes</td>
-            <td>23</td>
-            <td>Director</td>
-            <td>Conquistador</td>
-        </tr>
-        <tr>
-            <td>17390878-4</td>
-            <td>Nicolás</td>
-            <td>Fredes</td>
-            <td>23</td>
-            <td>Director</td>
-            <td>Conquistador</td>
-        </tr>
-        <tr>
-            <td>17390878-4</td>
-            <td>Nicolás</td>
-            <td>Fredes</td>
-            <td>23</td>
-            <td>Director</td>
-            <td>Conquistador</td>
-        </tr>
+    <?php }?>
     </tbody>
 </table>
 

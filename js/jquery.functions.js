@@ -69,7 +69,7 @@ function isDate(dateStr) {
 	}
 	return true; // date is valid
 }
-function msg(er){$('#error').html(er).fadeIn("slow",function(){$(this).fadeOut(6000);});
+function msg(er){$('#error, #error2').html(er).fadeIn("slow",function(){$(this).fadeOut(6000);});
 }
 
 /*********************************************/

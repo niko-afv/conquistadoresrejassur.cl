@@ -6,21 +6,23 @@
     $(document).on("ready", function(){
         $("#upload").upload({
             galery:{
-                content : '#galeryZona', /*no opcional*/
+                content : '#galeryIntegrante', /*no opcional*/
                 views   : ['120x80'],        /*no opcional*/
                 count   : 1
             },
             image:{
                 path   : 'integrantes',
                 types  : 'jpg,png,jpeg,gif',
-                size   : 1000,
-                width  : 385,
-                height : 385
+                size   : 2000,
+                width  : 1840,
+                height : 3264
                 //thumb  : ['210x144']
             }
          });
     })
 </script>
+
+<div id="error2" class="hidden"></div>
 
 <form action="" method="POST">
     <div class="bo-form">
@@ -29,7 +31,11 @@
         </div>
 
         <div class="form-item">
+            <i class="icon-picture img-icon"></i>
             <label id="upload">Subir Foto</label>
+        
+            <div id="galeryIntegrante"></div>
+            
             <?php echo form_error('foto');?>
         </div>
     </div>

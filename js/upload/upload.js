@@ -22,7 +22,7 @@
 			 thumb	:null
 		},
 		name: $(this).attr('id'),
-		upload: '/conquistadoresrejassur.cl/index.php/backend/upload/image'
+		upload: '/conquistadoresrejassur.cl/index.php/backend/upload/image' /*Call to controller*/
     };
 	/*re asignacion de variables nulas*/
 	if(options.galery.content == null){options.galery.content=null}
@@ -55,22 +55,23 @@
 			},
 			dataType: "json",
 			data:{
-				  path:options.image.path,
-				  types:options.image.types,
-				  size:options.image.size,
-				  width:options.image.width,
-				  height:options.image.height,
-				  thumb:totalThumb
-				  },
+                path:options.image.path,
+                types:options.image.types,
+				size:options.image.size,
+				width:options.image.width,
+				height:options.image.height,
+				thumb:totalThumb
+			},
 			onComplete: function(file, response){					
-				 var view = options.galery.views.toString(); 
-				 var arr  = view.split('x');
-				 var rs =  response.split(',');
-				 if(rs[0]=='ok'){
-				 	crateImage(options.name,rs[1],arr[0],arr[1]);
-				 }else{
-					msg(rs[0]);
-				 }			 
+                var view = options.galery.views.toString(); 
+                var arr  = view.split('x');
+				var rs =  response.split(',');
+				if(rs[0]=='ok'){
+                    
+                    crateImage(options.name,rs[1],arr[0],arr[1]);
+				}else{
+                    msg(rs[0]);
+                }			 
 			}
 		});			 
     });
@@ -82,7 +83,7 @@
 		deleteName =  "'"+input+n+"'";
 		var html = '<span>';
 			html += '<a class="delete" onclick="deleteImage('+deleteName+');">del</a>';
-			html += '<img src="'+img+'" width="'+w+'" height="'+h+'" />';
+			html += '<img src="/conquistadoresrejassur.cl/'+img+'" width="'+w+'" height="'+h+'" />';
 			html += '<input type="hidden" id="'+input+n+'" name="'+input+n+'" value="'+img+'">';
 			html += '</span>';
 		$(content).append(html);

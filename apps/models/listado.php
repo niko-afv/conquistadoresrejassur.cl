@@ -32,6 +32,7 @@ class Listado extends CI_Model{
         $records = $this->db->get('INTEGRANTES');
         foreach ($records->result() as $item => $val){
             $oIntegrante = new $this->Integrante($val->RUT);
+            $this->add($oIntegrante);
         }
     }
     

@@ -39,18 +39,23 @@
 */
 
 /*FrontEnd*/
-$route['default_controller']        =   "frontend/home";
-$route['404_override']              =   '';
+$route['default_controller']            =   "frontend/home";
+$route['404_override']                  =   '';
 
 /*BackEnd*/
-$route['admin']                     =   "backend/bo";
-$route['admin/login']               =   "backend/bo/login";
-$route['admin/logout']              =   "backend/bo/logout";
-$route['bo/pin']                    =   "backend/bo/pin";
+$route['admin']                         =   "backend/bo";
+$route['admin/login']                   =   "backend/bo/login";
+$route['admin/logout']                  =   "backend/bo/logout";
+$route['bo/pin']                        =   "backend/bo/pin";
 
 
-$route['admin/upload/image']       =   "backend/upload/image";
-$route['admin/integrantes/(:any)']  =   "backend/integrante_form/$1";
+$route['admin/upload/image']            =   "backend/upload/image";
+
+$route['admin/integrantes_form']        =   "backend/integrante_form";
+$route['admin/integrantes_form/(:any)'] =   "backend/integrante_form/$1";
+
+$route['admin/integrantes_list']        =   "backend/integrante_list";
+$route['admin/integrantes_list/(:any)'] =   "backend/integrante_list/$1";
 
 
 /* End of file routes.php */

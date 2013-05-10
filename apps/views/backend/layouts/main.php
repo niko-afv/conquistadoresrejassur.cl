@@ -13,6 +13,7 @@
                 {sidebar}
             </div>
 			<div id="title"><?php echo $category_title;?></div>
+            <!--<div id="error"></div>-->
             <div id="content">
                 {content}
             </div>

@@ -30,15 +30,20 @@ class Integrante extends CI_Model{
 
     private $xnuevo;
     
-    public function __construct() {
+    public function __construct($xrut = FALSE) {
         parent::__construct();
         $this->xnuevo = FALSE;
         $this->load->model('apoderado','apoderado_m');
         $this->apoderado = new $this->apoderado_m();
+        $this->apoderado->setRut('88811111-1');
+        if($xrut){
+            $this->setRut($xrut);
+        }
     }
 
 
     public function setRut($value){
+        
         $this->rut = $value;
         
         $this->db->where('RUT',  $this->getRut());
@@ -60,7 +65,7 @@ class Integrante extends CI_Model{
             $this->apoderado->setRut($xintegrante[0]->RUT_APODERADO);
         }else{
             $this->xnuevo = TRUE;
-        }
+        }        
     }
     public function setRango($value){
         $this->rango = $value;
@@ -114,6 +119,10 @@ class Integrante extends CI_Model{
         return $res;
     }
     
+    public function delete(){
+        
+    }
+    
     
     public function toArray($db = TRUE){
         $array = array();
@@ -130,6 +139,8 @@ class Integrante extends CI_Model{
             $array['RANGO'] = $this->getRango();
             $array['CARGO'] = $this->getCargo();
             $array['ESTADO'] = $this->getEstado();
+            $array['RUT_APODERADO'] = $this->apoderado->getRut();
+            
         }else{
             $array['rut'] = $this->getRut();
             $array['nombre'] = $this->getNombre();
