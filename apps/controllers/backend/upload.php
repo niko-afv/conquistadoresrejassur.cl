@@ -5,7 +5,7 @@ class Upload extends CI_Controller {
 	var $data;
 	
 	public function __construct(){
-		parent::__construct();		
+		parent::__construct();
 		$this->load->helper('url');
 	}
 	
@@ -155,7 +155,7 @@ class Upload extends CI_Controller {
 			$delete = false;
 			$carpeta = opendir($pathDeleteThumbs);
 			while($subFolders = readdir($carpeta)){		
-				if ($subFolders !='.' && $subFolders !='..' ){			
+				if ($subFolders !='.' && $subFolders !='..' ){
 					@unlink($pathDeleteThumbs.$subFolders.'/'.$imageDelete);
 				}		
 			}

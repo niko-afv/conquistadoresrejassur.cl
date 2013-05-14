@@ -7,6 +7,13 @@
 
 <script type="text/javascript" src="<?php echo base_url();?>/js/jquery-1.8.1.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>/js/jquery.functions.js"></script>
+
+<script type="text/javascript" src="<?php echo $base_url;?>js/AjaxUpload.2.0.js"></script>
+<script type="text/javascript" src="<?php echo $base_url;?>js/upload/upload.js"></script>
+<script type="text/javascript" src="<?php echo $base_url;?>js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo $base_url;?>js/upload/css/upload.css">
+
+
 <script type="text/javascript">
 <!--
 $(document).ready(function(){

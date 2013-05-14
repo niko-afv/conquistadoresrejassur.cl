@@ -251,7 +251,6 @@ button {
     text-align: center;
 }
 #error{
-	float:right;
 	color:#F00;
 	padding:0 45px 0 0;
 }

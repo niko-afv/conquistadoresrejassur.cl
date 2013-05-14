@@ -49,7 +49,7 @@ $route['admin/logout']                  =   "backend/bo/logout";
 $route['bo/pin']                        =   "backend/bo/pin";
 
 
-$route['admin/upload/image']            =   "backend/upload/image";
+$route['admin/upload/(:any)']            =   "backend/upload/$1";
 
 $route['admin/integrantes_form']        =   "backend/integrante_form";
 $route['admin/integrantes_form/(:any)'] =   "backend/integrante_form/$1";

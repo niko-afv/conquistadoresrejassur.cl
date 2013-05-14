@@ -1,4 +1,3 @@
-
 <table class='table table-hover table-bordered table-condensed'>
     <thead>
         <tr class="form-title">
@@ -13,17 +12,17 @@
     </thead>
     <tbody>
     <?php foreach($integrantes as $item => $val){?>
-        <tr id="">
+        <tr id="<?php echo $val['rut']; ?>">
             <td><?php echo $val['rut']; ?></td>
-            <td><?php echo $val['nombre']; ?></td>
-            <td><?php echo $val['apellido']; ?></td>
+            <td class='name'><?php echo $val['nombre']; ?></td>
+            <td class='lastname'><?php echo $val['apellido']; ?></td>
             <td><?php echo $val['edad']; ?></td>
             <td><?php echo $val['cargo']; ?></td>
             <td><?php echo $val['grado']; ?></td>
             <td>
                 <a href='javascript:void(0)'><i class='icon-edit'></i></a>
                 &nbsp;
-                <a href='<?php echo $base_url . "index.php/admin/integrantes_list/eliminar/" . $val['rut']; ?>'><i class='icon-trash'></i></a>
+                <a class="delete-reg" href='<?php echo $base_url . "index.php/admin/integrantes_list/eliminar/" . $val['rut']; ?>'><i class='icon-trash'></i></a>
                 
             </td>
         </tr>

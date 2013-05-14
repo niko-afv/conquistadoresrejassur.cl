@@ -6,6 +6,7 @@ class Home extends CI_Controller {
 	
 	public function __construct(){
 		parent::__construct();
+        $this->load->helper('url');
 		$this->title = 'Bo';
 		$this->layout = array('base'=>'main','meta','header','sidebar','footer');
 		$this->session->loginState('userBo_session');	
@@ -16,6 +17,7 @@ class Home extends CI_Controller {
 	}
 	
 	public function index(){
+        $data['base_url']   =   base_url();
 		$data['title'] = $this->title; //title base to backoffice
 		$data['category_title'] = 'Home BackOffice'; //title base to category
 		$this->load->view('backend/home',$data);

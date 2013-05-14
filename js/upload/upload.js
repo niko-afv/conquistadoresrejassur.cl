@@ -43,12 +43,12 @@
 			action: options.upload,
 			onSubmit : function(file,ext){
 				if (! (ext && /^(jpg|png|jpeg|gif)$/.test(ext))){
-					msg('Extensiones permitidas '+options.image.types);
+					msg2('Extensiones permitidas '+options.image.types);
 					return false;
 				}else{
 					var n = $(options.galery.content).find('span').length+1;
 					if(n>options.galery.count){
-						msg('Excede el máximo de imagenes permitidas');
+						msg2('Excede el máximo de imagenes permitidas');
 						return false
 					}				
 				}
@@ -70,7 +70,7 @@
                     
                     crateImage(options.name,rs[1],arr[0],arr[1]);
 				}else{
-                    msg(rs[0]);
+                    msg2(rs[0]);
                 }			 
 			}
 		});			 
@@ -81,6 +81,7 @@
 			input = 'img'+input.slice(0,1).toUpperCase()+input.slice(1);
 		var n = $(content).find('span').length+1;
 		deleteName =  "'"+input+n+"'";
+        //alert(img);
 		var html = '<span>';
 			html += '<a class="delete" onclick="deleteImage('+deleteName+');">del</a>';
 			html += '<img src="/conquistadoresrejassur.cl/'+img+'" width="'+w+'" height="'+h+'" />';
@@ -95,7 +96,7 @@
 function deleteImage(id){
 	var em = $('#'+id);
 	var image = $(em).attr('value');		
-	$.post('/bo/home/deleteImage',{'img' : image}, function(data){
+	$.post('/conquistadoresrejassur.cl/index.php/admin/upload/delete',{'img' : image}, function(data){
 		if(data){$(em).parent().fadeOut(1000,function(){
 				$(this).remove();
 		});}

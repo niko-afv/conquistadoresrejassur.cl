@@ -1,28 +1,7 @@
-<script type="text/javascript" src="<?php echo $base_url;?>js/AjaxUpload.2.0.js"></script>
-<script type="text/javascript" src="<?php echo $base_url;?>js/upload/upload.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo $base_url;?>js/upload/css/upload.css">
-
-<script type="text/javascript">
-    $(document).on("ready", function(){
-        $("#upload").upload({
-            galery:{
-                content : '#galeryIntegrante', /*no opcional*/
-                views   : ['120x80'],        /*no opcional*/
-                count   : 1
-            },
-            image:{
-                path   : 'integrantes',
-                types  : 'jpg,png,jpeg,gif',
-                size   : 2000,
-                width  : 1840,
-                height : 3264
-                //thumb  : ['210x144']
-            }
-         });
-    })
-</script>
-
-<div id="error2" class="hidden"></div>
+<div id="error" class="hidden">
+    <span><i class='icon-remove-sign'></i></span>
+    <div></diV>
+</div>
 
 <form action="" method="POST">
     <div class="bo-form">
@@ -48,43 +27,43 @@
 
         <div class="form-item">
             <label>Rut</label>
-            <input type="text" name="rut" placeholder="ej: xxxxxxxx-x"  />
+            <input type="text" name="rut" placeholder="ej: xxxxxxxx-x" value='<?php echo set_value('rut'); ?>'  />
             <?php echo form_error('rut');?>
         </div>
 
         <div class="form-item">
             <label>Nombre</label>
-            <input type="text" name="nombre"  />
+            <input type="text" name="nombre" value='<?php echo set_value('nombre');?>'  />
             <?php echo form_error('nombre');?>
         </div>
 
         <div class="form-item">
             <label>Apellido</label>
-            <input type="text" name="apellido"  />
+            <input type="text" name="apellido" value='<?php echo set_value('apellido');?>'  />
             <?php echo form_error('apellido');?>
         </div>
 
         <div class="form-item">
             <label>Edad</label>
-            <input type="text" name="edad"  />
+            <input type="text" name="edad" value='<?php echo set_value('edad');?>'  />
             <?php echo form_error('edad');?>
         </div>
 
         <div class="form-item">
             <label>Telefono</label>
-            <input type="text" name="fono" placeholder="ej: xxxxxxxxx"  />
+            <input type="text" name="fono" placeholder="ej: xxxxxxxxx" value='<?php echo set_value('fono');?>'  />
             <?php echo form_error('fono');?>
         </div>
 
         <div class="form-item">
             <label>Telefono Auxiliar</label>
-            <input type="text" name="fono2" placeholder="ej: xxxxxxxx-x"  />
+            <input type="text" name="fono2" placeholder="ej: xxxxxxxx-x" value='<?php echo set_value('fono2');?>'  />
             <?php echo form_error('fono2');?>
         </div>
 
         <div class="form-item">
             <label>Direccion</label>
-            <input type="text" name="direccion" placeholder="ej: calle #numero, comuna"  />
+            <input type="text" name="direccion" placeholder="ej: calle #numero, comuna" value='<?php echo set_value('direccion');?>'  />
             <?php echo form_error('direccion');?>
         </div>
 
@@ -92,7 +71,7 @@
             <label>E-Mail</label>
             <div class="input-prepend">
                 <span class="add-on"><i class="icon-envelope"></i></span>
-                <input type="text" name="mail" placeholder="ej: algun@email.com"  />
+                <input type="text" name="mail" placeholder="ej: algun@email.com" value='<?php echo set_value('mail');?>'  />
             </div>
             <?php echo form_error('mail');?>
         </div>

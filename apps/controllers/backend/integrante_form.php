@@ -59,7 +59,7 @@ class Integrante_Form extends CI_Controller{
                 if($this->input->post('direccion')){$oIntegrante->setDireccion($this->input->post('direccion'));}
                 if($this->input->post('mail')){$oIntegrante->setMail($this->input->post('mail'));}
                 if($oIntegrante->save()){
-                    echo "Todo ok";
+                    redirect('index.php/admin/integrantes_list/');
                 }else{
                     echo "Error de DB";
                 }

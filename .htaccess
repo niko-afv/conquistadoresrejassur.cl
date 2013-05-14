@@ -1,0 +1,4 @@
+RewriteEngine on 
+RewriteCond $1 !^(index.php|css|js|images|uploads|bootstrap|robots.txt) 
+#RewriteRule ^(.*)$ /conquistadoresrejassur.cl/index.php/$1 [L]
+#RewriteRule ^index.php/(.+)$ http://benjamin13.koding.com/$1 [R=301,L]

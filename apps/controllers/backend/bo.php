@@ -19,6 +19,7 @@ class Bo extends CI_Controller {
 
     public function index(){
         $this->layout = array('base'=>'main','meta','header','sidebar','footer');
+        $data['base_url']   =   base_url();
         $data['msg'] = $this->data;
         $data['category_title'] = "Bienvenido al sistema de administración de conquistadores Rejas Sur";
         $data['title'] = "BackOffice - Bienvenida";

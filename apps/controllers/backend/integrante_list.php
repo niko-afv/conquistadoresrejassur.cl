@@ -43,7 +43,11 @@ class Integrante_List extends CI_Controller{
         if($oUtils->isAjax()){
             $oIntegrante = new $this->integrante();
             $oIntegrante->setRut($var);
-            //$oIntegrante->delete();
+            $res = $oIntegrante->delete();
+            $data['type']    =  'json';
+            $data['content']    =  $res;
+            $this->load->view('ajax',$data);
+            
         }else{
             $this->session->set_flashdata('error', 'La petición realizada es invalida');
             redirect('index.php/admin/integrantes_list/');

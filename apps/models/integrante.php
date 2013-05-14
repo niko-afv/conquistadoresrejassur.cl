@@ -120,7 +120,8 @@ class Integrante extends CI_Model{
     }
     
     public function delete(){
-        
+        $this->db->query("TRUNCATE TABLE UNIDADES_TRAYECTORIA_INTEGRANTES");
+        return $this->db->delete('INTEGRANTES',array('RUT'=>$this->getRut()));
     }
     
     
