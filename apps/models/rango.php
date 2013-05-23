@@ -24,7 +24,7 @@ class Rango extends CI_Model{
     
     public function setID($value){
         $this->id = $value;
-        $this->db->where('ID',$value);
+        $this->db->where('RANGOS',$value);
         $res = $this->db->get('RANGOS');
         if(count($res->result() > 0)){
             $res = $res->result();

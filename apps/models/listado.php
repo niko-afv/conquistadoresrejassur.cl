@@ -16,6 +16,11 @@ class Listado extends CI_Model{
     
     
     public function __construct($tipox = NULL) {
+        
+        //$res = $this->db->get('UNIDADES');
+        //print_r($res->result());
+        //exit;
+        
         parent::__construct();
         $this->lista = new ArrayObject();
         switch ($tipox){
@@ -51,8 +56,19 @@ class Listado extends CI_Model{
         $this->db->select('RANGOS, NOMBRE');
         $records = $this->db->get('RANGOS');
         foreach ($records->result() as $item => $val){
-            $oRango = new $this->cargo($val->RANGOS);
+            $oRango = new $this->rango($val->RANGOS);
             $this->add($oRango);
+        }
+    }
+    
+    public function listarUnidades(){
+        $this->load->model('unidad');
+        $this->db->select('ID, NOMBRE');
+        $records = $this->db->get('UNIDADES');
+        foreach ($records->result() as $item => $val){
+            $oUnidad = new $this->unidad();
+            $oUnidad->setId($val->ID);
+            $this->add($oUnidad);
         }
     }
 

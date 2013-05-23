@@ -49,9 +49,9 @@ class Unidad extends CI_Model{
             
             if( count($res->result()) > 0 ){
                 foreach($res->result() as $item => $val){
-                    $xTrayectoria = new $this->trayectoria_unidad();
-                    $xTrayectoria->setId($val->ID);
-                    $this->addTrayectoria($xTrayectoria);
+                    /*$xTrayectoria = new $this->trayectoria_unidad();
+                    /*$xTrayectoria->setId($val->ID);
+                    $this->addTrayectoria($xTrayectoria);*/
                 }
             }
         }

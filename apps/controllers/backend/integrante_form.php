@@ -31,6 +31,11 @@ class Integrante_Form extends CI_Controller{
         $data['category_title'] =   'Agregar Integrante';
         $data['cargos']         =   $this->loadCargos();
         $data['rangos']         =   $this->loadRangos();
+        $data['unidades']       =   $this->loadUnidades();
+        
+        $this->load->model('integrante');
+        $oIntegrante = new $this->integrante();
+        $data['integrante'] = $oIntegrante->toArray(FALSE);
         if($_POST){
             $this->load->library('form_validation');
             $this->form_validation->set_error_delimiters('<div class="error">', '</div>');
@@ -43,17 +48,18 @@ class Integrante_Form extends CI_Controller{
             $this->form_validation->set_rules('fono2','Telefono Auxiliar','min_length[7]|max_length[15]');
             $this->form_validation->set_rules('direccion','Direccion','min_length[10]|max_length[50]');
             $this->form_validation->set_rules('mail','E-Mail','valid_email');
-            $this->form_validation->set_rules('foto','Foto de Perfil','min_length[10]');
+            $this->form_validation->set_rules('imgUpload1','Foto de Perfil','min_length[10]');
             
             if($this->form_validation->run()){
-                $this->load->model('integrante');
-                $oIntegrante = new $this->integrante();
                 $oIntegrante->setRut($this->input->post('rut'));
                 $oIntegrante->setNombre($this->input->post('nombre'));
                 $oIntegrante->setApellido($this->input->post('apellido'));
                 $oIntegrante->setEdad($this->input->post('edad'));
                 $oIntegrante->setCargo($this->input->post('cargo'));
                 $oIntegrante->setRango($this->input->post('rango'));
+                
+                
+                if($this->input->post('imgUpload1')){$oIntegrante->setFoto($this->input->post('imgUpload1'));}
                 if($this->input->post('fono')){$oIntegrante->setTelefono($this->input->post('fono'));}
                 if($this->input->post('fono2')){$oIntegrante->setTelefonoAuxiliar($this->input->post('fono2'));}
                 if($this->input->post('direccion')){$oIntegrante->setDireccion($this->input->post('direccion'));}
@@ -65,6 +71,21 @@ class Integrante_Form extends CI_Controller{
                 }
             }
         }
+        $this->load->view('backend/integrante_formulario',$data);
+    }
+    
+    public function modificar($rut){
+        $this->load->model('integrante');
+        $oIntegrante = new $this->integrante();
+        $oIntegrante->setRut($rut);
+        
+        $data['base_url']       =   base_url();
+        $data['title']          =   $this->title;
+        $data['category_title'] =   'Modificar Integrante';
+        $data['cargos']         =   $this->loadCargos();
+        $data['rangos']         =   $this->loadRangos();
+        
+        $data['integrante'] = $oIntegrante->toArray(FALSE);
         $this->load->view('backend/integrante_formulario',$data);
     }
     
@@ -83,6 +104,17 @@ class Integrante_Form extends CI_Controller{
         $this->load->model("listado");
         $oListado   =   new $this->listado();
         $oListado->listarRangos();
+        $array      =   array();
+        for ($i = 0; $i < $oListado->count();$i++){
+            $array[$i]['id']    =   $oListado->get($i)->getId();
+            $array[$i]['nombre']    =   $oListado->get($i)->getNombre();
+        }
+        return $array;
+    }
+    private function loadUnidades(){
+        $this->load->model("listado");
+        $oListado   =   new $this->listado();
+        $oListado->listarUnidades();
         $array      =   array();
         for ($i = 0; $i < $oListado->count();$i++){
             $array[$i]['id']    =   $oListado->get($i)->getId();

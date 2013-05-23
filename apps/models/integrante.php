@@ -13,29 +13,33 @@
 class Integrante extends CI_Model{
     
     
-    private $rut;
-    private $nombre;
-    private $apellido;
-    private $edad;
-    private $telefono;
-    private $telefono_auxiliar;
-    private $direccion;
-    private $mail;
-    private $foto;
-    private $rango;
-    private $cargo;
-    private $estado = 1;
-    private $apoderado;
+    private $rut                = '';
+    private $nombre             = '';
+    private $apellido           = '';
+    private $edad               = '';
+    private $telefono           = '';
+    private $telefono_auxiliar  = '';
+    private $direccion          = '';
+    private $mail               = '';
+    private $foto               = '';
+    private $rango              = '';
+    private $cargo              = '';
+    private $estado             = 1;
+    private $apoderado          = '';
+    private $trayectoria        = '';
 
 
     private $xnuevo;
     
     public function __construct($xrut = FALSE) {
+        
         parent::__construct();
         $this->xnuevo = FALSE;
         $this->load->model('apoderado','apoderado_m');
+        $this->load->model('trayectoria_unidad','trayectoria_m');
         $this->apoderado = new $this->apoderado_m();
         $this->apoderado->setRut('88811111-1');
+        $this->trayectoria = new $this->trayectoria_m();
         if($xrut){
             $this->setRut($xrut);
         }
@@ -63,9 +67,11 @@ class Integrante extends CI_Model{
             $this->setEstado($xintegrante[0]->ESTADO);
             
             $this->apoderado->setRut($xintegrante[0]->RUT_APODERADO);
+            $this->xnuevo = FALSE;
         }else{
             $this->xnuevo = TRUE;
-        }        
+        }
+        return $this->xnuevo;
     }
     public function setRango($value){
         $this->rango = $value;
@@ -110,7 +116,7 @@ class Integrante extends CI_Model{
     public function getEstado(){return $this->estado;}
     
     public function save(){
-        if ($this->xnuevo){
+        if ($this->xnuevo == TRUE){
             $res = $this->db->insert("INTEGRANTES",  $this->toArray());
         }  else {
             $this->db->where('RUT',  $this->getRut());
@@ -128,33 +134,34 @@ class Integrante extends CI_Model{
     public function toArray($db = TRUE){
         $array = array();
         if($db){
-            $array['RUT'] = $this->getRut();
-            $array['NOMBRE'] = $this->getNombre();
-            $array['APELLIDO'] = $this->getApellido();
-            $array['EDAD'] = $this->getEdad();
-            $array['TELEFONO_PRINCIPAL'] = $this->getTelefono();
-            $array['TELEFONO_AUXILIAR'] = $this->getTelefonoAuxiliar();
-            $array['DIRECCION'] = $this->getDireccion();
-            $array['EMAIL'] = $this->getMail();
-            $array['FOTO'] = $this->getFoto();
-            $array['RANGO'] = $this->getRango();
-            $array['CARGO'] = $this->getCargo();
-            $array['ESTADO'] = $this->getEstado();
-            $array['RUT_APODERADO'] = $this->apoderado->getRut();
+            $array['RUT']                   = $this->getRut();
+            $array['NOMBRE']                = $this->getNombre();
+            $array['APELLIDO']              = $this->getApellido();
+            $array['EDAD']                  = $this->getEdad();
+            $array['TELEFONO_PRINCIPAL']    = $this->getTelefono();
+            $array['TELEFONO_AUXILIAR']     = $this->getTelefonoAuxiliar();
+            $array['DIRECCION']             = $this->getDireccion();
+            $array['EMAIL']                 = $this->getMail();
+            $array['FOTO']                  = $this->getFoto();
+            $array['RANGO']                 = $this->getRango();
+            $array['CARGO']                 = $this->getCargo();
+            $array['ESTADO']                = $this->getEstado();
+            $array['RUT_APODERADO']         = $this->apoderado->getRut();
             
         }else{
-            $array['rut'] = $this->getRut();
-            $array['nombre'] = $this->getNombre();
-            $array['apellido'] = $this->getApellido();
-            $array['edad'] = $this->getEdad();
-            $array['telefono_principal'] = $this->getTelefono();
-            $array['telefono_auxiliar'] = $this->getTelefonoAuxiliar();
-            $array['direccion'] = $this->getDireccion();
-            $array['email'] = $this->getMail();
-            $array['foto'] = $this->getFoto();
-            $array['rango'] = $this->getRango();
-            $array['cargo'] = $this->getCargo();
-            $array['estado'] = $this->getEstado();
+            $array['rut']                   = $this->getRut();
+            $array['nombre']                = $this->getNombre();
+            $array['apellido']              = $this->getApellido();
+            $array['edad']                  = $this->getEdad();
+            $array['telefono_principal']    = $this->getTelefono();
+            $array['telefono_auxiliar']     = $this->getTelefonoAuxiliar();
+            $array['direccion']             = $this->getDireccion();
+            $array['email']                 = $this->getMail();
+            $array['foto']                  = $this->getFoto();
+            $array['rango']                 = $this->getRango();
+            $array['cargo']                 = $this->getCargo();
+            $array['estado']                = $this->getEstado();
+            $array['unidad']                = $this->unidad->getId();
         }
         return $array;
     }

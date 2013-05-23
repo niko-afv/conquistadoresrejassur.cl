@@ -53,5 +53,9 @@ class Integrante_List extends CI_Controller{
             redirect('index.php/admin/integrantes_list/');
         }
     }
+    
+    public function editar(){
+        
+    }
 }
 ?>
