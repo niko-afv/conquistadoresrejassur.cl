@@ -53,9 +53,13 @@ $route['admin/upload/(:any)']            =   "backend/upload/$1";
 
 $route['admin/integrantes_form']        =   "backend/integrante_form";
 $route['admin/integrantes_form/(:any)'] =   "backend/integrante_form/$1";
-
 $route['admin/integrantes_list']        =   "backend/integrante_list";
 $route['admin/integrantes_list/(:any)'] =   "backend/integrante_list/$1";
+
+$route['admin/unidades_form']        =   "backend/ctrl_unidad_formulario";
+$route['admin/unidades_form/(:any)'] =   "backend/ctrl_unidad_formulario/$1";
+//$route['admin/unidades_list']        =   "backend/integrante_list";
+//$route['admin/unidades_list/(:any)'] =   "backend/integrante_list/$1";
 
 
 /* End of file routes.php */
