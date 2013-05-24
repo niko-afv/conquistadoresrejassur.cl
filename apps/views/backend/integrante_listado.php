@@ -20,9 +20,9 @@
             <td><?php echo $val['cargo']; ?></td>
             <td><?php echo $val['grado']; ?></td>
             <td>
-                <a href="<?php echo $base_url . 'index.php/admin/integrantes_form/modificar/' . $val['rut'];?>"><i class='icon-edit'></i></a>
+                <a href="<?php echo $base_url . '/admin/integrantes_form/modificar/' . $val['rut'];?>"><i class='icon-edit'></i></a>
                 &nbsp;
-                <a class="delete-reg" href='<?php echo $base_url . "index.php/admin/integrantes_list/eliminar/" . $val['rut']; ?>'><i class='icon-trash'></i></a>
+                <a class="delete-reg" href='<?php echo $base_url . "/admin/integrantes_list/eliminar/" . $val['rut']; ?>'><i class='icon-trash'></i></a>
                 
             </td>
         </tr>

@@ -32,14 +32,17 @@ class Integrante extends CI_Model{
     private $xnuevo;
     
     public function __construct($xrut = FALSE) {
-        
         parent::__construct();
         $this->xnuevo = FALSE;
         $this->load->model('apoderado','apoderado_m');
-        $this->load->model('trayectoria_unidad','trayectoria_m');
+        $this->load->model('rango','rango_m');
+        $this->load->model('cargo','cargo_m');
+
         $this->apoderado = new $this->apoderado_m();
         $this->apoderado->setRut('88811111-1');
-        $this->trayectoria = new $this->trayectoria_m();
+        $this->rango = new $this->rango_m();
+        $this->cargo = new $this->cargo_m();
+
         if($xrut){
             $this->setRut($xrut);
         }
@@ -74,7 +77,7 @@ class Integrante extends CI_Model{
         return $this->xnuevo;
     }
     public function setRango($value){
-        $this->rango = $value;
+        $this->rango->setId($value);
         /*$this->db->where('RANGOS',$value);
         $res = $this->db->get('RANGOS');
         if(count($res->result())>0){
@@ -83,7 +86,7 @@ class Integrante extends CI_Model{
         }*/
     }
     public function setCargo($value){
-        $this->cargo = $value;
+        $this->cargo->setId($value);
         /*$this->db->where('ID',$value);
         $res = $this->db->get('CARGOS');
         if(count($res->result())>0){
@@ -143,7 +146,7 @@ class Integrante extends CI_Model{
             $array['DIRECCION']             = $this->getDireccion();
             $array['EMAIL']                 = $this->getMail();
             $array['FOTO']                  = $this->getFoto();
-            $array['RANGO']                 = $this->getRango();
+            $array['RANGO']                 = $this->getRango()->getId();
             $array['CARGO']                 = $this->getCargo();
             $array['ESTADO']                = $this->getEstado();
             $array['RUT_APODERADO']         = $this->apoderado->getRut();
@@ -158,10 +161,10 @@ class Integrante extends CI_Model{
             $array['direccion']             = $this->getDireccion();
             $array['email']                 = $this->getMail();
             $array['foto']                  = $this->getFoto();
-            $array['rango']                 = $this->getRango();
-            $array['cargo']                 = $this->getCargo();
+            $array['rango']                 = $this->getRango()->getNombre();
+            $array['cargo']                 = $this->getCargo()->getNombre();
             $array['estado']                = $this->getEstado();
-            $array['unidad']                = $this->unidad->getId();
+            //$array['unidad']                = $this->unidad->getId();
         }
         return $array;
     }

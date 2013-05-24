@@ -13,7 +13,7 @@ class Bo extends CI_Controller {
         $this->data = $this->session->flashdata('msg');
 
         if(!$this->session->userdata('userBo_id') && $this->uri->segments[2] != 'login'){
-            redirect('index.php/admin/login');
+            redirect('admin/login');
         }
     }
 
@@ -42,15 +42,15 @@ class Bo extends CI_Controller {
                         'userBo_type' 	 => 'admin',
                         'userBo_pin' 	 => array('h'=>1,'v'=>1)
                     ));
-                    $redirect = ($this->session->userdata('userBo_url_referida')!="")?$this->session->userdata('url_referida'):'index.php/admin';
+                    $redirect = ($this->session->userdata('userBo_url_referida')!="")?$this->session->userdata('url_referida'):'admin';
                     redirect($redirect);
                 }else{
                     $this->session->set_flashdata('msg','El usuario o pasword son incorrectos');
-                    redirect('index.php/admin/login');
+                    redirect('admin/login');
                 }
             }else{
                 $this->session->set_flashdata('msg','El usuario o pasword son incorrectos');
-                redirect('index.php/admin/login');
+                redirect('admin/login');
             }
         }else{
             $data['msg'] = $this->data;

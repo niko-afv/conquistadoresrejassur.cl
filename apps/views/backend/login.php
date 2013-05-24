@@ -3,9 +3,9 @@
 <head>
 <title>bo</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="<?php echo base_url();?>/css/login.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<?php echo base_url();?>/js/jquery-1.8.1.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>/js/jquery.functions.js"></script>
+<link href="<?php echo base_url();?>css/login.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery.functions.js"></script>
 <script type="text/javascript">
 <!--
 

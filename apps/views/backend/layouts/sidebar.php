@@ -11,8 +11,8 @@
 <ul>
   <li> <span <?php //echo $page == 'oooo'?'class="current"':'';?>><a href="javascript:;">Integrantes</a></span>
     <ul>
-      <li><i class='icon-list'></i> &nbsp; <a href="<? echo $base_url;?>index.php/admin/integrantes_list/">Listar</a></li>
-      <li><i class='icon-plus'></i> &nbsp; <a href="<? echo $base_url;?>index.php/admin/integrantes_form/">Nuevo</a></li>
+      <li><i class='icon-list'></i> &nbsp; <a href="<? echo $base_url;?>admin/integrantes_list/">Listar</a></li>
+      <li><i class='icon-plus'></i> &nbsp; <a href="<? echo $base_url;?>admin/integrantes_form/">Nuevo</a></li>
     </ul>
   </li>
   <li> <span <?php //echo $page == 'oooo'?'class="current"':'';?>><a href="javascript:;">Unidades</a></span>

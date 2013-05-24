@@ -56,7 +56,7 @@ class Upload extends CI_Controller {
         	$config['upload_path'] = $realPath = IMAGE_PATH;
 		}
 		#-------- revisar si el path existe sino crearlo con permisos
-		
+
 		if(!is_dir($realPath)){	
 			mkdir($realPath, 0777, false);
 			chmod($realPath, 0777);

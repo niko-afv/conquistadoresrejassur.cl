@@ -113,7 +113,7 @@
         
         <div class="form-item">
             <label>Unidad</label>
-            <select name="rango">
+            <select name="unidad">
                 <option value="0">Seleccione Unidad</option>
                 <?php foreach ($unidades as $item => $val){?>
                 <option value="<?=$val['id'];?>" <?php if($val['id']==$integrante['unidad']){echo 'selected';}?> ><?=$val['nombre'];?></option>

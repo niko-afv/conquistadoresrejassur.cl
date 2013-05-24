@@ -28,8 +28,8 @@ class Integrante_List extends CI_Controller{
             $array[$i]['nombre']    =   $oListado->get($i)->getNombre();
             $array[$i]['apellido']  =   $oListado->get($i)->getApellido();
             $array[$i]['edad']      =   $oListado->get($i)->getEdad();
-            $array[$i]['cargo']     =   $oListado->get($i)->getCargo();
-            $array[$i]['grado']     =   $oListado->get($i)->getRango();
+            $array[$i]['cargo']     =   $oListado->get($i)->getCargo()->getNombre();
+            $array[$i]['grado']     =   $oListado->get($i)->getRango()->getNombre();
         }
         $data['integrantes']    =   $array;
         $this->load->view('backend/integrante_listado',$data);
