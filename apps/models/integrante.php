@@ -147,7 +147,7 @@ class Integrante extends CI_Model{
             $array['EMAIL']                 = $this->getMail();
             $array['FOTO']                  = $this->getFoto();
             $array['RANGO']                 = $this->getRango()->getId();
-            $array['CARGO']                 = $this->getCargo();
+            $array['CARGO']                 = $this->getCargo()->getId();
             $array['ESTADO']                = $this->getEstado();
             $array['RUT_APODERADO']         = $this->apoderado->getRut();
             
@@ -161,8 +161,8 @@ class Integrante extends CI_Model{
             $array['direccion']             = $this->getDireccion();
             $array['email']                 = $this->getMail();
             $array['foto']                  = $this->getFoto();
-            $array['rango']                 = $this->getRango()->getNombre();
-            $array['cargo']                 = $this->getCargo()->getNombre();
+            $array['rango']                 = $this->getRango()->getId();
+            $array['cargo']                 = $this->getCargo()->getId();
             $array['estado']                = $this->getEstado();
             //$array['unidad']                = $this->unidad->getId();
         }

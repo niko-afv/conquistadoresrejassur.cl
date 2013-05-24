@@ -111,7 +111,7 @@
             <?php echo form_error('grado');?>
         </div>
         
-        <div class="form-item">
+        <!--<div class="form-item">
             <label>Unidad</label>
             <select name="unidad">
                 <option value="0">Seleccione Unidad</option>
@@ -120,7 +120,7 @@
                 <?php }?>
             </select>
             <?php echo form_error('unidad');?>
-        </div>
+        </div>-->
         
 
         <div class="form-item">
