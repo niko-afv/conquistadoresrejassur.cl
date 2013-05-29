@@ -76,10 +76,19 @@ function msg(er){
         $(this).fadeOut(6000);
     });
 }
-function msg2(er){
-    $('#error').fadeIn("slow",function(){
-        $(this).find('div').html(er);
-    });
+function showMsg2(msg, tipo){
+    $('#'+tipo+'2').fadeIn("slow");
+    $('#'+tipo+'2').find('div').html(msg);
+
+}
+function msg2(msg,tipo){
+    if($('#error, #success').length){
+        $('#error, #success').fadeOut(1000,function(){
+            showMsg2(msg, tipo);
+        });
+    }else{
+        showMsg2(msg, tipo);
+    }
 }
 
 /*********************************************/

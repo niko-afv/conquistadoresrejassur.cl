@@ -13,8 +13,20 @@
                 {sidebar}
             </div>
 			<div id="title"><?php echo $category_title;?></div>
-            <!--<div id="error"></div>-->
+
             <div id="content">
+                <?php if($this->session->flashdata('error')){?>
+                    <div id="error">
+                        <?php echo $this->session->flashdata('error');?>
+                    </div>
+                <?php }?>
+
+                <?php if($this->session->flashdata('success')){?>
+                    <div id="success">
+                        <?php echo $this->session->flashdata('success');?>
+                    </div>
+                <?php }?>
+
                 {content}
             </div>
             <div class="clear"></div>
