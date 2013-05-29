@@ -17,8 +17,8 @@
   </li>
   <li> <span <?php //echo $page == 'oooo'?'class="current"':'';?>><a href="javascript:;">Unidades</a></span>
     <ul>
-      <li><i class='icon-list'></i> &nbsp; <a href="javascript:;">Listar</a></li>
-      <li><i class='icon-plus'></i> &nbsp; <a href="javascript:;">Nuevo</a></li>
+      <li><i class='icon-list'></i> &nbsp; <a href="<? echo $base_url;?>admin/unidades_list/">Listar</a></li>
+      <li><i class='icon-plus'></i> &nbsp; <a href="<? echo $base_url;?>admin/unidades_form/">Nuevo</a></li>
     </ul>
   </li>
 </ul>
