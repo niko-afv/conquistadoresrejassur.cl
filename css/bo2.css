@@ -1,0 +1,191 @@
+/* 
+    Document   : bo2
+    Created on : 10-feb-2013, 2:06:43
+    Author     : nks
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+figure{
+    float: left;
+}
+figure#logo_club img{
+    height: 160px;
+}
+.error{
+    background: none repeat scroll 0 0 #FBE3E4;
+    border: 1px solid #FBC2C4;
+    color: #8A1F11;
+    min-height: 15px;
+    margin-left: 30%;
+    padding:2px 0;
+    text-align: center;
+    text-indent: 5px;
+    width: 60%;
+}
+.bo-form{
+    border: 1px solid #999999;
+    float: left;
+    margin: 0 15px 20px 0;
+    min-height: 100px;
+    min-width: 200px;
+    width: 40%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.bo-form:hover{
+    box-shadow: 10px 10px 40px -16px #333;
+    /*margin: 0 15px 20px -1px;*/
+    margin-top: -2px;        
+}
+.dinamic{
+    float: left;
+    margin: 5px;
+    width: 100px;
+}
+.dinamic img{
+    width: 100px;
+    height: 100px;
+}
+.drop-unidad{
+    border: 1px solid;
+    float: left;
+    margin: 10px;
+    max-height: 500px;
+    min-height: 200px;
+    overflow-y: scroll;
+    width: 340px;
+}
+.drop-unidad .unidad{
+    margin: 0;
+    min-height: 150px;
+    padding: 10px 0 10px 10px;
+}
+.form-title{
+    /*background: #131361;*/
+    background: #2F304F;
+    border-radius: 4px 4px 0 0;
+    /*color: #fff000;*/
+    /*color : rgb(255,241,0);*/
+    color : #E1E434;
+    height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    text-indent: 10px;
+    padding: 5px 0;
+    width: 100%;
+}
+.form-item{
+    min-height: 20px;
+    margin: 10px 10px 5px 10px;
+    /*width: 95%;*/
+}
+.form-item label{
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
+.form-item input, .form-item select{
+    margin-left: 10px;
+    width: 60%;
+}
+.form-item input[type='submit']{
+    margin-left: 30%;
+}
+.hidden{
+    display: none;
+}
+
+#apoderado-form{
+    float: left;
+    margin-left: 22px;
+    width: 41%;
+}
+#integrantes-container{
+    height: 400px;
+    position: relative;
+}
+#integrantes-container #background{
+    background: url(/conquistadoresrejassur.cl/images/siluetas_unidad.jpg);
+    height: 400px;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 1;
+}
+#integrantes-container .sortable-list{
+    position: absolute;
+    z-index: 5;
+}
+#link-add{
+    color: inherit;
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin-right: 10px;
+}
+
+#select-integrantes{
+    border: 1px solid;
+    float: left;   
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+#select-integrantes ul{
+    float: left;
+    margin: 10px 0 0 10px;
+    max-height: 1000px;
+    min-height: 300px; 
+}
+.integrante-card{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid;
+    float: left;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    position: relative;
+    width: 300px;
+}
+.integrante-card img{
+    float: left;        
+}
+.info{
+    float: left;
+    margin-top: 5px;
+    width: 215px;
+}
+.info .item{
+    float: left;
+    margin-bottom: 3px;
+}
+.info .item label{
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0 10px;
+    width: 50px;
+}
+.info .item span{
+    display: block;
+    float: left;
+    font-size: 12px;
+    text-indent: 10px;
+    width: 145px;
+}
+.unidad-titulo{
+    text-align: center;
+}
+
+
+
+optgroup.titulo{
+    color: #333333;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: underline;
+}

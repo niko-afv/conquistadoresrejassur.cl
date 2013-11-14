@@ -1,0 +1,49 @@
+/*
+CSS Document
+Proyect: CodeIgniter FrontEnd
+Version: 1.0 (12/05/2012)
+Autor: Pedro Montero
+Team: Pedro Montero (html/css/jquery/php)
+Description 
+-----------
+Ancho Total: 960px
+Tipografia : Verdana
+Colores    : Gris Opaco: #CCC
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+a {
+	outline: none;
+}
+img {
+	border: 0;
+}
+ul {
+	list-style: inside none;
+}
+.clear {
+	clear: both;
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+header {
+	height: 100px;
+	margin: 0px auto;
+	background:#333;
+}
+footer {
+	color:#FFF;
+	height: 100px;
+	margin: 10px auto;
+	background:#333;
+}
+#content {
+	width: 960px;
+	margin: 0px auto;
+}
