@@ -69,5 +69,8 @@ $route['admin/flujo_caja/(:any)']           =   "backend/CtrlFlujoCajaList/$1";
 
 $route['admin/flujo_caja_form']             =   "backend/CtrlFlujoCajaForm";
 $route['admin/flujo_caja_form/(:any)']      =   "backend/CtrlFlujoCajaForm/$1";
+
+$route['admin/listados_form']             =   "backend/CtrlListForm";
+$route['admin/listados_form/(:any)']      =   "backend/CtrlListForm/$1";
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

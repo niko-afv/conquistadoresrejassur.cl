@@ -1,1 +1,2 @@
 .htaccess
+apps/config/database.php

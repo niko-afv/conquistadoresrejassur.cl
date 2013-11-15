@@ -29,5 +29,11 @@
             <li><i class='icon-plus'></i> &nbsp; <a href="<? echo $base_url;?>admin/flujo_caja_form/">Nuevo Movimiento</a></li>
         </ul>
     </li>
+    <li> <span <?php echo $page == 'listados'?'class="current"':'';?>><a href="javascript:;">Listados</a></span>
+        <ul>
+            <li><i class='icon-list'></i> &nbsp; <a href="javascript:void(0)">Ver plantillas</a></li>
+            <li><i class='icon-plus'></i> &nbsp; <a href="<? echo $base_url;?>admin/listados_form">Nuevo Listado</a></li>
+        </ul>
+    </li>
 </ul>
 <a id="sidebar-pin" href="javascript:;">pinv</a>

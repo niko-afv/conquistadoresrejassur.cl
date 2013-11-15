@@ -85,6 +85,17 @@ class Listado extends CI_Model{
             $this->add($oCFlujoCaja);
         }
     }
+    
+    public function listarEntidades(){
+        $this->load->model('entidad');
+        $this->db->select('ID, NOMBRE');
+        $records = $this->db->get('ENTIDADES');
+        foreach ($records->result() as $item => $val){
+            $oEntidad = new $this->entidad();
+            $oEntidad->setId($val->ID);
+            $this->add($oEntidad);
+        }
+    }
 
     public function limpiar(){
         unset($this->lista);
