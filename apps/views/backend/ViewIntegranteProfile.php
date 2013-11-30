@@ -1574,15 +1574,12 @@
         </div>
 
         <div class="form-item">
-            <i class="icon-picture img-icon"></i>
-            <label id="integrante-img">Subir Foto</label>
         
             <div id="galeryIntegrante">
                 <?php if(set_value('imgIntegrante-img1') != ''){$integrante['foto'] = set_value('imgIntegrante-img1');}?>
                 <?php if($integrante['foto'] != ''){?>
                 
-                <span style="position: relative; float: left;" class="im span12">
-                    <a class="delete" onclick="deleteImage('imgIntegrante-img1','/conquistadoresrejassur.cl/admin/integrantes_form/deleteImage');">del</a>
+                <span class="im span10" style="display: block; height: auto;float: none;margin: 0 auto;"> 
                     <img src="<?php echo $base_url.$integrante['foto']?>" width="400" height="480">
                     <input type="hidden" id="imgIntegrante-img1" name="imgIntegrante-img1" value="<?=$integrante['foto']?>"  />
                 </span>
