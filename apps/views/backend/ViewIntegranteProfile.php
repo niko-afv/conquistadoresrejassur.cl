@@ -1579,7 +1579,7 @@
                 <?php if(set_value('imgIntegrante-img1') != ''){$integrante['foto'] = set_value('imgIntegrante-img1');}?>
                 <?php if($integrante['foto'] != ''){?>
                 
-                <span class="im span10" style="display: block; height: auto;float: none;margin: 0 auto;">
+                <span class="im span10" style="display: block; height: auto;float: none;margin: 0 auto;"> 
                     <img src="<?php echo $base_url.$integrante['foto']?>" width="400" height="480">
                     <input type="hidden" id="imgIntegrante-img1" name="imgIntegrante-img1" value="<?=$integrante['foto']?>"  />
                 </span>
