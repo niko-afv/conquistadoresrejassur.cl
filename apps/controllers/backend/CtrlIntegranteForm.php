@@ -191,5 +191,26 @@ class CtrlIntegranteForm extends CI_Controller{
         }
     }
     
+    public function toPDF($rut){
+        unset($this->layout);
+        
+        $this->load->model('integrante');
+        $oIntegrante = new $this->integrante();
+        $oIntegrante->setRut($rut);
+        
+        $data['base_url']       =   base_url();
+        $data['title']          =   $this->title;
+        $data['category_title'] =   'Ver Integrante';
+        $data['page']           =   $this->page;
+        
+        $data['integrante'] = $oIntegrante->toArray(FALSE);
+        $this->load->view('backend/ViewIntegranteProfile',$data);
+        
+        //$this->load->helper(array('dompdf', 'file'));
+        
+        /*$html = $this->load->view('backend/ViewIntegrantesListPrint',$data, TRUE);
+        pdf_create($html, 'FichaIntegrante');*/
+    }
+    
 }
 ?>
