@@ -276,7 +276,7 @@ button {
     float: left;
     margin-right: 10px;
 }
-.hidden{
+.hiddenx{
     display: none;
 }
 #error, #success,#error2, #success2{

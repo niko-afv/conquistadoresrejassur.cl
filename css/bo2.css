@@ -96,42 +96,7 @@ figure#logo_club img{
 .form-item input[type='submit']{
     margin-left: 30%;
 }
-.form-column{
-    float: left;
-    position: relative;
-    width: 75%;
-}
-.form-column label{
-    display: block;
-    float: none;
-    width: 80%;
-}
-.form-column input[type='checkbox']{
-    display: block;
-    margin: 10px 0;
-}
-.form-column.b{
-    width: 15%;
-}
-.form-column .a label{
-    display: block;
-    width: 30%;
-}
-.campos{
-    float: right;
-    width: 60%;
-}
-.campos label{
-    float: none;
-}
-.campos input{
-    margin-left: 0;
-    width: 75%;
-}
-.campos input[type='radio']{
-    margin:0;
-}
-.hidden{
+.hiddenx{
     display: none;
 }
 

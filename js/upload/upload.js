@@ -22,8 +22,8 @@
 			 thumb	:null
 		},
 		name: $(this).attr('id'),
-		upload: '/conquistadoresrejassur.cl/index.php/backend/upload/image', /*Call to controller*/
-        deleteUrl  :   '/conquistadoresrejassur.cl/index.php/admin/upload/delete'
+		upload: '/backend/upload/image', /*Call to controller*/
+        deleteUrl  :   '/admin/upload/delete'
     };
 	/*re asignacion de variables nulas*/
 	if(options.galery.content == null){options.galery.content=null}
@@ -87,7 +87,7 @@
         //alert(img);
 		var html = '<span>';
 			html += '<a class="delete" onclick="deleteImage('+deleteName+','+ deleteUrl +');">del</a>';
-			html += '<img src="/conquistadoresrejassur.cl/'+img+'" width="'+w+'" height="'+h+'" />';
+			html += '<img src="/'+img+'" width="'+w+'" height="'+h+'" />';
 			html += '<input type="hidden" id="'+input+n+'" name="'+input+n+'" value="'+img+'">';
 			html += '</span>';
 		//$(content).append(html);

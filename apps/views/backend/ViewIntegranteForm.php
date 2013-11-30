@@ -127,7 +127,7 @@
         </div>
     </div>
     
-    <div class="hidden" id="apoderado-form">
+    <div class="hiddenx" id="apoderado-form">
         <div class="bo-form span12">
             <div class="form-title">
                 Datos del Apoderado

@@ -55,10 +55,12 @@ function agregarIntegrante(rut, unidad_id,anterior_id){
 $(function(){
     
     if($("input[name='edad']").val() > 15 || $("input[name='edad']").val() === ""){
-        //$("#apoderado-form").hide();
+        $("#apoderado-form").hide();
+    }else{
+        $("#apoderado-form").show();
     }
     
-    $('.close').live('click',function(){
+    $('.close').on('click',function(){
         $(this).parent().fadeOut(1000);
     });
 
@@ -77,7 +79,7 @@ $(function(){
             height  :   480,
             thumb   :   '100x177,150x180'
         },
-        deleteUrl  :   '/conquistadoresrejassur.cl/admin/integrantes_form/deleteImage'
+        deleteUrl  :   '/admin/integrantes_form/deleteImage'
     });
     $(".delete-reg").on("click",eliminarIntegrante);
 
