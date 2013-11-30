@@ -46,8 +46,13 @@
                 opacity: 0.7;
                 width: 340px;
             }
+            footer #social-extra{
+                margin: 0 auto;
+                width: 110px;
+            }
             #main-content{
                 height: 100%;
+                position: relative;
                 width: 100%;
             }
             #main-content #center-content{
@@ -207,12 +212,14 @@
                     
                 </div><!--Content-->
                 <div id="bckg-content"></div>
-                <div class="clear"></div>
+                <div class="clear"></div>                
             </section><!--Center Content-->
         </section><!--Main Content-->
         
         <footer>
-            
+            <div id="social-extra">
+                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fconquistadoresrejassur.cl%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+            </div>
         </footer>
         
         <script>

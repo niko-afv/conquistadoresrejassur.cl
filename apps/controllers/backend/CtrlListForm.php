@@ -1,11 +1,4 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of CtrlListForm
  *
@@ -16,7 +9,7 @@ class CtrlListForm extends CI_Controller{
     public function __construct() {
         parent::__construct();
         $this->load->helper(array('form','url'));
-        $this->title = 'LIstados';
+        $this->title = 'Listados';
         $this->layout = array('base'=>'main','meta','header','sidebar','footer');
         $this->session->loginState('userBo_session');
         $this->page = 'Listados';
@@ -25,7 +18,7 @@ class CtrlListForm extends CI_Controller{
         $data['base_url']       =   base_url();
         $data['title']          =   $this->title;
         $data['page']           =   $this->page;
-        $data['category_title'] =   'Agregar Integrante';
+        $data['category_title'] =   'Configuración del Listado';
         $data['entidades']      =   $this->loadEntidades();
         
         $this->load->model('listados_templates');

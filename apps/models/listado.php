@@ -96,6 +96,17 @@ class Listado extends CI_Model{
             $this->add($oEntidad);
         }
     }
+    
+    public function listarPlantillas(){
+        $this->load->model('template');
+        $this->db->select('ID, NOMBRE');
+        $records = $this->db->get('LISTADOS_TEMPLATES');
+        foreach ($records->result() as $item => $val){
+            $oTemplate = new $this->template();
+            $oTemplate->setId($val->ID);
+            $this->add($oTemplate);
+        }
+    }
 
     public function limpiar(){
         unset($this->lista);

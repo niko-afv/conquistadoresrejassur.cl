@@ -6,7 +6,8 @@
 <link href="<?php echo base_url();?>css/bo.css" rel="stylesheet" type="text/css" media="print, screen"/>
 <link href="<?php echo base_url();?>css/bo2.css" rel="stylesheet" type="text/css" media="print, screen" />
 <!--JQuery & UI-->
-<script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.8.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!--<script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.8.1.min.js"></script>-->
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.functions.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.jqprint.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>vendors/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>

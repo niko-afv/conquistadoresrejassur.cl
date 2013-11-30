@@ -42,7 +42,7 @@ function opacityCard($element,opacity, callback){
 
 function agregarIntegrante(rut, unidad_id,anterior_id){
     rut = rut.replace("card-",'');
-    url = '/conquistadoresrejassur.cl/admin/agregar_integrantes/agregarIntegrante';
+    url = '/admin/agregar_integrantes/agregarIntegrante';
     $.post(url,{integrante_rut: rut, unidad_id: unidad_id, anterior_id: anterior_id},function(data){
         if(data){
             msg2('<strong>¡Bien echo!</strong> La operación se ha realizado correctamente','success');

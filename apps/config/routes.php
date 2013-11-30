@@ -70,7 +70,15 @@ $route['admin/flujo_caja/(:any)']           =   "backend/CtrlFlujoCajaList/$1";
 $route['admin/flujo_caja_form']             =   "backend/CtrlFlujoCajaForm";
 $route['admin/flujo_caja_form/(:any)']      =   "backend/CtrlFlujoCajaForm/$1";
 
+$route['admin/plantillas_form']             =   "backend/CtrlTemplateForm";
+$route['admin/plantillas_form/(:any)']      =   "backend/CtrlTemplateForm/$1";
+$route['admin/plantillas_list']             =   "backend/CtrlTemplateList";
+$route['admin/plantillas_list/(:any)']      =   "backend/CtrlTemplateList/$1";
+
 $route['admin/listados_form']             =   "backend/CtrlListForm";
 $route['admin/listados_form/(:any)']      =   "backend/CtrlListForm/$1";
+$route['admin/listados_list']             =   "backend/CtrlListList";
+$route['admin/listados_list/(:any)']      =   "backend/CtrlListList/$1";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

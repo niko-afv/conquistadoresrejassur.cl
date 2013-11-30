@@ -153,5 +153,13 @@ class Utils {
 
         return $delete;
     }
+    
+    public function formatString($string){
+        $unsuported_chars = array('-','_','/','*');
+        $suported_string = str_replace($unsuported_chars, " ", $string);
+        $loweString = strtolower($suported_string);
+        $final_string = ucfirst($loweString);
+        return $final_string;
+    }
 }
 ?>
