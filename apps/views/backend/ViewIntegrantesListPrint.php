@@ -1411,8 +1411,17 @@
             width: 25%;
         }
         #content{
-            width: 100% !important;
-        }
+            background: url(/images/logo-completo-opac.png) no-repeat 285px 80px;
+            width: 100% !important;            
+            margin-top: 0 !important;
+       }
+       .paginador{
+           bottom: 0;
+           left: 45%;
+           page-break-after: always;
+           position: absolute;
+           width: 80px;
+       }
         #wrapper{
             margin: 20px auto;
             width: 93%;
@@ -1420,7 +1429,10 @@
     </style>
 </head>
 <body>
-    
+    <?php
+        $i=0;        
+        $total = ceil(count($integrantes) / 15);
+    ?>
     <div id="wrapper">
         <div id="header">
                 <div class="row-header-print">
@@ -1429,54 +1441,58 @@
                     </div>
 
                     <div class="item-header-print">
-                        <span class="key">Cantidad de Registros: </span>  <span class="value"><?php echo $num_rows ?></span>
+                        <span class="key">Fecha Impresión: </span>  <span class="value"><?php echo date("d - M - Y"); ?></span>
                     </div>
                 </div>
 
                 <div class="row-header-print">
                     <div class="item-header-print">
-                        <span class="key">Fecha Impresión: </span>  <span class="value"><?php echo date("d - M - Y"); ?></span>
+                        <span class="key">Cantidad de Paginas: </span>  <span class="value"><?php echo $total; ?></span>
                     </div>
+                    
                     <div class="item-header-print">
-                        <span class="key">Hora Impresión: </span>  <span class="value"><?php echo date("H:m"); ?></span>
+                        <span class="key">Cantidad de Registros: </span>  <span class="value"><?php echo $num_rows ?></span>
                     </div>
                 </div>
         </div> 
         <div id="main">
-            <div id="content">
-                
-                <table class='table table-hover table-bordered table-condensed'>
-                    <thead>
-                        <tr class="form-title">
-                            <th>N°</th>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Unidad</th>
-                            <th>Edad</th>
-                            <th>Cargo</th>
-                            <th>Grado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <?php $i=0;?>
-                    <?php foreach($integrantes as $item => $val){?>
-                        <?php $i++;?>
-                        <tr id="<?php echo $val['rut']; ?>">
-                            <td><?php echo $i;?></td>
-                            <td class='name'><?php echo $val['nombre']; ?></td>
-                            <td class='lastname'><?php echo $val['apellido']; ?></td>
-                            <td><?php echo $val['unidad']; ?></td>
-                            <td><?php echo $val['edad']; ?></td>
-                            <td><?php echo $val['cargo']; ?></td>
-                            <td><?php echo $val['grado']; ?></td>
-                        </tr>
-                    <?php }?>
-                    </tbody>
-                </table>
+            <?php
+                for($x = 1; $x <= $total; $x++){                    
+            ?>            
+                    <div id="content">
 
-            <div class="clear"></div>
-                
-            </div>
+                        <table class='table table-hover table-bordered table-condensed'>
+                            <thead>
+                                <tr class="form-title">
+                                    <th>N°</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Unidad</th>
+                                    <th>Edad</th>
+                                    <th>Cargo</th>
+                                    <th>Grado</th>
+                                </tr>
+                            </thead>
+                            <tbody>                            
+                            <?php for($i; $i< count($integrantes); $i++){ ?>
+                                <tr id="<?php echo $integrantes[$i]['rut']; ?>">
+                                    <td><?php echo $i + 1;?></td>
+                                    <td class='name'><?php echo $integrantes[$i]['nombre']; ?></td>
+                                    <td class='lastname'><?php echo $integrantes[$i]['apellido']; ?></td>
+                                    <td><?php echo $integrantes[$i]['unidad']; ?></td>
+                                    <td><?php echo $integrantes[$i]['edad']; ?></td>
+                                    <td><?php echo $integrantes[$i]['cargo']; ?></td>
+                                    <td><?php echo $integrantes[$i]['grado']; ?></td>
+                                </tr>
+                                <?php if($i > 0 && $i % 17 === 0){$i++; break;}?>
+                            <?php }?>
+                            </tbody>
+                        </table>
+                    <div class="clear"></div>
+
+                    </div><!--End Content-->
+                    <div class="paginador">Pagina <?php echo $x;?></div>
+            <?php }?>
             <div class="clear"></div>
         </div>
     </div>
