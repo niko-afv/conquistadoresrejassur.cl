@@ -40,7 +40,8 @@
         }
         #content {
                 width: 960px;
-                margin: 0px auto;
+                marg
+                    in: 0px auto;
         }
         /********************** END MAIN.CSS *****************************/
         /*****************************************************************/
@@ -1413,7 +1414,7 @@
         #content{
             background: url(/images/logo-completo-opac.png) no-repeat 285px 80px;
             width: 100% !important;            
-            margin-top: 0 !important;
+            margin-top: 10px !important;
        }
        .paginador{
            bottom: 0;
