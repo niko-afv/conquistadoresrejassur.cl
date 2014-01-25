@@ -51,7 +51,11 @@ $active_record = TRUE;
 $db['default']['hostname'] = '208.97.163.252';
 $db['default']['username'] = 'rejassur';
 $db['default']['password'] = 'r2j1ss5r';
-$db['default']['database'] = 'conquis_rejas_sur_devel';
+if(strstr($_SERVER['DOCUMENT_ROOT'],"devel")){
+    $db['default']['database'] = 'conquis_rejas_sur_devel';
+}else{
+    $db['default']['database'] = 'conquis_rejas_sur';
+}
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
