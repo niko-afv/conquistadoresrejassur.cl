@@ -56,7 +56,6 @@ class Flujo_Caja extends CI_Model{
     public function save(){
         if ($this->xnuevo == TRUE){
             $res = $this->db->insert("FLUJO_CAJA",  $this->toArray(TRUE));
-            print_r($this->toArray(TRUE));
         }  else {
             $this->db->where('ID',  $this->getId());
             $res = $this->db->update("FLUJO_CAJA",  $this->toArray(TRUE));

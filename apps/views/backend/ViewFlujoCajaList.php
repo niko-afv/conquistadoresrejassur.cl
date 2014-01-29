@@ -24,9 +24,16 @@
     <thead>
         <tr class="form-title">
             <th>Flujo</th>
-            <?php for($i = $desde; $i <= $hasta; $i++){?>
+            <?php /*for($i = $desde; $i <= $hasta; $i++){?>
             <th><?php echo $meses[$i];?></th>
-            <?php }?>
+            <?php }*/?>
+
+            <?php
+                foreach($meses as $numeral => $mes){?>
+                <th><?php echo $mes['palabras'] ?></th>
+                <?php }
+            ?>
+
         </tr>
     </thead>
     <tbody>
