@@ -29,12 +29,16 @@ class CtrlFlujoCajaList extends CI_Controller{
         $data['page']           =   'tesoreria';
         
         $ms                     = date('m');
+        if($ms - 7 ){
+            $data['desde']      = 12 - 6 + $ms;
+        }else{
+            $data['desde']          = $ms*1-6;
+        }
         $data['hasta']          = $ms*1-1;
-        $data['desde']          = $ms*1-6;
         $data['fecha']          = date('Y-m',strtotime(date('Y-m')." -5 month"));
-        $data['meses']          = array(
-                        'enero','febrero','marzo','abril','mayo','junio','julio',
-                        'agosto','septiembre','octubre','noviembre','diciembre');
+        $meses          = array(
+                        'Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio',
+                        'Agosto','Septiembre','Octubre','Noviembre','Diciembre');
 
         $this->load->model('listado');
         $oListado = new $this->listado();
@@ -44,6 +48,13 @@ class CtrlFlujoCajaList extends CI_Controller{
         for($i = 0; $i < $oListado->count(); $i++){
             $array[$i] = $oListado->get($i)->toArray();
         }
+        //print_r($array[1]['total']);
+        foreach($array[1]['total'] as $item => $row){
+            $fec =  explode("-",$item);
+            $data['meses'][] = array('numero' => $fec[1], 'palabras' => $meses[round($fec[1])-1]);
+        }
+
+
         $data['cuentas']['ingresos'] = $array;
         $oListado->limpiar();
         unset($array);
