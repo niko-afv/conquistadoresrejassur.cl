@@ -195,4 +195,20 @@ class Template extends CI_Model{
             return FALSE;
         }
     }
+
+    public function autocompletar($abuscar){
+        $this->db->select('NOMBRE');
+        $this->db->like('NOMBRE',$abuscar,'after');
+
+        $resultados = $this->db->get('LISTADOS_CAMPOS', 12);
+
+        if(count($resultados->result()) > 0){
+            foreach($resultados->result() as $row){
+                $datos[] = $row->NOMBRE;
+            }
+            return $datos;
+        }else{
+            return FALSE;
+        }
+    }
 }

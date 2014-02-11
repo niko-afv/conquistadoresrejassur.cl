@@ -119,4 +119,36 @@ class CtrlTemplateForm extends CI_Controller{
             return TRUE;
         }
     }
+
+    public function autocompletar(){
+        unset($this->layout);
+        $this->load->library('utils');
+        $oUtils = new $this->utils();
+
+        if($oUtils->isAjax()){
+            $this->load->model('template');
+            $abuscar = $this->security->xss_clean($this->input->post('info'));
+            $Otemplate = new $this->template();
+            $search = $Otemplate->autocompletar($abuscar);
+
+            $datos = array();
+            $datos['ok'] = TRUE;
+
+            if($search != FALSE){
+                foreach($search as $row){
+                    $datos['campos'][]['nombre'] = $row;
+                }
+            }else{
+                $datos['ok'] = FALSE;
+            }
+
+            $data['type']    =  'json';
+            $data['content']    =  $datos;
+            $this->load->view('ajax',$data);
+
+        }else{
+            $this->session->set_flashdata('error', 'La petición realizada es invalida');
+            redirect('/admin/plantillas_list/');
+        }
+    }
 }

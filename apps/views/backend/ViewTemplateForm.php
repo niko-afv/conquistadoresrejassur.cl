@@ -1,5 +1,9 @@
 <script>
     $(function(){
+        /**
+         * Función encargada de cargar los campos disponibles,
+         * segun la entidad Seleccionada
+         */
         $("select[name='entidad']").on('change', function(){
             var entidad =   $(this).val();
             var url     =   "/admin/plantillas_form/carga_detalles_entidad/"; 
@@ -22,25 +26,117 @@
                 });
             });
         });
-        
+
+        /**
+         * Función cargar los campos extra dinamicamente
+         *
+         */
         $(".campos#new").on('keyup','input',function(event){
-            if($(this).hasClass("dynamic")){
+            if($(this).parent().hasClass("dynamic")){
                 if( (event.which >= 48 && event.which <= 57) || (event.which >= 97 && event.which <= 122) || (event.which >= 65 && event.which <= 90)){
-                    $(this).removeClass('dynamic');
+                    $(this).parent().removeClass('dynamic');
+                    $(this).parent().addClass('static');
                     var nCampos = $(".campos#new");
-                    nCampos.append("<input class='dynamic' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' maxlength='20'  />");
+                    var num = $(".autocompletar").length +1;
+                    html = "<div class='dynamic'>";
+                    html += "<input id='campo_"+num+"' class='autocompletar' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' autocomplete='off' maxlength='20'  />";
+                    html += "<div class='dropdown'>";
+                    html += "<ul class='dropdown-menu' role='menu' aria-labelledby='dropdownMenu'>";
+                    html += "<li class='title-li'>Algunos Sugerencias</li>";
+                    html += "<li class='divider'></li>";
+                    html += "</ul>";
+                    html += "</div>";
+                    html += "</div>";
+                    nCampos.append(html);
                 }
             }else{
                 if(event.which === 8){
                     if($.trim($(this).val()) === ""){
                         $(".dynamic").remove();
-                        $(this).addClass("dynamic");
+                        $(this).parent().removeClass('static');
+                        $(this).parent().addClass("dynamic");
                     }
                 }
             }
         });
+
+        /**
+         * Función encargada del autocompletado de campos extra disponibles
+         */
+        $(".campos#new").on('keyup','.autocompletar',function(){
+            var info = $(this).val();
+            var id = $(this).attr('id');
+            if(info.length > 0){
+                var url     =   "/admin/plantillas_form/autocompletar/";
+                $.post(url,{ info : info, id : id }, function(data){
+                    $(".auto").remove();
+                    data = JSON.parse(data);
+                    if(data.ok){
+                        selector = "#" + id;
+                        console.log(id);
+                        console.log("valor es: "+$("#campo_"+id+"").parent().attr('class'));
+                        //$("#"+id).parent().children(".dropdown").children("dropdown-menu").addClass('visible');
+                        for(var i = 0; i < data.campos.length; i++){
+                            //$(this).parent().children(".dropdown").children("dropdown-menu").append("<li class='auto'><a>"+data.campos[i].nombre+"</a>");
+                        }
+                    }else{
+                        //$(this).parent().children(".dropdown").children("dropdown-menu").removeClass('visible');
+                        $(".auto").remove();
+                    }
+                })
+            }else{
+                $(".dropdown-menu").removeClass('visible');
+                $(".auto").remove();
+            }
+        })
+
+        /**
+         * Funcion encargada de cargar el valor
+         * en el nuevo campo al hacer click en las sugerencias
+         */
+        $(".dropdown-menu").on('dblclick','.auto',function(){
+            var valor = $(this).children('a').html()
+
+            $(this).parent().parent().parent().children('input').val(valor);
+            $(this).parent().removeClass('visible');
+        });
+
     });
 </script>
+
+<style type="text/css">
+    .contenedor p{
+        font-size: 14px;
+        background-color: #ca5d36;
+        background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+        background-size: 203px 203px;
+        color: #fff;
+        padding: 3px 2px;
+        border: 1px solid #000;
+        max-width: 300px;
+        margin-top: -14px;
+    }
+    .contenedor p a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .dropdown{
+        left: 10px;
+        top: -10px;
+    }
+    .visible{
+        display: block;
+    }
+    .title-li{
+        font-size: 13px;
+        font-weight: bold;
+        text-indent: 15px;
+    }
+    .auto{
+        cursor: pointer;
+    }
+</style>
 
 <div class="row-fluid">
     <div id="error" class="hidden">
@@ -96,7 +192,15 @@
                 <label>Nuevos campos</label>
                 
                 <div class="campos" id="new">
-                    <input class='dynamic' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' maxlength='20'  />
+                    <div class="dynamic">
+                        <input id="campo_1" class='autocompletar' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' maxlength='20' autocomplete="off"  />
+                        <div class="dropdown">
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                <li class="title-li">Algunos Sugerencias</li>
+                                <li class="divider"></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
                 <?php echo form_error('dCampos');?>
