@@ -202,6 +202,11 @@ public function getRut(){return $this->rut;}
         }
         return $array;
     }
+
+    public function getProperty($property){
+        $property = strtolower($property);
+        return $this->$property;
+    }
     
 }
 

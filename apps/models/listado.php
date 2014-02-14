@@ -31,11 +31,15 @@ class Listado extends CI_Model{
         }
     }
 
-    public function listarIntegrantes(){
-        $this->load->model('Integrante');
+    public function listarIntegrantes($columnas = FALSE){
         $this->db->select('RUT');
+        if($columnas){
+            $this->db->select($columnas);
+        }
         $this->db->order_by('APELLIDO');
         $records = $this->db->get('INTEGRANTES');
+
+        $this->load->model('Integrante');
         foreach ($records->result() as $item => $val){
             $oIntegrante = new $this->Integrante($val->RUT);
             $this->add($oIntegrante);
@@ -105,6 +109,38 @@ class Listado extends CI_Model{
             $oTemplate = new $this->template();
             $oTemplate->setId($val->ID);
             $this->add($oTemplate);
+        }
+    }
+
+    public function customList($tabla = "", $xcolumnas = array()){
+
+        foreach($xcolumnas as $columna => $val){
+            if($val['tipo'] == 1){
+                $columnas[] =  strtoupper($val['nombre']);
+            }
+        }
+        switch($tabla){
+            case 'INTEGRANTES':
+                $this->listarIntegrantes($columnas);
+                break;
+            case 'CARGOS':
+                $this->listarCargos();
+                break;
+            case 'RANGOS':
+                $this->listarRangos();
+                break;
+            case 'UNIDADES':
+                $this->listarUnidades();
+                break;
+            /*case 'CUENTAS':
+                $this->listarCuentas();
+                break;*/
+            case 'ENTIDADES':
+                $this->listarEntidades();
+                break;
+            case 'PLANTILLAS':
+                $this->listarPlantillas();
+                break;
         }
     }
 

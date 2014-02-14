@@ -21,12 +21,15 @@ class Template extends CI_Model{
     
     private $xnuevo;
     
-    public function __construct() {
+    public function __construct($id = NULL) {
         parent::__construct();
         $this->xnuevo = TRUE;
         $this->listaCampos = new ArrayObject();
         $this->load->model('entidad','xentidad');
         $this->entidad = new $this->xentidad();
+        if($id != NULL){
+            $this->setId($id);
+        }
     }
     
     public function getNombre() {
@@ -54,10 +57,15 @@ class Template extends CI_Model{
             $this->db->where('ID_LISTADO_TEMPLATE', $id);
             $listados_campos_templates = $this->db->get('LISTADOS_CAMPOS_TEMPLATES');
             foreach($listados_campos_templates->result() as $row => $val){
-                $this->db->where('ID', $val-> 	ID_LISTADO_CAMPO);
+                $this->db->where('ID', $val->ID_LISTADO_CAMPO);
                 $listados_campos = $this->db->get('LISTADOS_CAMPOS');
                 foreach($listados_campos->result() as $row2 => $val2){
-                    $this->addCampo($val2->NOMBRE);
+                    $this->addCampo(
+                        array(
+                            'nombre'    =>  $val2->NOMBRE,
+                            'tipo'      =>  $val->DATO_EXISTE,
+                        )
+                    );
                 }
             }
         }
@@ -77,28 +85,31 @@ class Template extends CI_Model{
             if($ins){
                 $id_template = $this->db->insert_id();
                 for($i=0;$i<$this->countCampos();$i++){
+                    $campo  =   $this->getCampo($i);
+
                     if($this->verifyCampo($this->getCampo($i))){
-                        $id_campo = $this->verifyCampo($this->getCampo($i));
-                        $ok = TRUE;
+                        $id_campo   =   $this->verifyCampo($this->getCampo($i));
+                        $ok         =   TRUE;
                     }else{
-                        $array = array(
-                            'NOMBRE'    =>  $this->getCampo($i)
-                        );
-                        $ins2 = $this->db->insert("LISTADOS_CAMPOS",$array);
+                        $array  =   array(
+                                        'NOMBRE'    =>  $campo['nombre']
+                                    );
+                        $ins2   =   $this->db->insert("LISTADOS_CAMPOS",$array);
                         if($ins2){
-                            $id_campo = $this->db->insert_id();
-                            $ok = TRUE;
+                            $id_campo   =   $this->db->insert_id();
+                            $ok         =   TRUE;
                         }else{
-                            $ok = FALSE;
+                            $ok         =   FALSE;
                         }
                     }
 
                     if($ok){
-                        $array = array(
-                            'ID_LISTADO_TEMPLATE'   =>    $id_template,
-                            'ID_LISTADO_CAMPO'   =>    $id_campo,
-                        );
-                        $ins3 = $this->db->insert("LISTADOS_CAMPOS_TEMPLATES",$array);
+                        $array  =   array(
+                                        'ID_LISTADO_TEMPLATE'   =>  $id_template,
+                                        'ID_LISTADO_CAMPO'      =>  $id_campo,
+                                        'DATO_EXISTE'           =>  $campo['tipo']
+                                    );
+                        $ins3   =   $this->db->insert("LISTADOS_CAMPOS_TEMPLATES",$array);
                     }
                 }
             }
@@ -127,7 +138,7 @@ class Template extends CI_Model{
         if(!$db){
             $array['id'] = $this->getId();
             $array['nombre'] = $this->getNombre();
-            $array['entidad'] = $this->getEntidad();
+            $array['entidad'] = $this->getEntidad()->toArray();
             for($i = 0; $i < $this->countCampos();$i++){
                 $array['campos'][] = $this->getCampo($i);
             }
@@ -185,8 +196,8 @@ class Template extends CI_Model{
      * @return bool|id_campo
      * Verifica la existencia de un campo en la DB
      */
-    public function verifyCampo($nombreCampo){
-        $this->db->where('NOMBRE', $nombreCampo);
+    public function verifyCampo($campo){
+        $this->db->where('NOMBRE', $campo['nombre']);
         $listados_campos    =    $this->db->get('LISTADOS_CAMPOS');
         if(count($listados_campos->result()) > 0){
             $xcampo = $listados_campos->result();

@@ -50,14 +50,22 @@ class CtrlTemplateForm extends CI_Controller{
                 $xcampos = $this->input->post('campos');
                 for($i = 0; $i< count($xcampos); $i++){
                     if(strlen(trim($xcampos[$i])) > 0){
-                        $oTemplates->addCampo($xcampos[$i]);
+                        $campo = array(
+                            'nombre'    =>  $xcampos[$i],
+                            'tipo'      =>  1
+                        );
+                        $oTemplates->addCampo($campo);
                     }
                 }
                 if($this->input->post('dCampos')){
                     $xcampos = $this->input->post('dCampos');
                     for($i = 0; $i< count($xcampos); $i++){
                         if(strlen(trim($xcampos[$i])) > 0){
-                            $oTemplates->addCampo($xcampos[$i]);
+                            $campo = array(
+                                'nombre'    =>  $xcampos[$i],
+                                'tipo'      =>  0
+                            );
+                            $oTemplates->addCampo($campo);
                         }
                     }
                 }

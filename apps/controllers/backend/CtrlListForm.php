@@ -14,51 +14,36 @@ class CtrlListForm extends CI_Controller{
         $this->session->loginState('userBo_session');
         $this->page = 'Listados';
     }
-    public function index(){
+    public function cargar($template_id){
+        $this->load->model('template');
+        $this->load->model('listado');
+
         $data['base_url']       =   base_url();
         $data['title']          =   $this->title;
         $data['page']           =   $this->page;
         $data['category_title'] =   'Configuración del Listado';
-        $data['entidades']      =   $this->loadEntidades();
-        
-        $this->load->model('listados_templates');
-        $oListadosTemplates = new $this->listados_templates();
-        
-        $data['listado']      =   $oListadosTemplates->toArray();
+        $data['entidad']        =   array();
+
+
+        $oTemplate  =   new $this->template($template_id);
+        $oListado   =   new $this->listado();
+
+        $template   =   $oTemplate->toArray();
+        $oListado->customList($template['entidad']['Tabla'],$template['campos']);
+        //print_r($oListado->get(0));
+        for($i=0; $i < $oListado->count(); $i++){
+            foreach($template['campos'] as $campo){
+                if($campo['tipo'] == 1){
+                    $xcampo = $campo['nombre'];
+                    $data['entidad']['lista'][] =   array(
+                        $xcampo    => $oListado->get($i)->getProperty($xcampo)
+                    );
+                }
+            }
+        }
+
+        $data['template']   =   $oTemplate->toArray();
         $this->load->view("backend/ViewListForm",$data);
     }
-    
-    public function carga_detalles_entidad(){
-        unset($this->layout);
-        $this->load->library('utils');
-        $oUtils = new $this->utils();
 
-        if($oUtils->isAjax()){
-            if($this->input->post()){
-                
-                $this->load->model('listados_campos');
-                $oListadosCapos = new $this->listados_campos();
-                $id_entidad = $this->input->post('entidad');
-                $data['content'] = $oListadosCapos->listarCamposTabla($id_entidad);
-                $data['type'] = 'json';
-                $this->load->view('ajax',$data);
-            }
-        }else{
-            $this->session->set_flashdata('error', 'La petición realizada es invalida');
-            redirect('/admin/listados_form/');
-        }
-    }
-
-
-    private function loadEntidades(){
-        $this->load->model("listado");
-        $oListado   =   new $this->listado();
-        $oListado->listarEntidades();
-        $array      =   array();
-        for ($i = 0; $i < $oListado->count();$i++){
-            $array[$i]['id']    =   $oListado->get($i)->getId();
-            $array[$i]['nombre']    =   $oListado->get($i)->getNombre();
-        }
-        return $array;
-    }
 }

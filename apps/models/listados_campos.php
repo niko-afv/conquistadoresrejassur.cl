@@ -35,6 +35,8 @@ class Listados_Campos extends CI_Model{
                 }
             }
         }
+        print $campos[1];
+        die;
         return $campos;
     }
     

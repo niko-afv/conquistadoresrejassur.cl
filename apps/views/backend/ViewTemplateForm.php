@@ -116,15 +116,6 @@
             $(this).parent().parent().parent().children('input').val(valor);
             $(this).parent().removeClass('visible');
         });
-
-        /**
-         * Funcion encargada se hacer desaarecer el listado de autocompletado
-         * si se pierde el foco en el input
-         */
-        $(".campos#new").on('focusout','.dynamic', function(){
-            $(this).parent().children('.dropdown').children().removeClass('visible');
-        })
-
     });
 </script>
 
