@@ -1,6 +1,17 @@
 <script>
     $(function(){
         /**
+         * Funcion encargada de validar si a las teclas presionadas les corresponde gatillar eventos
+         **/
+        function verificarTecla(tecla){
+            if((tecla >= 48 && tecla <= 57) || (tecla >= 97 && tecla <= 122) || (tecla >= 65 && tecla <= 90)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        /**
          * Función encargada de cargar los campos disponibles,
          * segun la entidad Seleccionada
          */
@@ -32,8 +43,9 @@
          *
          */
         $(".campos#new").on('keyup','input',function(event){
+
             if($(this).parent().hasClass("dynamic")){
-                if( (event.which >= 48 && event.which <= 57) || (event.which >= 97 && event.which <= 122) || (event.which >= 65 && event.which <= 90)){
+                if(verificarTecla(event.which)){
                     $(this).parent().removeClass('dynamic');
                     $(this).parent().addClass('static');
                     var nCampos = $(".campos#new");
@@ -63,43 +75,55 @@
         /**
          * Función encargada del autocompletado de campos extra disponibles
          */
-        $(".campos#new").on('keyup','.autocompletar',function(){
-            var info = $(this).val();
-            var id = $(this).attr('id');
-            if(info.length > 0){
-                var url     =   "/admin/plantillas_form/autocompletar/";
-                $.post(url,{ info : info, id : id }, function(data){
-                    $(".auto").remove();
-                    data = JSON.parse(data);
-                    if(data.ok){
-                        selector = "#" + id;
-                        console.log(id);
-                        console.log("valor es: "+$("#campo_"+id+"").parent().attr('class'));
-                        //$("#"+id).parent().children(".dropdown").children("dropdown-menu").addClass('visible');
-                        for(var i = 0; i < data.campos.length; i++){
-                            //$(this).parent().children(".dropdown").children("dropdown-menu").append("<li class='auto'><a>"+data.campos[i].nombre+"</a>");
-                        }
-                    }else{
-                        //$(this).parent().children(".dropdown").children("dropdown-menu").removeClass('visible');
+        $(".campos#new").on('keyup','input',function(event){
+            if(verificarTecla(event.which) || event.which === 8){
+                var info = $(this).val();
+                var id = $(this).attr('id');
+                if(info.length > 0){
+                    var url     =   "/admin/plantillas_form/autocompletar/";
+                    $.post(url,{ info : info, id : id }, function(data){
+
+                        var dropdown = $("#"+id).parent().children('.dropdown').children();
+
                         $(".auto").remove();
-                    }
-                })
-            }else{
-                $(".dropdown-menu").removeClass('visible');
-                $(".auto").remove();
+                        data = JSON.parse(data);
+                        if(data.ok){
+                            //console.log(id);
+                            //console.log("valor es: "+$("#campo_"+id+"").parent().attr('class'));
+                            dropdown.addClass('visible');
+                            for(var i = 0; i < data.campos.length; i++){
+                                dropdown.append("<li class='auto'><a>"+data.campos[i].nombre+"</a>");
+                            }
+                        }else{
+                            dropdown.removeClass('visible');
+                            $(".auto").remove();
+                        }
+                    })
+                }else{
+                    $("#"+id).parent().children('.dropdown').children().removeClass('visible');
+                    $(".auto").remove();
+                }
             }
-        })
+        });
 
         /**
          * Funcion encargada de cargar el valor
          * en el nuevo campo al hacer click en las sugerencias
          */
-        $(".dropdown-menu").on('dblclick','.auto',function(){
+        $(".campos#new").on('dblclick','.auto',function(){
             var valor = $(this).children('a').html()
 
             $(this).parent().parent().parent().children('input').val(valor);
             $(this).parent().removeClass('visible');
         });
+
+        /**
+         * Funcion encargada se hacer desaarecer el listado de autocompletado
+         * si se pierde el foco en el input
+         */
+        $(".campos#new").on('focusout','.dynamic', function(){
+            $(this).parent().children('.dropdown').children().removeClass('visible');
+        })
 
     });
 </script>

@@ -198,7 +198,8 @@ class Template extends CI_Model{
 
     public function autocompletar($abuscar){
         $this->db->select('NOMBRE');
-        $this->db->like('NOMBRE',$abuscar,'after');
+        $this->db->like('NOMBRE',$abuscar,'both');
+        $this->db->order_by('NOMBRE','ASC');
 
         $resultados = $this->db->get('LISTADOS_CAMPOS', 12);
 
