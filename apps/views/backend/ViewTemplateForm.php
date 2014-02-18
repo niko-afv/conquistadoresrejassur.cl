@@ -20,9 +20,10 @@
             var url     =   "/admin/plantillas_form/carga_detalles_entidad/"; 
             
             $.post(url, {'entidad':entidad}, function(data){
+                var obj = JSON.parse(data);
                 var html1 = "<div class='form-column a'>";
                 var html2 = "<div class='form-column b'>";
-                obj = JSON.parse(data);
+
                 for(var i = 0; i< obj.length; i++){
                     html1 += "<label for='"+i+"'>"+obj[i]+"</label>";
                     html2 += "<input type='checkbox' name='campos[]' id='"+i+"' value='"+obj[i]+"' />";

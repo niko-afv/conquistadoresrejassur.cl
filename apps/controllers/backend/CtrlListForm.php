@@ -22,7 +22,6 @@ class CtrlListForm extends CI_Controller{
         $data['title']          =   $this->title;
         $data['page']           =   $this->page;
         $data['category_title'] =   'Configuración del Listado';
-        $data['entidad']        =   array();
 
 
         $oTemplate  =   new $this->template($template_id);
@@ -30,18 +29,22 @@ class CtrlListForm extends CI_Controller{
 
         $template   =   $oTemplate->toArray();
         $oListado->customList($template['entidad']['Tabla'],$template['campos']);
-        //print_r($oListado->get(0));
+
+        $data['entidad']        =   array(
+                    'nombre'    =>  $template['nombre'],
+                    'entidad'   =>  array(
+                        'nombre'    =>  $template['entidad']['Nombre']
+            )
+        );
+
         for($i=0; $i < $oListado->count(); $i++){
             foreach($template['campos'] as $campo){
                 if($campo['tipo'] == 1){
                     $xcampo = $campo['nombre'];
-                    $data['entidad']['lista'][] =   array(
-                        $xcampo    => $oListado->get($i)->getProperty($xcampo)
-                    );
+                    $data['entidad']['lista'][$i][$xcampo] =$oListado->get($i)->getProperty($xcampo);
                 }
             }
         }
-
         $data['template']   =   $oTemplate->toArray();
         $this->load->view("backend/ViewListForm",$data);
     }

@@ -30,8 +30,9 @@
                 <?php
                     foreach($val['campos'] as $campo => $val2){
                         echo " | ";
-                        echo $val2;
+                        echo $val2['nombre'];
                     }
+                    echo " | ";
                 ?>
             </td>
             <td>
