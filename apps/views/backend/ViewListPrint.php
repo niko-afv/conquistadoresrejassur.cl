@@ -1429,11 +1429,8 @@
     </style>
 </head>
 <body>
-    <?php
-        $i=0;        
-        $total = ceil(count($integrantes) / 15);
-    ?>
-    <div id="wrapper">
+
+<div id="wrapper">
         <div id="header">
                 <div class="row-header-print">
                     <div class="item-header-print">
@@ -1447,54 +1444,52 @@
 
                 <div class="row-header-print">
                     <div class="item-header-print">
-                        <span class="key">Cantidad de Paginas: </span>  <span class="value"><?php echo $total; ?></span>
+                        <span class="key">Cantidad de Paginas: </span>  <span class="value"><?php //echo $total; ?></span> 
                     </div>
                     
                     <div class="item-header-print">
-                        <span class="key">Cantidad de Registros: </span>  <span class="value"><?php echo $num_rows ?></span>
+                        <span class="key">Cantidad de Registros: </span>  <span class="value"><?php //echo $num_rows ?></span>
                     </div>
                 </div>
         </div> 
         <div id="main">
-            <?php
-                for($x = 1; $x <= $total; $x++){                    
-            ?>            
-                    <div id="content">
 
-                        <table class='table table-hover table-bordered table-condensed'>
-                            <thead>
-                                <tr class="form-title">
-                                    <th>N°</th>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>Unidad</th>
-                                    <th>Edad</th>
-                                    <th>Cargo</th>
-                                    <th>Grado</th>
-                                </tr>
-                            </thead>
-                            <tbody>                            
-                            <?php for($i; $i< count($integrantes); $i++){ ?>
-                                <tr id="<?php echo $integrantes[$i]['rut']; ?>">
-                                    <td><?php echo $i + 1;?></td>
-                                    <td class='name'><?php echo $integrantes[$i]['nombre']; ?></td>
-                                    <td class='lastname'><?php echo $integrantes[$i]['apellido']; ?></td>
-                                    <td><?php echo $integrantes[$i]['unidad']; ?></td>
-                                    <td><?php echo $integrantes[$i]['edad']; ?></td>
-                                    <td><?php echo $integrantes[$i]['cargo']; ?></td>
-                                    <td><?php echo $integrantes[$i]['grado']; ?></td>
-                                </tr>
-                                <?php if($i > 0 && $i % 17 === 0){$i++; break;}?>
-                            <?php }?>
-                            </tbody>
-                        </table>
-                    <div class="clear"></div>
-
-                    </div><!--End Content-->
-                    <div class="paginador">Pagina <?php echo $x;?></div>
+<table class='table table-hover table-bordered table-condensed'>
+    <thead>
+    <tr class="form-title">
+        <td>N°</td>
+        <?php foreach($template['campos'] as $campo){?>
+            <th><?php echo $campo['nombre'];?></th>
+        <?php }?>
+    </tr>
+    </thead>
+    <tbody>
+    <?php $i=0;?>
+    <?php foreach($entidad['lista'] as $item){?>
+        <?php $i++;?>
+        <tr id="">
+            <td><?php echo $i;?></td>
+            <?php foreach($template['campos'] as $campo){?>
+                <td><?php if(isset($item[$campo['nombre']])){ echo $item[$campo['nombre']]; } ?></td> 
             <?php }?>
-            <div class="clear"></div>
-        </div>
+
+            <!--<td>
+                <a href="<?php echo $base_url . '/admin/plantillas_form/modificar/' . $val['id'];?>"><i class='icon-edit'></i></a>
+                &nbsp;
+                <a class="delete-reg" href='<?php echo $base_url . "/admin/plantillas_list/eliminar/" . $val['id']; ?>'><i class='icon-trash'></i></a>
+                &nbsp;
+                <a href='<?php echo $base_url . "/admin/listados_form/cargar/" . $val['id']; ?>'><i class='icon-list'></i></a>
+            </td>-->
+        </tr>
+    <?php }?>
+    </tbody>
+</table>
+
+<div class="clear"></div>
+
+</div>
     </div>
 </body>
 </html>
+
+

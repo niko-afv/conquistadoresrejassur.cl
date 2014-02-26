@@ -59,6 +59,12 @@ class Entidad extends CI_Model{
     public function setTabla($tabla) {
         $this->tabla = $tabla;
     }
-
+    public function toArray(){
+        return array(
+            'Id'        =>  $this->getId(),
+            'Nombre'    =>  $this->getNombre(),
+            'Tabla'     =>  $this->getTabla()
+        );
+    }
 
 }

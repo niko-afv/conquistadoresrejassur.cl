@@ -49,12 +49,24 @@ class CtrlTemplateForm extends CI_Controller{
                 
                 $xcampos = $this->input->post('campos');
                 for($i = 0; $i< count($xcampos); $i++){
-                    $oTemplates->addCampo($xcampos[$i]);
+                    if(strlen(trim($xcampos[$i])) > 0){
+                        $campo = array(
+                            'nombre'    =>  $xcampos[$i],
+                            'tipo'      =>  1
+                        );
+                        $oTemplates->addCampo($campo);
+                    }
                 }
                 if($this->input->post('dCampos')){
                     $xcampos = $this->input->post('dCampos');
                     for($i = 0; $i< count($xcampos); $i++){
-                        $oTemplates->addCampo($xcampos[$i]);
+                        if(strlen(trim($xcampos[$i])) > 0){
+                            $campo = array(
+                                'nombre'    =>  $xcampos[$i],
+                                'tipo'      =>  0
+                            );
+                            $oTemplates->addCampo($campo);
+                        }
                     }
                 }
                 
@@ -113,6 +125,38 @@ class CtrlTemplateForm extends CI_Controller{
             return FALSE;
         }else{
             return TRUE;
+        }
+    }
+
+    public function autocompletar(){
+        unset($this->layout);
+        $this->load->library('utils');
+        $oUtils = new $this->utils();
+
+        if($oUtils->isAjax()){
+            $this->load->model('template');
+            $abuscar = $this->security->xss_clean($this->input->post('info'));
+            $Otemplate = new $this->template();
+            $search = $Otemplate->autocompletar($abuscar);
+
+            $datos = array();
+            $datos['ok'] = TRUE;
+
+            if($search != FALSE){
+                foreach($search as $row){
+                    $datos['campos'][]['nombre'] = $row;
+                }
+            }else{
+                $datos['ok'] = FALSE;
+            }
+
+            $data['type']    =  'json';
+            $data['content']    =  $datos;
+            $this->load->view('ajax',$data);
+
+        }else{
+            $this->session->set_flashdata('error', 'La petición realizada es invalida');
+            redirect('/admin/plantillas_list/');
         }
     }
 }

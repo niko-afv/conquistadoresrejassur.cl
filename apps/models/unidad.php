@@ -133,6 +133,11 @@ class Unidad extends CI_Model{
             }
         }
         return $array;
+   }
+
+    public function getProperty($property){
+        $property = strtolower($property);
+        return $this->$property;
     }
     
 }

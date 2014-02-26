@@ -64,6 +64,35 @@ figure#logo_club img{
     min-height: 150px;
     padding: 10px 0 10px 10px;
 }
+.campos#old{
+    float: left;
+    width: 70%;
+}
+.campos#new{
+    float: left;
+    width: 60%;
+}
+.campos#new input[type='text']{
+    width: 90%;
+}
+
+.campos .form-column.a, .campos .form-column.b{
+    float: left;
+    width: 44%;
+}
+.campos .form-column.a label, .campos .form-column.b input{
+    float: none;
+    display: block;
+}
+.campos .form-column.a{
+    margin-left: 30px;
+}
+.campos .form-column.a label{
+    width: 120px;
+}
+.campos .form-column.b input{
+    margin-bottom: 11px;
+}
 .form-title{
     /*background: #131361;*/
     background: #2F304F;
