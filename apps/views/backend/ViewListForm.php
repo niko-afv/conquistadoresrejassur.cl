@@ -24,7 +24,7 @@
         <tr id="">
             <td><?php echo $i;?></td>
             <?php foreach($template['campos'] as $campo){?>
-                <td><?php if(isset($item[$campo['nombre']])){ echo $item[$campo['nombre']]; }else{ echo "<input type='text' placeholder='Ingrese un valor'/>";} ?></td>
+                <td><?php if(isset($item[$campo['nombre']])){ echo $item[$campo['nombre']]; }else{ echo "<input type='text' placeholder='Ingrese un valor' style='width:110px !important;margin-bottom:0'  />";} ?></td>
             <?php }?>
 
             <!--<td>
@@ -32,10 +32,13 @@
                 &nbsp;
                 <a class="delete-reg" href='<?php echo $base_url . "/admin/plantillas_list/eliminar/" . $val['id']; ?>'><i class='icon-trash'></i></a>
                 &nbsp;
-                <a href='<?php echo $base_url . "/admin/listados_form/" . $val['id']; ?>'><i class='icon-list'></i></a>
+                <a href='<?php echo $base_url . "/admin/listados_form/cargar/" . $val['id']; ?>'><i class='icon-list'></i></a>
             </td>-->
         </tr>
     <?php }?>
-    </tbody>
+    </tbody> 
 </table>
+
+<a title="Descargar a PDF" style="float: right;" href="/admin/listados_form/toPdf/<?php echo $id;?>"><img alt="logo-pdf" src="/images/pdf-download-icon.png" /></a>
+
 <div class="clear"></div>
