@@ -40,7 +40,7 @@ class Listado extends CI_Model{
         $records = $this->db->get('INTEGRANTES');
 
         $this->load->model('Integrante');
-        foreach ($records->result() as $item => $val){
+        foreach ($records->result() as $item => $val){            
             $oIntegrante = new $this->Integrante($val->RUT);
             $this->add($oIntegrante);
         }
@@ -113,7 +113,6 @@ class Listado extends CI_Model{
     }
 
     public function customList($tabla = "", $xcolumnas = array()){
-
         foreach($xcolumnas as $columna => $val){
             if($val['tipo'] == 1){
                 $columnas[] =  strtoupper($val['nombre']);

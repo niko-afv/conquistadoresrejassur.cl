@@ -94,13 +94,10 @@ figure#logo_club img{
     margin-bottom: 11px;
 }
 .form-title{
-    /*background: #131361;*/
     background: #2F304F;
     border-radius: 4px 4px 0 0;
-    /*color: #fff000;*/
-    /*color : rgb(255,241,0);*/
     color : #E1E434;
-    height: 20px;
+    height: 30px;
     font-size: 13px;
     font-weight: bold;
     line-height: 22px;
@@ -119,7 +116,6 @@ figure#logo_club img{
     float: left;
 }
 .form-item input, .form-item select{
-    margin-left: 10px;
     width: 60%;
 }
 .form-item input[type='submit']{
@@ -212,9 +208,18 @@ figure#logo_club img{
 
 
 
-optgroup.titulo{
+/*optgroup.titulo{
     color: #333333;
     font-size: 15px;
     text-align: center;
     text-decoration: underline;
+}*/
+.input-group{
+    width: 60%;
+}
+a.chosen-single{
+    height: 30px !important;
+}
+.chosen-container{
+    width: 70%;
 }

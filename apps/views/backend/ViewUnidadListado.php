@@ -23,9 +23,9 @@
             <td><?php //echo $val['integrantes']; ?></td>
             <td><?php echo $estado; ?></td>
             <td>
-                <a href="<?php echo $base_url . '/admin/unidades_form/modificar/' . $val['id'];?>"><i class='icon-edit'></i></a>
+                <a href="<?php echo $base_url . '/admin/unidades_form/modificar/' . $val['id'];?>"><i class='glyphicon glyphicon-edit'></i></a>
                 &nbsp;
-                <a class="delete-unidad" href='<?php echo $base_url . "/admin/unidades_list/eliminar/" . $val['id']; ?>'><i class='icon-trash'></i></a>
+                <a class="delete-unidad" href='<?php echo $base_url . "/admin/unidades_list/eliminar/" . $val['id']; ?>'><i class='glyphicon glyphicon-trash'></i></a>
 
             </td>
         </tr>

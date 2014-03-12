@@ -41,54 +41,12 @@
         <?php foreach($cuentas['ingresos'] as $item => $val){$o++ ?>
         <tr id="ventas">
             <td>
-                <table style="width: 100%">
-                    <thead>
-                        <?php if($o==1){?>
-                        <tr>
-                            <th><h5>Ingresos</h5></th>
-                        </tr>
-                        <?php }?>
-                        <tr>
-                            <th><?php echo $val['nombre'];?></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach($val['subCategorias'] as $item2 => $val2){?>                        
-                        <tr>
-                            <td><?php echo $val2['nombre'];?></td>                            
-                        </tr>
-                        <?php }?>
-                    </tbody>
-                </table>
+                <?php echo $val['nombre'];?>
             </td>
             <?php for($i = 0; $i <= 5; $i++){?>
             <?php $totalIngresos[$i] += $val['total'][date("Y-m", strtotime($fecha." +$i month"))]?>
             <td>
-                <table style="width: 100%">
-                    <thead>
-                        <?php if($o==1){?>
-                        <tr>
-                            <th><h5>&nbsp;</h5></th>
-                        </tr>
-                        <?php }?>
-                        <tr>
-                            <th>
-                                Total $<?php echo $val['total'][date("Y-m", strtotime($fecha." +$i month"))];?>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach($val['subCategorias'] as $item2 => $val2){?>
-                            <tr>
-                            <?php if(isset($val2['periodos'][date("Y-m", strtotime($fecha." +$i month"))])){ ?>
-                                <td>$ <?php echo $val2['periodos'][date("Y-m", strtotime($fecha." +$i month"))]['montos'];?></td>
-                            <?php }else{?>
-                                <td>$ 0  </td>
-                            <?php }?>
-                            </tr>
-                        <?php }?>
-                    </tbody>
-                </table>
+                Total $<?php echo $val['total'][date("Y-m", strtotime($fecha." +$i month"))];?>
             </td>
             <?php }?>
         </tr>
@@ -111,54 +69,12 @@
         <?php foreach($cuentas['egresos'] as $item => $val){$o++ ?>
         <tr id="ventas">
             <td>
-                <table style="width: 100%">
-                    <thead>
-                        <?php if($o==1){?>
-                        <tr>
-                            <th><h5>Egresos</h5></th>
-                        </tr>
-                        <?php }?>
-                        <tr>
-                            <th><?php echo $val['nombre'];?></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach($val['subCategorias'] as $item2 => $val2){?>                        
-                        <tr>
-                            <td><?php echo $val2['nombre'];?></td>                            
-                        </tr>
-                        <?php }?>
-                    </tbody>
-                </table>
+                <?php echo $val['nombre'];?>
             </td>
             <?php for($i = 0; $i <= 5; $i++){?>
             <?php $totalEgresos[$i] += $val['total'][date("Y-m", strtotime($fecha." +$i month"))]?>
             <td>
-                <table style="width: 100%">
-                    <thead>
-                        <?php if($o==1){?>
-                        <tr>
-                            <th><h5>&nbsp;</h5></th>
-                        </tr>
-                        <?php }?>
-                        <tr>
-                            <th>
-                                Total $<?php echo $val['total'][date("Y-m", strtotime($fecha." +$i month"))];?>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach($val['subCategorias'] as $item2 => $val2){?>
-                            <tr>
-                            <?php if(isset($val2['periodos'][date("Y-m", strtotime($fecha." +$i month"))])){ ?>
-                                <td>$ <?php echo $val2['periodos'][date("Y-m", strtotime($fecha." +$i month"))]['montos'];?></td>
-                            <?php }else{?>
-                                <td>$ 0  </td>
-                            <?php }?>
-                            </tr>
-                        <?php }?>
-                    </tbody>
-                </table>
+                Total $<?php echo $val['total'][date("Y-m", strtotime($fecha." +$i month"))];?>
             </td>
             <?php }?>
         </tr>

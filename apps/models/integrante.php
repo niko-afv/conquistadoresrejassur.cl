@@ -20,7 +20,7 @@ class Integrante extends CI_Model{
     private $telefono           = '';
     private $telefono_auxiliar  = '';
     private $direccion          = '';
-    private $mail               = '';
+    private $email               = '';
     private $foto               = '';
     private $rango              = '';
     private $cargo              = '';

@@ -12,7 +12,7 @@ class CtrlListForm extends CI_Controller{
         $this->title = 'Listados';
         $this->layout = array('base'=>'main','meta','header','sidebar','footer');
         $this->session->loginState('userBo_session');
-        $this->page = 'Listados';
+        $this->page = 'plantillas';
     }
     public function cargar($template_id = NULL){
         
@@ -48,9 +48,10 @@ class CtrlListForm extends CI_Controller{
                 if($campo['tipo'] == 1){
                     $xcampo = $campo['nombre'];
                     $data['entidad']['lista'][$i][$xcampo] =$oListado->get($i)->getProperty($xcampo);
+                    
                 }
             }
-        }
+        }       
         
         $data['template']   =   $oTemplate->toArray();
         $data['id']         =   $template_id; 

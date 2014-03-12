@@ -3,11 +3,13 @@
 </figure>
 
 <div id="tools">
-  <div id="link">
-  <strong><?php echo $this->session->userdata("userBo_nombre"); ?></strong>
-  &bull; <a href="/bo/home" >Escritorio</a> 
-  &bull; <a href="/" target="_blank">Ver sitio web</a> 
-  &bull; <a href="<?php echo base_url();?>admin/logout">Cerrar Sesión</a></div>
+  <div id="link">      
+      <a class="glyphicon glyphicon-user" href="javascript:void(0);" title="Usuario: <?php echo $this->session->userdata("userBo_nombre"); ?>"></a>
+    <a class='glyphicon glyphicon-dashboard' title="Dashboard" href="/bo/home"></a> 
+    <a class="glyphicon glyphicon-fullscreen" href="/" target="_blank" title="Ver sitio web"></a> 
+    <a class='glyphicon glyphicon-off' href="<?php echo base_url();?>admin/logout" title="Cerrar Sesion"></a>
+  </div>
+    
   <div id="relog"></div>
 </div>
 <a id="header-pin" href="javascript:;">pinh</a>

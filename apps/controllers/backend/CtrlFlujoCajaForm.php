@@ -28,7 +28,7 @@ class CtrlFlujoCajaForm extends CI_Controller{
         $data['category_title'] =   'Flujo de Caja';
         $data['page']           =   'tesoreria';
 
-        $this->load->model('listado');
+        /*$this->load->model('listado');
         $oListado = new $this->listado();
 
         $oListado->listarCuentas(1);
@@ -46,7 +46,7 @@ class CtrlFlujoCajaForm extends CI_Controller{
             $array2[$i] = $oListado->get($i)->toArray();
         }
         $data['cuentas']['egresos'] = $array2;
-        unset($array);
+        unset($array);*/
         
         
         if($_POST){
@@ -74,6 +74,29 @@ class CtrlFlujoCajaForm extends CI_Controller{
         }
 
         $this->load->view('backend/ViewFlujoCajaForm',$data);
+    }
+    
+    public function getCuentas(){
+        unset($this->layout);
+        $this->load->model('listado');
+        $oListado = new $this->listado();
+        
+        $value = $this->input->get('selected');
+        
+        $oListado->listarCuentas($value);
+        $array  =   array();
+        for($i = 0; $i < $oListado->count(); $i++){
+            $array[$i] = $oListado->get($i)->toArray();
+        }
+        $data['cuentas'] = $array;
+        $oListado->limpiar();
+        unset($array);
+        
+        $data = array(
+            'content'   => $data,
+            'type'      => 'json'
+            );
+        $this->load->view('ajax',$data);
     }
 }
 ?>
