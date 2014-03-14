@@ -15,12 +15,7 @@ class Listado extends CI_Model{
     private $lista;
     
     
-    public function __construct($tipox = NULL) {
-        
-        //$res = $this->db->get('UNIDADES');
-        //print_r($res->result());
-        //exit;
-        
+    public function __construct($tipox = NULL) {        
         parent::__construct();
         $this->lista = new ArrayObject();
         switch ($tipox){

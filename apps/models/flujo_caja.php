@@ -69,7 +69,7 @@ class Flujo_Caja extends CI_Model{
             $array['ID'] = $this->getId();
             $array['DESCRIPCION'] = $this->getDescripcion();
             $array['MONTO'] = $this->getMonto();
-            //$array['FECHA'] = $this->getFecha();
+            $array['FECHA'] = $this->getFecha();
             $array['FLUJO_CAJA_CATEGORIA_ID'] = $this->getSubCategoria();
         }else{
             $array['id'] = $this->getId();

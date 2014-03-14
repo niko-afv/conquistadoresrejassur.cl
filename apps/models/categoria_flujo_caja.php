@@ -44,14 +44,14 @@ class Categoria_Flujo_Caja extends CI_Model{
                 
                 foreach($res2->result() as $item => $val2){
                     $oSubCategoria = new $this->sub_categoria_flujo_caja();
-                    $oSubCategoria->setId($val2->ID);                    
+                    $oSubCategoria->setId($val2->ID);
                     $this->addSubCategoria($oSubCategoria);
                 }
                 $this->calculaTotal();
             }
         }
-        
     }
+    
     public function setNombre($val){$this->nombre = $val;}
     public function setTipo($val){$this->tipo = $val;}
     public function getId(){return $this->id;}
@@ -74,12 +74,12 @@ class Categoria_Flujo_Caja extends CI_Model{
     
     private function calculaTotal(){
         $fecha = date('Y-m',strtotime(date('Y-m')." -5 month"));
+        $monto = array();
         
         for($x = 0; $x <= 5; $x++){
             $xfecha = date('Y-m',strtotime($fecha." +$x month"));
-            $monto[$xfecha]  = 0;
-        }        
-
+            $monto[$xfecha]  = 0;   
+        }
         for($i=0; $i < $this->countSubCategorias(); $i++){
             foreach($this->getSubCategoria($i)->getPeriodos() as $item => $val){
                 $monto[$item] += $val['montos'];                

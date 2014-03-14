@@ -36,9 +36,7 @@ class CtrlFlujoCajaList extends CI_Controller{
         }
         $data['hasta']          = $ms*1-1;
         $data['fecha']          = date('Y-m',strtotime(date('Y-m')." -5 month"));
-        $meses          = array(
-                        'Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio',
-                        'Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+        $meses                  = $this->getMeses();
 
         $this->load->model('listado');
         $oListado = new $this->listado();
@@ -48,12 +46,13 @@ class CtrlFlujoCajaList extends CI_Controller{
         for($i = 0; $i < $oListado->count(); $i++){
             $array[$i] = $oListado->get($i)->toArray();
         }
-        //print_r($array[1]['total']);
+        
+        
+        
         foreach($array[1]['total'] as $item => $row){
             $fec =  explode("-",$item);
             $data['meses'][] = array('numero' => $fec[1], 'palabras' => $meses[round($fec[1])-1]);
         }
-
 
         $data['cuentas']['ingresos'] = $array;
         $oListado->limpiar();
@@ -179,7 +178,6 @@ class CtrlFlujoCajaList extends CI_Controller{
         header('Content-Length: '.strlen($body));
         header('Content-Disposition: attachment; filename="FlujoDeCaja.pdf"');
         echo $body;
-        //echo $buffer;
     }
     
     function ParseHeader($header=''){
@@ -191,6 +189,56 @@ class CtrlFlujoCajaList extends CI_Controller{
 	$resArr = array_merge($resArr, array($tmpArr[0] => count($tmpArr) < 2 ? "" : $tmpArr[1]));
 	}
 	return $resArr;
+        }
+        
+        
+        
+        
+        
+        
+        public function subCatList($idCat = NULL){
+            unset($this->layout);            
+
+            $ms                     = date('m');
+            if($ms - 7 ){
+                $data['desde']      = 12 - 6 + $ms;
+            }else{
+                $data['desde']          = $ms*1-6;
+            }
+            $data['hasta']          = $ms*1-1;
+            $data['fecha']          = date('Y-m',strtotime(date('Y-m')." -5 month"));
+            $meses          = $this->getMeses();
+            
+            $idCat = ($idCat == NULL)?$this->input->post('id_cat'):$idCat;
+
+            $this->load->model('categoria_flujo_caja');
+            $oFlujoCat = new $this->categoria_flujo_caja();
+            $oFlujoCat->setId($idCat);
+
+            
+            $array  =   array();
+            for($i = 0; $i < $oFlujoCat->countSubCategorias(); $i++){
+                $array[$i] = $oFlujoCat->getSubCategoria($i)->toArray();
+            }
+            
+            foreach($array[0]['periodos'] as $item => $row){
+                $fec =  explode("-",$item);
+                $data['meses'][] = array('numero' => $fec[1], 'palabras' => $meses[round($fec[1])-1]);
+            }
+            
+            $data['nomCuentaPadre'] = $oFlujoCat->getNombre();
+            $data['cuentas']['ingresos'] = $array;
+            unset($array);
+
+            $this->load->view('backend/_ViewFlujoCajaSubCatList',$data);
+        }
+        
+        
+        private function getMeses(){
+            return array(
+                'Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio',
+                'Agosto','Septiembre','Octubre','Noviembre','Diciembre'
+            );
         }
 }
 ?>

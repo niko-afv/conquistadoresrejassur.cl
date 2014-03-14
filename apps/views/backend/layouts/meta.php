@@ -21,6 +21,11 @@
 <!--Chosen-->
 <script src="http://harvesthq.github.io/chosen/chosen.jquery.js" type="text/javascript"></script>
 <link href="http://harvesthq.github.io/chosen/chosen.css" rel="stylesheet" type="text/css"   />
+<!--Bootstrap DatePicker-->
+<script src="<?php echo base_url();?>/vendors/bootstrap-datepicker-master/js/bootstrap-datepicker.js"></script>
+<link href="<?php echo base_url();?>/vendors/bootstrap-datepicker-master/css/datepicker.css" rel="stylesheet"   />
+
+
 
 
 <script type="text/javascript">

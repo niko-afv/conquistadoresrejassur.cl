@@ -1,4 +1,4 @@
-/* 
+e/* 
     Document   : bo2
     Created on : 10-feb-2013, 2:06:43
     Author     : nks
@@ -18,12 +18,14 @@ figure#logo_club img{
 .error{
     background: none repeat scroll 0 0 #FBE3E4;
     border: 1px solid #FBC2C4;
+    border-radius: 0 0 30px 30px;
     color: #8A1F11;
+    line-height: 20px;
     min-height: 15px;
     margin-left: 30%;
-    padding:2px 0;
+    margin-top: 5px;
+    padding:2px 15px 10px;
     text-align: center;
-    text-indent: 5px;
     width: 60%;
 }
 .bo-form{
@@ -214,7 +216,7 @@ figure#logo_club img{
     text-align: center;
     text-decoration: underline;
 }*/
-.input-group{
+.input-group-form{
     width: 60%;
 }
 a.chosen-single{

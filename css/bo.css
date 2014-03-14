@@ -40,6 +40,9 @@ table tr td {
 	text-align:left;
 	padding:1px 0;
 }
+table tr td.link{
+    cursor: pointer;
+}
 
 .input{
 	width: 55% !important;
