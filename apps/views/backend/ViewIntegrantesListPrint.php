@@ -1397,7 +1397,8 @@
         }
         .row-header-print{
             display: block;
-            width: 100%;
+            margin: 0 auto;
+            width: 80%;
         }
         .row-header-print-right{
             float: right;
@@ -1413,12 +1414,12 @@
         #content{
             background: url(/images/logo-completo-opac.png) no-repeat 285px 80px;
             width: 100% !important;            
-            margin-top: 10px !important;
+            margin-top: 100px !important;
        }
        .paginador{
            bottom: 0;
            left: 45%;
-           page-break-after: always;
+           page-break-after: auto;
            position: absolute;
            width: 80px;
        }
@@ -1426,36 +1427,52 @@
             margin: 20px auto;
             width: 93%;
         }
+        
+        #header, #footer {
+            position: fixed;
+            left: 0;
+            right: 0;
+        }
+
+        #header {
+            top: 0;
+            border-bottom: 0.1pt solid #aaa;
+        }
+
+        #footer {
+            bottom: 0;
+        }
     </style>
 </head>
-<body>
+<body>    
     <?php
         $i=0;        
         $total = ceil(count($integrantes) / 15);
     ?>
+    <div id="header">
+        <div class="row-header-print">
+            <div class="item-header-print">
+                <span class="key">Nombre Informe: </span>  <span class="value"><?php echo $category_title ?></span>
+            </div>
+
+            <div class="item-header-print">
+                <span class="key">Fecha Impresión: </span>  <span class="value"><?php echo date("d - M - Y"); ?></span>
+            </div>
+        </div>
+
+        <div class="row-header-print">
+            <div class="item-header-print">
+                <span class="key">Cantidad de Paginas: </span>  <span class="value"><?php echo $total; ?></span>
+            </div>
+
+            <div class="item-header-print">
+                <span class="key">Cantidad de Registros: </span>  <span class="value"><?php echo $num_rows ?></span>
+            </div>
+        </div>
+    </div> 
+    
     <div id="wrapper">
-        <div id="header">
-                <div class="row-header-print">
-                    <div class="item-header-print">
-                        <span class="key">Nombre Informe: </span>  <span class="value"><?php echo $category_title ?></span>
-                    </div>
-
-                    <div class="item-header-print">
-                        <span class="key">Fecha Impresión: </span>  <span class="value"><?php echo date("d - M - Y"); ?></span>
-                    </div>
-                </div>
-
-                <div class="row-header-print">
-                    <div class="item-header-print">
-                        <span class="key">Cantidad de Paginas: </span>  <span class="value"><?php echo $total; ?></span>
-                    </div>
-                    
-                    <div class="item-header-print">
-                        <span class="key">Cantidad de Registros: </span>  <span class="value"><?php echo $num_rows ?></span>
-                    </div>
-                </div>
-        </div> 
-        <div id="main">
+        <div id="main" id="content">
             <?php
                 for($x = 1; $x <= $total; $x++){                    
             ?>            
