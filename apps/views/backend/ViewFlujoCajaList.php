@@ -23,6 +23,10 @@
         0 => 0,1 => 0,2 => 0,
         3 => 0,4 => 0,5 => 0
     );
+    
+    function format($amount){
+        return number_format($amount,0,',','.');
+    }
 ?>
 
 <div id="dinamic-table">
@@ -55,7 +59,7 @@
             <?php for($i = 0; $i <= 5; $i++){?>
             <?php $totalIngresos[$i] += $val['total'][date("Y-m", strtotime($fecha." +$i month"))]?>
             <td>
-                Total $<?php echo $val['total'][date("Y-m", strtotime($fecha." +$i month"))];?>
+                Total $ <?php echo format($val['total'][date("Y-m", strtotime($fecha." +$i month"))]);?>
             </td>
             <?php }?>
             
@@ -69,7 +73,7 @@
             <td><h6><a href="javascript:void(0)">Total Ingresos Por Mes</a></h6></td>
             <?php foreach($totalIngresos as $item){?>
             <td>
-                <h6><a href="javascript:void(0)">$<?php echo $item;?></a></h6>
+                <h6><a class="total-amount" href="javascript:void(0)">$ <?php echo format($item);?></a></h6>
             </td>
             <?php }?>
         </tr>
@@ -94,7 +98,7 @@
             <?php for($i = 0; $i <= 5; $i++){?>
             <?php $totalEgresos[$i] += $val['total'][date("Y-m", strtotime($fecha." +$i month"))]?>
             <td>
-                Total $<?php echo $val['total'][date("Y-m", strtotime($fecha." +$i month"))];?>
+                Total $ <?php echo format($val['total'][date("Y-m", strtotime($fecha." +$i month"))]);?>
             </td>
             <?php }?>
             
@@ -108,7 +112,7 @@
             <td><h6><a href="javascript:void(0)">Total Egresos Por Mes</a></h6></td>
             <?php foreach($totalEgresos as $item){?>
             <td>
-                <h6><a href="">$<?php echo $item;?></a></h6>
+                <h6><a class="total-amount" href="">$ <?php echo format($item);?></a></h6>
             </td>
             <?php }?>
         </tr>
