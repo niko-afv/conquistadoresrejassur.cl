@@ -61,6 +61,7 @@ textarea {
 	border: 1px solid #CCC;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	resize : none;
+        width: 60% !important;
 }
 
 .radio{

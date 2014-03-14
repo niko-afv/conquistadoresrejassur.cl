@@ -37,6 +37,7 @@ $(document).ready(function(){
     });
 });
 </script>
+
 <div class="row-fluid">
     <div id="error2" class="hidden alert alert-error">
         <!--<span><i class='icon-remove-sign'></i></span>-->

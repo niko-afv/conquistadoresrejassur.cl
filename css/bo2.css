@@ -80,7 +80,7 @@ figure#logo_club img{
 
 .campos .form-column.a, .campos .form-column.b{
     float: left;
-    width: 44%;
+    width: 30%;
 }
 .campos .form-column.a label, .campos .form-column.b input{
     float: none;
@@ -208,6 +208,9 @@ figure#logo_club img{
     text-align: center;
 }
 
+.row-check .form-column.a label{
+    margin-top: 25px;
+}
 
 
 /*optgroup.titulo{

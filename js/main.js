@@ -54,6 +54,9 @@ function agregarIntegrante(rut, unidad_id,anterior_id){
 /*DOCUMENT READY*/
 $(function(){
     
+    $("select").chosen(function(){disable_search_threshold: 10});
+    
+    
     if($("input[name='edad']").val() > 15 || $("input[name='edad']").val() === ""){
         $("#apoderado-form").hide();
     }else{

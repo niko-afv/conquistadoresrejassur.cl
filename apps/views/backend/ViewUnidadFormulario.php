@@ -3,7 +3,7 @@
         <span><i class='icon-remove-sign'></i></span>
         <div></diV>
     </div>
-    <?php //print_r($unidad);?>
+
     <form action="/admin/unidades_form/" method="POST">
 
         <input type="hidden" name="id" value="<?php if($unidad['id'] != ''){echo $unidad['id'];}?>"  />
@@ -25,7 +25,7 @@
                         <span style="position: relative; float: left;" class="im span12">
                         <a class="delete" onclick="deleteImage('imgUnidad-img1');">del</a>
                         <img src="<?php echo $base_url.$unidad['trayectoria'][0]['foto']?>" width="460" height="816">
-                        <input type="hidden" id="imgUnidad-img1" name="imgUnidad-img1" value="<?=$unidad['trayectoria'][0]['foto']?>"  />
+                        <input class="form-control" type="hidden" id="imgUnidad-img1" name="imgUnidad-img1" value="<?=$unidad['trayectoria'][0]['foto']?>"  />
                     </span>
                     <?php }else{?>
                         <input type="hidden" id="imgUnidad-img1" name="imgUnidad-img1" value=""  />
@@ -43,19 +43,19 @@
 
             <div class="form-item">
                 <label>Nombre</label>
-                <input type="text" name="nombre" value="<?php if($unidad['nombre'] != ''){echo $unidad['nombre'];} else { echo set_value('nombre');} ?>"  />
+                <input class="form-control" type="text" name="nombre" value="<?php if($unidad['nombre'] != ''){echo $unidad['nombre'];} else { echo set_value('nombre');} ?>"  />
                 <?php echo form_error('nombre');?>
             </div>
 
             <div class="form-item">
                 <label>Grito</label>
-                <textarea name="grito"><?php if($unidad['trayectoria'][0]['grito'] != ''){echo $unidad['trayectoria'][0]['grito'];} else { echo set_value('grito');} ?></textarea>
+                <textarea class="form-control" name="grito"><?php if($unidad['trayectoria'][0]['grito'] != ''){echo $unidad['trayectoria'][0]['grito'];} else { echo set_value('grito');} ?></textarea>
                 <?php echo form_error('grito');?>
             </div>
 
             <div class="form-item">
                 <label>Fundado</label>
-                <input type="text" name="fundado" value="<?php if($unidad['fundado'] != ''){echo $unidad['fundado'];} else { echo set_value('fundado');} ?>"  />
+                <input class="form-control" type="text" name="fundado" value="<?php if($unidad['fundado'] != ''){echo $unidad['fundado'];} else { echo set_value('fundado');} ?>"  />
                 <?php echo form_error('fundado');?>
             </div>
 
