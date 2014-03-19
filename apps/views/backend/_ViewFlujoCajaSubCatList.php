@@ -76,7 +76,7 @@
     </thead>
     <tbody>
         <tr>
-            <td colspan="7" style="text-align: center;">
+            <td colspan="9" style="text-align: center;">
                 <h4><?php echo $nomCuentaPadre;?></h4>
             </td>
         </tr>

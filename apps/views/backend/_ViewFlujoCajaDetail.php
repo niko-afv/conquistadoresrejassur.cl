@@ -8,7 +8,7 @@
         }
         result = number + result;
         return result;
-        };
+    };
     
     $(document).ready(function(){
         
@@ -56,11 +56,15 @@
 
 <h4><?php echo $nomCuenta;?></h4>
 
-<div style="width: 500px;">
+
+<?php if(count($movimientos) > 0){?>
+
+<?php foreach($movimientos as $meses => $mes){ ?>
+<div style="width: 500px; float: left; margin-right: 10px;">
     <table class='table table-hover table-bordered table-condensed'>
         <thead>
             <tr>
-                <th >Mes 1</th>
+                <th class="center" colspan="3"><?php echo $meses?></th>
             </tr>
             <tr class="form-title">
                 <th>Fecha</th>
@@ -69,7 +73,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach($movimientos as $item => $val){ ?>
+            <?php foreach($mes as $item => $val){ ?>
                 <tr id="<?php echo $val['id'];?>">
                     <td>
                         <?php echo $val['fecha'];?>
@@ -87,5 +91,11 @@
         </tbody>
     </table>
 </div>
+<?php }?>
+
+<?php }else{?>
+<p class="bg-danger msg center">No Hay Movimientos para esta cuenta</p>
+<?php }?>
+
 
 <div class="clear"></div>

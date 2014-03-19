@@ -251,22 +251,24 @@ class CtrlFlujoCajaList extends CI_Controller{
             }
             $data['hasta']          = $ms*1-1;
             $data['fecha']          = date('Y-m',strtotime(date('Y-m')." -5 month"));
-            $meses          = $this->getMeses();
+            $meses                  = $this->getMeses();
             
             $idCat = ($idCat == NULL)?$this->input->post('id_cat'):$idCat;
 
             $this->load->model('sub_categoria_flujo_caja');
             $oFlujoCat = new $this->sub_categoria_flujo_caja();
-            $oFlujoCat->setId($idCat);            
+            $oFlujoCat->setId($idCat);
             
             $array  =   array();
-            for($i = 0; $i < $oFlujoCat->countFlujos(); $i++){
-                $array[$i] = $oFlujoCat->getFlujo($i)->toArray();
-            }
-            
-            foreach($array as $item => $row){
-                $fec = explode("-",$row['fecha']);
-                $data['meses'][] = array('numero' => $fec[1], 'palabras' => $meses[round($fec[1])-1]);
+            for($x = 0; $x < 12; $x++){
+                for($i = 0; $i < $oFlujoCat->countFlujos(); $i++){
+                    $flujo = $oFlujoCat->getFlujo($i)->toArray();
+                    $fecha = explode("-",$flujo['fecha']);
+                    
+                    if(($fecha[1] * 1) == $x){
+                        $array[$meses[($fecha[1]*1-1)]][$i] = $oFlujoCat->getFlujo($i)->toArray();
+                    }
+                }
             }
             
             $data['nomCuenta'] = $oFlujoCat->getNombre();

@@ -30,7 +30,7 @@ $(document).ready(function(){
                     html += "</option>";
                 }
                 html += "</optgroup>";
-            }            
+            }
             $("select[name='cuenta']").append(html);
             $("select[name='cuenta']").trigger("chosen:updated");
         })

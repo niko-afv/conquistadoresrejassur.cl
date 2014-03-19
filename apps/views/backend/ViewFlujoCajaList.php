@@ -46,7 +46,7 @@
     </thead>
     <tbody>
         <tr>
-            <td colspan="7" style="text-align: center;">
+            <td colspan="8" style="text-align: center;">
                 <h4>INGRESOS</h4>
             </td>
         </tr>
@@ -81,7 +81,7 @@
         
         
         <tr>
-            <td colspan="7" style="text-align: center;">
+            <td colspan="8" style="text-align: center;">
                 <h4>EGRESOS</h4>
             </td>
         </tr>

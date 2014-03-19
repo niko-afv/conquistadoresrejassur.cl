@@ -126,6 +126,15 @@ figure#logo_club img{
 .hiddenx{
     display: none;
 }
+.center{
+    text-align: center;
+}
+
+.msg{
+    color: 666;
+    width: auto;
+    padding: 10px;    
+}
 
 #apoderado-form{
     float: left;
