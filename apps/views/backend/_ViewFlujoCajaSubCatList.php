@@ -28,7 +28,6 @@
         
         $(".txc").each(function(){
             $("#temp").val(0);
-            
             $(this).parent().find(".amount").each(function(){
                 var valor2 = parseInt($("#temp").val());
                 var valor1 = parseFloat($(this).attr("id"));
@@ -41,6 +40,19 @@
             }else{
                 $(this).html(total);
             }
+        });
+        
+        $("#content").on('click','.flow-detail', function(){
+            var $dinamic_table = $("#dinamic-table");
+            
+            $dinamic_table.fadeOut("slow");
+            
+            var url = "http://devel.conquistadoresrejassur.cl/admin/flujo_caja/subCatDetailList/";
+            var id = $(this).parent().parent().attr("id");
+            
+            $dinamic_table.load(url,{id_cat : id}, function(data){
+                $dinamic_table.fadeIn("slow");
+            })
         });
         
     });
@@ -59,6 +71,7 @@
                 <?php }
             ?>
                 <th>Total P/Cuenta</th>
+                <th>Ir al Detalle</th>
         </tr>
     </thead>
     <tbody>
@@ -85,6 +98,11 @@
             <?php }?>
             
             <td class="txc"></td>
+            
+            <!--Acciones-->
+            <td>
+                <a href="javascript:void(0);" class='glyphicon glyphicon-list flow-detail'></a>
+            </td>
         </tr>
         <?php }?>
         <tr>
@@ -98,6 +116,11 @@
             
             <td class="txc">
                 <h6><a class="total-amount" href="javascript:void(0);"></a></h6>
+            </td>
+            
+            <!--Acciones-->
+            <td>
+                <a href="javascript:void(0);" class='glyphicon glyphicon-list link-subcat'></a>
             </td>
         </tr>
         

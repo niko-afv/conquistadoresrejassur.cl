@@ -7,6 +7,7 @@
             
             var url = "http://devel.conquistadoresrejassur.cl/admin/flujo_caja/subCatList/";
             var id = $(this).parent().parent().attr("id");
+            
             $dinamic_table.load(url,{id_cat : id}, function(data){
                 $dinamic_table.fadeIn("slow");
             })
@@ -91,7 +92,7 @@
 
         <?php $o = 0;?>
         <?php foreach($cuentas['egresos'] as $item => $val){$o++ ?>
-        <tr class="link-subcat" id="<?php echo $val['id'];?>">
+        <tr id="<?php echo $val['id'];?>">
             <td class="link">
                 <?php echo $val['nombre'];?>
             </td>
