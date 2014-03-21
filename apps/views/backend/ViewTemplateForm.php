@@ -21,17 +21,30 @@
             
             $.post(url, {'entidad':entidad}, function(data){
                 var obj = JSON.parse(data);
-                var html1 = "<div class='form-column a'>";
-                var html2 = "<div class='form-column b'>";
+                var html0 = "";
+                var html1 = "";
+                var html2 = "";
 
                 for(var i = 0; i< obj.length; i++){
+                    html1 += "<div class='row-check'>";
+                    html1 += "<div class='form-column a'>";
+                    html1 += "<label>"+obj[i]+"</label>";
+                    html1 += "</div>";
+                    html1 += "<div class='form-column b'>";
+                    html1 += "<fieldset>";
+                    html1 += "<input type='checkbox' name='campos[]' id='"+i+"' value='"+obj[i]+"' />"
                     html1 += "<label for='"+i+"'>"+obj[i]+"</label>";
-                    html2 += "<input type='checkbox' name='campos[]' id='"+i+"' value='"+obj[i]+"' />";
+                    html1 += "</fieldset>";
+                    //html2 += "<input class='form-inline' type='checkbox' name='campos[]' id='"+i+"' value='"+obj[i]+"' />";
+                    
+                    html1 += "</div>";
+                    html1 += "</div>";
                 }
-                html1 += "</div>";
-                html2 += "</div>";
+                
                 $("#step2 .campos#old").fadeOut(200, function(){
                     $("#step2 .campos#old").html(html1+html2);
+                    //$("#step2 .campos#old").html(html);
+                    $("input[type=radio], input[type=checkbox]").picker({toggle: true});
                     $(this).fadeIn(200, function(){
                         $("#step2").fadeIn(1000);
                     });
@@ -51,8 +64,9 @@
                     $(this).parent().addClass('static');
                     var nCampos = $(".campos#new");
                     var num = $(".autocompletar").length +1;
+                    console.log("NUm: "+ num);
                     html = "<div class='dynamic'>";
-                    html += "<input id='campo_"+num+"' class='autocompletar' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' autocomplete='off' maxlength='20'  />";
+                    html += "<input class='form-control autocompletar' id='campo_"+num+"' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' autocomplete='off' maxlength='20'  />";
                     html += "<div class='dropdown'>";
                     html += "<ul class='dropdown-menu' role='menu' aria-labelledby='dropdownMenu'>";
                     html += "<li class='title-li'>Algunos Sugerencias</li>";
@@ -80,6 +94,8 @@
             if(verificarTecla(event.which) || event.which === 8){
                 var info = $(this).val();
                 var id = $(this).attr('id');
+                /*console.log("id: "+ id);
+                console.log("idvalor: "+ info);*/
                 if(info.length > 0){
                     var url     =   "/admin/plantillas_form/autocompletar/";
                     $.post(url,{ info : info, id : id }, function(data){
@@ -89,8 +105,6 @@
                         $(".auto").remove();
                         data = JSON.parse(data);
                         if(data.ok){
-                            //console.log(id);
-                            //console.log("valor es: "+$("#campo_"+id+"").parent().attr('class'));
                             dropdown.addClass('visible');
                             for(var i = 0; i < data.campos.length; i++){
                                 dropdown.append("<li class='auto'><a>"+data.campos[i].nombre+"</a>");
@@ -170,14 +184,14 @@
 
             <div class="form-item">
                 <label>Nombre</label>
-                <input type="text" name="nombre" value="<?php if($template['nombre'] != ''){echo $template['nombre'];} else { echo set_value('nombre');} ?>"  />
+                <input class="form-control" type="text" name="nombre" value="<?php if($template['nombre'] != ''){echo $template['nombre'];} else { echo set_value('nombre');} ?>"  />
                 <?php echo form_error('nombre');?>
             </div>
 
             <div class="form-item">
                 <label>Entidad</label>
 
-                <select name="entidad">
+                <select class="form-control" name="entidad">
                     <option value="0">Seleccione Entidad</option>
                     <?php foreach ($entidades as $item => $val){?>
                     <option value="<?=$val['id'];?>" <?php if($val['id']==$template['entidad'] || $val['id'] == set_value('nombre')){echo 'selected';}?> ><?=$val['nombre'];?></option>
@@ -209,7 +223,7 @@
                 
                 <div class="campos" id="new">
                     <div class="dynamic">
-                        <input id="campo_1" class='autocompletar' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' maxlength='20' autocomplete="off"  />
+                        <input class="form-control autocompletar" id="campo_1" type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' maxlength='20' autocomplete="off"  />
                         <div class="dropdown">
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                                 <li class="title-li">Algunos Sugerencias</li>

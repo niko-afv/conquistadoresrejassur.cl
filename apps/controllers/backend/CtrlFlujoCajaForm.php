@@ -27,33 +27,14 @@ class CtrlFlujoCajaForm extends CI_Controller{
         $data['title']          =   $this->title;
         $data['category_title'] =   'Flujo de Caja';
         $data['page']           =   'tesoreria';
-
-        $this->load->model('listado');
-        $oListado = new $this->listado();
-
-        $oListado->listarCuentas(1);
-        $array  =   array();
-        for($i = 0; $i < $oListado->count(); $i++){
-            $array[$i] = $oListado->get($i)->toArray();
-        }
-        $data['cuentas']['ingresos'] = $array;
-        $oListado->limpiar();
-        unset($array);
-
-        $oListado->listarCuentas(0);
-        $array2  =   array();
-        for($i = 0; $i < $oListado->count(); $i++){
-            $array2[$i] = $oListado->get($i)->toArray();
-        }
-        $data['cuentas']['egresos'] = $array2;
-        unset($array);
         
         
         if($_POST){
             $this->load->library('form_validation');
             $this->form_validation->set_error_delimiters('<div class="error">', '</div>');
             
-            $this->form_validation->set_rules('descripcion','Descripción','required|min_length[9]|max_length[30]');
+            $this->form_validation->set_rules('descripcion','Descripción','required|min_length[5]|max_length[|100]');
+            $this->form_validation->set_rules('fecha','Fecha','required|exact_length[10]');
             $this->form_validation->set_rules('monto','Monto','required|min_length[1]|max_length[10]|numeric');
             $this->form_validation->set_rules('cuenta','Cuenta','required|numeric');
             
@@ -61,6 +42,7 @@ class CtrlFlujoCajaForm extends CI_Controller{
                 $this->load->model('flujo_caja');
                 $oFlujoCaja = new $this->flujo_caja();
                 $oFlujoCaja->setDescripcion($this->input->post('descripcion'));
+                $oFlujoCaja->setFecha($this->input->post('fecha'));
                 $oFlujoCaja->setMonto($this->input->post('monto'));
                 $oFlujoCaja->setSubCategoria($this->input->post('cuenta'));
                 if($oFlujoCaja->save()){
@@ -74,6 +56,29 @@ class CtrlFlujoCajaForm extends CI_Controller{
         }
 
         $this->load->view('backend/ViewFlujoCajaForm',$data);
+    }
+    
+    public function getCuentas(){
+        unset($this->layout);
+        $this->load->model('listado');
+        $oListado = new $this->listado();
+        
+        $value = $this->input->get('selected');
+        
+        $oListado->listarCuentas($value);
+        $array  =   array();
+        for($i = 0; $i < $oListado->count(); $i++){
+            $array[$i] = $oListado->get($i)->toArray();
+        }
+        $data['cuentas'] = $array;
+        $oListado->limpiar();
+        unset($array);
+        
+        $data = array(
+            'content'   => $data,
+            'type'      => 'json'
+            );
+        $this->load->view('ajax',$data);
     }
 }
 ?>

@@ -1,4 +1,4 @@
-/* 
+e/* 
     Document   : bo2
     Created on : 10-feb-2013, 2:06:43
     Author     : nks
@@ -18,12 +18,14 @@ figure#logo_club img{
 .error{
     background: none repeat scroll 0 0 #FBE3E4;
     border: 1px solid #FBC2C4;
+    border-radius: 0 0 30px 30px;
     color: #8A1F11;
+    line-height: 20px;
     min-height: 15px;
     margin-left: 30%;
-    padding:2px 0;
+    margin-top: 5px;
+    padding:2px 15px 10px;
     text-align: center;
-    text-indent: 5px;
     width: 60%;
 }
 .bo-form{
@@ -73,7 +75,8 @@ figure#logo_club img{
     width: 60%;
 }
 .campos#new input[type='text']{
-    width: 90%;
+    margin: 10px 0;
+    width: 100%;
 }
 
 .campos .form-column.a, .campos .form-column.b{
@@ -94,13 +97,10 @@ figure#logo_club img{
     margin-bottom: 11px;
 }
 .form-title{
-    /*background: #131361;*/
     background: #2F304F;
     border-radius: 4px 4px 0 0;
-    /*color: #fff000;*/
-    /*color : rgb(255,241,0);*/
     color : #E1E434;
-    height: 20px;
+    height: 30px;
     font-size: 13px;
     font-weight: bold;
     line-height: 22px;
@@ -119,7 +119,6 @@ figure#logo_club img{
     float: left;
 }
 .form-item input, .form-item select{
-    margin-left: 10px;
     width: 60%;
 }
 .form-item input[type='submit']{
@@ -127,6 +126,15 @@ figure#logo_club img{
 }
 .hiddenx{
     display: none;
+}
+.center{
+    text-align: center;
+}
+
+.msg{
+    color: 666;
+    width: auto;
+    padding: 10px;    
 }
 
 #apoderado-form{
@@ -209,12 +217,27 @@ figure#logo_club img{
 .unidad-titulo{
     text-align: center;
 }
+.row-check{
+    float: left;
+    width: 85%;
+}
+.row-check .form-column.a label{
+    margin-top: 25px;
+}
 
 
-
-optgroup.titulo{
+/*optgroup.titulo{
     color: #333333;
     font-size: 15px;
     text-align: center;
     text-decoration: underline;
+}*/
+.input-group-form{
+    width: 60%;
+}
+a.chosen-single{
+    height: 30px !important;
+}
+.chosen-container{
+    width: 70%;
 }

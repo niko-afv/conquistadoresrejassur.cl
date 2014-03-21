@@ -20,7 +20,7 @@ class Integrante extends CI_Model{
     private $telefono           = '';
     private $telefono_auxiliar  = '';
     private $direccion          = '';
-    private $mail               = '';
+    private $email               = '';
     private $foto               = '';
     private $rango              = '';
     private $cargo              = '';
@@ -98,7 +98,7 @@ class Integrante extends CI_Model{
     public function setTelefono($value){$this->telefono = $value;}
     public function setTelefonoAuxiliar($value){$this->telefono_auxiliar = $value;}
     public function setDireccion($value){$this->direccion = $value;}
-    public function setMail($value){$this->mail = $value;}
+    public function setMail($value){$this->email = $value;}
     public function setFoto($value){$this->foto = $value;}    
     public function setEstado($value){$this->estado = $value;}
     public function setApoderado($value){$this->apoderado->setRut($value);}
@@ -126,7 +126,7 @@ public function getRut(){return $this->rut;}
     public function getTelefono(){return $this->telefono;}
     public function getTelefonoAuxiliar(){return $this->telefono_auxiliar;}
     public function getDireccion(){return $this->direccion;}
-    public function getMail(){return $this->mail;}
+    public function getMail(){return $this->email;}
     public function getFoto(){return $this->foto;}
     public function getRango(){return $this->rango;}
     public function getCargo(){return $this->cargo;}

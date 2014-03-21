@@ -18,6 +18,17 @@
 <script type="text/javascript" src="<?php echo $base_url;?>js/upload/upload.js"></script>
 <script type="text/javascript" src="<?php echo $base_url;?>js/main.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo $base_url;?>js/upload/css/upload.css">
+<!--Chosen-->
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js" type="text/javascript"></script>
+<link href="http://harvesthq.github.io/chosen/chosen.css" rel="stylesheet" type="text/css"   />
+<!--Bootstrap DatePicker-->
+<script src="<?php echo base_url();?>/vendors/bootstrap-datepicker-master/js/bootstrap-datepicker.js"></script>
+<link href="<?php echo base_url();?>/vendors/bootstrap-datepicker-master/css/datepicker.css" rel="stylesheet"   />
+<!--Checkbox & Radio Pickers-->
+<script src="/vendors/Picker-master/jquery.fs.picker.min.js"></script>
+<link href="/vendors/Picker-master/jquery.fs.picker.css" rel="stylesheet"   />
+
+
 
 
 <script type="text/javascript">

@@ -45,8 +45,9 @@ class Sub_Categoria_Flujo_Caja extends CI_Model{
                     $oFlujoCaja->setId($val2->ID);
                     $this->addFlujo($oFlujoCaja);
                 }
-                $this->calculaTotal();
+                
             }
+            $this->calculaTotal();
         }
         
     }
@@ -77,20 +78,20 @@ class Sub_Categoria_Flujo_Caja extends CI_Model{
     private function calculaTotal(){
         $fecha = date('Y-m',strtotime(date('Y-m')." -5 month"));
         
-        for($x = 0; $x <= 5; $x++){        
-            $monto   =   0;            
+        for($x = 0; $x <= 5; $x++){
+            $fechaPlus = date("Y-m", strtotime($fecha." +$x month"));
+            
+            $this->periodos[$fechaPlus]['montos'] = 0;
+            $monto   =   0;
             
             for($i = 0; $i < $this->countFlujos(); $i++){
-                $fechaPlus = date("Y-m", strtotime($fecha." +$x month"));
                 if(strstr($this->getFlujo($i)->getFecha(),$fechaPlus)){
                     $monto += $this->getFlujo($i)->getMonto(); 
                 }
             }
             $this->periodos[$fechaPlus]['montos'] = $monto;
-            /*echo "<br/>";
-            print_r($this->periodos);
-            echo "<br/>";*/
         }
+        
     }
 
     public function toArray(){
