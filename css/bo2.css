@@ -75,12 +75,13 @@ figure#logo_club img{
     width: 60%;
 }
 .campos#new input[type='text']{
-    width: 90%;
+    margin: 10px 0;
+    width: 100%;
 }
 
 .campos .form-column.a, .campos .form-column.b{
     float: left;
-    width: 30%;
+    width: 44%;
 }
 .campos .form-column.a label, .campos .form-column.b input{
     float: none;
@@ -216,7 +217,10 @@ figure#logo_club img{
 .unidad-titulo{
     text-align: center;
 }
-
+.row-check{
+    float: left;
+    width: 85%;
+}
 .row-check .form-column.a label{
     margin-top: 25px;
 }

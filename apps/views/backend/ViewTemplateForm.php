@@ -64,8 +64,9 @@
                     $(this).parent().addClass('static');
                     var nCampos = $(".campos#new");
                     var num = $(".autocompletar").length +1;
+                    console.log("NUm: "+ num);
                     html = "<div class='dynamic'>";
-                    html += "<input class='form-control' id='campo_"+num+"' class='autocompletar' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' autocomplete='off' maxlength='20'  />";
+                    html += "<input class='form-control autocompletar' id='campo_"+num+"' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' autocomplete='off' maxlength='20'  />";
                     html += "<div class='dropdown'>";
                     html += "<ul class='dropdown-menu' role='menu' aria-labelledby='dropdownMenu'>";
                     html += "<li class='title-li'>Algunos Sugerencias</li>";
@@ -93,6 +94,8 @@
             if(verificarTecla(event.which) || event.which === 8){
                 var info = $(this).val();
                 var id = $(this).attr('id');
+                /*console.log("id: "+ id);
+                console.log("idvalor: "+ info);*/
                 if(info.length > 0){
                     var url     =   "/admin/plantillas_form/autocompletar/";
                     $.post(url,{ info : info, id : id }, function(data){
@@ -102,8 +105,6 @@
                         $(".auto").remove();
                         data = JSON.parse(data);
                         if(data.ok){
-                            //console.log(id);
-                            //console.log("valor es: "+$("#campo_"+id+"").parent().attr('class'));
                             dropdown.addClass('visible');
                             for(var i = 0; i < data.campos.length; i++){
                                 dropdown.append("<li class='auto'><a>"+data.campos[i].nombre+"</a>");
@@ -222,7 +223,7 @@
                 
                 <div class="campos" id="new">
                     <div class="dynamic">
-                        <input class="form-control" id="campo_1" class='autocompletar' type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' maxlength='20' autocomplete="off"  />
+                        <input class="form-control autocompletar" id="campo_1" type='text' name='dCampos[]' placeholder='Ej: Pañolín, biblia, cuota, asistencia' maxlength='20' autocomplete="off"  />
                         <div class="dropdown">
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                                 <li class="title-li">Algunos Sugerencias</li>
