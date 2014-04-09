@@ -1,16 +1,12 @@
 <div class="row-fluid">
 <div id="error2" class="alert alert-error" style="display: none;">
-    <!--<span><i class='icon-remove-sign'></i></span>-->
     <button type="button" class="close" data-dismiss="alert">×</button>
     <div></diV>
 </div>
 <div id="success2" class="alert alert-success" style="display: none;">
-    <!--<span><i class='icon-remove-sign'></i></span>-->
     <button type="button" class="close" data-dismiss="alert">×</button>
     <div></diV>
 </div>
-
-<?php //if(isset($integrante)){print_r($unidades);}?>
 
 <form action="/admin/integrantes_form/" method="POST">
 
