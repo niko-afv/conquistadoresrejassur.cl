@@ -24,7 +24,7 @@
         <tr id="">
             <td><?php echo $i;?></td>
             <?php foreach($template['campos'] as $campo){?>
-                <td><?php if(isset($item[$campo['nombre']])){ echo $item[$campo['nombre']]; }else{ echo "<input type='text' placeholder='Ingrese un valor' style='width:110px !important;margin-bottom:0'  />";} ?></td>
+                <td><?php if(isset($item[$campo['nombre']])){ echo $item[$campo['nombre']]; }else{ echo "<input type='text' placeholder='Ingrese un valor'  />";} ?></td>
             <?php }?>
 
             <!--<td>

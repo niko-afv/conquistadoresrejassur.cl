@@ -21,7 +21,10 @@
                     <?php if($integrante['unidad'] == FALSE){?>
                     <li class="integrante integrante-card sortable-item" id='card-<?php echo $integrante['rut']?>'>
 
-                        <img src="<?php echo $base_url.str_replace('400x480','150x180',$integrante['foto']);?>" width='83'    />
+                        <?php $foto = (strlen($integrante['foto']) > 0)?$base_url.str_replace('400x480','150x180',$integrante['foto']): "http://ciberjuris.upsjb.edu.pe/No_person.jpg";?>
+                        
+                        <img src="<?php echo $foto;?>" width='83' height="98"    />
+                        
                         <div class='info'>
                             <div class="item">
                                 <label>Nombre</label> <span><?php echo $integrante['nombre']. ' ' .$integrante['apellido'];?></span>

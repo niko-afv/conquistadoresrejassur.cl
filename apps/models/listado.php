@@ -106,6 +106,17 @@ class Listado extends CI_Model{
             $this->add($oTemplate);
         }
     }
+    
+    public function listarPeriodos(){
+        $this->load->model('periodo');
+        $this->db->select('ID');
+        $records = $this->db->get('CUENTAS_PERIODOS');
+        foreach ($records->result() as $item => $val){
+            $oPeriodo = new $this->periodo();
+            $oPeriodo->setId($val->ID);            
+            $this->add($oPeriodo);
+        }
+    }
 
     public function customList($tabla = "", $xcolumnas = array()){
         foreach($xcolumnas as $columna => $val){

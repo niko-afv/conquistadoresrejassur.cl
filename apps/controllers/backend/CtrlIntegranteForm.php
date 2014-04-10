@@ -86,7 +86,7 @@ class CtrlIntegranteForm extends CI_Controller{
                         if($oIntegrante->getApoderado()->save()){
                             if($oIntegrante->save()){
                                 $this->session->set_flashdata('success','<strong>¡Bien echo!</strong> El integrante se ha guardado con exito');
-                                redirect('admin/integrantes_list/');                            
+                                redirect('admin/integrantes_list/');
                             }else{
                                 $this->session->set_flashdata('error','<strong>¡Hubo un problema!</strong> Los datos no se han guardado, intentelo mas tarde');
                                 //redirect('admin/integrantes_list/');

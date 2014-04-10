@@ -1,3 +1,9 @@
+<script>
+$(function(){
+    $("input[type=checkbox]").picker({toggle: true});
+});
+</script>
+
 <div class="row-fluid">
 <div id="error2" class="alert alert-error" style="display: none;">
     <button type="button" class="close" data-dismiss="alert">×</button>
@@ -10,7 +16,7 @@
     
 <?php $cuenta['nombre'] = "";?>    
     
-    <form action="/admin/integrantes_form/" method="POST">
+    <form action="/admin/cuentas_form/" method="POST">
         <div class="bo-form span5">
             <div class="form-title">
                 Datos Generales
@@ -52,11 +58,10 @@
                 <div class="input-group input-group-form">
                     <select class="form-control" name="periodo" >
                         <option value="">Seleccione una opción</option>
-                        <option value="1">Indefinido</option>
-                        <option value="2">Anual</option>
-                        <option value="3">Semestral</option>
-                        <option value="4">Mensual</option>
-                        <option value="5">Semanal</option>
+                        <?PHP foreach ($periodos as $item => $row){?>
+                        <option value="<?php echo $row['id'];?>"><?php echo $row['descripcion'];?></option>
+                        <?php }?>
+                        
                     </select>                    
                 </div>
                 <?php echo form_error('periodo');?>
@@ -78,11 +83,15 @@
             <div class="form-item">
                 <label>Inherente</label>
                 <div class="input-group input-group-form">
-                    <select class="form-control" name="inherente" >
+                    <!--<select class="form-control" name="inherente" >
                         <option value="">Seleccione una opción</option>
                         <option value="1">Si</option>
-                        <option value="2">No</option>                        
-                    </select>                    
+                        <option value="0">No</option>                        
+                    </select>-->
+                    <fieldset>
+                        <label for="inherente">inherente</label>
+                        <input type="checkbox" name="inherente" id="inherente" class="picker-element" value="1"  />
+                    </fieldset>
                 </div>
                 <?php echo form_error('inherente');?>
             </div>

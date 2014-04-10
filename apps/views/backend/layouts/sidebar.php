@@ -27,6 +27,7 @@
         <ul>
             <li><i class='glyphicon glyphicon-th'></i> &nbsp; <a href="<? echo $base_url;?>admin/flujo_caja/">Ver Resumen</a></li>
             <li><i class='glyphicon glyphicon-plus'></i> &nbsp; <a href="<? echo $base_url;?>admin/flujo_caja_form/">Nuevo Flujo</a></li>
+            <li><i class='glyphicon glyphicon-usd'></i> &nbsp; <a href="<? echo $base_url;?>admin/cuentas_form/">Ctas. Personales</a></li>
         </ul>
     </li>
     <li> <span <?php echo $page == 'plantillas'?'class="current"':'';?>><a href="javascript:;">Listados</a></span>

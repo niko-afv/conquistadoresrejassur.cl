@@ -47,7 +47,7 @@
             
             $dinamic_table.fadeOut("slow");
             
-            var url = "http://devel.conquistadoresrejassur.cl/admin/flujo_caja/subCatDetailList/";
+            var url = "/admin/flujo_caja/subCatDetailList/";
             var id = $(this).parent().parent().attr("id");
             
             $dinamic_table.load(url,{id_cat : id}, function(data){
