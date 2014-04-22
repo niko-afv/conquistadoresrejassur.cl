@@ -53,7 +53,7 @@ class Ctrl_unidad_formulario extends CI_Controller{
                     if($this->input->post('id_trayectoria') != ''){
                         $oTrayectoria->setId($this->input->post('id_trayectoria'));
                     }
-                    $oTrayectoria->setTemporada(date('Y'));
+                    $oTrayectoria->setTemporada($this->session->userdata("temporada_id"));
                     if($this->input->post('imgUnidad-img1')){
                         $oTrayectoria->setFoto($this->input->post('imgUnidad-img1'));
                     }else{

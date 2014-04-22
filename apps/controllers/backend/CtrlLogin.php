@@ -7,6 +7,7 @@ class CtrlLogin extends CI_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->model('usuario');
+        $this->load->model('temporada');
         $this->load->helper(array('form','url'));
     }
 
@@ -24,12 +25,15 @@ class CtrlLogin extends CI_Controller{
                 $this->usuario->setNombre($this->input->post('username',true));
                 $this->usuario->setClave($this->input->post('password',true));
                 if($this->usuario->login()){
+                    $oTemporada = new $this->temporada();
                     $this->session->set_userdata(array(
                         'userBo_id'	 	 => '12345',//$rs[0]->use_id,
                         'userBo_nombre'	 => 'nicolas',//$rs[0]->use_first_name.' '.$rs[0]->use_last_name,
                         'userBo_session' => true,
                         'userBo_type' 	 => 'admin',
-                        'userBo_pin' 	 => array('h'=>1,'v'=>1)
+                        'userBo_pin' 	 => array('h'=>1,'v'=>1),
+                        'temporada' 	 => $oTemporada->getAño(),
+                        'temporada_id' 	 => $oTemporada->getId()
                     ));
                     $this->mostrarVistaPrincipal();
                 }else{

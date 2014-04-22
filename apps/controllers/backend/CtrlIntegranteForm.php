@@ -85,8 +85,14 @@ class CtrlIntegranteForm extends CI_Controller{
                     if($this->input->post('mail')){$oIntegrante->setMail($this->input->post('mail'));}
                         if($oIntegrante->getApoderado()->save()){
                             if($oIntegrante->save()){
-                                $this->session->set_flashdata('success','<strong>¡Bien echo!</strong> El integrante se ha guardado con exito');
-                                redirect('admin/integrantes_list/');
+                                $this->load->model('trayectoria_integrante');
+                                $oTrayectoria = new $this->trayectoria_integrante();
+                                
+                                $oTrayectoria->setTemporada($this->session->userdata("temporada_id"));
+                                if($oTrayectoria->save($oIntegrante->getRut())){
+                                    $this->session->set_flashdata('success','<strong>¡Bien echo!</strong> El integrante se ha guardado con exito');
+                                    redirect('admin/integrantes_list/');
+                                }
                             }else{
                                 $this->session->set_flashdata('error','<strong>¡Hubo un problema!</strong> Los datos no se han guardado, intentelo mas tarde');
                                 //redirect('admin/integrantes_list/');
@@ -94,9 +100,7 @@ class CtrlIntegranteForm extends CI_Controller{
                         }else{
                             $this->session->set_flashdata('error','<strong>¡Hubo un problema al añadir el apoderado!</strong> Los datos no se han guardado, intentelo mas tarde');
                             //redirect('admin/integrantes_list/');
-                        }
-                        
-                        
+                        }                        
                 /*}else{
                     $this->session->set_flashdata('error','<strong>¡Hubo un problema!</strong> La edad ingresada no coincide con el cargo o grado seleccionado, intentelo nuevamente');
                     //redirect('admin/integrantes_list/');

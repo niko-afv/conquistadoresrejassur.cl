@@ -24,7 +24,7 @@
 
                         <span style="position: relative; float: left;" class="im span12">
                         <a class="delete" onclick="deleteImage('imgUnidad-img1');">del</a>
-                        <img src="<?php echo $base_url.$unidad['trayectoria'][0]['foto']?>" width="460" height="816">
+                        <img src="<?php echo $base_url.$unidad['trayectoria'][0]['foto']?>" width="460" height="300">
                         <input class="form-control" type="hidden" id="imgUnidad-img1" name="imgUnidad-img1" value="<?=$unidad['trayectoria'][0]['foto']?>"  />
                     </span>
                     <?php }else{?>

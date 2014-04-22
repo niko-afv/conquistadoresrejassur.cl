@@ -31,6 +31,7 @@ class Listado extends CI_Model{
         if($columnas){
             $this->db->select($columnas);
         }
+        $this->db->where('ESTADO',1);
         $this->db->order_by('APELLIDO');
         $records = $this->db->get('INTEGRANTES');
 

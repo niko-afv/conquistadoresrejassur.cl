@@ -28,6 +28,7 @@ class Integrante extends CI_Model{
     private $apoderado          = '';
     
     private $unidad             = '';
+    private $historial          = '';
 
     private $xnuevo;
     
@@ -154,7 +155,9 @@ public function getRut(){return $this->rut;}
     }
     
     public function delete(){
-        $res =  $this->db->delete('INTEGRANTES',array('RUT'=>$this->getRut()));
+        //$res =  $this->db->delete('INTEGRANTES',array('RUT'=>$this->getRut()));
+        $res = $this->db->where("RUT", $this->getRut());
+        $res = $this->db->update("INTEGRANTES",array("ESTADO"=>0));
         if($res){
             return $res;
         }else{
