@@ -80,5 +80,10 @@ $route['admin/listados_form/(:any)']      =   "backend/CtrlListForm/$1";
 $route['admin/listados_list']             =   "backend/CtrlListList";
 $route['admin/listados_list/(:any)']      =   "backend/CtrlListList/$1";
 
+$route['admin/cuentas_form']             =   "backend/CtrlCuentaForm";
+$route['admin/cuentas_form/(:any)']      =   "backend/CtrlCuentaForm/$1";
+$route['admin/cuentas_list']             =   "backend/CtrlCuentatList";
+$route['admin/cuentas_list/(:any)']      =   "backend/CtrlCuentaList/$1";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

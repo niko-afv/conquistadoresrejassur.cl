@@ -49,6 +49,12 @@ table tr td.link{
     font-size: 17px;
     font-weight: bold;
 }
+td input{
+    border: none;
+    height: 100%;
+    outline: 0;
+    width: 96% !important;
+}
 .input{
 	width: 55% !important;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;

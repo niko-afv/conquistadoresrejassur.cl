@@ -31,6 +31,7 @@ class Listado extends CI_Model{
         if($columnas){
             $this->db->select($columnas);
         }
+        $this->db->where('ESTADO',1);
         $this->db->order_by('APELLIDO');
         $records = $this->db->get('INTEGRANTES');
 
@@ -104,6 +105,17 @@ class Listado extends CI_Model{
             $oTemplate = new $this->template();
             $oTemplate->setId($val->ID);
             $this->add($oTemplate);
+        }
+    }
+    
+    public function listarPeriodos(){
+        $this->load->model('periodo');
+        $this->db->select('ID');
+        $records = $this->db->get('CUENTAS_PERIODOS');
+        foreach ($records->result() as $item => $val){
+            $oPeriodo = new $this->periodo();
+            $oPeriodo->setId($val->ID);            
+            $this->add($oPeriodo);
         }
     }
 

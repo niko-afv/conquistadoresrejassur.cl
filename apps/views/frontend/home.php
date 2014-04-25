@@ -195,8 +195,9 @@
                         </p>
 
                         <p>
-                            <strong>Reuniones :</strong><br/>
-                            Sábados 16:30 hrs - 18:30 hrs.<br/>
+                            <strong>Reuniones :</strong>
+                            <br/>
+                            Domingos 10:30 hrs<br/>
                         </p>
 
                         <p>
