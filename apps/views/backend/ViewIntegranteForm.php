@@ -7,6 +7,127 @@
     <button type="button" class="close" data-dismiss="alert">×</button>
     <div></diV>
 </div>
+    
+    <script>
+        function codificarRut(rut){
+            if(rut.search("-") === -1){
+                var cv = rut.slice((rut.length -1));
+                rut = rut.slice(0,(rut.length -1));
+                return rut + "-" + cv;
+            }
+            return rut;
+        }
+        function fillIntegranteFields(integrante){
+            console.log(integrante);
+            $("input[name='rut']").val(integrante.rut);
+            $("input[name='nombre']").val(integrante.nombre);
+            $("input[name='apellido']").val(integrante.apellido);
+            $("input[name='edad']").val(integrante.edad);
+            $("input[name='fono']").val(integrante.telefono_principal);
+            $("input[name='fono2']").val(integrante.telefono_auxiliar);
+            $("input[name='direccion']").val(integrante.direccion);
+            $("input[name='mail']").val(integrante.email);
+            $("select[name='cargo']").val(integrante.cargo);
+            $("select[name='cargo']").trigger('chosen:updated');//acutalizamos select
+            $("select[name='grado']").val(integrante.rango);
+            $("select[name='grado']").trigger('chosen:updated');//acutalizamos select
+            if(integrante.estado == 1){
+                $("input[name='estado']").attr("checked",true);
+            }else{
+                $("input[name='estado']").attr("checked",false);
+            }
+            $("input[name='estado']").picker("update");
+            
+        }
+        
+        $(document).ready(function() {
+            
+            $("input[type=checkbox]").picker({toggle: true});
+            
+            $("input[name='rut']").on("focusout", function(){
+                
+                var rut = codificarRut($(this).val());
+
+                if(rut.length < 9){return rut;}
+                
+                var url = "/admin/integrantes_form/searchByRut";
+                $.post(url,{rut:rut},function(data){
+                    data = JSON.parse(data);
+                    fillIntegranteFields(data);
+                })
+            })
+
+// the basics
+// ----------
+
+/*var substringMatcher = function(strs) {
+  return function findMatches(q, cb) {
+    var matches, substringRegex;
+
+    // an array that will be populated with substring matches
+    matches = [];
+
+    // regex used to determine if a string contains the substring `q`
+    substrRegex = new RegExp(q, 'i');
+
+    // iterate through the pool of strings and for any string that
+    // contains the substring `q`, add it to the `matches` array
+    $.each(strs, function(i, str) {
+      if (substrRegex.test(str)) {
+        // the typeahead jQuery plugin expects suggestions to a
+        // JavaScript object, refer to typeahead docs for more info
+        matches.push({ value: str });
+      }
+    });
+
+    cb(matches);
+  };
+};
+
+var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+  'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+  'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+  'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+  'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+  'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+  'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+  'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+];
+
+$('.typeahead').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+{
+  name: 'states',
+  displayKey: 'value',
+  source: substringMatcher(states)
+});
+
+
+
+
+        var bestPictures = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          prefetch: '../data/films/post_1960.json',
+          remote: '../data/films/queries/%QUERY.json'
+        });
+
+        bestPictures.initialize();
+
+        $('#remote .typeahead').typeahead(null, {
+          name: 'best-pictures',
+          displayKey: 'value',
+          source: bestPictures.ttAdapter()
+        });*/
+
+    });
+    </script>
+    
+    <?php print_r($integrante['cargos']);?>
 
 <form action="/admin/integrantes_form/" method="POST">
 
@@ -16,6 +137,12 @@
         </div>
 
         <div class="form-item">
+            
+            <!--<div id="the-basics">
+            test de autocompletado
+                <input class="typeahead" type="text" placeholder="States of USA">
+            </div>-->
+            
             <label>Rut</label>
             <input class="form-control" type="text" name="rut" placeholder="ej: xxxxxxxx-x" <?php if($integrante['rut'] != ''){echo "readonly";}?> value="<?php if($integrante['rut'] != ''){echo $integrante['rut'];}else{echo set_value('rut');} ?>" />
             <?php echo form_error('rut');?>
@@ -68,10 +195,10 @@
         
         <div class="form-item">
             <label>Cargo</label>
-            <select class="form-control" name="cargo">
+            <select class="form-control" name="cargo[]" multiple>
                 <option value="0">Seleccione Cargo</option>
                 <?php foreach ($cargos as $item => $val){?>
-                <option value="<?=$val['id'];?>" <?php if($val['id']==$integrante['cargo'] || $val['id'] == set_value('cargo')){echo 'selected';}?> ><?=$val['nombre'];?></option>
+                <option value="<?=$val['id'];?>" <?php if(in_array($val['id'], $integrante["cargos"]) || $val['id'] == set_value('cargo')){echo 'selected';}?> ><?=$val['nombre'];?></option>
                 <?php }?>
             </select>
             <?php echo form_error('cargo');?>
@@ -86,7 +213,20 @@
                 <?php }?>
             </select>
             <?php echo form_error('grado');?>            
-        </div>        
+        </div>
+        
+        
+        <div class="form-item">
+            <label>Estado (Activo / Inactivo)</label>
+                <div class="input-group input-group-form">
+                    <fieldset>
+                        <label for="estado">Activo</label>
+                        <input type="checkbox" name="estado" id="estado" class="picker-element"  />
+                    </fieldset>
+                </div>
+            
+            <?php echo form_error('estado');?>
+        </div>
 
         <div class="form-item">
             <input type="submit" value="Guardar" class="btn btn-primary"    />

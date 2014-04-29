@@ -32,7 +32,7 @@
     </li>
     <li> <span <?php echo $page == 'plantillas'?'class="current"':'';?>><a href="javascript:;">Listados</a></span>
         <ul>
-            <li><i class='glyphicon glyphicon-plus-sign'></i> &nbsp; <a href="<? echo $base_url;?>admin/plantillas_list">Crear Listado</a></li>
+            <li><i class='glyphicon glyphicon-plus-sign'></i> &nbsp; <a href="<? echo $base_url;?>admin/plantillas_list">Generar Listado</a></li>
             <li><i class='glyphicon glyphicon-plus'></i> &nbsp; <a href="<? echo $base_url;?>admin/plantillas_form">Nueva Plantilla</a></li>
         </ul>
     </li>

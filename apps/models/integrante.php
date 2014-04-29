@@ -23,12 +23,12 @@ class Integrante extends CI_Model{
     private $email              = '';
     private $foto               = '';
     private $rango              = '';
-    private $cargo              = '';
     private $estado             = 1;
     private $apoderado          = '';
     
     private $unidad             = '';
     private $historial          = '';
+    private $listCargos             = '';
 
     private $xnuevo;
     
@@ -37,11 +37,11 @@ class Integrante extends CI_Model{
         $this->xnuevo = FALSE;
         $this->load->model('apoderado','apoderado_m');
         $this->load->model('rango','rango_m');
-        $this->load->model('cargo','cargo_m');
+        $this->load->model('cargo');
         $this->apoderado = new $this->apoderado_m();
         //$this->setApoderado('88811111-1');
         $this->rango = new $this->rango_m();
-        $this->cargo = new $this->cargo_m(); 
+        $this->listCargos = new ArrayObject();
         if($xrut){
             $this->setRut($xrut);
         }
@@ -64,10 +64,21 @@ class Integrante extends CI_Model{
             $this->setMail($xintegrante[0]->EMAIL);
             $this->setFoto($xintegrante[0]->FOTO);
             $this->setRango($xintegrante[0]->RANGO);
-            $this->setCargo($xintegrante[0]->CARGO);
             $this->setEstado($xintegrante[0]->ESTADO);
             
             $this->apoderado->setRut($xintegrante[0]->RUT_APODERADO);
+            
+            $this->db->where("RUT_INTEGRANTE",$this->getRut());
+            $this->db->where("ID_TEMPORADA",1);//$this->session->userdata("userBo_temporada_id"));
+            $res = $this->db->get("INTEGRANTES_CARGOS");
+            /*print_r($res->result());
+            die();*/
+            foreach($res->result() as $item => $cargo){
+                $oCargo = new $this->cargo();
+                $oCargo->setID($cargo->ID);
+                $this->addCargo($oCargo);
+            }
+            
             $this->xnuevo = FALSE;
         }else{
             $this->xnuevo = TRUE;
@@ -77,22 +88,7 @@ class Integrante extends CI_Model{
     }
     public function setRango($value){
         $this->rango->setId($value);
-        /*$this->db->where('RANGOS',$value);
-        $res = $this->db->get('RANGOS');
-        if(count($res->result())>0){
-            $xrango = $res->result();
-            $this->rango = $xrango[0]->NOMBRE;
-        }*/
-    }
-    public function setCargo($value){
-        $this->cargo->setId($value);
-        /*$this->db->where('ID',$value);
-        $res = $this->db->get('CARGOS');
-        if(count($res->result())>0){
-            $xcargo = $res->result();
-            $this->cargo = $xcargo[0]->NOMBRE;
-        }*/
-    }
+    }    
     public function setNombre($value){$this->nombre = $value;}
     public function setApellido($value){$this->apellido = $value;}
     public function setEdad($value){$this->edad = $value;}
@@ -129,8 +125,7 @@ public function getRut(){return $this->rut;}
     public function getDireccion(){return $this->direccion;}
     public function getMail(){return $this->email;}
     public function getFoto(){return $this->foto;}
-    public function getRango(){return $this->rango;}
-    public function getCargo(){return $this->cargo;}
+    public function getRango(){return $this->rango;}    
     public function getEstado(){return $this->estado;}
     public function getApoderado(){return $this->apoderado;}
     public function getUnidad(){
@@ -151,6 +146,7 @@ public function getRut(){return $this->rut;}
             $this->db->where('RUT',  $this->getRut());
             $res = $this->db->update("INTEGRANTES",  $this->toArray());
         }
+        $this->__DBActualizarCargos();
         return $res;
     }
     
@@ -180,7 +176,7 @@ public function getRut(){return $this->rut;}
             $array['EMAIL']                 = $this->getMail();
             $array['FOTO']                  = $this->getFoto();
             $array['RANGO']                 = $this->getRango()->getId();
-            $array['CARGO']                 = $this->getCargo()->getId();
+            //$array['CARGO']                 = $this->getCargo()->getId();
             $array['ESTADO']                = $this->getEstado();
             $array['RUT_APODERADO']         = $this->getApoderado()->getRut();
             
@@ -195,13 +191,18 @@ public function getRut(){return $this->rut;}
             $array['email']                 = $this->getMail();
             $array['foto']                  = $this->getFoto();
             $array['rango']                 = $this->getRango()->getId();
-            $array['cargo']                 = $this->getCargo()->getId();
             $array['estado']                = $this->getEstado();
             $array['unidad']                = $this->getUnidad();
             $array['apoderado']['rut']      = $this->getApoderado()->getRut();
             $array['apoderado']['nombre']   = $this->getApoderado()->getNombre();
             $array['apoderado']['apellido'] = $this->getApoderado()->getApellido();
             $array['apoderado']['telefono'] = $this->getApoderado()->getTelefono();
+            
+            $array['cargos'] = array();
+            for($i=0; $i<$this->countCargos(); $i++){
+                $array['cargos'][] = $this->getCargo($i)->getID();
+            }
+            
         }
         return $array;
     }
@@ -211,6 +212,40 @@ public function getRut(){return $this->rut;}
         return $this->$property;
     }
     
+    public function addCargo($cargo){
+        $this->listCargos->append($cargo);
+    }
+    public function getCargo($index){
+        return $this->listCargos->offsetGet($index);
+    }
+    public function countCargos(){
+        return $this->listCargos->count();
+    }
+    public function removeCargo($index){
+        $this->listCargos->offsetUnset($index);
+    }
+    private function __DBActualizarCargos(){
+        for($i = 0; $i < $this->countCargos(); $i++){
+            $this->db->where("RUT_INTEGRANTE", $this->getRut());
+            $this->db->where("ID_TEMPORADA", $this->session->userdata("userBo_temporada_id"));
+            $this->db->where("ID_CARGO", $this->getCargo($i)->getID());
+            $res = $this->db->get("INTEGRANTES_CARGOS");
+            
+            if(count($res->resul() == 0)){
+                $datos = array(
+                    'RUT_INTEGRANTE'=>  $this->getRut(),
+                    'ID_CARGO'      =>  $this->getCargo($i)->getID(),
+                    'ID_TEMPORADA'  =>  $this->session->userdata("userBo_temporada_id")
+                );
+                $res2 = $this->db->insert("INTEGRANTES_CARGOS", $datos);
+            }else{
+                $cargo_integrante = $res->result();
+                $this->db->where("ID",$cargo_integrante[0]->ID);
+                $datos = array('ESTADO'=>1);
+                $this->db->update("INTEGRANTES_CARGOS",$datos);
+            }
+        }
+    }
 }
 
 ?>

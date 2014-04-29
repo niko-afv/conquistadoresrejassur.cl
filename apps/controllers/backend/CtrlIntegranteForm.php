@@ -51,7 +51,7 @@ class CtrlIntegranteForm extends CI_Controller{
             $this->form_validation->set_rules('direccion','Direccion','min_length[10]|max_length[50]');
             $this->form_validation->set_rules('mail','E-Mail','valid_email');
             $this->form_validation->set_rules('imgIntegrante-img1','Foto de Perfil','min_length[10]');
-            $this->form_validation->set_rules('cargo','Cargo','numeric|callback_verificar_cargo');
+            //$this->form_validation->set_rules('cargo','Cargo','numeric|callback_verificar_cargo');
             $this->form_validation->set_rules('grado','Grado','numeric|callback_verificar_grado');
             if($this->input->post('edad') < 16){
                 $this->form_validation->set_rules('rutApoderado','Rut Apoderado','required|min_length[9]|max_length[10]');
@@ -65,8 +65,14 @@ class CtrlIntegranteForm extends CI_Controller{
                     $oIntegrante->setNombre($this->input->post('nombre'));
                     $oIntegrante->setApellido($this->input->post('apellido'));
                     $oIntegrante->setEdad($this->input->post('edad'));
-                    $oIntegrante->setCargo($this->input->post('cargo'));
                     $oIntegrante->setRango($this->input->post('grado'));
+                    $this->load->model("cargo");
+                    
+                    foreach ($this->input->post('cargo') as $item => $cargo){
+                        $oCargo = new $this->cargo();
+                        $oCargo->setID($cargo);
+                        $oIntegrante->addCargo($oCargo);
+                    }
                     
                     $oIntegrante->setApoderado($this->input->post('rutApoderado'));
                     $oIntegrante->getApoderado()->setNombre($this->input->post('nombreApoderado'));
@@ -100,13 +106,7 @@ class CtrlIntegranteForm extends CI_Controller{
                         }else{
                             $this->session->set_flashdata('error','<strong>¡Hubo un problema al añadir el apoderado!</strong> Los datos no se han guardado, intentelo mas tarde');
                             //redirect('admin/integrantes_list/');
-                        }                        
-                /*}else{
-                    $this->session->set_flashdata('error','<strong>¡Hubo un problema!</strong> La edad ingresada no coincide con el cargo o grado seleccionado, intentelo nuevamente');
-                    //redirect('admin/integrantes_list/');
-                    $data['integrante'] = $oIntegrante->toArray(FALSE);
-                    $this->load->view('backend/ViewIntegranteForm',$data);
-                }*/
+                        }
             }
         }
         $this->load->view('backend/ViewIntegranteForm',$data);
@@ -214,6 +214,27 @@ class CtrlIntegranteForm extends CI_Controller{
         
         /*$html = $this->load->view('backend/ViewIntegrantesListPrint',$data, TRUE);
         pdf_create($html, 'FichaIntegrante');*/
+    }
+    
+    public function searchByRut(){
+        unset($this->layout);
+        $this->load->library('utils');
+        $oUtils = new $this->utils();
+
+        if($oUtils->isAjax()){
+            if($_POST){
+                $rut = $this->input->post("rut");
+                $this->load->model('integrante');
+                $oIntegrante = new $this->integrante();
+                $oIntegrante->setRut($rut);
+                
+                $data = array('content' => $oIntegrante->toArray(FALSE),'type'=>'json');
+                $this->load->view('ajax',$data);
+            }
+        }else{
+            $this->session->set_flashdata('error', 'La petición realizada es invalida');
+            redirect('index.php/admin/integrantes_list/');
+        }
     }
     
 }
