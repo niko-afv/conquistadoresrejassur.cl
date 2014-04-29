@@ -28,6 +28,9 @@ class CtrlPrincipal extends CI_Controller {
     }    
 
     public function logout(){        
+        $oUsuario = new $this->usuario();
+        $oUsuario->setId($this->session->userdata("userBo_id"));
+        $oUsuario->updateLastLogin();
         foreach($_SESSION as $k => $d)preg_match('/^userBo/',$k)?$this->session->unset_userdata($k):false;
         $this->session->set_flashdata('msg','Sesión cerrada correctamente');
         redirect('admin/login');

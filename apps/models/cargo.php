@@ -14,6 +14,7 @@ class Cargo extends CI_Model{
     
     private $id;
     private $nombre;
+    private $estado;
     
     public function __construct($idx = NULL) {
         parent::__construct();
@@ -32,9 +33,11 @@ class Cargo extends CI_Model{
         }
     }
     public function setNombre($value){$this->nombre = $value;}
+    public function setEstado($value){$this->estado = $value;}
     
     public function getId(){return $this->id;}
     public function getNombre(){return $this->nombre;}
+    public function getEstado(){return $this->estado;}
 }
 
 ?>

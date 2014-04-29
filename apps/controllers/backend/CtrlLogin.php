@@ -22,18 +22,20 @@ class CtrlLogin extends CI_Controller{
             $this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean|min_length[3]|max_length[25]');
             $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|min_length[3]|max_length[25]');
             if($this->form_validation->run() == true){
-                $this->usuario->setNombre($this->input->post('username',true));
-                $this->usuario->setClave($this->input->post('password',true));
-                if($this->usuario->login()){
+                $oUsuario = new $this->usuario();
+                $oUsuario->setNombre($this->input->post('username',true));
+                $oUsuario->setClave($this->input->post('password',true));
+                if($oUsuario->login()){
                     $oTemporada = new $this->temporada();
                     $this->session->set_userdata(array(
-                        'userBo_id'	 	 => '12345',//$rs[0]->use_id,
-                        'userBo_nombre'	 => 'nicolas',//$rs[0]->use_first_name.' '.$rs[0]->use_last_name,
-                        'userBo_session' => true,
-                        'userBo_type' 	 => 'admin',
-                        'userBo_pin' 	 => array('h'=>1,'v'=>1),
-                        'temporada' 	 => $oTemporada->getAño(),
-                        'temporada_id' 	 => $oTemporada->getId()
+                        'userBo_id'             => $oUsuario->getId(),
+                        'userBo_nombre'         => $oUsuario->getNombre(),
+                        'userBo_last_login'     => $oUsuario->getLast_login(),
+                        'userBo_session'        => true,
+                        'userBo_type'           => 'Administrador',
+                        'userBo_pin'            => array('h'=>1,'v'=>1),
+                        'userBo_temporada' 	=> $oTemporada->getAño(),
+                        'userBo_temporada_id' 	=> $oTemporada->getId()
                     ));
                     $this->mostrarVistaPrincipal();
                 }else{
