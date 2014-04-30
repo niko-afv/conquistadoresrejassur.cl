@@ -1498,7 +1498,7 @@
                                     <td class='lastname'><?php echo $integrantes[$i]['apellido']; ?></td>
                                     <td><?php echo $integrantes[$i]['unidad']; ?></td>
                                     <td><?php echo $integrantes[$i]['edad']; ?></td>
-                                    <td><?php foreach ($val['cargos'] as $item => $cargo){echo "| " .$cargo . " | ";} ?></td>
+                                    <td><?php foreach ($integrantes[$i]['cargos'] as $item => $cargo){echo "| " .$cargo . " | ";} ?></td>
                                     <td><?php echo $integrantes[$i]['grado']; ?></td>
                                 </tr>
                                 <?php if($i > 0 && $i % 17 === 0){$i++; break;}?>

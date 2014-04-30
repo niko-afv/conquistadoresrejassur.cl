@@ -88,8 +88,11 @@ class CtrlIntegranteList extends CI_Controller{
             $array[$i]['apellido']  =   $oListado->get($i)->getApellido();
             $array[$i]['unidad']    =   $oListado->get($i)->getUnidad();
             $array[$i]['edad']      =   $oListado->get($i)->getEdad();
-            $array[$i]['cargo']     =   $oListado->get($i)->getCargo()->getNombre();
             $array[$i]['grado']     =   $oListado->get($i)->getRango()->getNombre();
+            $array[$i]['cargos']    =   array();
+            for($x =0; $x < $oListado->get($i)->countCargos();$x++){
+                $array[$i]['cargos'][]  =   $oListado->get($i)->getCargo($x)->getNombre();
+            }            
         }
         $data['num_rows'] =   $oListado->count();
         $data['integrantes']    =   $array;
