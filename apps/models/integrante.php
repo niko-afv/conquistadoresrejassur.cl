@@ -70,12 +70,11 @@ class Integrante extends CI_Model{
             
             $this->db->where("RUT_INTEGRANTE",$this->getRut());
             $this->db->where("ID_TEMPORADA",1);//$this->session->userdata("userBo_temporada_id"));
+            $this->db->where("ESTADO",1);
             $res = $this->db->get("INTEGRANTES_CARGOS");
-            /*print_r($res->result());
-            die();*/
             foreach($res->result() as $item => $cargo){
                 $oCargo = new $this->cargo();
-                $oCargo->setID($cargo->ID);
+                $oCargo->setID($cargo->ID_CARGO);
                 $this->addCargo($oCargo);
             }
             
@@ -224,27 +223,41 @@ public function getRut(){return $this->rut;}
     public function removeCargo($index){
         $this->listCargos->offsetUnset($index);
     }
+    public function deleteCargos(){
+        unset($this->listCargos);
+        $this->listCargos = new ArrayObject();
+    }
     private function __DBActualizarCargos(){
+        $cargos_a_quitar = array();
         for($i = 0; $i < $this->countCargos(); $i++){
             $this->db->where("RUT_INTEGRANTE", $this->getRut());
-            $this->db->where("ID_TEMPORADA", $this->session->userdata("userBo_temporada_id"));
+            $this->db->where("ID_TEMPORADA", 1/*$this->session->userdata("userBo_temporada_id")*/);
             $this->db->where("ID_CARGO", $this->getCargo($i)->getID());
             $res = $this->db->get("INTEGRANTES_CARGOS");
             
-            if(count($res->resul() == 0)){
+            if(count($res->result()) < 1){
                 $datos = array(
                     'RUT_INTEGRANTE'=>  $this->getRut(),
                     'ID_CARGO'      =>  $this->getCargo($i)->getID(),
-                    'ID_TEMPORADA'  =>  $this->session->userdata("userBo_temporada_id")
+                    'ID_TEMPORADA'  =>  1,//$this->session->userdata("userBo_temporada_id")
+                    'ESTADO'        => 1
                 );
                 $res2 = $this->db->insert("INTEGRANTES_CARGOS", $datos);
-            }else{
-                $cargo_integrante = $res->result();
+            }else{                
+                $cargo_integrante = $res->result();                
+                $cargos_a_quitar[] = $cargo_integrante[0]->ID;
                 $this->db->where("ID",$cargo_integrante[0]->ID);
                 $datos = array('ESTADO'=>1);
                 $this->db->update("INTEGRANTES_CARGOS",$datos);
             }
         }
+        if(count($cargos_a_quitar)>0){
+                $this->db->where_not_in("ID",$cargos_a_quitar);
+                $this->db->where("RUT_INTEGRANTE",$this->getRut());
+                $datos = array('ESTADO'=>0);
+                $res3 = $this->db->update("INTEGRANTES_CARGOS",$datos);
+        }
+        
     }
 }
 
