@@ -1,5 +1,5 @@
 <div class="row-fluid">
-<div id="error2" class="alert alert-error" style="display: none;">
+<div id="error2" class="alert alert-danger" style="display: none;">
     <button type="button" class="close" data-dismiss="alert">×</button>
     <div></diV>
 </div>
