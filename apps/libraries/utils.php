@@ -154,8 +154,9 @@ class Utils {
         return $delete;
     }
     
-    public function formatString($string){
-        $unsuported_chars = array('-','_','/','*');
+    public function formatString($string,$underscore = FALSE){
+        $unsuported_chars = array('-','/','*');
+        if(!$underscore){$unsuported_chars[] = '_';}
         $suported_string = str_replace($unsuported_chars, " ", $string);
         $loweString = strtolower($suported_string);
         $final_string = ucfirst($loweString);

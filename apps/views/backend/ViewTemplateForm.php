@@ -24,16 +24,17 @@
                 var html0 = "";
                 var html1 = "";
                 var html2 = "";
-
+                console.log(obj);
+                
                 for(var i = 0; i< obj.length; i++){
                     html1 += "<div class='row-check'>";
                     html1 += "<div class='form-column a'>";
-                    html1 += "<label>"+obj[i]+"</label>";
+                    html1 += "<label>"+obj[i].label+"</label>";
                     html1 += "</div>";
                     html1 += "<div class='form-column b'>";
                     html1 += "<fieldset>";
-                    html1 += "<input type='checkbox' name='campos[]' id='"+i+"' value='"+obj[i]+"' />"
-                    html1 += "<label for='"+i+"'>"+obj[i]+"</label>";
+                    html1 += "<input type='checkbox' name='campos[]' id='"+i+"' value='"+obj[i].field+"' />"
+                    html1 += "<label for='"+i+"'>"+obj[i].label+"</label>";
                     html1 += "</fieldset>";
                     //html2 += "<input class='form-inline' type='checkbox' name='campos[]' id='"+i+"' value='"+obj[i]+"' />";
                     

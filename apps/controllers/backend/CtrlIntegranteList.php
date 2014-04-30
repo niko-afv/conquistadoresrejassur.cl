@@ -92,7 +92,7 @@ class CtrlIntegranteList extends CI_Controller{
             $array[$i]['cargos']    =   array();
             for($x =0; $x < $oListado->get($i)->countCargos();$x++){
                 $array[$i]['cargos'][]  =   $oListado->get($i)->getCargo($x)->getNombre();
-            }            
+            }
         }
         $data['num_rows'] =   $oListado->count();
         $data['integrantes']    =   $array;

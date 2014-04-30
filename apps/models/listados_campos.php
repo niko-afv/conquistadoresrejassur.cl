@@ -31,7 +31,9 @@ class Listados_Campos extends CI_Model{
             if(count($res->result()) > 0){
                 foreach ($res->result() as $item => $val){
                     $oUtils = new $this->utils();
-                    $campos[] = $oUtils->formatString($val->Field);
+                    $campos[] = array(
+                        'label' => $oUtils->formatString($val->Field),
+                        'field' => $oUtils->formatString($val->Field,TRUE));
                 }
             }
         }
