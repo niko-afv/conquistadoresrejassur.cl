@@ -51,7 +51,7 @@ class CtrlIntegranteForm extends CI_Controller{
             $this->form_validation->set_rules('direccion','Direccion','min_length[10]|max_length[50]');
             $this->form_validation->set_rules('mail','E-Mail','valid_email');
             $this->form_validation->set_rules('imgIntegrante-img1','Foto de Perfil','min_length[10]');
-            //$this->form_validation->set_rules('cargo','Cargo','numeric|callback_verificar_cargo');
+            $this->form_validation->set_rules('cargos[]','Cargo','required|numeric|callback_verificar_cargo');
             $this->form_validation->set_rules('grado','Grado','numeric|callback_verificar_grado');
             if($this->input->post('edad') < 16){
                 $this->form_validation->set_rules('rutApoderado','Rut Apoderado','required|min_length[9]|max_length[10]');
@@ -68,16 +68,20 @@ class CtrlIntegranteForm extends CI_Controller{
                     $oIntegrante->setRango($this->input->post('grado'));
                     $this->load->model("cargo");
                     
-                    foreach ($this->input->post('cargo') as $item => $cargo){
+                    $oIntegrante->setApoderado($this->input->post('rutApoderado'));
+                    $oIntegrante->getApoderado()->setNombre($this->input->post('nombreApoderado'));
+                    $oIntegrante->getApoderado()->setApellido($this->input->post('apellidoApoderado'));
+                    $oIntegrante->getApoderado()->setTelefono($this->input->post('fonoApoderado'));
+                    
+                    $oIntegrante->deleteCargos();
+                    
+                    foreach ($this->input->post('cargos') as $item => $cargo){                        
                         $oCargo = new $this->cargo();
                         $oCargo->setID($cargo);
                         $oIntegrante->addCargo($oCargo);
                     }
                     
-                    $oIntegrante->setApoderado($this->input->post('rutApoderado'));
-                    $oIntegrante->getApoderado()->setNombre($this->input->post('nombreApoderado'));
-                    $oIntegrante->getApoderado()->setApellido($this->input->post('apellidoApoderado'));
-                    $oIntegrante->getApoderado()->setTelefono($this->input->post('fonoApoderado'));
+                    
                     
                     if($this->input->post('imgIntegrante-img1')){
                         $oIntegrante->setFoto($this->input->post('imgIntegrante-img1'));
@@ -94,7 +98,7 @@ class CtrlIntegranteForm extends CI_Controller{
                                 $this->load->model('trayectoria_integrante');
                                 $oTrayectoria = new $this->trayectoria_integrante();
                                 
-                                $oTrayectoria->setTemporada($this->session->userdata("temporada_id"));
+                                $oTrayectoria->setTemporada($this->session->userdata("userBo_temporada_id"));
                                 if($oTrayectoria->save($oIntegrante->getRut())){
                                     $this->session->set_flashdata('success','<strong>¡Bien echo!</strong> El integrante se ha guardado con exito');
                                     redirect('admin/integrantes_list/');
@@ -177,7 +181,7 @@ class CtrlIntegranteForm extends CI_Controller{
         }
     }
     
-    public function verificar_cargo($cargo){
+    public function verificar_cargo($cargo){        
         if($this->edad <= 15 && $cargo != 3){
             $this->form_validation->set_message('verificar_cargo', 'El cargo seleccionado solo puede ser asignado a mayores de 15 años de edad');
             return FALSE;

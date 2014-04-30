@@ -16,7 +16,7 @@
             <th>Nombre</th>
             <th>Unidad</th>
             <th>Edad</th>
-            <th>Cargo</th>
+            <th>Cargo(s)</th>
             <th>Grado</th>
             <th>Acciones</th>
         </tr>
@@ -31,7 +31,7 @@
             <td class='name'><?php echo $val['nombre']; ?></td>
             <td><?php echo $val['unidad']; ?></td>
             <td><?php echo $val['edad']; ?></td>
-            <td><?php echo $val['cargo']; ?></td>
+            <td><?php foreach ($val['cargos'] as $item => $cargo){echo "| " .$cargo . " | ";} ?></td>
             <td><?php echo $val['grado']; ?></td>
             <td>
                 <a href="<?php echo $base_url . '/admin/integrantes_form/modificar/' . $val['rut'];?>" class='glyphicon glyphicon-edit'></a>

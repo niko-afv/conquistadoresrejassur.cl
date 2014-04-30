@@ -126,8 +126,6 @@ $('.typeahead').typeahead({
 
     });
     </script>
-    
-    <?php print_r($integrante['cargos']);?>
 
 <form action="/admin/integrantes_form/" method="POST">
 
@@ -195,13 +193,13 @@ $('.typeahead').typeahead({
         
         <div class="form-item">
             <label>Cargo</label>
-            <select class="form-control" name="cargo[]" multiple>
+            <select class="form-control" name="cargos[]" multiple>
                 <option value="0">Seleccione Cargo</option>
                 <?php foreach ($cargos as $item => $val){?>
                 <option value="<?=$val['id'];?>" <?php if(in_array($val['id'], $integrante["cargos"]) || $val['id'] == set_value('cargo')){echo 'selected';}?> ><?=$val['nombre'];?></option>
                 <?php }?>
             </select>
-            <?php echo form_error('cargo');?>
+            <?php echo form_error('cargos[]');?>
         </div>
         
         <div class="form-item">
