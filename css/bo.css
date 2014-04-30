@@ -321,3 +321,10 @@ button {
     border-color: #C6D880;
     background: none repeat scroll 0 0 #E6EFC2;*/
 }
+
+
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"]{
+    height: 30px !important;
+    padding: 0 5px !important;    
+}

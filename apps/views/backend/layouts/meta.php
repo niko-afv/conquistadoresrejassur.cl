@@ -11,11 +11,8 @@
 <link href="<?php echo base_url();?>vendors/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="print, screen" />
 <script src="<?php echo base_url();?>vendors/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!--TypeaHead - AutoComplete-->
-<script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js" type="text/javascript"></script>
-<!--Own Css-->
 <link href="http://twitter.github.io/typeahead.js/css/examples.css" rel="stylesheet"   />
-<link href="<?php echo base_url();?>css/bo.css" rel="stylesheet" type="text/css" media="print, screen"/>
-<link href="<?php echo base_url();?>css/bo2.css" rel="stylesheet" type="text/css" media="print, screen" />
+<script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js" type="text/javascript"></script>
 <!--JQuery Sortable-->
 <script src="http://devheart.org/examples/jquery-customizable-layout-using-drag-and-drop/2-saving-and-loading-items/jquery.cookie.js"></script>
 <!--Upload & functions-->
@@ -32,6 +29,9 @@
 <!--Checkbox & Radio Pickers-->
 <script src="/vendors/Picker-master/jquery.fs.picker.min.js"></script>
 <link href="/vendors/Picker-master/jquery.fs.picker.css" rel="stylesheet"   />
+<!--Own Css-->
+<link href="<?php echo base_url();?>css/bo.css" rel="stylesheet" type="text/css" media="print, screen"/>
+<link href="<?php echo base_url();?>css/bo2.css" rel="stylesheet" type="text/css" media="print, screen" />
 
 <script type="text/javascript">
 

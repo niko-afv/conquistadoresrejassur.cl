@@ -15,7 +15,7 @@
     <div id="user-popover">
         <div><label>User:</label> <?php echo $this->session->userdata("userBo_nombre"); ?></div>
         <div><label>Perfil:</label> <?php echo $this->session->userdata("userBo_type"); ?></div>
-        <div><label>Temporada:</label> <?php echo $this->session->userdata("temporada");?></div>
+        <div><label>Temporada:</label> <?php echo $this->session->userdata("userBo_temporada");?></div>
         <div><label>Ultima Visita:</label> <?php echo $this->session->userdata("userBo_last_login");?></div>
         <hr/>
         <div><a href="javascript:void(0);">Modificar Perfil</a></div>
@@ -37,7 +37,8 @@
            title="Perfil de Usuario"
         ></a>
         <a class='glyphicon glyphicon-dashboard' title="Dashboard" href="/bo/home"></a> 
-        <a class="glyphicon glyphicon-fullscreen" href="/" target="_blank" title="Ver sitio web"></a> 
+        <a class="glyphicon glyphicon-fullscreen" href="/" target="_blank" title="Ver sitio web"></a>
+        <a class="glyphicon glyphicon-cog" href="/" target="_blank" title="Configuración"></a>
         <a class='glyphicon glyphicon-off' href="<?php echo base_url();?>admin/logout" title="Cerrar Sesion"></a>
     </div>
     
