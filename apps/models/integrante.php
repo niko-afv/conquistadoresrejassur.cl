@@ -69,7 +69,7 @@ class Integrante extends CI_Model{
             $this->apoderado->setRut($xintegrante[0]->RUT_APODERADO);
             
             $this->db->where("RUT_INTEGRANTE",$this->getRut());
-            $this->db->where("ID_TEMPORADA",1);//$this->session->userdata("userBo_temporada_id"));
+            $this->db->where("ID_TEMPORADA",$this->session->userdata("userBo_temporada_id"));
             $this->db->where("ESTADO",1);
             $res = $this->db->get("INTEGRANTES_CARGOS");
             foreach($res->result() as $item => $cargo){
@@ -231,7 +231,7 @@ public function getRut(){return $this->rut;}
         $cargos_a_quitar = array();
         for($i = 0; $i < $this->countCargos(); $i++){
             $this->db->where("RUT_INTEGRANTE", $this->getRut());
-            $this->db->where("ID_TEMPORADA", 1/*$this->session->userdata("userBo_temporada_id")*/);
+            $this->db->where("ID_TEMPORADA", $this->session->userdata("userBo_temporada_id"));
             $this->db->where("ID_CARGO", $this->getCargo($i)->getID());
             $res = $this->db->get("INTEGRANTES_CARGOS");
             
@@ -239,7 +239,7 @@ public function getRut(){return $this->rut;}
                 $datos = array(
                     'RUT_INTEGRANTE'=>  $this->getRut(),
                     'ID_CARGO'      =>  $this->getCargo($i)->getID(),
-                    'ID_TEMPORADA'  =>  1,//$this->session->userdata("userBo_temporada_id")
+                    'ID_TEMPORADA'  =>  $this->session->userdata("userBo_temporada_id"),
                     'ESTADO'        => 1
                 );
                 $res2 = $this->db->insert("INTEGRANTES_CARGOS", $datos);
