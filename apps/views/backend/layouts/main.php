@@ -15,7 +15,7 @@
             <div id="title"><?php echo $category_title;?></div>
             <div id="content">
                 <?php if($this->session->flashdata('error')){?>
-                    <div id="error" class="alert alert-error">
+                    <div id="error" class="alert alert-danger">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <?php echo $this->session->flashdata('error');?>
                     </div>
