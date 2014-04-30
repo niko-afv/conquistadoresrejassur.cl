@@ -192,9 +192,8 @@ $('.typeahead').typeahead({
         </div>
         
         <div class="form-item">
-            <label>Cargo</label>
-            <select class="form-control" name="cargos[]" multiple>
-                <option value="0">Seleccione Cargo</option>
+            <label>Cargo(s)</label>
+            <select class="form-control" name="cargos[]" multiple data-placeholder="Seleccione almenos un cargo">
                 <?php foreach ($cargos as $item => $val){?>
                 <option value="<?=$val['id'];?>" <?php if(in_array($val['id'], $integrante["cargos"]) || $val['id'] == set_value('cargo')){echo 'selected';}?> ><?=$val['nombre'];?></option>
                 <?php }?>
@@ -204,8 +203,7 @@ $('.typeahead').typeahead({
         
         <div class="form-item">
             <label>Grado</label>
-            <select class="form-control" name="grado">
-                <option value="0">Seleccione Grado</option>
+            <select class="form-control" name="grado" multiple data-placeholder="Seleccione un grado">
                 <?php foreach ($rangos as $item => $val){?>
                 <option value="<?=$val['id'];?>" <?php if($val['id']==$integrante['rango'] || $val['id'] == set_value('grado')){echo 'selected';}?> ><?=$val['nombre'];?></option>
                 <?php }?>
