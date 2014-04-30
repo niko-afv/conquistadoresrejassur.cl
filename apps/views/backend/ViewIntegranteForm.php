@@ -203,7 +203,7 @@ $('.typeahead').typeahead({
         
         <div class="form-item">
             <label>Grado</label>
-            <select class="form-control" name="grado" multiple data-placeholder="Seleccione un grado">
+            <select class="form-control" name="grado" data-placeholder="Seleccione un grado">
                 <?php foreach ($rangos as $item => $val){?>
                 <option value="<?=$val['id'];?>" <?php if($val['id']==$integrante['rango'] || $val['id'] == set_value('grado')){echo 'selected';}?> ><?=$val['nombre'];?></option>
                 <?php }?>
