@@ -36,11 +36,11 @@ class CtrlListForm extends CI_Controller{
         $template   =   $oTemplate->toArray();
         $oListado->customList($template['entidad']['Tabla'],$template['campos']);
 
-        $data['entidad']        =   array(
-                    'nombre'    =>  $template['nombre'],
-                    'entidad'   =>  array(
-                        'nombre'    =>  $template['entidad']['Nombre']
-            )
+        $data['entidad']    =   array(
+                'nombre'    =>  $template['nombre'],
+                'entidad'   =>  array(
+                    'nombre'    =>  $template['entidad']['Nombre']
+                )
         );
 
         for($i=0; $i < $oListado->count(); $i++){

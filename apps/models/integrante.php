@@ -17,7 +17,7 @@ class Integrante extends CI_Model{
     private $nombre             = '';
     private $apellido           = '';
     private $edad               = '';
-    private $telefono           = '';
+    private $telefono_principal = '';
     private $telefono_auxiliar  = '';
     private $direccion          = '';
     private $email              = '';
@@ -91,7 +91,7 @@ class Integrante extends CI_Model{
     public function setNombre($value){$this->nombre = $value;}
     public function setApellido($value){$this->apellido = $value;}
     public function setEdad($value){$this->edad = $value;}
-    public function setTelefono($value){$this->telefono = $value;}
+    public function setTelefono($value){$this->telefono_principal = $value;}
     public function setTelefonoAuxiliar($value){$this->telefono_auxiliar = $value;}
     public function setDireccion($value){$this->direccion = $value;}
     public function setMail($value){$this->email = $value;}
@@ -119,7 +119,7 @@ public function getRut(){return $this->rut;}
         }
     }
     public function getEdad(){return $this->edad;}
-    public function getTelefono(){return $this->telefono;}
+    public function getTelefono(){return $this->telefono_principal;}
     public function getTelefonoAuxiliar(){return $this->telefono_auxiliar;}
     public function getDireccion(){return $this->direccion;}
     public function getMail(){return $this->email;}
@@ -257,7 +257,6 @@ public function getRut(){return $this->rut;}
                 $datos = array('ESTADO'=>0);
                 $res3 = $this->db->update("INTEGRANTES_CARGOS",$datos);
         }
-        
     }
 }
 
