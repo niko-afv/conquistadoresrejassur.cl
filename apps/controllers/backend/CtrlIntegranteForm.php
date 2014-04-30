@@ -53,6 +53,7 @@ class CtrlIntegranteForm extends CI_Controller{
             $this->form_validation->set_rules('imgIntegrante-img1','Foto de Perfil','min_length[10]');
             $this->form_validation->set_rules('cargos[]','Cargo','required|numeric|callback_verificar_cargo');
             $this->form_validation->set_rules('grado','Grado','numeric|callback_verificar_grado');
+            $this->form_validation->set_rules('estado','Estado','alpha');
             if($this->input->post('edad') < 16){
                 $this->form_validation->set_rules('rutApoderado','Rut Apoderado','required|min_length[9]|max_length[10]');
                 $this->form_validation->set_rules('nombreApoderado','Nombre Apoderado','required|min_length[5]|max_length[25]');
@@ -66,6 +67,7 @@ class CtrlIntegranteForm extends CI_Controller{
                     $oIntegrante->setApellido($this->input->post('apellido'));
                     $oIntegrante->setEdad($this->input->post('edad'));
                     $oIntegrante->setRango($this->input->post('grado'));
+                    $oIntegrante->setEstado(($this->input->post("estado") == "on")?1:0);
                     $this->load->model("cargo");
                     
                     $oIntegrante->setApoderado($this->input->post('rutApoderado'));
