@@ -11,7 +11,9 @@
 */
 date_default_timezone_set('America/Santiago');
 define('IMAGE_PATH',  $_SERVER['DOCUMENT_ROOT'] . '/uploads/images/');
+define('PDF_PATH',  $_SERVER['DOCUMENT_ROOT'] . '/uploads/pdf/');
 define('FILE_PATH',  $_SERVER['DOCUMENT_ROOT'] . 'uploads/files/');
+define('PDF', '/uploads/pdf/');
 define('IMAGE', 'uploads/images/');
 define('FILE', '/uploads/files/');
 define('RANDOM_NAME', substr(md5(uniqid(mt_rand())),0,5));

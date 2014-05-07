@@ -8,6 +8,36 @@
     <div></div>
 </div>
 
+<script>
+$(function(){
+    $("#toPDF").on("click", function(e){
+        e.preventDefault();
+        var original_src = $(this).find("img").attr("src");
+        $(this).find("img").attr("src","http://media.jumpingjack.com/JumpingJack/loading.gif");
+        
+        var matriz = new Array();
+        $("tbody tr").each(function(i){
+            var id = $(this).attr("id");
+            var valores = new Array();
+            
+            $(this).find("input").each(function(i){
+                valores[i]= $(this).val();
+            });
+            matriz[id] = valores;
+        });
+        
+        $.post($("#toPDF").attr("href"),{matriz:matriz}, function(data){
+            $("#toPDF").find("img").attr("src",original_src);
+            data = JSON.parse(data)
+            console.log(data.file);
+            //window.location.href = data.file;
+            window.open(data.file, '_blank');
+        })
+    });
+})
+</script>
+
+<form method="POST">
 <table class='table table-hover table-bordered table-condensed'>
     <thead>
     <tr class="form-title">
@@ -21,24 +51,16 @@
     <?php $i=0;?>
     <?php foreach($entidad['lista'] as $item){?>
         <?php $i++;?>
-        <tr id="">
+        <tr id="<?php echo $i;?>">
             <td><?php echo $i;?></td>
-            <?php foreach($template['campos'] as $campo){?>
-                <td><?php if(isset($item[$campo['nombre']])){ echo $item[$campo['nombre']]; }else{ echo "<input type='text' placeholder='Ingrese un valor'  />";} ?></td>
+            <?php foreach($template['campos'] as $campo){?>                
+                <td><?php if(isset($item[$campo['nombre']])){ echo $item[$campo['nombre']]; }else{ echo "<input type='text' name='". $campo['nombre'] ."' placeholder='Ingrese un valor'  />";} ?></td>
             <?php }?>
-
-            <!--<td>
-                <a href="<?php echo $base_url . '/admin/plantillas_form/modificar/' . $val['id'];?>"><i class='icon-edit'></i></a>
-                &nbsp;
-                <a class="delete-reg" href='<?php echo $base_url . "/admin/plantillas_list/eliminar/" . $val['id']; ?>'><i class='icon-trash'></i></a>
-                &nbsp;
-                <a href='<?php echo $base_url . "/admin/listados_form/cargar/" . $val['id']; ?>'><i class='icon-list'></i></a>
-            </td>-->
         </tr>
     <?php }?>
     </tbody> 
 </table>
-
-<a title="Descargar a PDF" style="float: right;" href="/admin/listados_form/toPdf/<?php echo $id;?>"><img alt="logo-pdf" src="/images/pdf-download-icon.png" /></a>
+</form>
+<a id="toPDF" title="Descargar a PDF" style="float: right;" href="/admin/listados_form/toPdf/<?php echo $id;?>"><img alt="logo-pdf" src="/images/pdf-download-icon.png" width="32" height="38" /></a>
 
 <div class="clear"></div>

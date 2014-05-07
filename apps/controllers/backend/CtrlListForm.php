@@ -59,6 +59,7 @@ class CtrlListForm extends CI_Controller{
     }
     
     public function toPDF($template_id = NULL){
+        
         unset($this->layout);
         
         if($template_id == NULL){
@@ -98,10 +99,26 @@ class CtrlListForm extends CI_Controller{
         }
         
         $data['template']   =   $oTemplate->toArray();
+        $data['campos_extra'] = $this->input->post();
         $html = $this->load->view("backend/ViewListPrint",$data, TRUE);
         
         $this->load->helper(array('dompdf', 'file'));
-        pdf_create($html, $oTemplate->getNombre());
+        $pdf_string = pdf_create($html, $oTemplate->getNombre(), FALSE);
+        $final_file = PDF_PATH . $oTemplate->getNombre() . ".pdf";
+        $file_url = PDF . $oTemplate->getNombre() . ".pdf";
+        $file = fopen($final_file, "a");
+        fwrite($file, $pdf_string);
+        fclose($file);
+        
+        $json = array(
+            'success' => TRUE,
+            'file'  => $file_url
+        );
+        
+        $data = array(
+            'content' => $json,
+            'type'  => 'json'
+        );
+        $this->load->view("ajax",$data);
     }
-
 }

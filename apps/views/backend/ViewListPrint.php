@@ -1467,19 +1467,20 @@
     <?php $i=0;?>
     <?php foreach($entidad['lista'] as $item){?>
         <?php $i++;?>
-        <tr id="">
+        <tr id="<?php echo $i;?>">
             <td><?php echo $i;?></td>
+            <?php $x = 0;?>
+            <?php $y = 0;?>
             <?php foreach($template['campos'] as $campo){?>
-                <td><?php if(isset($item[$campo['nombre']])){ echo $item[$campo['nombre']]; } ?></td> 
+                <td><?php if(isset($item[$campo['nombre']])){
+                    echo $item[$campo['nombre']];
+                }else{
+                    $x = ($y == $i)?$x+1:$x = 0;
+                    echo $campos_extra["matriz"][$i][$x];
+                    $y = $i;
+                } ?></td> 
+                
             <?php }?>
-
-            <!--<td>
-                <a href="<?php echo $base_url . '/admin/plantillas_form/modificar/' . $val['id'];?>"><i class='icon-edit'></i></a>
-                &nbsp;
-                <a class="delete-reg" href='<?php echo $base_url . "/admin/plantillas_list/eliminar/" . $val['id']; ?>'><i class='icon-trash'></i></a>
-                &nbsp;
-                <a href='<?php echo $base_url . "/admin/listados_form/cargar/" . $val['id']; ?>'><i class='icon-list'></i></a>
-            </td>-->
         </tr>
     <?php }?>
     </tbody>
