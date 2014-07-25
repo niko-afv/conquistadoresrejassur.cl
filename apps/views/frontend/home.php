@@ -81,11 +81,11 @@
                                     </div>
                                     <!-- /Top Logo -->
                                     <ul class="text-slide">                
-                                          <li>Explore <span class="text-color">Agency</span> Theme</li>
-                                          <li><span class="text-color">creative</span> team work</li>
-                                          <li>Great <span class="text-color">features</span> included! </li>                
+                                          <li>Te invitamos a <span class="text-color">Nuestro</span> Club</li>
+                                          <li>Las mejores <span class="text-color">aventuras</span> se viven aquí</li>
+                                          <li>Comparte en un ambiente de  <span class="text-color">amistad</span></li>
                                     </ul>
-                                    <a href="#section2" class="btn btn-1 img-btn">Learn More</a>
+                                    <a href="#section2" class="btn btn-1 img-btn">Conócenos</a>
                               </div>
                         </div>
                   </div>
@@ -119,7 +119,7 @@
                                                       <!-- Collect the nav links, forms, and other content for toggling -->
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav navbar-right">
-                                                                  <li class="active"><a href="#section1">Home</a></li>
+                                                                  <li class="active"><a href="#section">Home</a></li>
                                                                   <li><a href="#section2">About Us</a></li>
                                                                   <li><a href="#section3">Portfolio</a></li>
                                                                   <li><a href="#section4">Services</a></li>
