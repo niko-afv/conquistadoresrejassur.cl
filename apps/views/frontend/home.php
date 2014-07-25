@@ -4,7 +4,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 <head>
       <meta charset="utf-8">
-      <title>Agency Parallax Responsive HTML5/CSS3 Template | FIFO THEMES</title>
+      <title>Conquistadores Rejas Sur</title>
       <meta name="description" content="Agency Parallax Responsive HTML5/CSS3 Template from FIFOTHEMES.COM">
       <meta name="author" content="FIFOTHEMES.COM">
       <!-- Mobile Metas -->
@@ -26,9 +26,11 @@
       <link rel="stylesheet" href="css/agency/css/style.css">
       <link rel="stylesheet" href="css/agency/css/global.css">
       <!-- Skin -->
-      <link rel="stylesheet" href="css/agency/css/colors/blue.css" class="colors">
+      <!--<link rel="stylesheet" href="css/agency/css/colors/blue.css" class="colors">-->
+      <link rel="stylesheet" href="/css/agency/css/colors/blue.css" class="colors">
       <!-- Favicons -->
-      <link rel="shortcut icon" href="images/agency/img/ico/favicon.ico">
+      <!--<link rel="shortcut icon" href="images/agency/img/ico/favicon.ico">-->
+      <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
       <link rel="apple-touch-icon" href="images/agency/img/ico/apple-touch-icon.png">
       <link rel="apple-touch-icon" sizes="72x72" href="images/agency/img/ico/apple-touch-icon-72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="images/agency/img/ico/apple-touch-icon-114.png">
@@ -56,8 +58,9 @@
       <div class="wrap with-logo">
             
 
-            <!-- Image Background Parallax -->
-            <div id="section" class="image-parallax" style="background-image: url(images/agency/img/slider/bx1.jpg)">
+            <!-- Image Background Parallax --
+            <div id="section" class="image-parallax" style="background-image: url(images/agency/img/slider/bx1.jpg)">-->
+            <div id="section" class="image-parallax" style="background-image: url(images/frontend/dia0_1_.jpg)">
 
                   <div class="bg-overlay">
                         <div class="slide-content light">
@@ -66,7 +69,8 @@
                                     <div class="top-logo">
                                           <div class="scrollNormal">
                                                 <a href="#section2">
-                                                      <img width="140" height="140" alt="Agency" src="images/agency/img/logo_welcome.png">
+                                                    <!--<img width="140" height="140" alt="Agency" src="images/agency/img/logo_welcome.png">-->
+                                                    <img width="140" height="200" alt="Agency" src="images/logo-completo2.png">
                                                 </a>
                                           </div>
                                           <div class="scrollDown">
