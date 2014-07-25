@@ -1,3 +1,4 @@
 .htaccess
 apps/config/database.php
 uploads/
+/nbproject
