@@ -486,8 +486,8 @@
                                           <div class="col-md-3 wow fadeInLeft">
                                                 <div class="fun-box">
                                                       <i class="fa fa-clock-o"></i>
-                                                      <span class="fun" data-from="0" data-to="4555" data-speed="5000" data-refresh-interval="50"></span>
-                                                      <p>Hours of work</p>
+                                                      <span class="fun" data-from="0" data-to="18" data-speed="100" data-refresh-interval="1"></span>
+                                                      <p>Total de Integrantes</p>
                                                 </div>
                                           </div>
 
