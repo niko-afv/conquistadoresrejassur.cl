@@ -951,11 +951,11 @@
             </section>
             <!-- /Section 5 -->
 
-            <!-- Section 6 -->
+            <!-- Section 6 --
             <section id="section6" class="pricing">
                   <div class="container">
                         <div class="row flat">
-                              <!-- Title row -->
+                              <!-- Title row --
                               <div class="row">
                                     <div class="col-md-12 big-title wow bounceIn">
                                           <h2>Pricing</h2>
@@ -967,7 +967,7 @@
                                           <h3>What you have become is the price you paid to get what you used to want!</h3>
                                     </div>
                               </div>
-                              <!-- /Title row -->
+                              <!-- /Title row --
 
                               <div class="row">
                                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInLeft">
@@ -1207,14 +1207,18 @@
                   <footer class="footer-wrap text-center">
                         <div class="container">
                               <ul class="social social-icons-footer-bottom wow fadeInDown">
-                                    <li class="facebook"><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="fa fa-dribbble"></i></a></li>
-                                    <li class="linkedin"><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                                     <li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="fa fa-rss"></i></a></li>
+                                    <li class="facebook">
+                                        <a href="https://www.facebook.com/conquistadores.rejassur" data-toggle="tooltip" title="Facebook" target="_blank">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <!--<li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+                                    <!--<li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="fa fa-dribbble"></i></a></li>-->
+                                    <!--<li class="linkedin"><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>-->
+                                    <li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="fa fa-rss"></i></a></li>
                               </ul>
 
-                              <p class="site-info wow fadeInUp"> © 2014 FifoThemes</p>
+                              <p class="site-info wow fadeInUp"> © 2014 Club de Conquistadores Rejas Sur</p>
                         </div>
                   </footer>
             </section>

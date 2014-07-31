@@ -286,7 +286,7 @@ Drop Down Menu Fade Effect
         
     //Google map
     jQuery('#maps').gMap({
-        address: "House: 325, Road: 2, Mirpur DOHS, Dhaka, Bangladesh",
+        address: "Jeremías, Estación Central",
         zoom: 16,
         controls: {
          panControl: true,
@@ -297,9 +297,9 @@ Drop Down Menu Fade Effect
          overviewMapControl: true
      },
         markers: [{
-            latitude: 23.835369,
-            longitude: 90.367172,
-            html: "<h4>FIFO Themes</h4>Wordpress, HTML5/CSS Themes",
+            latitude: -33.470747,
+            longitude:  -70.704198,
+            html: "<h5>Iglesia Adventista del 7° día</h5> <h4>Rejas Sur</h4>",
             popup: true
         }]
     });
