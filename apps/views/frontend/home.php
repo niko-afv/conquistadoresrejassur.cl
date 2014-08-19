@@ -86,7 +86,8 @@
                                     <!-- /Top Logo -->
                                     <ul class="text-slide">                
                                           <li>Unete a <span class="text-color">Nuestro</span> Club</li>
-                                          <li>Comparte en un ambiente de  <span class="text-color">amistad</span></li>
+                                          <li><span class="text-color">Comparte</span> con Nosotros</li>
+                                          <li>Diviertete <span class="text-color">Sanamente</span></li>
                                     </ul>
                                     <a href="#section2" class="btn btn-1 img-btn">Conócenos</a>
                               </div>
@@ -127,16 +128,16 @@
                                                                   <li><a href="#section3">Integrantes</a></li>
                                                                   <li><a href="#section4">Services</a></li>
                                                                   <li><a href="#section5">Clients</a></li>
-                                                                  <li><a href="#section6">Pricing</a></li>
-                                                                  <li class="dropdown nav-toggle">
+                                                                  <!--<li><a href="#section6">Pricing</a></li>-->
+                                                                  <!--<li class="dropdown nav-toggle">
                                                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
                                                                         <ul class="dropdown-menu">
                                                                               <li><a class="external" href="blog.html">Blog</a></li>
                                                                               <li><a class="external" href="blog-big.html">Blog Large</a></li>
                                                                               <li><a class="external" href="single-post.html">Single Page</a></li>
                                                                         </ul>
-                                                                  </li>
-                                                                  <li><a href="#section7">Contact</a></li>
+                                                                  </li>-->
+                                                                  <li><a href="#section7">Contactanos</a></li>
                                                             </ul>
                                                       </div>
                                                       <!-- /.Navbar-collapse -->
@@ -1335,11 +1336,11 @@
 
             <!-- Section 7 -->
             <section id="section7" class="contacts">
-                  <!-- Subscription Wrap -->
+                  <!-- Subscription Wrap --
                   <div class="subscription-wrap light">
                         <div class="texture-layer">
                               <div class="container">
-                                    <!-- Title row -->
+                                    <!-- Title row --
                                     <div class="row">
                                           <div class="col-md-12 big-title light wow bounceIn">
                                                 <h2>Subscribe with us</h2>
@@ -1347,7 +1348,7 @@
                                     </div>
                                     <!-- /Title row -->
 
-                                    <!-- Subscription form -->
+                                    <!-- Subscription form --
                                     <div class="row text-center">
                                           <div class="col-md-2"></div>
 
@@ -1366,7 +1367,7 @@
 
                                           <div class="col-md-2"></div>
                                     </div>
-                                    <!-- /Subscription form -->
+                                    <!-- /Subscription form --
                               </div>
                         </div>
                   </div>
@@ -1378,13 +1379,13 @@
                               <!-- Title row -->
                               <div class="row">
                                     <div class="col-md-12 big-title wow bounceIn">
-                                          <h2>Contact</h2>
+                                          <h2>Contactanos</h2>
                                     </div>
 
                                     <div class="clearfix"></div>
 
                                     <div class="col-md-12 sub-title text-center wow slideInRight">
-                                          <h3>Contact with us to learn more about all of our Web Design Services!</h3>
+                                          <h3>¡Contactanos para saber mas de nuestro club!</h3>
                                     </div>
                               </div>
                               <!-- /Title row -->
