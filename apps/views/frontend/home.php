@@ -43,6 +43,10 @@
       <!--[if IE]>
       <link rel="stylesheet" href="css/ie.css">
       <![endif]-->
+      
+      <!--Custom CSS - NFREDES-->
+      <link rel="stylesheet" href="/css/agency/custom.css" class="colors">
+      <!--Custom CSS - NFREDES-->
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="75">
       <!-- Page Preloader -->
@@ -81,8 +85,7 @@
                                     </div>
                                     <!-- /Top Logo -->
                                     <ul class="text-slide">                
-                                          <li>Te invitamos a <span class="text-color">Nuestro</span> Club</li>
-                                          <li>Las mejores <span class="text-color">aventuras</span> se viven aquí</li>
+                                          <li>Unete a <span class="text-color">Nuestro</span> Club</li>
                                           <li>Comparte en un ambiente de  <span class="text-color">amistad</span></li>
                                     </ul>
                                     <a href="#section2" class="btn btn-1 img-btn">Conócenos</a>
@@ -121,7 +124,7 @@
                                                             <ul class="nav navbar-nav navbar-right">
                                                                   <li class="active"><a href="#section">Home</a></li>
                                                                   <li><a href="#section2">About Us</a></li>
-                                                                  <li><a href="#section3">Portfolio</a></li>
+                                                                  <li><a href="#section3">Integrantes</a></li>
                                                                   <li><a href="#section4">Services</a></li>
                                                                   <li><a href="#section5">Clients</a></li>
                                                                   <li><a href="#section6">Pricing</a></li>
@@ -327,11 +330,12 @@
                                     <h2>
                                           <i class="fa fa-quote-left wow fadeInLeft"></i>
                                           <span class="wow bounceIn">
-                                                Design is a plan for arranging elements in such a way as best to accomplish a particular purpose.
+                                                Por tanto, yo te aconsejo que de mí compres oro refinado en fuego, para que seas rico, y vestiduras blancas
+                                                para vestirte, y que no se descubra la vergüenza de tu desnudez; y unge tus ojos con colirio, para que veas.
                                           </span>
                                           <i class="fa fa-quote-right wow" data-animate="fadeInRight"></i>
                                     </h2>
-                                    <p class="animated wow" data-animate="fadeInUp">- Charles Eames -</p>
+                                    <p class="animated wow" data-animate="fadeInUp">- Apocalipsis 3:18 -</p>
                               </div>
                         </div>
                   </div>
@@ -343,13 +347,13 @@
                               <!-- Title row -->
                               <div class="row">
                                     <div class="col-md-12 big-title wow bounceIn">
-                                          <h2>Agency Team</h2>
+                                          <h2>DIRECTIVA</h2>
                                     </div>
 
                                     <div class="clearfix"></div>
 
                                     <div class="col-md-12 sub-title text-center wow slideInRight">
-                                          <h3>Get to know the talented people behind it all, and read our latest thinking about web design process, web development and content marketing!</h3>
+                                          <h3>Las personas tras, todas las tareas administrativas y las gestiones para las acividades!</h3>
                                     </div>
                               </div>
                               <!-- /Title row -->
@@ -361,22 +365,25 @@
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
-                                                            <img alt="" src="images/agency/img/team/team-member-1.jpg">
+                                                            <img alt="" src="images/fichas/nicolas_fredes_464x530.jpg">
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
                                                                         <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
                                                                         <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
                                                                         <p>
-                                                                              Lorem ipsum dolor sit amet, quis adipiscing elit.
+                                                                              "Bienaventurados los que guardan sus mandamientos, para que su potencia
+                                                                              sea en el árbol dela vida, y que entren por las puertas en la ciudad"
+                                                                              <br/>
+                                                                              Apoc. 22:14 RV900.
                                                                         </p>
                                                                   </div>
                                                             </div>
                                                       </div>
                                                       <div class="team-member-meta">
-                                                            <h4 class="team-member-name">Monzurul Haque</h4>
+                                                            <h4 class="team-member-name">Nicolás Fredes</h4>
                                                             <div class="team-member-role">
-                                                                  CEO
+                                                                  DIRECTOR
                                                             </div>
                                                       </div>
                                                 </div>
@@ -388,22 +395,22 @@
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
-                                                            <img alt="" src="images/agency/img/team/team-member-2.jpg">
+                                                            <img alt="" src="images/fichas/nallive_montecino_464x530.jpg">
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
                                                                         <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
                                                                         <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
                                                                         <p>
-                                                                              Lorem ipsum dolor sit amet, quis adipiscing elit.
+                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
                                                                         </p>
                                                                   </div>
                                                             </div>
                                                       </div>
                                                       <div class="team-member-meta">
-                                                            <h4 class="team-member-name">Jessica Alba</h4>
+                                                            <h4 class="team-member-name">Nallive Montecino</h4>
                                                             <div class="team-member-role">
-                                                                  CMO
+                                                                  SUB DIRECTOR
                                                             </div>
                                                       </div>
                                                 </div>
@@ -415,22 +422,22 @@
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
-                                                            <img alt="" src="images/agency/img/team/team-member-3.jpg">
+                                                            <img alt="" src="images/fichas/lorena_pezoa_464x530.jpg">
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
                                                                         <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
                                                                         <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
                                                                         <p>
-                                                                              Lorem ipsum dolor sit amet, quis adipiscing elit.
+                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
                                                                         </p>
                                                                   </div>
                                                             </div>
                                                       </div>
                                                       <div class="team-member-meta">
-                                                            <h4 class="team-member-name">Emma Watson</h4>
+                                                            <h4 class="team-member-name">Lorena Pezoa</h4>
                                                             <div class="team-member-role">
-                                                                  CFO
+                                                                  SECRETARIA
                                                             </div>
                                                       </div>
                                                 </div>
@@ -442,22 +449,22 @@
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
-                                                            <img alt="" src="images/agency/img/team/team-member-4.jpg">
+                                                            <img alt="" src="images/fichas/gonzalo_mieres_464x530.jpg">
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
                                                                         <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
                                                                         <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
                                                                         <p>
-                                                                              Lorem ipsum dolor sit amet, quis adipiscing elit.
+                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
                                                                         </p>
                                                                   </div>
                                                             </div>
                                                       </div>
                                                       <div class="team-member-meta">
-                                                            <h4 class="team-member-name">Atiar Rahman</h4>
+                                                            <h4 class="team-member-name">Gonzalo Mieres</h4>
                                                             <div class="team-member-role">
-                                                                  CTO
+                                                                  TESORERO
                                                             </div>
                                                       </div>
                                                 </div>
@@ -527,13 +534,13 @@
                   <!-- Title row -->
                         <div class="row">
                               <div class="col-md-12 big-title wow bounceIn">
-                                    <h2>Portfolio</h2>
+                                    <h2>INTEGRANTES</h2>
                               </div>
 
                               <div class="clearfix"></div>
 
                               <div class="col-md-12 sub-title text-center wow slideInRight">
-                                    <h3>More people will pay you money to help them achieve a monetary goal than will pay you to give them something pretty to look at!</h3>
+                                    <h3>Conoce a quienes forman parte de este gran club!</h3>
                               </div>
                         </div>
                   <!-- /Title row -->
@@ -542,7 +549,7 @@
                   <div id="filters">
                 
                       <ul class="clearfix">
-                        <li><a id="all" href="#" data-filter="*" class="active"><h5>Todos</h5></a></li> 
+                        <li><a id="all" href="#" data-filter="*" class="active"><h5>Todos</h5></a></li>
                         <li><a href="#" data-filter=".directiva"><h5>Directiva</h5></a></li>
                         <li><a href="#" data-filter=".centuriones"><h5>Centuriones</h5></a></li>
                         <li><a href="#" data-filter=".aguilas"><h5>Aguilas</h5></a></li>
@@ -551,17 +558,19 @@
                       </ul>
                   </div>
                   <!-- /Portfolio Filters -->
-
+                  
                   <!-- Portfolio Wrap -->  
                     <div id="portfolio-wrap">
-                    
-                        
-                        
                         <!-- Portfolio Item With PrettyPhoto  -->                 
                         <div class="portfolio-item one-four aguilas">
                               <div class="img-holder">
                                   <img class="img-responsive" src="images/fichas/adriel_montecino_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
+                                  <div class="img-overlay">
+                                      <div>
+                                        <p>Adriel Montecino</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                      </div>
+                                  </div>
                                     <div class="overlay-effect">
                                         <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio2.jpg"><i class="fa fa-search"></i></a>
                                         </span>
@@ -571,12 +580,17 @@
                                 </div>
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->       
-                    
+
                         <!-- Portfolio Item With PrettyPhoto  -->                 
                         <div class="portfolio-item one-four centuriones">
                               <div class="img-holder">
                                   <img class="img-responsive" src="images/fichas/andres_guerra_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
+                                  <div class="img-overlay">
+                                      <div>
+                                        <p>Andres Guerra</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                      </div>
+                                  </div>
                                     <div class="overlay-effect">
                                         <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio3.jpg"><i class="fa fa-search"></i></a>
                                         </span>
@@ -585,13 +599,298 @@
                                     </div>
                                 </div>
                         </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->      
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four branding aguilas">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/john_requelme_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>John Requelme</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                      </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four centuriones directiva ">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/gonzalo_mieres_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Gonzalo Mieres</p>
+                                        <p class="cargo">CONSEJERO - TESORERO</p>
+                                      </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio6.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four centuriones">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/marcelo_rojas_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Marcelo Rojas</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                      </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four centuriones">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/gonzalo_vega_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Gonzalo Vega</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                      </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio8.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four directiva lideres">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/nicolas_fredes_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Nicolás Fredes</p>
+                                        <p class="cargo">DIRECTOR</p>
+                                      </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four lideres">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/felipe_sotomayor_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Felipe Sotomayor</p>
+                                        <p class="cargo">LIDER</p>
+                                      </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four felinas">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/catalina_dias_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Catalina Díaz</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                      </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+                        
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four felinas">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/camila_mieres_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                            <p>Camila Mieres</p>
+                                            <p class="cargo">CONSEJERA</p>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four centuriones directiva">
+                              <div class="img-holder">
+                                  <img class="img-responsive" src="images/fichas/cesar_muñoz_464x530.jpg" alt="">
+                                  <div class="img-overlay">
+                                      <div>
+                                        <p>Cesar Muñoz</p>
+                                        <p class="cargo">CONSEJERO - INSTRUCTOR</p>
+                                      </div>
+                                  </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio2.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->       
+
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four felinas">
+                              <div class="img-holder">
+                                  <img class="img-responsive" src="images/fichas/claudia_donoso_464x530.jpg" alt="">
+                                  <div class="img-overlay">
+                                      <div>
+                                        <p>Claudia Donos</p>
+                                        <p class="cargo">LIDER</p>
+                                      </div>
+                                  </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio3.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four directiva">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/lorena_pezoa_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Lorena Pezoa</p>
+                                        <p class="cargo">SECRETARIA</p>
+                                      </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four directiva felinas">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/nallive_montecino_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                            <p>Nallive Montecino</p>
+                                            <p class="cargo">CONSEJERA - SUB DIRECTOR</p>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four centuriones">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/rodrigo_carvajal_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                            <p>Rodrigo Carvajal</p>
+                                            <p class="cargo">CONQUISTADOR</p>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio8.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four aguilas">
+                              <div class="img-holder">
+                                    <img class="img-responsive" src="images/fichas/javier_cid_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                            <p>Javier Cid</p>
+                                            <p class="cargo">CONSEJERO</p>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-effect">
+                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                        </span>
+                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
                         
                         <!-- Portfolio Item With PrettyPhoto  -->                 
                         <div class="portfolio-item one-four aguilas">
                               <div class="img-holder">
                                     <img class="img-responsive" src="images/fichas/anthony_montecino_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Anthony Montecino</p>
+                                        <p class="cargo">CONSEJERO</p>
+                                      </div>
+                                    </div>
                                     <div class="overlay-effect">
                                         <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
                                         </span>
@@ -600,215 +899,18 @@
                                     </div>
                                 </div>
                         </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four branding aguilas">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/john_requelme_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones directiva ">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/gonzalo_mieres_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio6.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/marcelo_rojas_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/gonzalo_vega_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio8.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four directiva lideres">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/nicolas_fredes_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four lideres">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/felipe_sotomayor_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
-                        
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four felinas">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/catalina_dias_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
+                                    <img class="img-responsive" src="images/fichas/cathy_huyllapuna_464x530.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <div>
+                                        <p>Cathy Huyllapina</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                      </div>
                                     </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        
-                        <!------------------------------------------------------->
-                        
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones directiva">
-                              <div class="img-holder">
-                                  <img class="img-responsive" src="images/fichas/cesar_muñoz_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio2.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->       
-                    
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four felinas">
-                              <div class="img-holder">
-                                  <img class="img-responsive" src="images/fichas/claudia_donoso_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio3.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four directiva">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/lorena_pezoa_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four php html css">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/gonzalo_mieres_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio6.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four directiva felinas">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/nallive_montecino_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/rodrigo_carvajal_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio8.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-                        
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four aguilas">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/javier_cid_464x530.jpg" alt="">
-                                    <div class="img-overlay"></div>
                                     <div class="overlay-effect">
                                         <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
                                         </span>
@@ -817,9 +919,7 @@
                                     </div>
                                 </div>
                         </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-                              
-                        
+                        <!-- /Portfolio Item With PrettyPhoto  -->
                               
                              
                    </div>

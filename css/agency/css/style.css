@@ -1062,7 +1062,8 @@ div.content-box.big div.content-box-info p {
 }
 
 .quote-wrap {
-    background: url('/images/agency/img/plx5.jpg') 50% 0 no-repeat fixed;
+    /*background: url('/images/agency/img/plx5.jpg') 50% 0 no-repeat fixed;*/
+    background: url('/images/frontend/pañolin_front_.jpg') 50% 0 no-repeat fixed;
 }
 
 .subscription-wrap {
@@ -1070,7 +1071,8 @@ div.content-box.big div.content-box-info p {
 }
 
 .fun-wrap {
-    background: url('/images/agency/img/plx3.jpg') 50% 0 no-repeat fixed;
+    /*background: url('/images/agency/img/plx3.jpg') 50% 0 no-repeat fixed;*/
+    background: url('/images/frontend/uniforme_.jpg') 50% 0 no-repeat fixed;
 }
 
 
@@ -1190,6 +1192,7 @@ div.content-box.big div.content-box-info p {
 /* Portfolio Items */   
 
     #portfolio-wrap {
+        background: #000;
         position: relative;
         padding: 0;
         width: 100%;
