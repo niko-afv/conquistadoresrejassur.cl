@@ -123,8 +123,8 @@
                                                       <!-- Collect the nav links, forms, and other content for toggling -->
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav navbar-right">
-                                                                  <li class="active"><a href="#section">Home</a></li>
-                                                                  <li><a href="#section2">About Us</a></li>
+                                                                  <li class="active"><a href="#section">Inicio</a></li>
+                                                                  <li><a href="#section2">Nosotros</a></li>
                                                                   <li><a href="#section3">Integrantes</a></li>
                                                                   <li><a href="#section4">Services</a></li>
                                                                   <li><a href="#section5">Clients</a></li>
@@ -373,10 +373,10 @@
                                                                         <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
                                                                         <p>
-                                                                              "Bienaventurados los que guardan sus mandamientos, para que su potencia
+                                                                              <!--"Bienaventurados los que guardan sus mandamientos, para que su potencia
                                                                               sea en el árbol dela vida, y que entren por las puertas en la ciudad"
                                                                               <br/>
-                                                                              Apoc. 22:14 RV900.
+                                                                              Apoc. 22:14 RV900.-->
                                                                         </p>
                                                                   </div>
                                                             </div>
@@ -466,6 +466,60 @@
                                                             <h4 class="team-member-name">Gonzalo Mieres</h4>
                                                             <div class="team-member-role">
                                                                   TESORERO
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- End -->
+                                    <!-- item 5 -->
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
+                                          <div class="team-member">
+                                                <div class="team-member-holder">
+                                                      <div class="team-member-image">
+                                                            <img alt="" src="images/fichas/javier_cid_464x530.jpg">
+                                                            <div class="team-member-links">
+                                                                  <div class="team-member-links-list">
+                                                                        <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
+                                                                        <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
+                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
+                                                                        <p>
+                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="team-member-meta">
+                                                            <h4 class="team-member-name">Javier Cid</h4>
+                                                            <div class="team-member-role">
+                                                                  CAPELLÁN
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- End -->
+                                    <!-- item 6 -->
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
+                                          <div class="team-member">
+                                                <div class="team-member-holder">
+                                                      <div class="team-member-image">
+                                                            <img alt="" src="images/fichas/cesar_muñoz_464x530.jpg">
+                                                            <div class="team-member-links">
+                                                                  <div class="team-member-links-list">
+                                                                        <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
+                                                                        <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
+                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
+                                                                        <p>
+                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="team-member-meta">
+                                                            <h4 class="team-member-name">Cesar Muñoz</h4>
+                                                            <div class="team-member-role">
+                                                                  INSTRUCTOR
                                                             </div>
                                                       </div>
                                                 </div>
@@ -802,7 +856,7 @@
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
-                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <!-- Portfolio Item With PrettyPhoto  --
                         <div class="portfolio-item one-four directiva">
                               <div class="img-holder">
                                     <img class="img-responsive" src="images/fichas/lorena_pezoa_464x530.jpg" alt="">
