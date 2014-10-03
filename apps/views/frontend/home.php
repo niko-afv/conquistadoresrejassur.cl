@@ -27,7 +27,7 @@
       <link rel="stylesheet" href="css/agency/css/global.css">
       <!-- Skin -->
       <!--<link rel="stylesheet" href="css/agency/css/colors/blue.css" class="colors">-->
-      <link rel="stylesheet" href="/css/agency/css/colors/blue.css" class="colors">
+      <link rel="stylesheet" href="/css/agency/css/colors/custom_blue.css" class="colors">
       <!-- Favicons -->
       <!--<link rel="shortcut icon" href="images/agency/img/ico/favicon.ico">-->
       <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
@@ -64,7 +64,7 @@
 
             <!-- Image Background Parallax --
             <div id="section" class="image-parallax" style="background-image: url(images/agency/img/slider/bx1.jpg)">-->
-            <div id="section" class="image-parallax" style="background-image: url(images/frontend/dia0_1_.jpg)">
+            <div id="section" class="image-parallax" style="background-image: url(images/frontend/home_slider_3.png)">
 
                   <div class="bg-overlay">
                         <div class="slide-content light">
@@ -74,7 +74,7 @@
                                           <div class="scrollNormal">
                                                 <a href="#section2">
                                                     <!--<img width="140" height="140" alt="Agency" src="images/agency/img/logo_welcome.png">-->
-                                                    <img width="140" height="200" alt="Agency" src="images/logo-completo2.png">
+                                                    <img width="100%" id="logo-header" alt="Agency" src="images/logo-completo2.png">
                                                 </a>
                                           </div>
                                           <div class="scrollDown">
@@ -106,7 +106,7 @@
                                           <div class="col-md-2 mob-logo">
                                                 <div class="row">
                                                       <div class="site-logo">
-                                                            <a href="index-image-slider.html"><img src="images/agency/img/logo.png" alt="Agency"></a>
+                                                          <a href="index-image-slider.html"><img src="/images/logo_letras.png" alt="Agency"></a>
                                                       </div>
                                                 </div>
                                           </div>
@@ -158,21 +158,29 @@
                         <!-- Title row -->
                         <div class="row">
                               <div class="col-md-12 big-title wow bounceIn">
-                                    <h2>About Us</h2>
+                                    <h2>Nosotros</h2>
                               </div>
 
                               <div class="clearfix"></div>
 
                               <div class="col-md-12 sub-title text-center wow slideInRight">
-                                    <h3>We match the project goals with a proposed solution considering latest web features, web design and corporate branding!</h3>
+                                    <h3>
+                                        Somos el Club de Conquistadores Rejas Sur, perteneciente a la Asociación
+                                        Metropolitana de Chile (AMCH), llevamos mas de 30 años sirviendo a Dios
+                                        a través de este hermosos ministerio.
+                                    </h3>
                               </div>
                         </div>
                         <!-- /Title row -->
 
                         <div class="row">
-                              <div class="col-md-12">
-                                    <img src="images/agency/img/imac-device.png" alt="About Us" class="img-responsive">
-                              </div>
+                                <div class="col-md-6">
+                                    <img src="/images/logo_conquistadores.png" alt="About Us" class="img-responsive" id="conquis_logo_home">
+                                </div>
+                            
+                                <div class="col-md-6">
+                                    <img src="/images/logo-completo.png" alt="About Us" class="img-responsive">
+                                </div>
                         </div>
 
                         

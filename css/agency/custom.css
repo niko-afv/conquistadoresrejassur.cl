@@ -29,3 +29,20 @@ and open the template in the editor.
     font-size: 10px;
     margin-top: 20px;
 }
+#conquis_logo_home{
+    float: right;
+    margin: 35px auto 0;
+}
+
+@media all and (max-width: 1000px){
+    #logo-header{
+        width:100px;
+    }
+}
+
+@media all and (max-width: 400px){
+    #logo-header{
+        margin: 0 25%;
+        width:90px;
+    }
+}
