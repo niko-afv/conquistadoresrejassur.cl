@@ -48,9 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
+$db['default']['hostname'] = 'mysql.conquistadoresrejassur.cl';
+$db['default']['username'] = 'rejassur';
+$db['default']['password'] = 'r2j1ss5r';
 //if(strstr($_SERVER['DOCUMENT_ROOT'],"devel")){
     $db['default']['database'] = 'conquis_rejas_sur_devel';
 //}else{
