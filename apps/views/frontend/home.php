@@ -64,7 +64,7 @@
 
             <!-- Image Background Parallax --
             <div id="section" class="image-parallax" style="background-image: url(images/agency/img/slider/bx1.jpg)">-->
-            <div id="section" class="image-parallax" style="background-image: url(images/frontend/home_slider_3.png)">
+            <div id="section" class="image-parallax" style="background-image: url(images/frontend/home_slider_1.png)">
 
                   <div class="bg-overlay">
                         <div class="slide-content light">
@@ -370,7 +370,7 @@
                               <!-- Team members row 1-->
                               <div class="row">
                                     <!-- item 1 -->
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInLeft">
+                                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 item wow fadeInLeft">
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
@@ -400,7 +400,7 @@
                                     </div>
                                     <!-- End -->
                                     <!-- item 2 -->
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown">
+                                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown">
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
@@ -427,7 +427,7 @@
                                     </div>
                                     <!-- End -->
                                     <!-- item 3 -->
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown">
+                                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown">
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
@@ -454,7 +454,7 @@
                                     </div>
                                     <!-- End -->
                                     <!-- item 4 -->
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInRight">
+                                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 item wow fadeInRight">
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
@@ -481,7 +481,7 @@
                                     </div>
                                     <!-- End -->
                                     <!-- item 5 -->
-                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
+                                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
@@ -508,7 +508,7 @@
                                     </div>
                                     <!-- End -->
                                     <!-- item 6 -->
-                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
+                                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
