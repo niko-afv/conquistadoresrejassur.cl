@@ -214,12 +214,12 @@ class CtrlIntegranteForm extends CI_Controller{
         $data['page']           =   $this->page;
         
         $data['integrante'] = $oIntegrante->toArray(FALSE);
-        $this->load->view('backend/ViewIntegranteProfile',$data);
+        //$this->load->view('backend/ViewIntegranteProfile',$data);
         
-        //$this->load->helper(array('dompdf', 'file'));
+        $this->load->helper(array('dompdf', 'file'));
         
-        /*$html = $this->load->view('backend/ViewIntegrantesListPrint',$data, TRUE);
-        pdf_create($html, 'FichaIntegrante');*/
+        $html = $this->load->view('backend/ViewIntegrantesListPrint',$data, TRUE);
+        pdf_create($html, 'FichaIntegrante');
     }
     
     public function searchByRut(){
@@ -242,6 +242,9 @@ class CtrlIntegranteForm extends CI_Controller{
             redirect('index.php/admin/integrantes_list/');
         }
     }
+
+
+
     
 }
 ?>
