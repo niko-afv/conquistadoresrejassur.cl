@@ -85,6 +85,19 @@ class Listado extends CI_Model{
             $this->add($oCFlujoCaja);
         }
     }
+
+    public function listarFlujosByMonth($month){
+        $this->load->model('flujo_caja');
+        $this->db->like('FECHA','2014-'. $month);
+        $this->db->select('ID');
+        $records = $this->db->get('FLUJO_CAJA');
+
+        foreach ($records->result() as $item => $val){
+            $oFlujoCaja = new $this->flujo_caja();
+            $oFlujoCaja->setId($val->ID);
+            $this->add($oFlujoCaja);
+        }
+    }
     
     public function listarEntidades(){
         $this->load->model('entidad');

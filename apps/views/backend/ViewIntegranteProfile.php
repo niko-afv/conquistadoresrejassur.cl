@@ -113,12 +113,12 @@
         #header {
                 /*height: 100px;*/
                 position: relative;
-                border: 1px #666666 solid;
+                /*border: 1px #666666 solid;
                 -webkit-border-radius: 7px;
                 -moz-border-radius: 7px;
                 -khtml-border-radius: 7px;
                 -ms-border-radius: 7px;
-                border-radius: 7px;
+                border-radius: 7px;*/
                 padding: 10px;
                 margin: 10px 10px 0 10px;
         }
@@ -244,12 +244,12 @@
 
         #content {
                 margin: 0 10px 0 0;
-                border: 1px #666666 solid;
+                /*border: 1px #666666 solid;
                 -webkit-border-radius: 7px;
                 -moz-border-radius: 7px;
                 -khtml-border-radius: 7px;
                 -ms-border-radius: 7px;
-                border-radius: 7px;
+                border-radius: 7px;*/
                 padding: 10px;
         }
 
@@ -389,14 +389,15 @@
             padding: 10px 0 10px 10px;
         }
         .form-title{
-            background: #131361;
-            border-radius: 4px 4px 0 0;
-            /*color: #fff000;*/
+            /*background: #131361;*/
+            background: #2F304F;
+
+            /*border-radius: 4px 4px 0 0;*/
             color : rgb(255,241,0);
             height: 20px;
             font-size: 13px;
             font-weight: bold;
-            line-height: 22px;
+            line-height: 18px;
             text-indent: 10px;
             padding: 5px 0;
             width: 100%;
@@ -1395,20 +1396,28 @@
             font-weight: bold;
             width: 160px;
         }
-        .row-header-print{
-            display: block;
-            width: 100%;
+        .item-content-print .key{
+            font-weight: bold;
+            line-height: 15px;
+            width: 30%;
         }
-        .row-header-print-right{
-            float: right;
+        .item-content-print .value{
+            line-height: 14px;
+            width: 60%;
+            /*margin-bottom: 10px;*/
+        }
+        .row-header-print, .row-content-print{
+            display: block;
+            margin: 0 0 1px 0;
+            width: 90%;
         }
         .item-header-print{
             display: inline-block;
             width: 45%;
         }
-        .item-header-print-b{
+        .item-content-print{
             display: inline-block;
-            width: 25%;
+            width: 100%;
         }
         #content{
             width: 100% !important;
@@ -1417,247 +1426,172 @@
             margin: 20px auto;
             width: 93%;
         }
+        .title-header-print{
+            color: #2F304F;
+            font-size: 25px;
+            font-weight: bold;
+            display: block;
+            margin: 0 auto;
+            width: 180px;
+        }
+        #wrapper #header div{
+            display: inline-block;
+            width: 80px;
+        }
+        #wrapper #header #ficha-title{
+            width: 550px;
+        }
     </style>
 </head>
 <body>
     
     <div id="wrapper">
         <div id="header">
-                <div class="row-header-print">
-                    <div class="item-header-print">
-                        <span class="key">Nombre Informe: </span>  <span class="value"><?php echo $category_title ?></span>
-                    </div>
-
-                    <div class="item-header-print">
-                        <span class="key">Cantidad de Registros: </span>  <span class="value">1<?php //echo $num_rows ?></span>
-                    </div>
-                </div>
-
-                <div class="row-header-print">
-                    <div class="item-header-print">
-                        <span class="key">Fecha Impresión: </span>  <span class="value"><?php echo date("d - M - Y"); ?></span>
-                    </div>
-                    <div class="item-header-print">
-                        <span class="key">Hora Impresión: </span>  <span class="value"><?php echo date("H:m"); ?></span>
-                    </div>
-                </div>
-        </div> 
+            <div>
+                <img src="images/logo-completo.png" width="60"    />
+            </div>
+            <div id="ficha-title">
+                <span class="title-header-print">Ficha Miembro</span>
+            </div>
+            <div>
+                <img src="images/logo_conquistadores.png" width="60"    />
+            </div>
+        </div>
+        
         <div id="main">
             <div id="content">
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                <div class="row-fluid">
-                    <div id="error2" class="alert alert-error" style="display: none;">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
-                        <div></diV>
-                    </div>
-                    <div id="success2" class="alert alert-success" style="display: none;">
-                    <!--<span><i class='icon-remove-sign'></i></span>-->
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <div></diV>
-</div>
+                        <div class="span6">
+                            <div class="form-title">
+                                Datos Personales
+                            </div>
+                            
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Rut: </span>
+                                    <span class="value"><?php if($integrante['rut'] != ''){echo $integrante['rut'];}?></span>
+                                </div>
+                            </div>
 
-<?php //if(isset($integrante)){print_r($unidades);}?>
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Nombre: </span>
+                                    <span class="value"><?php if($integrante['nombre'] != ''){echo $integrante['nombre'];}?></span>
+                                </div>
+                            </div>
 
-<form action="/admin/integrantes_form/" method="POST">
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Apellido: </span>
+                                    <span class="value"><?php if($integrante['apellido'] != ''){echo $integrante['apellido'];}?></span>
+                                </div>
+                            </div>
 
-    <div class="bo-form span5">
-        <div class="form-title">
-            Datos Personales
-        </div>
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Edad: </span>
+                                    <span class="value"><?php if($integrante['edad'] != ''){echo $integrante['edad'];}?></span>
+                                </div>
+                            </div>
 
-        <div class="form-item">
-            <label>Rut</label>
-            <input type="text" name="rut" placeholder="ej: xxxxxxxx-x" <?php if($integrante['rut'] != ''){echo "readonly";}?> value="<?php if($integrante['rut'] != ''){echo $integrante['rut'];}else{echo set_value('rut');} ?>" />
-            <?php echo form_error('rut');?>
-        </div>
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Telefono: </span>
+                                    <span class="value"><?php if($integrante['telefono_principal'] != ''){echo $integrante['telefono_principal'];}?></span>
+                                </div>
+                            </div>
 
-        <div class="form-item">
-            <label>Nombre</label>
-            <input type="text" name="nombre" value="<?php if($integrante['nombre'] != ''){echo $integrante['nombre'];}else{echo set_value('nombre');} ?>"  />
-            <?php echo form_error('nombre');?>
-        </div>
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Telefono Auxiliar: </span>
+                                    <span class="value"><?php if($integrante['telefono_auxiliar'] != ''){echo $integrante['telefono_auxiliar'];}?></span>
+                                </div>
+                            </div>
 
-        <div class="form-item">
-            <label>Apellido</label>
-            <input type="text" name="apellido" value="<?php if($integrante['apellido'] != ''){echo $integrante['apellido'];}else{echo set_value('apellido');} ?>"  />
-            <?php echo form_error('apellido');?>
-        </div>
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Dirección: </span>
+                                    <span class="value"><?php if($integrante['direccion'] != ''){echo $integrante['direccion'];}?></span>
+                                </div>
+                            </div>
 
-        <div class="form-item">
-            <label>Edad</label>
-            <input type="text" name="edad" value="<?php if($integrante['edad'] != ''){echo $integrante['edad'];}else{echo set_value('edad');} ?>"  />
-            <?php echo form_error('edad');?>
-        </div>
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">E-Mail: </span>
+                                    <span class="value"><?php if($integrante['email'] != ''){echo $integrante['email'];}?></span>
+                                </div>
+                            </div>
 
-        <div class="form-item">
-            <label>Telefono</label>
-            <input type="text" name="fono" placeholder="ej: xxxxxxxxx" value="<?php if($integrante['telefono_principal'] != ''){echo $integrante['telefono_principal'];}else{echo set_value('fono');} ?>"  />
-            <?php echo form_error('fono');?>
-        </div>
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Cargo(s): </span>
+                                    <span class="value">
+                                        <?php foreach ($cargos as $item => $val){?>
+                                            <?php if(in_array($val['id'], $integrante['cargos'])){ ?>
+                                                <?php echo " - " . $val['nombre'];?>
+                                            <?php }?>
+                                        <?php }?>
+                                    </span>
+                                </div>
+                            </div>
 
-        <div class="form-item">
-            <label>Telefono Auxiliar</label>
-            <input type="text" name="fono2" placeholder="ej: xxxxxxxxx" value="<?php if($integrante['telefono_auxiliar'] != ''){echo $integrante['telefono_auxiliar'];}else{echo set_value('fono2');} ?>"  />
-            <?php echo form_error('fono2');?>
-        </div>
+                            <div class="row-content-print">
+                                <div class="item-content-print">
+                                    <span class="key">Grado: </span>
+                                    <span class="value">
+                                        <?php foreach ($rangos as $item => $val){?>
+                                        <?php if($val['id']==$integrante['rango']){echo $val['nombre'];}?>
+                                        <?php }?>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
 
-        <div class="form-item">
-            <label>Direccion</label>
-            <input type="text" name="direccion" placeholder="ej: calle #numero, comuna" value="<?php if($integrante['direccion'] != ''){echo $integrante['direccion'];}else{echo set_value('direccion');} ?>"  />
-            <?php echo form_error('direccion');?>
-        </div>
+                        <div id="galeryIntegrante">
+                            <?php if($integrante['foto'] != ''){?>
 
-        <div class="form-item">
-            <label>E-Mail</label>
-            <div class="input-prepend">
-                <span class="add-on"><i class="icon-envelope"></i></span>
-                <input type="text" name="mail" placeholder="ej: algun@email.com" value="<?php if($integrante['email'] != ''){echo $integrante['email'];}else{echo set_value('mail');} ?>"  />
-            </div>
-            <?php echo form_error('mail');?>
-        </div>
-        
-        <div class="form-item">
-            <label>Cargo</label>
-            <select name="cargo">
-                <option value="0">Seleccione Cargo</option>
-                <?php foreach ($cargos as $item => $val){?>
-                <option value="<?=$val['id'];?>" <?php if($val['id']==$integrante['cargo'] || $val['id'] == set_value('cargo')){echo 'selected';}?> ><?=$val['nombre'];?></option>
-                <?php }?>
-            </select>
-            <?php echo form_error('cargo');?>
-        </div>
-        
-        <div class="form-item">
-            <label>Grado</label>
-            <select name="grado">
-                <option value="0">Seleccione Grado</option>
-                <?php foreach ($rangos as $item => $val){?>
-                <option value="<?=$val['id'];?>" <?php if($val['id']==$integrante['rango'] || $val['id'] == set_value('grado')){echo 'selected';}?> ><?=$val['nombre'];?></option>
-                <?php }?>
-            </select>
-            <?php echo form_error('grado');?>            
-        </div>        
+                            <span class="" style="display: inline-block;width: 200px;margin-left: 25px; /*height: auto;float: none;margin: 0 auto;*/">
+                                <img src="<?php echo $integrante['foto']?>" width="200" />
+                            </span>
+                            <?php }?>
+                        </div>                     
+                        
 
-        <div class="form-item">
-            <input type="submit" value="Guardar" class="btn btn-primary"    />
-        </div>
+                        <!--<div class="hidden" id="apoderado-form">
+                            <div class="bo-form span12">
+                                <div class="form-title">
+                                    Datos del Apoderado
+                                </div>
 
-        <div class="clear"></div>
-    </div>
-    
-    
-    <div class="bo-form span5">
-        <div class="form-title">
-            Foto Perfil
-        </div>
+                                <div class="form-item">
+                                    <label>Rut Apoderado</label>
+                                    <input type="text" name="rutApoderado" placeholder="ej: xxxxxxxx-x" value="<?php //if($integrante['apoderado']['rut'] != ''){echo $integrante['apoderado']['rut'];}else{echo set_value('rutApoderado');} ?>"  />
+                                </div>
 
-        <div class="form-item">
-        
-            <div id="galeryIntegrante">
-                <?php if(set_value('imgIntegrante-img1') != ''){$integrante['foto'] = set_value('imgIntegrante-img1');}?>
-                <?php if($integrante['foto'] != ''){?>
-                
-                <span class="im span10" style="display: block; height: auto;float: none;margin: 0 auto;"> 
-                    <img src="<?php echo $base_url.$integrante['foto']?>" width="400" height="480">
-                    <input type="hidden" id="imgIntegrante-img1" name="imgIntegrante-img1" value="<?=$integrante['foto']?>"  />
-                </span>
-                <?php }else{?>
-                    <input type="hidden" id="imgIntegrante-img1" name="imgIntegrante-img1" value=""  />
-                <?php }?>
-            </div>
-            
-            <?php echo form_error('foto');?>
-        </div>
-    </div>
-    
-    <div class="hidden" id="apoderado-form">
-        <div class="bo-form span12">
-            <div class="form-title">
-                Datos del Apoderado
-            </div>
+                                <div class="form-item">
+                                    <label>Nombre Apoderado</label>
+                                    <input type="text" name="nombreApoderado" placeholder="ej: xxxxxxxx-x" value="<?php //if($integrante['apoderado']['nombre'] != ''){echo $integrante['apoderado']['nombre'];}else{echo set_value('nombreApoderado');} ?>"  />
+                                </div>
 
-            <div class="form-item">
-                <label>Rut Apoderado</label>
-                <input type="text" name="rutApoderado" placeholder="ej: xxxxxxxx-x" value="<?php if($integrante['apoderado']['rut'] != ''){echo $integrante['apoderado']['rut'];}else{echo set_value('rutApoderado');} ?>"  />
-                <?php echo form_error('rutApoderado');?>
-            </div>
+                                <div class="form-item">
+                                    <label>Apellido Apoderado</label>
+                                    <input type="text" name="apellidoApoderado" placeholder="ej: xxxxxxxx-x" value="<?php //if($integrante['apoderado']['apellido'] != ''){echo $integrante['apoderado']['apellido'];}else{echo set_value('apellidoApoderado');} ?>"  />
+                                </div>
 
-            <div class="form-item">
-                <label>Nombre Apoderado</label>
-                <input type="text" name="nombreApoderado" placeholder="ej: xxxxxxxx-x" value="<?php if($integrante['apoderado']['nombre'] != ''){echo $integrante['apoderado']['nombre'];}else{echo set_value('nombreApoderado');} ?>"  />
-                <?php echo form_error('nombreApoderado');?>
-            </div>
+                                <div class="form-item">
+                                    <label>Telefono Apoderado</label>
+                                    <input type="text" name="fonoApoderado" placeholder="ej: xxxxxxxx-x" value="<?php //if($integrante['apoderado']['telefono'] != ''){echo $integrante['apoderado']['telefono'];}else{echo set_value('fonoApoderado');} ?>"  />
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>-->
+                    <div class="clear"></div>
 
-            <div class="form-item">
-                <label>Apellido Apoderado</label>
-                <input type="text" name="apellidoApoderado" placeholder="ej: xxxxxxxx-x" value="<?php if($integrante['apoderado']['apellido'] != ''){echo $integrante['apoderado']['apellido'];}else{echo set_value('apellidoApoderado');} ?>"  />
-                <?php echo form_error('apellidoApoderado');?>
-            </div>
-
-            <div class="form-item">
-                <label>Telefono Apoderado</label>
-                <input type="text" name="fonoApoderado" placeholder="ej: xxxxxxxx-x" value="<?php if($integrante['apoderado']['telefono'] != ''){echo $integrante['apoderado']['telefono'];}else{echo set_value('fonoApoderado');} ?>"  />
-                <?php echo form_error('fonoApoderado');?>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    
-    
-</form>
-<div class="clear"></div>
-</div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-
-            <div class="clear"></div>
+                <div class="clear"></div>
                 
             </div>
             <div class="clear"></div>
-        </div>
+        </div><!--main-->
     </div>
 </body>
 </html>

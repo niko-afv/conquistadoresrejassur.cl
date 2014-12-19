@@ -208,6 +208,8 @@ class CtrlIntegranteForm extends CI_Controller{
         $oIntegrante = new $this->integrante();
         $oIntegrante->setRut($rut);
         
+        $data['cargos']         =   $this->loadCargos();
+        $data['rangos']         =   $this->loadRangos();
         $data['base_url']       =   base_url();
         $data['title']          =   $this->title;
         $data['category_title'] =   'Ver Integrante';
@@ -217,9 +219,9 @@ class CtrlIntegranteForm extends CI_Controller{
         //$this->load->view('backend/ViewIntegranteProfile',$data);
         
         $this->load->helper(array('dompdf', 'file'));
-        
-        $html = $this->load->view('backend/ViewIntegrantesListPrint',$data, TRUE);
-        pdf_create($html, 'FichaIntegrante');
+
+        $html = $this->load->view('backend/ViewIntegranteProfile',$data, TRUE);
+        pdf_create($html, 'FichaIntegrante',TRUE, 'portrait');
     }
     
     public function searchByRut(){

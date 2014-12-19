@@ -99,8 +99,9 @@ class CtrlIntegranteList extends CI_Controller{
         
         $this->load->helper(array('dompdf', 'file'));
         
-        $html = $this->load->view('backend/ViewIntegrantesListPrint',$data, TRUE);
-        pdf_create($html, 'ListaIntegrantes');
+        $this->load->view('backend/ViewIntegrantesListPrint',$data);
+        //$html = $this->load->view('backend/ViewIntegrantesListPrint',$data, TRUE);
+        //pdf_create($html, 'ListaIntegrantes');
     }
 }
 ?>

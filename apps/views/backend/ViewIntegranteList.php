@@ -34,10 +34,11 @@
             <td><?php foreach ($val['cargos'] as $item => $cargo){echo "| " .$cargo . " | ";} ?></td>
             <td><?php echo $val['grado']; ?></td>
             <td>
+                <a href="<?php echo $base_url . '/admin/integrantes_form/toPdf/' . $val['rut'];?>" class='glyphicon glyphicon-print'></a>
+                &nbsp;
                 <a href="<?php echo $base_url . '/admin/integrantes_form/modificar/' . $val['rut'];?>" class='glyphicon glyphicon-edit'></a>
                 &nbsp;
                 <a class="delete-reg" href='<?php echo $base_url . "/admin/integrantes_list/eliminar/" . $val['rut']; ?>'><i class='glyphicon glyphicon-trash'></i></a>
-                
             </td>
         </tr>
     <?php }?>

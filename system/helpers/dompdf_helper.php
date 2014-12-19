@@ -1,9 +1,9 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-function pdf_create($html, $filename='', $stream=TRUE){
+function pdf_create($html, $filename='', $stream=TRUE, $orientation = 'landscape'){
     require_once("dompdf/dompdf_config.inc.php");
     
     $dompdf = new DOMPDF();
-    $dompdf->set_paper("letter", "landscape");
+    $dompdf->set_paper("letter", $orientation);
     $dompdf->load_html($html);
     
     $dompdf->render();

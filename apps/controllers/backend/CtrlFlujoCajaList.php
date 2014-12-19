@@ -179,6 +179,22 @@ class CtrlFlujoCajaList extends CI_Controller{
         header('Content-Disposition: attachment; filename="FlujoDeCaja.pdf"');
         echo $body;
     }
+
+
+    public function toPDFbyMonth($month){
+        unset($this->layout);
+        $this->load->model('listado');
+        $oListado = new $this->listado();
+
+        $oListado->listarFlujosByMonth($month);
+
+        $flujos = array();
+        for($i = 0 ; $i < $oListado->count(); $i++){
+            $flujos[] = $oListado->get($i)->toArray();
+        }
+        $data['flujos'] = $flujos;
+        $this->load->view("backend/ViewFlujoCajaByMonthPrint",$data);
+    }
     
     function ParseHeader($header=''){
 	$resArr = array();
