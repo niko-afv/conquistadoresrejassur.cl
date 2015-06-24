@@ -1,0 +1,23 @@
+diff --git a/apps/views/backend/ViewFlujoCajaList.php b/apps/views/backend/ViewFlujoCajaList.php
+index eb540ed..cb282b8 100644
+--- a/apps/views/backend/ViewFlujoCajaList.php
++++ b/apps/views/backend/ViewFlujoCajaList.php
+@@ -24,9 +24,16 @@
+     <thead>
+         <tr class="form-title">
+             <th>Flujo</th>
+-            <?php for($i = $desde; $i <= $hasta; $i++){?>
++            <?php /*for($i = $desde; $i <= $hasta; $i++){?>
+             <th><?php echo $meses[$i];?></th>
+-            <?php }?>
++            <?php }*/?>
++
++            <?php
++                foreach($meses as $numeral => $mes){?>
++                <th><?php echo $mes['palabras'] ?></th>
++                <?php }
++            ?>
++
+         </tr>
+     </thead>
+     <tbody>

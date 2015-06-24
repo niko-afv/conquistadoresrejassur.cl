@@ -1057,8 +1057,8 @@ div.content-box.big div.content-box-info p {
 
 
 .testimonial-wrap {
-    background: url('/images/agency/img/plx2.jpg') 50% 0 no-repeat fixed;
-    
+    /*background: url('/images/agency/img/plx2.jpg') 50% 0 no-repeat fixed;*/
+    background: url(/images/testimonials.jpg) 50% 0 no-repeat fixed;
 }
 
 .quote-wrap {

@@ -183,17 +183,27 @@ class CtrlFlujoCajaList extends CI_Controller{
 
     public function toPDFbyMonth($month){
         unset($this->layout);
-        $this->load->model('listado');
-        $oListado = new $this->listado();
-
-        $oListado->listarFlujosByMonth($month);
+        $this->load->model('flujo_caja_resumen','resumen');
+        $oResumen = new $this->resumen($month);
 
         $flujos = array();
-        for($i = 0 ; $i < $oListado->count(); $i++){
-            $flujos[] = $oListado->get($i)->toArray();
+        for($i = 0 ; $i < $oResumen->countFlujos(); $i++){
+            $flujos[$i]['flujo'] = $oResumen->getFlujo($i)->toArray();
+            $flujos[$i]['tipo_movimiento'] = $oResumen->getFlujo($i)->getTipoMovimiento();
         }
+
+
+
+
+
         $data['flujos'] = $flujos;
-        $this->load->view("backend/ViewFlujoCajaByMonthPrint",$data);
+        $data['resumen'] = $oResumen->toArray();
+        //$this->load->view("backend/ViewFlujoCajaByMonthPrint",$data);
+
+        $this->load->helper(array('dompdf', 'file'));
+        $html = $this->load->view('backend/ViewFlujoCajaByMonthPrint', $data, true);
+
+        pdf_create($html, 'Informe Mensual',TRUE,"portrait");
     }
     
     function ParseHeader($header=''){

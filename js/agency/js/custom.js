@@ -334,7 +334,7 @@ Drop Down Menu Fade Effect
 /*  Portfolio Isotope
 /*----------------------------------------------------*/
 
-  jQuery(document).ready(function(){     
+  jQuery(window).load(function(){
 
     var container = jQuery('#portfolio-wrap'); 
     var winWidth = jQuery(window).width();  

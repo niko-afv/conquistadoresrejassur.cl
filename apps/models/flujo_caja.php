@@ -80,6 +80,16 @@ class Flujo_Caja extends CI_Model{
         }
         return $array;
     }
+
+    public function getTipoMovimiento(){
+        /*$this->db->where('ID',$this->getSubCategoria());
+        $this->get('FLUJO_CAJA_CATEGORIAS');*/
+
+        $this->load->model('categoria_flujo_caja');
+        $oCategoria = new $this->categoria_flujo_caja();
+        $oCategoria->setId($this->getSubCategoria());
+        return $oCategoria->getTipo();
+    }
 }
 
 ?>

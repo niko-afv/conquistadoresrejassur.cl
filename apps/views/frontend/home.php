@@ -64,7 +64,7 @@
 
             <!-- Image Background Parallax --
             <div id="section" class="image-parallax" style="background-image: url(images/agency/img/slider/bx1.jpg)">-->
-            <div id="section" class="image-parallax" style="background-image: url(images/frontend/home_slider_1.png)">
+            <div id="section" class="image-parallax" style="background-image: url(images/frontend/dia0_2015.jpg)">
 
                   <div class="bg-overlay">
                         <div class="slide-content light">
@@ -85,9 +85,9 @@
                                     </div>
                                     <!-- /Top Logo -->
                                     <ul class="text-slide">                
-                                          <li>Unete a <span class="text-color">Nuestro</span> Club</li>
-                                          <li><span class="text-color">Comparte</span> con Nosotros</li>
-                                          <li>Diviertete <span class="text-color">Sanamente</span></li>
+                                          <li>Unete a <!--<span class="text-color">-->Nuestro Club</li>
+                                          <li>Comparte con Nosotros</li>
+                                          <li>Diviertete Sanamente</li>
                                     </ul>
                                     <a href="#section2" class="btn btn-1 img-btn">Conócenos</a>
                               </div>
@@ -107,6 +107,7 @@
                                                 <div class="row">
                                                       <div class="site-logo">
                                                           <a href="index-image-slider.html"><img src="/images/logo_letras.png" alt="Agency"></a>
+
                                                       </div>
                                                 </div>
                                           </div>
@@ -126,8 +127,8 @@
                                                                   <li class="active"><a href="#section">Inicio</a></li>
                                                                   <li><a href="#section2">Nosotros</a></li>
                                                                   <li><a href="#section3">Integrantes</a></li>
-                                                                  <li><a href="#section4">Services</a></li>
-                                                                  <li><a href="#section5">Clients</a></li>
+                                                                  <li><a href="#section4">Que Hacemos</a></li>
+                                                                  <li><a href="#section5">Gente</a></li>
                                                                   <!--<li><a href="#section6">Pricing</a></li>-->
                                                                   <!--<li class="dropdown nav-toggle">
                                                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
@@ -165,102 +166,23 @@
 
                               <div class="col-md-12 sub-title text-center wow slideInRight">
                                     <h3>
-                                        Somos el Club de Conquistadores Rejas Sur, perteneciente a la Asociación
-                                        Metropolitana de Chile (AMCH), llevamos mas de 30 años sirviendo a Dios
-                                        a través de este hermosos ministerio.
+                                        Somos el Club de Conquistadores Rejas Sur, pertenecemos a la Zona Poniente de la Asociación
+                                        Metropolitana de Chile (AMCH). Desde 1982 hasta hoy servimos a Dios llevando el mensaje distintivo
+                                        de la Iglesia Adventista del Séptimo Día a niños que necesitan esa esperanza de la segunda venida de
+                                        Cristo.
                                     </h3>
                               </div>
                         </div>
                         <!-- /Title row -->
 
                         <div class="row">
-                                <div class="col-md-6">
-                                    <img src="/images/logo_conquistadores.png" alt="About Us" class="img-responsive" id="conquis_logo_home">
-                                </div>
-                            
-                                <div class="col-md-6">
-                                    <img src="/images/logo-completo.png" alt="About Us" class="img-responsive">
-                                </div>
+                            <div class="col-md-10">
+                                <img src="/images/logos_rejas_sur_transp.png" alt="About Us" class="img-responsive" id="conquis_logo_home">
+                            </div>
                         </div>
 
                         
                   </div>
-
-                  <!-- Service wrap -->
-                  <div class="about-wrap">
-                        <div class="parallax-layer">
-                              <div class="icons"></div>
-                        </div>
-                        <div class="parallax-layer">
-                              <div class="texture"></div>
-                        </div>
-                        <div class="container">
-                              <!-- Content row -->
-                              <div class="row">
-                                    <!-- Content box 1 -->
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                          <div class="content-box big ch-item wow fadeInLeft">
-                                                <div class="ch-info-wrap">
-                                                      <div class="ch-info">
-                                                            <div class="ch-info-front ch-img-1">
-                                                                  <i class="fa fa-arrows-alt"></i>
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                                <div class="content-box-info">
-                                                      <h4>Professional Work</h4>
-                                                      <p>
-                                                         Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <!-- /Content box 1 -->
-
-                                    <!-- Content box 2 -->
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                          <div class="content-box big ch-item wow fadeInDown">
-                                                <div class="ch-info-wrap">
-                                                      <div class="ch-info">
-                                                            <div class="ch-info-front ch-img-1">
-                                                                  <i class="fa fa-eye"></i>
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                                <div class="content-box-info">
-                                                      <h4>Unique Design</h4>
-                                                      <p>
-                                                         Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <!-- /Content box 2 -->
-
-                                    <!-- Content box 3 -->
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                          <div class="content-box big ch-item wow fadeInRight">
-                                                <div class="ch-info-wrap">
-                                                      <div class="ch-info">
-                                                            <div class="ch-info-front ch-img-1">
-                                                                  <i class="fa fa-rocket"></i>
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                                <div class="content-box-info">
-                                                      <h4>Superb Support</h4>
-                                                      <p>
-                                                         Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <!-- /Content box 3 -->
-                              </div>
-                              <!-- /Content row -->
-                        </div>
-                  </div>
-                  <!-- /Service wrap -->
 
                   <!-- What we do best -->
                   <div class="skills-wrap">
@@ -268,7 +190,7 @@
                               <!-- Title row -->
                               <div class="row">
                                     <div class="col-md-12 big-title wow bounceIn">
-                                          <h2>What we do best</h2>
+                                          <h2>Qué Hacemos Mejor!</h2>
                                     </div>
 
                                     <div class="clearfix"></div>
@@ -339,12 +261,14 @@
                                     <h2>
                                           <i class="fa fa-quote-left wow fadeInLeft"></i>
                                           <span class="wow bounceIn">
-                                                Por tanto, yo te aconsejo que de mí compres oro refinado en fuego, para que seas rico, y vestiduras blancas
-                                                para vestirte, y que no se descubra la vergüenza de tu desnudez; y unge tus ojos con colirio, para que veas.
+                                                <!--Por tanto, yo te aconsejo que de mí compres oro refinado en fuego, para que seas rico, y vestiduras blancas
+                                                para vestirte, y que no se descubra la vergüenza de tu desnudez; y unge tus ojos con colirio, para que veas.-->
+                                              Por la gracia de Dios seré puro, bondadoso y leal, guardaré la ley del conquistador,
+                                              seré siervo de Dios y amigo de todos.
                                           </span>
                                           <i class="fa fa-quote-right wow" data-animate="fadeInRight"></i>
                                     </h2>
-                                    <p class="animated wow" data-animate="fadeInUp">- Apocalipsis 3:18 -</p>
+                                    <p class="animated wow" data-animate="fadeInUp">- VOTO -</p>
                               </div>
                         </div>
                   </div>
@@ -374,17 +298,17 @@
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
-                                                            <img alt="" src="images/fichas/nicolas_fredes_464x530.jpg">
+                                                            <img alt="" src="images/fichas/nicolas_fredes.png">
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
-                                                                        <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
-                                                                        <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
-                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
+                                                                        <a target="_blank" class="facebook team-member-links-item" href="https://www.facebook.com/niko.afv2"><i class="fa fa-facebook"></i></a>
+                                                                        <a target="_blank" class="twitter team-member-links-item" href="https://twitter.com/niko_afv"><i class="fa fa-twitter"></i></a>
+                                                                        <!--<a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                         <p>
-                                                                              <!--"Bienaventurados los que guardan sus mandamientos, para que su potencia
+                                                                              "Bienaventurados los que guardan sus mandamientos, para que su potencia
                                                                               sea en el árbol dela vida, y que entren por las puertas en la ciudad"
                                                                               <br/>
-                                                                              Apoc. 22:14 RV900.-->
+                                                                              Apoc. 22:14 RV900.
                                                                         </p>
                                                                   </div>
                                                             </div>
@@ -404,7 +328,34 @@
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
-                                                            <img alt="" src="images/fichas/nallive_montecino_464x530.jpg">
+                                                            <img alt="" src="images/fichas/marcos_dias_464x530.jpg">
+                                                            <div class="team-member-links">
+                                                                  <div class="team-member-links-list">
+                                                                        <a target="_blank" class="facebook team-member-links-item" href="https://es-la.facebook.com/people/Marco-A-Diaz-Henr%C3%ADquez/1266055768"><i class="fa fa-facebook"></i></a>
+                                                                        <!--<a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
+                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
+                                                                        <p>
+                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="team-member-meta">
+                                                            <h4 class="team-member-name">Marco Díaz</h4>
+                                                            <div class="team-member-role">
+                                                                  SUB DIRECTOR
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- End -->
+                                    <!-- item 3 -->
+                                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown">
+                                          <div class="team-member">
+                                                <div class="team-member-holder">
+                                                      <div class="team-member-image">
+                                                            <img alt="" src="images/fichas/nallive_montecino.png">
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
                                                                         <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
@@ -419,33 +370,6 @@
                                                       <div class="team-member-meta">
                                                             <h4 class="team-member-name">Nallive Montecino</h4>
                                                             <div class="team-member-role">
-                                                                  SUB DIRECTOR
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <!-- End -->
-                                    <!-- item 3 -->
-                                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown">
-                                          <div class="team-member">
-                                                <div class="team-member-holder">
-                                                      <div class="team-member-image">
-                                                            <img alt="" src="images/fichas/lorena_pezoa_464x530.jpg">
-                                                            <div class="team-member-links">
-                                                                  <div class="team-member-links-list">
-                                                                        <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
-                                                                        <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
-                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
-                                                                        <p>
-                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
-                                                                        </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div class="team-member-meta">
-                                                            <h4 class="team-member-name">Lorena Pezoa</h4>
-                                                            <div class="team-member-role">
                                                                   SECRETARIA
                                                             </div>
                                                       </div>
@@ -454,16 +378,16 @@
                                     </div>
                                     <!-- End -->
                                     <!-- item 4 -->
-                                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 item wow fadeInRight">
+                                    <div class="col-lg-6 col-md-3 col-sm-6 col-xs-12 item wow fadeInRight">
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
-                                                            <img alt="" src="images/fichas/gonzalo_mieres_464x530.jpg">
+                                                            <img alt="" src="images/fichas/anthony_montecino.png">
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
-                                                                        <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
-                                                                        <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
-                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
+                                                                        <a target="_blank" class="facebook team-member-links-item" href="https://www.facebook.com/anthonymontecino"><i class="fa fa-facebook"></i></a>
+                                                                        <a target="_blank" class="twitter team-member-links-item" href="https://twitter.com/Anthonymonte"><i class="fa fa-twitter"></i></a>
+                                                                        <!--<a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                         <p>
                                                                               <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
                                                                         </p>
@@ -471,7 +395,7 @@
                                                             </div>
                                                       </div>
                                                       <div class="team-member-meta">
-                                                            <h4 class="team-member-name">Gonzalo Mieres</h4>
+                                                            <h4 class="team-member-name">Anthony Montecino</h4>
                                                             <div class="team-member-role">
                                                                   TESORERO
                                                             </div>
@@ -481,16 +405,16 @@
                                     </div>
                                     <!-- End -->
                                     <!-- item 5 -->
-                                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
+                                    <div class="col-lg-6 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
                                           <div class="team-member">
                                                 <div class="team-member-holder">
                                                       <div class="team-member-image">
-                                                            <img alt="" src="images/fichas/javier_cid_464x530.jpg">
+                                                            <img alt="" src="images/fichas/alejandra_lagos.png">
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
-                                                                        <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
-                                                                        <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
-                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
+                                                                        <a target="_blank" class="facebook team-member-links-item" href="https://www.facebook.com/alejandra.lagosmoraga"><i class="fa fa-facebook"></i></a>
+                                                                        <!--<a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
+                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                         <p>
                                                                               <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
                                                                         </p>
@@ -498,36 +422,9 @@
                                                             </div>
                                                       </div>
                                                       <div class="team-member-meta">
-                                                            <h4 class="team-member-name">Javier Cid</h4>
+                                                            <h4 class="team-member-name">Alejandra Lagos</h4>
                                                             <div class="team-member-role">
                                                                   CAPELLÁN
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <!-- End -->
-                                    <!-- item 6 -->
-                                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 item wow fadeInRight">
-                                          <div class="team-member">
-                                                <div class="team-member-holder">
-                                                      <div class="team-member-image">
-                                                            <img alt="" src="images/fichas/cesar_muñoz_464x530.jpg">
-                                                            <div class="team-member-links">
-                                                                  <div class="team-member-links-list">
-                                                                        <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
-                                                                        <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
-                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
-                                                                        <p>
-                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
-                                                                        </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div class="team-member-meta">
-                                                            <h4 class="team-member-name">Cesar Muñoz</h4>
-                                                            <div class="team-member-role">
-                                                                  INSTRUCTOR
                                                             </div>
                                                       </div>
                                                 </div>
@@ -547,43 +444,35 @@
                                      <!-- Title row -->
                                     <div class="row">
                                           <div class="col-md-12 big-title light wow bounceIn">
-                                                <h2>Some Fun Facts</h2>
+                                                <h2>Información Extra</h2>
                                           </div>
                                     </div>
                                     <!-- /Title row -->
 
                                     <div class="row">
-                                          <div class="col-md-3 wow fadeInLeft">
-                                                <div class="fun-box">
-                                                      <i class="fa fa-clock-o"></i>
-                                                      <span class="fun" data-from="0" data-to="18" data-speed="100" data-refresh-interval="1"></span>
-                                                      <p>Total de Integrantes</p>
-                                                </div>
-                                          </div>
+                                        <div class="col-md-4 wow fadeInDown">
+                                            <div class="fun-box">
+                                            <i class="fa fa-star"></i>
+                                            <span class="fun" data-from="0" data-to="<?php echo (-1* (1982 - date('Y')));?>" data-speed="3000" data-refresh-interval="20"></span>
+                                                <p>Años de Servicio</p>
+                                            </div>
+                                        </div>
 
-                                          <div class="col-md-3 wow fadeInDown">
-                                                <div class="fun-box">
-                                                      <i class="fa fa-users"></i>
-                                                      <span class="fun" data-from="0" data-to="101" data-speed="5000" data-refresh-interval="50"></span>
-                                                      <p>Satisfied client</p>
-                                                </div>
-                                          </div>
+                                        <div class="col-md-4 wow fadeInDown">
+                                            <div class="fun-box">
+                                                <i class="fa fa-check"></i>
+                                                <span class="fun" data-from="0" data-to="2" data-speed="4000" data-refresh-interval="20"></span>
+                                                <p>Camporee DSA</p>
+                                            </div>
+                                        </div>
 
-                                          <div class="col-md-3 wow fadeInDown">
-                                                <div class="fun-box">
-                                                      <i class="fa fa-check"></i>
-                                                      <span class="fun" data-from="0" data-to="222" data-speed="5000" data-refresh-interval="50"></span>
-                                                      <p>Projects Completed</p>
-                                                </div>
-                                          </div>
-
-                                          <div class="col-md-3 wow fadeInRight">
-                                                <div class="fun-box">
-                                                      <i class="fa fa-trophy"></i>
-                                                      <span class="fun" data-from="0" data-to="49" data-speed="5000" data-refresh-interval="50"></span>
-                                                      <p>Awards Won</p>
-                                                </div>
-                                          </div>
+                                        <div class="col-md-4 wow fadeInLeft">
+                                            <div class="fun-box">
+                                                <i class="fa fa-user"></i>
+                                                <span class="fun" data-from="0" data-to="28" data-speed="3000" data-refresh-interval="20"></span>
+                                                <p>Total de Integrantes</p>
+                                            </div>
+                                        </div>
                                     </div>
                               </div>
                         </div>
@@ -616,7 +505,9 @@
                         <li><a href="#" data-filter=".directiva"><h5>Directiva</h5></a></li>
                         <li><a href="#" data-filter=".centuriones"><h5>Centuriones</h5></a></li>
                         <li><a href="#" data-filter=".aguilas"><h5>Aguilas</h5></a></li>
-                        <li><a href="#" data-filter=".felinas"><h5>Felinas</h5></a></li>
+                        <li><a href="#" data-filter=".panteras"><h5>Panteras</h5></a></li>
+                        <li><a href="#" data-filter=".gacelas"><h5>Gacelas</h5></a></li>
+                        <li><a href="#" data-filter=".aventureros"><h5>Aventureros</h5></a></li>
                         <li><a href="#" data-filter=".lideres"><h5>Lideres</h5></a></li>
                       </ul>
                   </div>
@@ -627,7 +518,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->                 
                         <div class="portfolio-item one-four aguilas">
                               <div class="img-holder">
-                                  <img class="img-responsive" src="images/fichas/adriel_montecino_464x530.jpg" alt="">
+                                  <img class="img-responsive" src="images/fichas/adriel_montecino.png" alt="">
                                   <div class="img-overlay">
                                       <div>
                                         <p>Adriel Montecino</p>
@@ -642,32 +533,12 @@
                                     </div>
                                 </div>
                         </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->       
+                        <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones">
+                        <div class="portfolio-item one-four branding centuriones">
                               <div class="img-holder">
-                                  <img class="img-responsive" src="images/fichas/andres_guerra_464x530.jpg" alt="">
-                                  <div class="img-overlay">
-                                      <div>
-                                        <p>Andres Guerra</p>
-                                        <p class="cargo">CONQUISTADOR</p>
-                                      </div>
-                                  </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio3.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four branding aguilas">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/john_requelme_464x530.jpg" alt="">
+                                    <img class="img-responsive" src="images/fichas/john_requelme.png" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>John Requelme</p>
@@ -675,119 +546,41 @@
                                       </div>
                                     </div>
                                     <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
+                                        <span class="RoundBg">
+                                            <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
                                         </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
-
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones directiva ">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/gonzalo_mieres_464x530.jpg" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                        <p>Gonzalo Mieres</p>
-                                        <p class="cargo">CONSEJERO - TESORERO</p>
-                                      </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio6.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/marcelo_rojas_464x530.jpg" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                        <p>Marcelo Rojas</p>
-                                        <p class="cargo">CONQUISTADOR</p>
-                                      </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/gonzalo_vega_464x530.jpg" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                        <p>Gonzalo Vega</p>
-                                        <p class="cargo">CONQUISTADOR</p>
-                                      </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio8.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four directiva lideres">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/nicolas_fredes_464x530.jpg" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                        <p>Nicolás Fredes</p>
-                                        <p class="cargo">DIRECTOR</p>
-                                      </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
                                         </span>
                                     </div>
                                 </div>
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  --> 
 
+
+
                         <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four lideres">
+                        <div class="portfolio-item one-four centuriones">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/felipe_sotomayor_464x530.jpg" alt="">
+                                    <img class="img-responsive" src="images/fichas/rodrigo_carvajal.png" alt="">
                                     <div class="img-overlay">
                                         <div>
-                                        <p>Felipe Sotomayor</p>
-                                        <p class="cargo">LIDER</p>
+                                        <p>Rodrigo Carvajal</p>
+                                        <p class="cargo">CONQUISTADOR</p>
                                       </div>
                                     </div>
                                     <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg">
+                                            <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio8.jpg"><i class="fa fa-search"></i></a>
                                         </span>
                                     </div>
                                 </div>
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
+
                         <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four felinas">
+                        <div class="portfolio-item one-four panteras">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/catalina_dias_464x530.jpg" alt="">
+                                    <img class="img-responsive" src="images/fichas/catalina_diaz.png" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>Catalina Díaz</p>
@@ -795,9 +588,8 @@
                                       </div>
                                     </div>
                                     <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg">
+                                            <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
                                         </span>
                                     </div>
                                 </div>
@@ -805,184 +597,467 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
                         
                         <!-- Portfolio Item With PrettyPhoto  -->
-                        <div class="portfolio-item one-four felinas">
+                        <div class="portfolio-item one-four panteras">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/camila_mieres_464x530.jpg" alt="">
+                                    <img class="img-responsive" src="images/fichas/barvara_bustos.png" alt="">
                                     <div class="img-overlay">
                                         <div>
-                                            <p>Camila Mieres</p>
-                                            <p class="cargo">CONSEJERA</p>
+                                            <p>Barvara Bustos</p>
+                                            <p class="cargo">CONQUISTADORA</p>
                                         </div>
                                     </div>
                                     <div class="overlay-effect">
                                         <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
                                         </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
                                     </div>
                                 </div>
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four centuriones directiva">
-                              <div class="img-holder">
-                                  <img class="img-responsive" src="images/fichas/cesar_muñoz_464x530.jpg" alt="">
-                                  <div class="img-overlay">
-                                      <div>
-                                        <p>Cesar Muñoz</p>
-                                        <p class="cargo">CONSEJERO - INSTRUCTOR</p>
-                                      </div>
-                                  </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio2.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->       
-
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four felinas">
-                              <div class="img-holder">
-                                  <img class="img-responsive" src="images/fichas/claudia_donoso_464x530.jpg" alt="">
-                                  <div class="img-overlay">
-                                      <div>
-                                        <p>Claudia Donos</p>
-                                        <p class="cargo">LIDER</p>
-                                      </div>
-                                  </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio3.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  --
-                        <div class="portfolio-item one-four directiva">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/lorena_pezoa_464x530.jpg" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                        <p>Lorena Pezoa</p>
-                                        <p class="cargo">SECRETARIA</p>
-                                      </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->
-                        <div class="portfolio-item one-four directiva felinas">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/nallive_montecino_464x530.jpg" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                            <p>Nallive Montecino</p>
-                                            <p class="cargo">CONSEJERA - SUB DIRECTOR</p>
-                                        </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
 
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four centuriones">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/rodrigo_carvajal_464x530.jpg" alt="">
+                                    <img class="img-responsive" src="images/fichas/martin_mora.png" alt="">
                                     <div class="img-overlay">
                                         <div>
-                                            <p>Rodrigo Carvajal</p>
+                                            <p>Martin Mora</p>
                                             <p class="cargo">CONQUISTADOR</p>
                                         </div>
                                     </div>
                                     <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio8.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg">
+                                            <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio8.jpg"><i class="fa fa-search"></i></a>
                                         </span>
                                     </div>
                                 </div>
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->
-                        <div class="portfolio-item one-four aguilas">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/javier_cid_464x530.jpg" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                            <p>Javier Cid</p>
-                                            <p class="cargo">CONSEJERO</p>
-                                        </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
                         
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
-                        <div class="portfolio-item one-four aguilas">
-                              <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/anthony_montecino_464x530.jpg" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                        <p>Anthony Montecino</p>
-                                        <p class="cargo">CONSEJERO</p>
-                                      </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
+
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                        <div class="portfolio-item one-four felinas">
+                        <div class="portfolio-item one-four gacelas">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="images/fichas/cathy_huyllapuna_464x530.jpg" alt="">
+                                    <img class="img-responsive" src="images/fichas/cathy_huayllapuna.png" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>Cathy Huyllapina</p>
-                                        <p class="cargo">CONQUISTADOR</p>
+                                        <p class="cargo">CONQUISTADORA</p>
                                       </div>
                                     </div>
                                     <div class="overlay-effect">
-                                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                        <span class="RoundBg"><a href=""><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg">
+                                            <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
                                         </span>
                                     </div>
                                 </div>
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four gacelas">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/claudia_mora.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Claudia Mora</p>
+                                            <p class="cargo">CONQUISTADORA</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four centuriones">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/claudio_rodriguez.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Claudio Rodriguez</p>
+                                            <p class="cargo">CONQUISTADOR</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four centuriones">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/ismael_mendez.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Ismael Mendez</p>
+                                            <p class="cargo">CONQUISTADOR</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four aguilas">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/josue.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Josué</p>
+                                            <p class="cargo">CONQUISTADOR</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four panteras">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/melisa_rodriguez.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Melisa Rodriguez</p>
+                                            <p class="cargo">CONQUISTADORA</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four panteras">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/nataly_encina.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Nataly Encina</p>
+                                            <p class="cargo">CONQUISTADORA</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four gacelas">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/paloma_uribe.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Paloma Uribe</p>
+                                            <p class="cargo">CONQUISTADORA</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four gacelas">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/pollet.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Pollet</p>
+                                            <p class="cargo">CONQUISTADORA</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four aguilas">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/norbil_requelme.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Norbil Requelme</p>
+                                            <p class="cargo">CONQUISTADOR</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four aguilas">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/juanito_rodriguez.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Juanito Rodriguez</p>
+                                            <p class="cargo">CONQUISTADOR</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four gacelas">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/mareli_diaz.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Marely Díaz</p>
+                                            <p class="cargo">CONQUISTADORA</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four aventureros">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/yahel_mena.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Yahel Mena</p>
+                                            <p class="cargo">AVENTURERA</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four aventureros">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/brandon.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Brandon</p>
+                                            <p class="cargo">AVENTURERO</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four directiva lideres">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/nicolas_fredes.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Nicolás Fredes</p>
+                                            <p class="cargo">DIRECTOR</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four lideres directiva">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/marcos_dias_464x530.jpg" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Marcos Díaz</p>
+                                            <p class="cargo">SUB DIRECTOR</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four aguilas lideres">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/gonzalo_mieres.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Gonzalo Mieres</p>
+                                            <p class="cargo">CONSEJERO - ASOCIADO DE RECREACIÓN</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio6.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- /Portfolio Item With PrettyPhoto  -->
+
+                            <!-- Portfolio Item With PrettyPhoto  -->
+                            <div class="portfolio-item one-four lideres panteras">
+                                  <div class="img-holder">
+                                        <img class="img-responsive" src="images/fichas/camila_mieres.png" alt="">
+                                        <div class="img-overlay">
+                                            <div>
+                                            <p>Camila Mieres</p>
+                                            <p class="cargo">CONSEJARA</p>
+                                          </div>
+                                        </div>
+                                        <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- /Portfolio Item With PrettyPhoto  -->
+
+
+
+                            <!-- Portfolio Item With PrettyPhoto  -->
+                                <div class="portfolio-item one-four lideres centuriones directiva">
+                                      <div class="img-holder">
+                                            <img class="img-responsive" src="images/fichas/anthony_montecino.png" alt="">
+                                            <div class="img-overlay">
+                                                <div>
+                                                <p>Anthony Montecino</p>
+                                                <p class="cargo">CONSEJERO - TESORERO</p>
+                                              </div>
+                                            </div>
+                                            <div class="overlay-effect">
+                                                <span class="RoundBg">
+                                                    <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                </div>
+                            <!-- /Portfolio Item With PrettyPhoto  -->
+
+                            <!-- Portfolio Item With PrettyPhoto  -->
+                                <div class="portfolio-item one-four lideres directiva panteras">
+                                      <div class="img-holder">
+                                            <img class="img-responsive" src="images/fichas/nallive_montecino.png" alt="">
+                                            <div class="img-overlay">
+                                                <div>
+                                                    <p>Nallive Montecino</p>
+                                                    <p class="cargo">CONSEJERA - SECRETARIA</p>
+                                                </div>
+                                            </div>
+                                            <div class="overlay-effect">
+                                                <span class="RoundBg">
+                                                    <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                </div>
+                            <!-- /Portfolio Item With PrettyPhoto  -->
+
+                            <!-- Portfolio Item With PrettyPhoto  -->
+                                <div class="portfolio-item one-four lideres gacelas">
+                                      <div class="img-holder">
+                                            <img class="img-responsive" src="images/fichas/lorena_caipo.png" alt="">
+                                            <div class="img-overlay">
+                                                <div>
+                                                <p>Lorena Caipo</p>
+                                                <p class="cargo">CONSEJERA</p>
+                                              </div>
+                                            </div>
+                                            <div class="overlay-effect">
+                                                <span class="RoundBg">
+                                                    <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                </div>
+                            <!-- /Portfolio Item With PrettyPhoto  -->
+
+                            <!-- Portfolio Item With PrettyPhoto  -->
+                                <div class="portfolio-item one-four lideres directiva gacelas">
+                                      <div class="img-holder">
+                                            <img class="img-responsive" src="images/fichas/alejandra_lagos.png" alt="">
+                                            <div class="img-overlay">
+                                                <div>
+                                                <p>Alejandra Lagos</p>
+                                                <p class="cargo">CONSEJERA - CAPELLANA</p>
+                                              </div>
+                                            </div>
+                                            <div class="overlay-effect">
+                                                <span class="RoundBg">
+                                                    <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio5.jpg"><i class="fa fa-search"></i></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                </div>
+                            <!-- /Portfolio Item With PrettyPhoto  -->
                               
                              
                    </div>
@@ -997,13 +1072,16 @@
                               <!-- Title row -->
                               <div class="row">
                                     <div class="col-md-12 big-title wow bounceIn">
-                                          <h2>Services</h2>
+                                          <h2>Que Hacemos</h2>
                                     </div>
 
                                     <div class="clearfix"></div>
 
                                     <div class="col-md-12 sub-title text-center wow slideInRight">
-                                          <h3>We match the project goals with a proposed solution considering latest web features, web design and corporate branding!</h3>
+                                          <h3>
+                                            La filosofía de los conquistadores es el crecimiento integral, involucrando el desarrollo fisico, intelectual y espiritual. Con eso en mente
+                                            planificamos nuestras actividades.
+                                          </h3>
                                     </div>
                               </div>
                               <!-- /Title row -->
@@ -1016,9 +1094,9 @@
                                                       <i class="fa fa-arrows-alt"></i>
                                                 </div>
                                                 <div class="service-box-content">
-                                                      <h4>Responsive Layout</h4>
+                                                      <h4>Acampamos</h4>
                                                       <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                            Realizamos campamentos donde disfrutamos de la naturaleza y contemplamos la creación de Dios.
                                                       </p>
                                                 </div>
                                           </div>
@@ -1029,9 +1107,9 @@
                                                       <i class="fa fa-eye"></i>
                                                 </div>
                                                 <div class="service-box-content">
-                                                      <h4>Retina Ready</h4>
+                                                      <h4>Deportes</h4>
                                                       <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                            Disfrutamos del aire libre y promovemos una vida sana a través de diferentes deportes.
                                                       </p>
                                                 </div>
                                           </div>
@@ -1042,9 +1120,9 @@
                                                       <i class="fa fa-edit"></i>
                                                 </div>
                                                 <div class="service-box-content">
-                                                      <h4>Rich Elements</h4>
+                                                      <h4>Estudiamos la Biblía</h4>
                                                       <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                        Nos preocupamos de conocer, en cada reunión, un poco mas del caracter y amor de Dios.
                                                       </p>
                                                 </div>
                                           </div>
@@ -1060,9 +1138,9 @@
                                                       <i class="fa fa-leaf"></i>
                                                 </div>
                                                 <div class="service-box-content">
-                                                      <h4>Unique Design</h4>
+                                                      <h4>Jugamos</h4>
                                                       <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                            Sabemos que la recreación y entretención son una pieza clave para un creecimiento sano, y es lo que hacemos!
                                                       </p>
                                                 </div>
                                           </div>
@@ -1073,9 +1151,9 @@
                                                       <i class="fa fa-cog"></i>
                                                 </div>
                                                 <div class="service-box-content">
-                                                      <h4>New Approach</h4>
+                                                      <h4>Aprendemos a relacionarnos</h4>
                                                       <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                          Compartimos entre todos, de diferente formas siendo inclusivos y amigables con la comunidad.
                                                       </p>
                                                 </div>
                                           </div>
@@ -1086,59 +1164,15 @@
                                                       <i class="fa fa-search"></i>
                                                 </div>
                                                 <div class="service-box-content">
-                                                      <h4>SEO Ready</h4>
+                                                      <h4>Excursiones y salidas</h4>
                                                       <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                         Con el objetivo de conocer nuevos lugares y las maravillas que el mundo nos tiene preparados.
                                                       </p>
                                                 </div>
                                           </div>
                                     </div>
                               </div>
                               <!-- Service row 2 -->
-
-                              <!-- Service row 3 -->
-                              <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
-                                          <div class="service-box">
-                                                <div class="service-icon">
-                                                      <i class="fa fa-rocket"></i>
-                                                </div>
-                                                <div class="service-box-content">
-                                                      <h4>Professional Quality</h4>
-                                                      <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
-                                          <div class="service-box">
-                                                <div class="service-icon">
-                                                      <i class="fa fa-code"></i>
-                                                </div>
-                                                <div class="service-box-content">
-                                                      <h4>HTMl5 Codes</h4>
-                                                      <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
-                                          <div class="service-box">
-                                                <div class="service-icon">
-                                                      <i class="fa fa-clock-o"></i>
-                                                </div>
-                                                <div class="service-box-content">
-                                                      <h4>Timely Delivery</h4>
-                                                      <p>
-                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <!-- Service row 3 -->
                         </div>
                   </div>
             </section>
@@ -1152,290 +1186,75 @@
                                     <!-- Title row -->
                                     <div class="row">
                                           <div class="col-md-12 big-title light wow bounceIn">
-                                                <h2>Clients Feedback</h2>
+                                                <h2>Gente</h2>
                                           </div>
 
                                           <div class="clearfix"></div>
 
                                           <div class="col-md-12 sub-title text-center light wow slideInRight">
-                                                <h3>Great designs are made by excellent use of white space, and plenty of it!</h3>
+                                                <h3>Qué dicen quienes nos han conocido, y han estado con nosotros!</h3>
                                           </div>
                                     </div>
                                     <!-- /Title row -->
 
                                     <!-- Testimonial row-->
                                     <div class="row">
-                                          <div class="testimonials">
-                                                <div class="col-md-1">
-                                                      <div class="carousel-controls">
-                                                            <a class="prev" href="#testimonials-carousel" data-slide="prev">
-                                                                  <i class="fa fa-angle-left"></i>
-                                                            </a>
+                                        <div class="testimonials">
+                                            <div class="col-md-1">
+                                                <div class="carousel-controls">
+                                                    <a class="prev" href="#testimonials-carousel" data-slide="prev">
+                                                        <i class="fa fa-angle-left"></i>
+                                                    </a>
                                                             
-                                                      </div>
                                                 </div>
-                                                <div class="col-md-10">
+                                            </div>
+                                            <div class="col-md-10">
                                                 <div id="testimonials-carousel" class="testimonials-carousel slide">
-                                                      <div class="carousel-inner">
-                                                            <div class="item active">
-                                                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                        <div class="testimonial item">
-                                                                              <p>
-                                                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                                                              </p>
-                                                                              <div class="testimonials-arrow"></div>
-                                                                              <div class="author">
-                                                                                    <div class="testimonial-image ">
-                                                                                          <img alt="" src="images/agency/img/testimonial/team-member-1.jpg">
-                                                                                    </div>
-                                                                                    <div class="testimonial-author-info">
-                                                                                          <a href="#"><span class="color">Monica Sing</span></a> FIFO Themes
-                                                                                    </div>
-                                                                              </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="item active">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="testimonial item">
+                                                                    <p>
+                                                                        El conocer y formar parte del club de conquistadores de Rejar Sur me ha dado muchas satisfacciones y alegrías.
+                                                                        Me ha permitido desarrollar habilidades que no pensaba tenia.
+                                                                        El compañerismo, vida en la naturaleza y contacto con Dios me ha hecho una persona integral.
+                                                                    </p>
+                                                                    <div class="testimonials-arrow"></div>
+                                                                    <div class="author">
+                                                                        <div class="testimonial-image ">
+                                                                            <img alt="" src="/images/feedback/alex-profile.png">
                                                                         </div>
-                                                                  </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                        <div class="testimonial item">
-                                                                              <p>
-                                                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                                                              </p>
-                                                                              <div class="testimonials-arrow"></div>
-                                                                              <div class="author">
-                                                                                    <div class="testimonial-image ">
-                                                                                          <img alt="" src="images/agency/img/testimonial/team-member-2.jpg">
-                                                                                    </div>
-                                                                                    <div class="testimonial-author-info">
-                                                                                          <a href="#"><span class="color">Monzurul Haque</span></a> FIFO Themes
-                                                                                    </div>
-                                                                              </div>
+                                                                        <div class="testimonial-author-info">
+                                                                            <a href="#"><span class="color">Alex Meneses</span></a> Regional de Conquistadores AMCH
                                                                         </div>
-                                                                  </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="item">
-                                                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                        <div class="testimonial item">
-                                                                              <p>
-                                                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                                                              </p>
-                                                                              <div class="testimonials-arrow"></div>
-                                                                              <div class="author">
-                                                                                    <div class="testimonial-image ">
-                                                                                          <img alt="" src="images/agency/img/testimonial/team-member-3.jpg">
-                                                                                    </div>
-                                                                                    <div class="testimonial-author-info">
-                                                                                          <a href="#"><span class="color">Carol Johansen</span></a> FIFO Themes
-                                                                                    </div>
-                                                                              </div>
-                                                                        </div>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                          </div>
-                                          <div class="col-md-1">
-                                                      <div class="carousel-controls pull-right">
-                                                            <a class="next" href="#testimonials-carousel" data-slide="next">
-                                                                  <i class="fa fa-angle-right"></i>
-                                                            </a>
-                                                            
-                                                      </div>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <div class="carousel-controls pull-right">
+                                                    <a class="next" href="#testimonials-carousel" data-slide="next">
+                                                        <i class="fa fa-angle-right"></i>
+                                                    </a>
                                                 </div>
-                                          </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- /Testimonial row-->
                               </div>
                         </div>
                   </div>
-
-                  
-
-                  
-
             </section>
             <!-- /Section 5 -->
 
-            <!-- Section 6 --
-            <section id="section6" class="pricing">
-                  <div class="container">
-                        <div class="row flat">
-                              <!-- Title row --
-                              <div class="row">
-                                    <div class="col-md-12 big-title wow bounceIn">
-                                          <h2>Pricing</h2>
-                                    </div>
 
-                                    <div class="clearfix"></div>
-
-                                    <div class="col-md-12 sub-title text-center wow slideInRight">
-                                          <h3>What you have become is the price you paid to get what you used to want!</h3>
-                                    </div>
-                              </div>
-                              <!-- /Title row --
-
-                              <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInLeft">
-                                          <ul class="plan plan1">
-                                                <li class="plan-name">
-                                                      Basic
-                                                </li>
-                                                <li class="plan-price">
-                                                      <strong>$29</strong> / month
-                                                </li>
-                                                <li>
-                                                      <strong>5GB</strong> Storage
-                                                </li>
-                                                <li>
-                                                      <strong>1GB</strong> RAM
-                                                </li>
-                                                <li>
-                                                      <strong>400GB</strong> Bandwidth
-                                                </li>
-                                                <li>
-                                                      <strong>10</strong> Email Address
-                                                </li>
-                                                <li>
-                                                      <strong>Forum</strong> Support
-                                                </li>
-                                                <li class="plan-action">
-                                                      <a href="#" class="btn btn-2 btn-2c">Signup</a>
-                                                </li>
-                                          </ul>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                          <ul class="plan plan2 featured">
-                                                <li class="plan-name">
-                                                      Standard
-                                                </li>
-                                                <li class="plan-price">
-                                                      <strong>$39</strong> / month
-                                                </li>
-                                                <li>
-                                                      <strong>5GB</strong> Storage
-                                                </li>
-                                                <li>
-                                                      <strong>1GB</strong> RAM
-                                                </li>
-                                                <li>
-                                                      <strong>400GB</strong> Bandwidth
-                                                </li>
-                                                <li>
-                                                      <strong>10</strong> Email Address
-                                                </li>
-                                                <li>
-                                                      <strong>Forum</strong> Support
-                                                </li>
-                                                <li class="plan-action">
-                                                      <a href="#" class="btn btn-2 btn-2c">Signup</a>
-                                                </li>
-                                          </ul>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInDown">
-                                          <ul class="plan plan3">
-                                                <li class="plan-name">
-                                                      Advanced
-                                                </li>
-                                                <li class="plan-price">
-                                                      <strong>$199</strong> / month
-                                                </li>
-                                                <li>
-                                                      <strong>5GB</strong> Storage
-                                                </li>
-                                                <li>
-                                                      <strong>1GB</strong> RAM
-                                                </li>
-                                                <li>
-                                                      <strong>400GB</strong> Bandwidth
-                                                </li>
-                                                <li>
-                                                      <strong>10</strong> Email Address
-                                                </li>
-                                                <li>
-                                                      <strong>Forum</strong> Support
-                                                </li>
-                                                <li class="plan-action">
-                                                      <a href="#" class="btn btn-2 btn-2c">Signup</a>
-                                                </li>
-                                          </ul>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInRight">
-                                          <ul class="plan plan4">
-                                                <li class="plan-name">
-                                                      Mighty
-                                                </li>
-                                                <li class="plan-price">
-                                                      <strong>$999</strong> / month
-                                                </li>
-                                                <li>
-                                                      <strong>5GB</strong> Storage
-                                                </li>
-                                                <li>
-                                                      <strong>1GB</strong> RAM
-                                                </li>
-                                                <li>
-                                                      <strong>400GB</strong> Bandwidth
-                                                </li>
-                                                <li>
-                                                      <strong>10</strong> Email Address
-                                                </li>
-                                                <li>
-                                                      <strong>Forum</strong> Support
-                                                </li>
-                                                <li class="plan-action">
-                                                      <a href="#" class="btn btn-2 btn-2c">Signup</a>
-                                                </li>
-                                          </ul>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </section>
-            <!-- /Section 6 -->
 
             <!-- Section 7 -->
             <section id="section7" class="contacts">
-                  <!-- Subscription Wrap --
-                  <div class="subscription-wrap light">
-                        <div class="texture-layer">
-                              <div class="container">
-                                    <!-- Title row --
-                                    <div class="row">
-                                          <div class="col-md-12 big-title light wow bounceIn">
-                                                <h2>Subscribe with us</h2>
-                                          </div>
-                                    </div>
-                                    <!-- /Title row -->
-
-                                    <!-- Subscription form --
-                                    <div class="row text-center">
-                                          <div class="col-md-2"></div>
-
-                                          <div class="col-md-8">
-                                                <form method="post" action="#" id="signup">
-                                                      <fieldset>
-                                                            <span id="response"></span>
-                                                                  
-                                                            <input class="form-control subEmail wow fadeInLeft" type="text" placeholder="Email Address" id="subEmail" name="subEmail">
-                                                            <button class="btn btn-1 wow fadeInRight">Join</button>
-                                                            
-                                                            <div id="no-spam" class="wow fadeInUp">* We'll never spam or give this address away</div>
-                                                      </fieldset>
-                                                </form>
-                                          </div>
-
-                                          <div class="col-md-2"></div>
-                                    </div>
-                                    <!-- /Subscription form --
-                              </div>
-                        </div>
-                  </div>
-                  <!-- /Subscription Wrap -->
-
-                  <!-- Contact form -->
+                <!-- Contact form -->
                   <div class="contact-form">
                         <div class="container">
                               <!-- Title row -->
@@ -1463,13 +1282,13 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
                                                                   <div class="row">
                                                                         <div class="col-md-12">
-                                                                              <input class="form-control" id="name" name="name" type="text" placeholder="Name" value="" required>
+                                                                              <input class="form-control" id="name" name="name" type="text" placeholder="Nombre" value="" required>
                                                                         </div>
                                                                         <div class="col-md-12">
                                                                               <input class="form-control" type="email" id="email" name="email" placeholder="Email" value="" required>
                                                                         </div>
                                                                         <div class="col-md-12">
-                                                                              <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" value="" required>
+                                                                              <input class="form-control" type="text" id="subject" name="subject" placeholder="Asunto" value="" required>
                                                                         </div>
                                                                   </div>
                                                             </div>
@@ -1477,7 +1296,7 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight">
                                                                   <div class="row">
                                                                         <div class="col-md-12">
-                                                                              <textarea class="form-control" id="text" name="text" rows="3" cols="40" placeholder="Your Message" required></textarea>
+                                                                              <textarea class="form-control" id="text" name="text" rows="3" cols="40" placeholder="Tu Mensaje" required></textarea>
                                                                         </div>
                                                                   </div>
                                                             </div>
@@ -1513,17 +1332,21 @@
                         <div class="container">
                               <ul class="social social-icons-footer-bottom wow fadeInDown">
                                     <li class="facebook">
-                                        <a href="https://www.facebook.com/conquistadores.rejassur" data-toggle="tooltip" title="Facebook" target="_blank">
+                                        <a href="https://www.facebook.com/clubrejassur" data-toggle="tooltip" title="Facebook" target="_blank">
                                             <i class="fa fa-facebook"></i>
                                         </a>
                                     </li>
-                                    <!--<li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/ClubRejasSur" data-toggle="tooltip" title="Twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
                                     <!--<li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="fa fa-dribbble"></i></a></li>-->
                                     <!--<li class="linkedin"><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>-->
-                                    <li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="fa fa-rss"></i></a></li>
+                                    <!--<li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="fa fa-rss"></i></a></li>-->
                               </ul>
 
-                              <p class="site-info wow fadeInUp"> © 2014 Club de Conquistadores Rejas Sur</p>
+                              <p class="site-info wow fadeInUp"> © 2015 Club de Conquistadores Rejas Sur</p>
                         </div>
                   </footer>
             </section>
