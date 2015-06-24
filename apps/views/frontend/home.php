@@ -208,7 +208,7 @@
                     </section>
                     
                     <ul id="social-bar">
-                        <li><a href="https://www.facebook.com/conquistadores.rejassur" target="_blank"><!--<img alt="FaceBook" src="" />--></a></li>
+                        <li><a href="https://www.facebook.com/clubrejassur" target="_blank"><!--<img alt="FaceBook" src="" />--></a></li>
                     </ul>
                     
                 </div><!--Content-->
