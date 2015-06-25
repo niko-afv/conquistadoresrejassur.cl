@@ -125,7 +125,7 @@ Drop Down Menu Fade Effect
         });
 
         // Helper function to Fill and Center the HTML5 Video
-        jQuery('video,object').maximage('maxcover');
+        /*jQuery('video,object').maximage('maxcover');*/
         
         
         
@@ -320,8 +320,9 @@ Drop Down Menu Fade Effect
 /*  Carousel Section
 /*----------------------------------------------------*/
 
-    
-    jQuery('.testimonials-carousel').carousel({interval: false, wrap: false});   
+    jQuery('.own-gallery').carousel({interval: false, wrap: true});
+
+    jQuery('.testimonials-carousel').carousel({interval: false, wrap: false});
     
     jQuery('.testimonials-carousel-widget').carousel({interval: 5000, pause: "hover"});
 
@@ -483,7 +484,7 @@ jQuery(document).ready(function(){
         if (isValidEmail(email) && (text.length > 100) && (name.length > 1)) {
             $.ajax({
                 type: "POST",
-                url: "ajax/process.php",
+                url: "/index.php/contact",
                 data: dataString,
                 success: function () {
                     $('.success').fadeIn(1000).delay(3000).fadeOut(1000);

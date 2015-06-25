@@ -40,6 +40,7 @@
 
 /*FrontEnd*/
 $route['default_controller']                =   "frontend/home";
+$route['contact']                           =   "frontend/home/contact";
 $route['404_override']                      =   '';
 
 /*BackEnd*/

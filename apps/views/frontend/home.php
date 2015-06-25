@@ -18,7 +18,8 @@
       <link rel="stylesheet" href="css/agency/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/agency/css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/agency/css/team-member.css" media="screen">
-      <link rel="stylesheet" href="css/agency/css/fonts/font-awesome/css/font-awesome.css">
+      <!--<link rel="stylesheet" href="css/agency/css/fonts/font-awesome/css/font-awesome.css">-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/agency/css/animations.css" media="screen">
       <link rel="stylesheet" href="css/agency/css/prettyPhoto.css" media="screen">
       <link rel="stylesheet" href="css/agency/css/jquery.bxslider.css" media="screen">
@@ -30,7 +31,7 @@
       <link rel="stylesheet" href="/css/agency/css/colors/custom_blue.css" class="colors">
       <!-- Favicons -->
       <!--<link rel="shortcut icon" href="images/agency/img/ico/favicon.ico">-->
-      <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+      <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
       <link rel="apple-touch-icon" href="images/agency/img/ico/apple-touch-icon.png">
       <link rel="apple-touch-icon" sizes="72x72" href="images/agency/img/ico/apple-touch-icon-72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="images/agency/img/ico/apple-touch-icon-114.png">
@@ -190,65 +191,79 @@
                               <!-- Title row -->
                               <div class="row">
                                     <div class="col-md-12 big-title wow bounceIn">
-                                          <h2>Qué Hacemos Mejor!</h2>
+                                          <h2>Conocenos en Acción</h2>
                                     </div>
 
                                     <div class="clearfix"></div>
 
                                     <div class="col-md-12 sub-title text-center wow slideInRight">
-                                          <h3>It is not enough that we do our best; sometimes we must do what is required!</h3>
+                                          <h3>Algunas de nuestras actividades</h3>
                                     </div>
                               </div>
                               <!-- /Title row -->
 
-                              <!-- Expertise progress bars -->
-                              <div class="skills">
-                                    <ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
-                                          <li class="progress">
-                                                <div class="progress-bar" data-width="85">
-                                                      Wordpress 85%
+                                <!--Gallery begin-->
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <div class="gallery-controls">
+                                            <a class="prev" href="#own-gallery" data-slide="prev">
+                                                <i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div id="own-gallery" class="own-gallery carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <!--<ol class="carousel-indicators">
+                                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                            </ol>-->
+
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="item active">
+                                                    <div class="responsive-video" style="position: relative; overflow: hidden; padding-bottom: 53%">
+                                                        <iframe width="1140" height="600" src="http://www.youtube.com/embed/OiXI6iCPI08?rel=0&showinfo=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;top:0;left: 0;"></iframe>
+                                                    </div>
                                                 </div>
-                                          </li>
-                                          <li class="progress">
-                                                <div class="progress-bar" data-width="65">
-                                                      Graphic Design 65%
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/dia0_2015.jpg&w=1140&h=600&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Asdf Qwerty
+                                                    </div>
                                                 </div>
-                                          </li>
-                                          <li class="progress">
-                                                <div class="progress-bar" data-width="90">
-                                                      HTML/CSS Design 90%
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/testimonials.jpg&w=1140&h=600&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Asdf Qwerty
+                                                    </div>
                                                 </div>
-                                          </li>
-                                          <li class="progress">
-                                                <div class="progress-bar" data-width="60">
-                                                      SEO 60%
-                                                </div>
-                                          </li>
-                                    </ul>
-                                    <ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
-                                          <li class="progress">
-                                                <div class="progress-bar" data-width="75">
-                                                      Agencying 75%
-                                                </div>
-                                          </li>
-                                          <li class="progress">
-                                                <div class="progress-bar" data-width="95">
-                                                      App Development 95%
-                                                </div>
-                                          </li>
-                                          <li class="progress">
-                                                <div class="progress-bar" data-width="70">
-                                                      IT Consultency 70%
-                                                </div>
-                                          </li>
-                                          <li class="progress">
-                                                <div class="progress-bar" data-width="90">
-                                                      Theme Development 90%
-                                                </div>
-                                          </li>
-                                    </ul>
-                              </div>
-                              <!-- /Expertise progress bars -->
+
+                                            </div>
+
+                                            <!-- Controls -->
+                                            <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                                <span class="fa fa-angle-left" aria-hidden="true" style="position: absolute;top: 45%;font-size: 60px;left: 30px;"></span>
+                                                <span class="sr-only">Previous</span>
+
+                                            </a>
+                                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                                <span class="fa fa-angle-right" aria-hidden="true" style="position: absolute;top: 45%;font-size: 60px;right: 30px;"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="gallery-controls pull-right">
+                                            <a class="next" href="#own-gallery" data-slide="next">
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Gallery End-->
+
+
                         </div>
                   </div>
                   <!-- /What we do best -->
@@ -359,11 +374,14 @@
                                                             <div class="team-member-links">
                                                                   <div class="team-member-links-list">
                                                                         <a target="_blank" class="facebook team-member-links-item" href="#"><i class="fa fa-facebook"></i></a>
-                                                                        <a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
-                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>
-                                                                        <p>
-                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
-                                                                        </p>
+                                                                        <!--<a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
+                                                                        <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
+                                                                      <p>
+                                                                          "Bienaventurados los que guardan sus mandamientos, para que su potencia
+                                                                          sea en el árbol dela vida, y que entren por las puertas en la ciudad"
+                                                                          <br/>
+                                                                          Apoc. 22:14 RV900.
+                                                                      </p>
                                                                   </div>
                                                             </div>
                                                       </div>
@@ -506,16 +524,16 @@
                         <li><a href="#" data-filter=".centuriones"><h5>Centuriones</h5></a></li>
                         <li><a href="#" data-filter=".aguilas"><h5>Aguilas</h5></a></li>
                         <li><a href="#" data-filter=".panteras"><h5>Panteras</h5></a></li>
-                        <li><a href="#" data-filter=".gacelas"><h5>Gacelas</h5></a></li>
+                        <li><a href="#" data-filter=".gepardas"><h5>gepardas</h5></a></li>
                         <li><a href="#" data-filter=".aventureros"><h5>Aventureros</h5></a></li>
                         <li><a href="#" data-filter=".lideres"><h5>Lideres</h5></a></li>
                       </ul>
                   </div>
                   <!-- /Portfolio Filters -->
-                  
-                  <!-- Portfolio Wrap -->  
+
+                  <!-- Portfolio Wrap -->
                     <div id="portfolio-wrap">
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four aguilas">
                               <div class="img-holder">
                                   <img class="img-responsive" src="images/fichas/adriel_montecino.png" alt="">
@@ -535,7 +553,7 @@
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four branding centuriones">
                               <div class="img-holder">
                                     <img class="img-responsive" src="images/fichas/john_requelme.png" alt="">
@@ -553,11 +571,11 @@
                                     </div>
                                 </div>
                         </div>
-                        <!-- /Portfolio Item With PrettyPhoto  --> 
+                        <!-- /Portfolio Item With PrettyPhoto  -->
 
 
 
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four centuriones">
                               <div class="img-holder">
                                     <img class="img-responsive" src="images/fichas/rodrigo_carvajal.png" alt="">
@@ -577,7 +595,7 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
 
-                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four panteras">
                               <div class="img-holder">
                                     <img class="img-responsive" src="images/fichas/catalina_diaz.png" alt="">
@@ -595,7 +613,7 @@
                                 </div>
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
-                        
+
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four panteras">
                               <div class="img-holder">
@@ -632,11 +650,11 @@
                                 </div>
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
-                        
+
 
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                        <div class="portfolio-item one-four gacelas">
+                        <div class="portfolio-item one-four panteras">
                               <div class="img-holder">
                                     <img class="img-responsive" src="images/fichas/cathy_huayllapuna.png" alt="">
                                     <div class="img-overlay">
@@ -655,7 +673,7 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                            <div class="portfolio-item one-four gacelas">
+                            <div class="portfolio-item one-four gepardas">
                                   <div class="img-holder">
                                         <img class="img-responsive" src="images/fichas/claudia_mora.png" alt="">
                                         <div class="img-overlay">
@@ -771,7 +789,7 @@
 
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                            <div class="portfolio-item one-four gacelas">
+                            <div class="portfolio-item one-four gepardas">
                                   <div class="img-holder">
                                         <img class="img-responsive" src="images/fichas/paloma_uribe.png" alt="">
                                         <div class="img-overlay">
@@ -791,7 +809,7 @@
 
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                            <div class="portfolio-item one-four gacelas">
+                            <div class="portfolio-item one-four gepardas">
                                   <div class="img-holder">
                                         <img class="img-responsive" src="images/fichas/pollet.png" alt="">
                                         <div class="img-overlay">
@@ -849,7 +867,7 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                            <div class="portfolio-item one-four gacelas">
+                            <div class="portfolio-item one-four gepardas">
                                   <div class="img-holder">
                                         <img class="img-responsive" src="images/fichas/mareli_diaz.png" alt="">
                                         <div class="img-overlay">
@@ -1022,7 +1040,7 @@
                             <!-- /Portfolio Item With PrettyPhoto  -->
 
                             <!-- Portfolio Item With PrettyPhoto  -->
-                                <div class="portfolio-item one-four lideres gacelas">
+                                <div class="portfolio-item one-four lideres gepardas">
                                       <div class="img-holder">
                                             <img class="img-responsive" src="images/fichas/lorena_caipo.png" alt="">
                                             <div class="img-overlay">
@@ -1041,7 +1059,7 @@
                             <!-- /Portfolio Item With PrettyPhoto  -->
 
                             <!-- Portfolio Item With PrettyPhoto  -->
-                                <div class="portfolio-item one-four lideres directiva gacelas">
+                                <div class="portfolio-item one-four lideres directiva gepardas">
                                       <div class="img-holder">
                                             <img class="img-responsive" src="images/fichas/alejandra_lagos.png" alt="">
                                             <div class="img-overlay">
@@ -1104,12 +1122,12 @@
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
                                           <div class="service-box">
                                                 <div class="service-icon">
-                                                      <i class="fa fa-eye"></i>
+                                                      <i class="fa fa-heartbeat"></i>
                                                 </div>
                                                 <div class="service-box-content">
                                                       <h4>Deportes</h4>
                                                       <p>
-                                                            Disfrutamos del aire libre y promovemos una vida sana a través de diferentes deportes.
+                                                          Promovemos una vida sana disfrutando del aire libre y a traves de diferentes deportes
                                                       </p>
                                                 </div>
                                           </div>
@@ -1117,7 +1135,7 @@
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
                                           <div class="service-box">
                                                 <div class="service-icon">
-                                                      <i class="fa fa-edit"></i>
+                                                      <i class="fa fa-book"></i>
                                                 </div>
                                                 <div class="service-box-content">
                                                       <h4>Estudiamos la Biblía</h4>
@@ -1135,12 +1153,12 @@
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
                                           <div class="service-box">
                                                 <div class="service-icon">
-                                                      <i class="fa fa-leaf"></i>
+                                                      <i class="fa fa-gamepad"></i>
                                                 </div>
                                                 <div class="service-box-content">
                                                       <h4>Jugamos</h4>
                                                       <p>
-                                                            Sabemos que la recreación y entretención son una pieza clave para un creecimiento sano, y es lo que hacemos!
+                                                            Sabemos que la recreación y entretención al aire libre son piezas claves para un creecimiento sano.
                                                       </p>
                                                 </div>
                                           </div>
@@ -1148,7 +1166,7 @@
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
                                           <div class="service-box">
                                                 <div class="service-icon">
-                                                      <i class="fa fa-cog"></i>
+                                                      <i class="fa fa-user-plus"></i>
                                                 </div>
                                                 <div class="service-box-content">
                                                       <h4>Aprendemos a relacionarnos</h4>
@@ -1161,12 +1179,12 @@
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
                                           <div class="service-box">
                                                 <div class="service-icon">
-                                                      <i class="fa fa-search"></i>
+                                                      <i class="fa fa-bus"></i>
                                                 </div>
                                                 <div class="service-box-content">
                                                       <h4>Excursiones y salidas</h4>
                                                       <p>
-                                                         Con el objetivo de conocer nuevos lugares y las maravillas que el mundo nos tiene preparados.
+                                                         Con el objetivo de conocer nuevos lugares y las maravillas que Dios ha creado.
                                                       </p>
                                                 </div>
                                           </div>
@@ -1303,7 +1321,7 @@
                                                       </div>
                                                       <div class="row">
                                                             <div class="col-md-12 wow fadeInUp">
-                                                                  <button type="submit" class="btn btn-2 btn-2c">Send</button>
+                                                                  <button type="submit" class="btn btn-2 btn-2c">Enviar</button>
                                                                   <div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
                                                                   <div class="error alert-danger alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
                                                             </div>
@@ -1341,6 +1359,11 @@
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
+                                  <li class="facebook">
+                                      <a href="https://www.youtube.com/channel/UCaKEVkv3fvEfgFe5JN439Kg" data-toggle="tooltip" title="Youtube" target="_blank">
+                                          <i class="fa fa-youtube"></i>
+                                      </a>
+                                  </li>
                                     <!--<li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="fa fa-dribbble"></i></a></li>-->
                                     <!--<li class="linkedin"><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>-->
                                     <!--<li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="fa fa-rss"></i></a></li>-->
