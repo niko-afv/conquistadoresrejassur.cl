@@ -25,9 +25,9 @@ class Home extends CI_Controller {
         //$this->email->bcc('them@their-example.com');
 
         $this->email->subject('Email Test');
-        $this->email->message();
+        $this->email->message($this->input->post('name') . " - " . $this->input->post('email') . " - " . $this->input->post('subject') . " - " . $this->input->post('message'));
 
-        $this->email->send($this->input->post('name') . " - " . $this->input->post('email') . " - " . $this->input->post('subject') . " - " . $this->input->post('message'));
+        $this->email->send();
 
         echo $this->email->print_debugger();
     }

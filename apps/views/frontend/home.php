@@ -380,7 +380,7 @@
                                                                         <!--<a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                       <p>
-                                                                          
+
                                                                       </p>
                                                                   </div>
                                                             </div>
