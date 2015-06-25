@@ -19,15 +19,15 @@ class Home extends CI_Controller {
         //print_r($this->input->post());
         $this->load->library('email');
 
-        $this->email->from('contacto@conquis.com', 'Website Rejas Sur');
+        $this->email->from('no-reply@conquistadoresrejassur.cl', 'Website Rejas Sur');
         $this->email->to('niko.afv@gmail.com');
         //$this->email->cc('another@another-example.com');
         //$this->email->bcc('them@their-example.com');
 
         $this->email->subject('Email Test');
-        $this->email->message('Testing the email class.');
+        $this->email->message();
 
-        $this->email->send();
+        $this->email->send($this->input->post('name') . " - " . $this->input->post('email') . " - " . $this->input->post('subject') . " - " . $this->input->post('message'));
 
         echo $this->email->print_debugger();
     }

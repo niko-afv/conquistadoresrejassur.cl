@@ -350,7 +350,10 @@
                                                                         <!--<a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                         <p>
-                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
+                                                                            "Mira que te mando que te esfuerces y seas valiente;
+                                                                            no temas ni desmayes, porque Jehová tu Dios estará contigo en dondequiera que vayas."
+                                                                            <br/>
+                                                                            Josue 1:9 RV60
                                                                         </p>
                                                                   </div>
                                                             </div>
@@ -377,10 +380,7 @@
                                                                         <!--<a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                       <p>
-                                                                          "Bienaventurados los que guardan sus mandamientos, para que su potencia
-                                                                          sea en el árbol dela vida, y que entren por las puertas en la ciudad"
-                                                                          <br/>
-                                                                          Apoc. 22:14 RV900.
+                                                                          
                                                                       </p>
                                                                   </div>
                                                             </div>
@@ -434,7 +434,10 @@
                                                                         <!--<a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                         <p>
-                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
+                                                                            "Mas él herido fue por nuestras rebeliones, molido por nuestros pecados;
+                                                                            el castigo de nuestra paz fue sobre él, y por su llaga fuimos nosotros curados."
+                                                                            <br/>
+                                                                            Isaías 53:5 RV60
                                                                         </p>
                                                                   </div>
                                                             </div>
