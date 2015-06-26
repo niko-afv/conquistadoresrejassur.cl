@@ -229,10 +229,22 @@
                                                     </div>-->
 
                                                     <video controls class="responsive-image" style="width: 100%; max-height: 535px !important;">
+                                                        <source src="/videos/Testimonio_Club_De_Conquistadores_Rejas_Sur_-_Andres_Guerra_2014.mp4"/>
+                                                    </video>
+                                                    <div class="carousel-caption">
+                                                        Testimonio de Andres Guerra
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <!--<div class="responsive-video" style="position: relative; overflow: hidden; padding-bottom: 53%">
+                                                        <iframe width="1140" height="600" src="http://www.youtube.com/embed/OiXI6iCPI08?rel=0&showinfo=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;top:0;left: 0;"></iframe>
+                                                    </div>-->
+
+                                                    <video controls class="responsive-image" style="width: 100%; max-height: 535px !important;">
                                                         <source src="/videos/Recuento_Club_Rejas_Sur_2014.mp4"/>
                                                     </video>
                                                     <div class="carousel-caption">
-                                                        Video recopilatorio 2014
+                                                        Resumen de nuestra temporada 2014
                                                     </div>
                                                 </div>
                                                 <div class="item">

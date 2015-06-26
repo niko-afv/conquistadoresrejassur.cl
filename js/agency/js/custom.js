@@ -320,7 +320,7 @@ Drop Down Menu Fade Effect
 /*  Carousel Section
 /*----------------------------------------------------*/
 
-    jQuery('.own-gallery').carousel({interval: false, wrap: false, pause: "hover"});
+    jQuery('.own-gallery').carousel({interval: false, wrap: true, pause: "hover"});
 
     jQuery('.testimonials-carousel').carousel({interval: false, wrap: false});
     

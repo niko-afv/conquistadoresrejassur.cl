@@ -16,7 +16,6 @@ class Home extends CI_Controller {
 	}
 
     public function contact(){
-        //print_r($this->input->post());
         $this->load->library('email');
 
         $this->email->from('no-reply@conquistadoresrejassur.cl', 'Website Rejas Sur');
@@ -26,9 +25,7 @@ class Home extends CI_Controller {
 
         $this->email->subject('Email Test');
         $this->email->message($this->input->post('name') . " - " . $this->input->post('email') . " - " . $this->input->post('subject') . " - " . $this->input->post('text'));
-
         $this->email->send();
-
         echo $this->email->print_debugger();
     }
 }
