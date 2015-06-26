@@ -1,4 +1,5 @@
 .htaccess
 apps/config/database.php
+images/cache
 uploads/
 /nbproject

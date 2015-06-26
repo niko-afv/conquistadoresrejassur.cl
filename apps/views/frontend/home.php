@@ -236,140 +236,140 @@
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20141108_170031.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20141108_170031.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Disfrutando del Aire Libre
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20141229_125824.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20141229_125824.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Sana Recreación
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150108_114454.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150108_114454.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Nuestra Identidad es importante
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150403_234218_.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150403_234218_.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Nuestro lideres enseñan con paciencia
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010406.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010406.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Tenemos nuestros momentos de euforia .....
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010509.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010509.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         ..... Pero sin perder el orden
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010559.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010559.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Aunque debemos asegurarnos de que hay orden :-)
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010759.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010759.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Cuidamos de los pequeños, entendiendo que son el futuro
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010831.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010831.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Pues para todos hay tiempo
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011057.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011057.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Nunca falta una entretenida meditación
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011248.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011248.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Para enseñar, debemos prepararnos y aprender.
                                                     </div>
                                                 </div>
 
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011725.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011725.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         En cualquier momento te sorprendemos
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011807.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011807.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Pero en la iglesia hay reverencia
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_165757.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_165757.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Unidad Centuriones
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_165846.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_165846.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Unidad Gepardas
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170010.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170010.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Unidad Panteras
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170133.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170133.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Unidad Aguilas
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170451.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170451.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Somos un Club especial
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005502.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005502.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         La entretención ...,
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005520.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005520.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         .. el compañerismo...,
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005542.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005542.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         ... y la enseñanza
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005600.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005600.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         Nos ayuda a ser unidos
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005617.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005617.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
                                                     <div class="carousel-caption">
                                                         y lograr grandes metas (Campori SDA - Brasil 2014)
                                                     </div>
@@ -1375,7 +1375,7 @@
                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                 <div class="testimonial item">
                                                                     <p>
-                                                                        El conocer y formar parte del club de conquistadores de Rejar Sur me ha dado muchas satisfacciones y alegrías.
+                                                                        El conocer y formar parte del club de conquistadores de Rejas Sur me ha dado muchas satisfacciones y alegrías.
                                                                         Me ha permitido desarrollar habilidades que no pensaba tenia.
                                                                         El compañerismo, vida en la naturaleza y contacto con Dios me ha hecho una persona integral.
                                                                     </p>
