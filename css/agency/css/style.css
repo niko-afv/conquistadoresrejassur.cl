@@ -1484,7 +1484,8 @@ div.content-box.big div.content-box-info p {
 /* Testimonials */
 .testimonial p {
     background: #fff;
-    font-family: "Tangerine", "Open Sans", Arial;
+    font-family: "Indie Flower", "Open Sans", Arial;
+    font-style: italic;
     font-size: 30px;
     letter-spacing:1px;
     line-height: 40px;
@@ -2600,4 +2601,11 @@ ol.commentlist li:first-child {
     .posts-block {
         padding-right: 30px !important;
     }
+}
+
+
+
+/*CUSTOM*/
+.testimonial-author-info a{
+    color: #fff !important;
 }

@@ -306,21 +306,21 @@ Drop Down Menu Fade Effect
 
 
 
+        jQuery(".player").mb_YTPlayer();
+    });
 
-/*===============================================*/
-/*  Video Script
-/*===============================================*/
+    /*===============================================*/
+    /*  Video Script
+     /*===============================================*/
 
     jQuery(function(){
-        jQuery(".player").mb_YTPlayer();
-    }); 
 
 
 /*----------------------------------------------------*/
 /*  Carousel Section
 /*----------------------------------------------------*/
 
-    jQuery('.own-gallery').carousel({interval: false, wrap: true});
+    jQuery('.own-gallery').carousel({interval: false, wrap: false, pause: "hover"});
 
     jQuery('.testimonials-carousel').carousel({interval: false, wrap: false});
     

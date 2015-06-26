@@ -14,12 +14,13 @@
       <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" />
+      <link href='http://fonts.googleapis.com/css?family=Poiret+One|Indie+Flower' rel='stylesheet' type='text/css'>
       <!-- Library CSS -->
       <link rel="stylesheet" href="css/agency/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/agency/css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/agency/css/team-member.css" media="screen">
-      <!--<link rel="stylesheet" href="css/agency/css/fonts/font-awesome/css/font-awesome.css">-->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/agency/css/fonts/font-awesome/css/font-awesome.css">
+        <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
       <link rel="stylesheet" href="css/agency/css/animations.css" media="screen">
       <link rel="stylesheet" href="css/agency/css/prettyPhoto.css" media="screen">
       <link rel="stylesheet" href="css/agency/css/jquery.bxslider.css" media="screen">
@@ -203,7 +204,8 @@
                               <!-- /Title row -->
 
                                 <!--Gallery begin-->
-                                <div class="row">
+                                <div class="row wow bounceIn">
+                                <div class="row wow bounceIn">
                                     <div class="col-md-1">
                                         <div class="gallery-controls">
                                             <a class="prev" href="#own-gallery" data-slide="prev">
@@ -222,23 +224,156 @@
                                             <!-- Wrapper for slides -->
                                             <div class="carousel-inner" role="listbox">
                                                 <div class="item active">
-                                                    <div class="responsive-video" style="position: relative; overflow: hidden; padding-bottom: 53%">
+                                                    <!--<div class="responsive-video" style="position: relative; overflow: hidden; padding-bottom: 53%">
                                                         <iframe width="1140" height="600" src="http://www.youtube.com/embed/OiXI6iCPI08?rel=0&showinfo=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;top:0;left: 0;"></iframe>
+                                                    </div>-->
+
+                                                    <video controls class="responsive-image" style="width: 100%; max-height: 535px !important;">
+                                                        <source src="/videos/Recuento_Club_Rejas_Sur_2014.mp4"/>
+                                                    </video>
+                                                    <div class="carousel-caption">
+                                                        Video recopilatorio 2014
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/frontend/dia0_2015.jpg&w=1140&h=600&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20141108_170031.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
                                                     <div class="carousel-caption">
-                                                        Asdf Qwerty
+                                                        Disfrutando del Aire Libre
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="/images/timthumb.php?src=/images/testimonials.jpg&w=1140&h=600&zc=1&f=2&q=80" alt="" >
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20141229_125824.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
                                                     <div class="carousel-caption">
-                                                        Asdf Qwerty
+                                                        Sana Recreación
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150108_114454.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Nuestra Identidad es importante
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150403_234218_.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Nuestro lideres enseñan con paciencia
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010406.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Tenemos nuestros momentos de euforia .....
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010509.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        ..... Pero sin perder el orden
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010559.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Aunque debemos asegurarnos de que hay orden :-)
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010759.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Cuidamos de los pequeños, entendiendo que son el futuro
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_010831.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Pues para todos hay tiempo
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011057.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Nunca falta una entretenida meditación
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011248.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Para enseñar, debemos prepararnos y aprender.
                                                     </div>
                                                 </div>
 
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011725.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        En cualquier momento te sorprendemos
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150404_011807.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Pero en la iglesia hay reverencia
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_165757.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Unidad Centuriones
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_165846.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Unidad Gepardas
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170010.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Unidad Panteras
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170133.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Unidad Aguilas
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150418_170451.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Somos un Club especial
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005502.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        La entretención ...,
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005520.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        .. el compañerismo...,
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005542.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        ... y la enseñanza
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005600.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        Nos ayuda a ser unidos
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="/images/timthumb.php?src=/images/frontend/gallery/IMG_20150626_005617.jpg&w=1140&h=650&zc=1&f=2&q=80" alt="" >
+                                                    <div class="carousel-caption">
+                                                        y lograr grandes metas (Campori SDA - Brasil 2014)
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             <!-- Controls -->
@@ -380,7 +515,10 @@
                                                                         <!--<a target="_blank" class="twitter team-member-links-item" href="#"><i class="fa fa-twitter"></i></a>
                                                                         <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                       <p>
-
+                                                                          "Hijitos mios, estas cosas os escribo par que no pequéies; y si alguno hubiese pecado, abogado tenemos
+                                                                          para con el padre, a Jesucristo el justo."
+                                                                          <br/>
+                                                                          1 de Juan 2:1 RV60
                                                                       </p>
                                                                   </div>
                                                             </div>
@@ -407,7 +545,9 @@
                                                                         <a target="_blank" class="twitter team-member-links-item" href="https://twitter.com/Anthonymonte"><i class="fa fa-twitter"></i></a>
                                                                         <!--<a target="_blank" class="linkedin team-member-links-item" href="#"><i class="fa fa-linkedin"></i></a>-->
                                                                         <p>
-                                                                              <!--Lorem ipsum dolor sit amet, quis adipiscing elit.-->
+                                                                            "Todo lo puedo en Cristo que me fortalece"
+                                                                            <br/>
+                                                                            Filipenses 4:13
                                                                         </p>
                                                                   </div>
                                                             </div>
@@ -523,7 +663,6 @@
                 
                       <ul class="clearfix">
                         <li><a id="all" href="#" data-filter="*" class="active"><h5>Todos</h5></a></li>
-                        <li><a href="#" data-filter=".directiva"><h5>Directiva</h5></a></li>
                         <li><a href="#" data-filter=".centuriones"><h5>Centuriones</h5></a></li>
                         <li><a href="#" data-filter=".aguilas"><h5>Aguilas</h5></a></li>
                         <li><a href="#" data-filter=".panteras"><h5>Panteras</h5></a></li>
@@ -927,7 +1066,7 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                            <div class="portfolio-item one-four directiva lideres">
+                            <div class="portfolio-item one-four lideres">
                                   <div class="img-holder">
                                         <img class="img-responsive" src="images/fichas/nicolas_fredes.png" alt="">
                                         <div class="img-overlay">
@@ -946,7 +1085,7 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                            <div class="portfolio-item one-four lideres directiva">
+                            <div class="portfolio-item one-four lideres">
                                   <div class="img-holder">
                                         <img class="img-responsive" src="images/fichas/marcos_dias_464x530.jpg" alt="">
                                         <div class="img-overlay">
@@ -1005,7 +1144,7 @@
 
 
                             <!-- Portfolio Item With PrettyPhoto  -->
-                                <div class="portfolio-item one-four lideres centuriones directiva">
+                                <div class="portfolio-item one-four lideres centuriones">
                                       <div class="img-holder">
                                             <img class="img-responsive" src="images/fichas/anthony_montecino.png" alt="">
                                             <div class="img-overlay">
@@ -1024,7 +1163,7 @@
                             <!-- /Portfolio Item With PrettyPhoto  -->
 
                             <!-- Portfolio Item With PrettyPhoto  -->
-                                <div class="portfolio-item one-four lideres directiva panteras">
+                                <div class="portfolio-item one-four lideres panteras">
                                       <div class="img-holder">
                                             <img class="img-responsive" src="images/fichas/nallive_montecino.png" alt="">
                                             <div class="img-overlay">
@@ -1062,7 +1201,7 @@
                             <!-- /Portfolio Item With PrettyPhoto  -->
 
                             <!-- Portfolio Item With PrettyPhoto  -->
-                                <div class="portfolio-item one-four lideres directiva gepardas">
+                                <div class="portfolio-item one-four lideres gepardas">
                                       <div class="img-holder">
                                             <img class="img-responsive" src="images/fichas/alejandra_lagos.png" alt="">
                                             <div class="img-overlay">
