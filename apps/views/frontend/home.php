@@ -19,8 +19,8 @@
       <link rel="stylesheet" href="css/agency/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/agency/css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/agency/css/team-member.css" media="screen">
-      <link rel="stylesheet" href="css/agency/css/fonts/font-awesome/css/font-awesome.css">
-        <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+      <!--<link rel="stylesheet" href="css/agency/css/fonts/font-awesome/css/font-awesome.css">-->
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/agency/css/animations.css" media="screen">
       <link rel="stylesheet" href="css/agency/css/prettyPhoto.css" media="screen">
       <link rel="stylesheet" href="css/agency/css/jquery.bxslider.css" media="screen">
