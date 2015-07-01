@@ -19,8 +19,8 @@
       <link rel="stylesheet" href="css/agency/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/agency/css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/agency/css/team-member.css" media="screen">
-      <link rel="stylesheet" href="css/agency/css/fonts/font-awesome/css/font-awesome.css">
-      <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+      <!--<link rel="stylesheet" href="css/agency/css/fonts/font-awesome/css/font-awesome.css">-->
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/agency/css/animations.css" media="screen">
       <link rel="stylesheet" href="css/agency/css/prettyPhoto.css" media="screen">
       <link rel="stylesheet" href="css/agency/css/jquery.bxslider.css" media="screen">
@@ -643,7 +643,7 @@
                                         <div class="col-md-4 wow fadeInLeft">
                                             <div class="fun-box">
                                                 <i class="fa fa-user"></i>
-                                                <span class="fun" data-from="0" data-to="28" data-speed="3000" data-refresh-interval="20"></span>
+                                                <span class="fun" data-from="0" data-to="31" data-speed="3000" data-refresh-interval="20"></span>
                                                 <p>Total de Integrantes</p>
                                             </div>
                                         </div>
@@ -866,6 +866,25 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four centuriones">
+                            <div class="img-holder">
+                                <img class="img-responsive" src="images/fichas/gonzalo_vega.png" alt="">
+                                <div class="img-overlay">
+                                    <div>
+                                        <p>Gonzalo Vega</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                    </div>
+                                </div>
+                                <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
                             <div class="portfolio-item one-four centuriones">
                                   <div class="img-holder">
                                         <img class="img-responsive" src="images/fichas/ismael_mendez.png" alt="">
@@ -969,7 +988,7 @@
                                         <img class="img-responsive" src="images/fichas/pollet.png" alt="">
                                         <div class="img-overlay">
                                             <div>
-                                            <p>Pollet</p>
+                                            <p>Juliet</p>
                                             <p class="cargo">CONQUISTADORA</p>
                                           </div>
                                         </div>
@@ -982,6 +1001,24 @@
                             </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four aguilas">
+                            <div class="img-holder">
+                                <img class="img-responsive" src="images/fichas/adriano.png" alt="">
+                                <div class="img-overlay">
+                                    <div>
+                                        <p>Adriano</p>
+                                        <p class="cargo">CONQUISTADOR</p>
+                                    </div>
+                                </div>
+                                <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
                             <div class="portfolio-item one-four aguilas">
@@ -1008,7 +1045,7 @@
                                         <img class="img-responsive" src="images/fichas/juanito_rodriguez.png" alt="">
                                         <div class="img-overlay">
                                             <div>
-                                            <p>Juanito Rodriguez</p>
+                                            <p>Juan Rodriguez</p>
                                             <p class="cargo">CONQUISTADOR</p>
                                           </div>
                                         </div>
@@ -1194,6 +1231,25 @@
                                 </div>
                             <!-- /Portfolio Item With PrettyPhoto  -->
 
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four lideres panteras">
+                            <div class="img-holder">
+                                <img class="img-responsive" src="images/fichas/andres_guerra.png" alt="">
+                                <div class="img-overlay">
+                                    <div>
+                                        <p>Andres Guerra</p>
+                                        <p class="cargo">Lider</p>
+                                    </div>
+                                </div>
+                                <div class="overlay-effect">
+                                    <span class="RoundBg">
+                                        <a data-gal="prettyPhoto[galname]" href="images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
                             <!-- Portfolio Item With PrettyPhoto  -->
                                 <div class="portfolio-item one-four lideres gepardas">
                                       <div class="img-holder">
@@ -1311,7 +1367,7 @@
                                                       <i class="fa fa-gamepad"></i>
                                                 </div>
                                                 <div class="service-box-content">
-                                                      <h4>Jugamos</h4>
+                                                      <h4>Juegos y Recreación</h4>
                                                       <p>
                                                             Sabemos que la recreación y entretención al aire libre son piezas claves para un creecimiento sano.
                                                       </p>
@@ -1560,8 +1616,8 @@
       <script src="js/agency/js/jquery.scrollTo.min.js"></script>
       <script src="js/agency/js/wow.js"></script>
       <script src="js/agency/js/jquery.nav.js"></script>
-      <!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
-      <script src="js/agency/js/maps.google.js"></script>
+      <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+      <!--<script src="js/agency/js/maps.google.js"></script>-->
       <script src="js/agency/js/jquery.gmap.min.js"></script>
       <script src="js/agency/js/jquery.mb.YTPlayer.js"></script>
       <script src="js/agency/js/tytabs.js"></script>
