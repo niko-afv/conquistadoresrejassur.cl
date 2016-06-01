@@ -11,8 +11,9 @@ class Home extends CI_Controller {
 	}
 	
 	public function index(){
-		$data['title'] = $this->title; 
-		$this->load->view('frontend/home',$data);
+		$data['title'] = $this->title;
+        $data['root_url'] = '/conquistadoresrejassur/';
+        $this->load->view('frontend/home',$data);
 	}
 
     public function contact(){

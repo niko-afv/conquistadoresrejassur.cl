@@ -29,9 +29,14 @@ and open the template in the editor.
     font-size: 10px;
     margin-top: 20px;
 }
-#conquis_logo_home{
+/*#conquis_logo_home{
     float: right;
     margin: 35px auto 0;
+}*/
+
+#conquis_logo_home{
+    margin: 0 auto;
+    width: 70%;
 }
 
 @media all and (max-width: 1000px){
