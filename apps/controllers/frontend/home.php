@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 	
 	public function index(){
 		$data['title'] = $this->title;
-        $data['root_url'] = '/conquistadoresrejassur/';
+        $data['root_url'] = '/';
         $this->load->view('frontend/home',$data);
 	}
 
