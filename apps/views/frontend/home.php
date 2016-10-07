@@ -562,7 +562,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four branding centuriones">
                               <div class="img-holder">
-                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/john_requelme-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/john_requelme.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>John Requelme</p>
