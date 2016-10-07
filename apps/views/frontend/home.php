@@ -77,7 +77,7 @@
                                           <div class="scrollNormal">
                                                 <a href="#section2">
                                                     <!--<img width="140" height="140" alt="Agency" src="<?php echo $root_url; ?>images/agency/img/logo_welcome.png">-->
-                                                    <img width="100%" id="logo-header" alt="Agency" src="<?php echo $root_url; ?>images/timthumb.php?src=images/logo-completo2.png">
+                                                    <img width="100%" id="logo-header" alt="Agency" src="<?php echo $root_url; ?>images/timthumb.php?src=images/logo-completo2.png&w=1140&h=650&zc=1&q=50">
                                                 </a>
                                           </div>
                                           <div class="scrollDown">
