@@ -77,7 +77,7 @@
                                           <div class="scrollNormal">
                                                 <a href="#section2">
                                                     <!--<img width="140" height="140" alt="Agency" src="<?php echo $root_url; ?>images/agency/img/logo_welcome.png">-->
-                                                    <img width="100%" id="logo-header" alt="Agency" src="<?php echo $root_url; ?>images/logo-completo2.png">
+                                                    <img width="100%" id="logo-header" alt="Agency" src="<?php echo $root_url; ?>images/timthumb.php?src=images/logo-completo2.png">
                                                 </a>
                                           </div>
                                           <div class="scrollDown">
@@ -216,18 +216,12 @@
                                     </div>
                                     <div class="col-md-10">
                                         <div id="own-gallery" class="own-gallery carousel slide" data-ride="carousel">
-                                            <!-- Indicators -->
-                                            <!--<ol class="carousel-indicators">
-                                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                            </ol>-->
-
                                             <!-- Wrapper for slides -->
                                             <div class="carousel-inner" role="listbox">
-                                                <div class="item active">
+                                                <!--<div class="item active">
                                                     <!--<div class="responsive-video" style="position: relative; overflow: hidden; padding-bottom: 53%">
                                                         <iframe width="1140" height="600" src="http://www.youtube.com/embed/OiXI6iCPI08?rel=0&showinfo=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;top:0;left: 0;"></iframe>
-                                                    </div>-->
+                                                    </div>--
 
                                                     <video controls class="responsive-image" style="width: 100%; max-height: 535px !important;">
                                                         <source src="<?php echo $root_url; ?>videos/Testimonio_Club_De_Conquistadores_Rejas_Sur_-_Andres_Guerra_2014.mp4"/>
@@ -236,10 +230,10 @@
                                                         Testimonio de Andres Guerra
                                                     </div>
                                                 </div>
-                                                <div class="item">
+                                                <!--<div class="item">
                                                     <!--<div class="responsive-video" style="position: relative; overflow: hidden; padding-bottom: 53%">
                                                         <iframe width="1140" height="600" src="http://www.youtube.com/embed/OiXI6iCPI08?rel=0&showinfo=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;top:0;left: 0;"></iframe>
-                                                    </div>-->
+                                                    </div>--
 
                                                     <video controls class="responsive-image" style="width: 100%; max-height: 535px !important;">
                                                         <source src="<?php echo $root_url; ?>videos/Recuento_Club_Rejas_Sur_2014.mp4"/>
@@ -247,158 +241,63 @@
                                                     <div class="carousel-caption">
                                                         Resumen de nuestra temporada 2014
                                                     </div>
+                                                </div>-->
+                                                <div class="item active">
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010509.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20141108_170031.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Disfrutando del Aire Libre
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010559.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20141229_125824.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Sana Recreación
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010759.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150108_114454.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Nuestra Identidad es importante
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010831.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150403_234218_.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Nuestro lideres enseñan con paciencia
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_011057.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010406.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Tenemos nuestros momentos de euforia .....
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010509.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        ..... Pero sin perder el orden
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010559.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Aunque debemos asegurarnos de que hay orden :-)
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010759.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Cuidamos de los pequeños, entendiendo que son el futuro
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_010831.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Pues para todos hay tiempo
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_011057.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Nunca falta una entretenida meditación
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_011248.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Para enseñar, debemos prepararnos y aprender.
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_011248.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
 
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_011725.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        En cualquier momento te sorprendemos
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_011725.jpg&w=1140&h=650&zc=1q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_011807.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Pero en la iglesia hay reverencia
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150404_011807.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_165757.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Unidad Centuriones
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_165757.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_165846.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Unidad Gepardas
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_165846.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_170010.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Unidad Panteras
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_170010.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_170133.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Unidad Aguilas
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_170133.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_170451.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Somos un Club especial
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150418_170451.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005502.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        La entretención ...,
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005502.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005520.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        .. el compañerismo...,
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005520.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005542.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        ... y la enseñanza
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005542.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005600.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        Nos ayuda a ser unidos
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005600.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                                 <div class="item">
-                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005617.jpg&w=1140&h=650&zc=1&f=2&q=50" alt="" >
-                                                    <div class="carousel-caption">
-                                                        y lograr grandes metas (Campori SDA - Brasil 2014)
-                                                    </div>
+                                                    <img src="<?php echo $root_url; ?>images/timthumb.php?src=images/frontend/gallery/IMG_20150626_005617.jpg&w=1140&h=650&zc=1&q=50" alt="" >
                                                 </div>
                                             </div>
-
-                                            <!-- Controls -->
-                                            <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                                <span class="fa fa-angle-left" aria-hidden="true" style="position: absolute;top: 45%;font-size: 60px;left: 30px;"></span>
-                                                <span class="sr-only">Previous</span>
-
-                                            </a>
-                                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                                <span class="fa fa-angle-right" aria-hidden="true" style="position: absolute;top: 45%;font-size: 60px;right: 30px;"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>-->
                                         </div>
                                     </div>
                                     <div class="col-md-1">
@@ -663,7 +562,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four branding centuriones">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/john_requelme.png" alt="">
+                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/jhon_requelme.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>John Requelme</p>
@@ -683,7 +582,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four centuriones">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/rodrigo_carvajal.png" alt="">
+                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/rodrigo_carvajal.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>Rodrigo Carvajal</p>
@@ -702,7 +601,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four panteras">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/cathy_huayllapuna.png" alt="">
+                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/katy_huayllapuna.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>Cathy Huyllapina</p>
@@ -721,7 +620,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four centuriones">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/claudio_rodriguez.png" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/claudio_rodriguez.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Claudio Rodriguez</p>
@@ -738,9 +637,29 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four centuriones">
+                            <div class="img-holder">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/josefa_solis.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+
+                                <div class="img-overlay">
+                                    <div>
+                                        <p>Josefa Solis</p>
+                                        <p class="cargo">CONQUISTADORA</p>
+                                    </div>
+                                </div>
+                                <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="<?php echo $root_url; ?>images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four panteras">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/melisa_rodriguez.png" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/melissa_rodriguez.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Melisa Rodriguez</p>
@@ -759,7 +678,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four gepardas">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/paloma_uribe.png" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/paloma_uribe.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Paloma Uribe</p>
@@ -797,7 +716,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four aguilas">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/norbil_requelme.png" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/norbit_requelme.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Norbil Requelme</p>
@@ -835,7 +754,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four gepardas">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/mareli_diaz.png" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/marely_diaz.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Marely Díaz</p>
@@ -849,6 +768,25 @@
                                         </div>
                                     </div>
                             </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four aventureros">
+                            <div class="img-holder">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/benjamin_fredes.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                <div class="img-overlay">
+                                    <div>
+                                        <p>Benjamin Fredes</p>
+                                        <p class="cargo">AVENTURERO</p>
+                                    </div>
+                                </div>
+                                <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="<?php echo $root_url; ?>images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
@@ -873,7 +811,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/catalina_diaz.png" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/catalina_diaz.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Catalina Díaz</p>
@@ -892,7 +830,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/martin_mora.png" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/martin_mora.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Martin Mora</p>
@@ -911,7 +849,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/gonzalo_vega.png" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/gonzalo_vega.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Gonzalo Vega</p>
@@ -930,7 +868,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/ismael_mendez.png" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/ismael_mendez.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Ismael Mendez</p>
@@ -968,7 +906,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/marcos_dias_464x530.jpg" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/marco_diaz.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Marcos Díaz</p>
@@ -1025,7 +963,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres panteras">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/nallive_montecino.png" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/nallive_montecino.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                                 <p>Nallive Montecino</p>
