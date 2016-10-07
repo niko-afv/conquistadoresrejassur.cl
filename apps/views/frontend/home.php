@@ -562,7 +562,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four branding centuriones">
                               <div class="img-holder">
-                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/jhon_requelme.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/john_requelme-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>John Requelme</p>
@@ -582,7 +582,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four centuriones">
                               <div class="img-holder">
-                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/rodrigo_carvajal.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/rodrigo_carvajal-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>Rodrigo Carvajal</p>
@@ -599,28 +599,9 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                        <div class="portfolio-item one-four panteras">
-                              <div class="img-holder">
-                                  <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/katy_huayllapuna.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
-                                    <div class="img-overlay">
-                                        <div>
-                                        <p>Cathy Huyllapina</p>
-                                        <p class="cargo">CONQUISTADORA</p>
-                                      </div>
-                                    </div>
-                                    <div class="overlay-effect">
-                                        <span class="RoundBg">
-                                            <a data-gal="prettyPhoto[galname]" href="<?php echo $root_url; ?>images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four centuriones">
                                   <div class="img-holder">
-                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/claudio_rodriguez.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/claudio_rodriguez-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Claudio Rodriguez</p>
@@ -636,7 +617,7 @@
                             </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
-                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <!-- Portfolio Item With PrettyPhoto  --
                         <div class="portfolio-item one-four centuriones">
                             <div class="img-holder">
                                 <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/josefa_solis.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
@@ -656,7 +637,7 @@
                         </div>
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
-                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <!-- Portfolio Item With PrettyPhoto  --
                         <div class="portfolio-item one-four panteras">
                                   <div class="img-holder">
                                       <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/melissa_rodriguez.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
@@ -678,7 +659,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four gepardas">
                                   <div class="img-holder">
-                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/paloma_uribe.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/paloma_uribe-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Paloma Uribe</p>
@@ -697,7 +678,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four aguilas">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/adriano.png" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/adriano-min.png" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Adriano</p>
@@ -716,7 +697,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four aguilas">
                                   <div class="img-holder">
-                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/norbit_requelme.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/norbil_requelme-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Norbil Requelme</p>
@@ -735,7 +716,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four aguilas">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/juanito_rodriguez.png" alt="">
+                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/juanito_rodriguez-min.png" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Juan Rodriguez</p>
@@ -754,7 +735,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four gepardas">
                                   <div class="img-holder">
-                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/marely_diaz.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/mareli_diaz-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Marely Díaz</p>
@@ -790,28 +771,9 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                        <div class="portfolio-item one-four aventureros">
-                                  <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/yahel_mena.png" alt="">
-                                        <div class="img-overlay">
-                                            <div>
-                                            <p>Yahel Mena</p>
-                                            <p class="cargo">AVENTURERA</p>
-                                          </div>
-                                        </div>
-                                        <div class="overlay-effect">
-                                            <span class="RoundBg">
-                                                <a data-gal="prettyPhoto[galname]" href="<?php echo $root_url; ?>images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                            </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/catalina_diaz.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/catalina_dias_464x530-min.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Catalina Díaz</p>
@@ -830,7 +792,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/martin_mora.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/martin_mora-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Martin Mora</p>
@@ -849,7 +811,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/gonzalo_vega.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/gonzalo_vega-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Gonzalo Vega</p>
@@ -868,7 +830,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/ismael_mendez.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/ismael_mendez-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Ismael Mendez</p>
@@ -906,7 +868,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                                   <div class="img-holder">
-                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/marco_diaz.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/marcos_dias_464x530-min.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Marcos Díaz</p>
@@ -925,7 +887,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/gonzalo_mieres.png" alt="">
+                                    <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/gonzalo_mieres-min.png" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>Gonzalo Mieres</p>
@@ -944,7 +906,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres panteras">
                               <div class="img-holder">
-                                    <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/camila_mieres.png" alt="">
+                                    <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/camila_mieres-min.png" alt="">
                                     <div class="img-overlay">
                                         <div>
                                         <p>Camila Mieres</p>
@@ -963,7 +925,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres panteras">
                                   <div class="img-holder">
-                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/nallive_montecino.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                      <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/nallive_montecino-min.png&w=476&h=530&zc=1&f=4&q=50" alt="">
                                         <div class="img-overlay">
                                             <div>
                                                 <p>Nallive Montecino</p>
@@ -982,7 +944,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/andres_guerra.png" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/andres_guerra_464x530-min.jpg" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Andres Guerra</p>
