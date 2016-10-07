@@ -484,7 +484,7 @@ jQuery(document).ready(function(){
         if (isValidEmail(email) && (text.length > 100) && (name.length > 1)) {
             $.ajax({
                 type: "POST",
-                url: "/index.php/contact",
+                url: "/contact",
                 data: dataString,
                 success: function () {
                     $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
