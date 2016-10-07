@@ -752,25 +752,6 @@
                         <!-- /Portfolio Item With PrettyPhoto  -->
 
                         <!-- Portfolio Item With PrettyPhoto  -->
-                        <div class="portfolio-item one-four aventureros">
-                            <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/benjamin_fredes-min.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
-                                <div class="img-overlay">
-                                    <div>
-                                        <p>Benjamin Fredes</p>
-                                        <p class="cargo">AVENTURERO</p>
-                                    </div>
-                                </div>
-                                <div class="overlay-effect">
-                                            <span class="RoundBg">
-                                                <a data-gal="prettyPhoto[galname]" href="<?php echo $root_url; ?>images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
-                                            </span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Portfolio Item With PrettyPhoto  -->
-
-                        <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                             <div class="img-holder">
                                 <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/catalina_dias_464x530-min.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
@@ -955,6 +936,25 @@
                                     <span class="RoundBg">
                                         <a data-gal="prettyPhoto[galname]" href="<?php echo $root_url; ?>images/agency/img/portfolio/portfolio7.jpg"><i class="fa fa-search"></i></a>
                                     </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->
+
+                        <!-- Portfolio Item With PrettyPhoto  -->
+                        <div class="portfolio-item one-four aventureros">
+                            <div class="img-holder">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/benjamin_fredes-min.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                <div class="img-overlay">
+                                    <div>
+                                        <p>Benjamin Fredes</p>
+                                        <p class="cargo">AVENTURERO</p>
+                                    </div>
+                                </div>
+                                <div class="overlay-effect">
+                                            <span class="RoundBg">
+                                                <a data-gal="prettyPhoto[galname]" href="<?php echo $root_url; ?>images/agency/img/portfolio/portfolio4.jpg"><i class="fa fa-search"></i></a>
+                                            </span>
                                 </div>
                             </div>
                         </div>
