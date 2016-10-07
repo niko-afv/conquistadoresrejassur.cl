@@ -754,7 +754,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four aventureros">
                             <div class="img-holder">
-                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/2016/benjamin_fredes.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
+                                <img class="img-responsive" src="<?php echo $root_url; ?>images/timthumb.php?src=images/fichas/benjamin_fredes-min.jpg&w=476&h=530&zc=1&f=4&q=50" alt="">
                                 <div class="img-overlay">
                                     <div>
                                         <p>Benjamin Fredes</p>
@@ -849,7 +849,7 @@
                         <!-- Portfolio Item With PrettyPhoto  -->
                         <div class="portfolio-item one-four lideres">
                                   <div class="img-holder">
-                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/nicolas_fredes.png" alt="">
+                                        <img class="img-responsive" src="<?php echo $root_url; ?>images/fichas/nicolas_fredes-min.png" alt="">
                                         <div class="img-overlay">
                                             <div>
                                             <p>Nicolás Fredes</p>
