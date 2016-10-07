@@ -1160,7 +1160,7 @@
                                                                     <div class="testimonials-arrow"></div>
                                                                     <div class="author">
                                                                         <div class="testimonial-image ">
-                                                                            <img alt="" src="<?php echo $root_url; ?>images/timthumb.php?src=images/feedback/alex-profile.png&w=70&zc=2&q=50">
+                                                                            <img alt="" src="<?php echo $root_url; ?>images/timthumb.php?src=images/feedback/alex-profile.png&w=70&zc=2&q=10">
                                                                         </div>
                                                                         <div class="testimonial-author-info">
                                                                             <a href="#"><span class="color">Alex Meneses</span></a> Regional de Conquistadores AMCH
