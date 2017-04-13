@@ -1,3 +1,5 @@
 .htaccess
 apps/config/database.php
 uploads/
+.idea/
+
